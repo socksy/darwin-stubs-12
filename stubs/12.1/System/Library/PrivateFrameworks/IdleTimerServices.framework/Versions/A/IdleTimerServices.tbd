@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1E5C7D2F-0018-3E4A-A83E-C2FE91CB2525', 'x86_64: 1E5C7D2F-0018-3E4A-A83E-C2FE91CB2525', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7170901E-FC64-3291-827D-90F77DD0ECCC', 'arm64e: 7170901E-FC64-3291-827D-90F77DD0ECCC' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IdleTimerServices.framework/Versions/A/IdleTimerServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ITIdleTimerServicesConfigurationErrorDomain, _ITLogIdleTimer, 
+                       _ITLoggingSubsystem, _IdleTimerServicesVersionNumber, _IdleTimerServicesVersionString ]
+    objc-classes:    [ _ITIdleTimerAssertion, _ITIdleTimerConfiguration, _ITIdleTimerIOKitHandler, 
+                       _ITIdleTimerServiceProvider, _ITIdleTimerState, _ITIdleTimerStateClient, 
+                       _ITIdleTimerStateModel, _ITIdleTimerStateService ]
+...

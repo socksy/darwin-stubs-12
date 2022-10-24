@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D7BCE73E-61D6-38DA-A2D7-DA359ABC981F', 'x86_64: D7BCE73E-61D6-38DA-A2D7-DA359ABC981F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 466D3A16-5BFC-31B1-B58F-4D0D5F33BBB8', 'arm64e: 466D3A16-5BFC-31B1-B58F-4D0D5F33BBB8' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MTLSimImplementation.framework/Versions/A/MTLSimImplementation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _init_with_xpc_connection ]
+...

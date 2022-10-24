@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 463DA7D5-0696-3D4F-A7A8-BDC853ED53D4', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8A39C987-F9CA-3178-A5ED-18FC1BE4FC1B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/BehaviorMiner.framework/Versions/A/BehaviorMiner'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BMAutomationSuggestionsConfig, _BMCreateShortcutFilter, _BMErrorDomain, 
+                       _BMEventInterval, _BMHourSlotForHourOfDay, _BMIsNotAppExtension, 
+                       _BMItemNormalizedValueFromValue, _BMItemValueFromNormalizedValue, 
+                       _BMLog, _BMMaxPhotoPeople, _BMMaxPhotoScenes, _BMStorageURLForDomain, 
+                       _BMTemporalItemsForDate, _BehaviorMinerVersionNumber, _BehaviorMinerVersionString, 
+                       _hourOfDaySlotDuration ]
+    objc-classes:    [ _BMAprioriPatternMiner, _BMBasketExtractor, _BMBehaviorDatabaseMetadata, 
+                       _BMBehaviorRetriever, _BMBehaviorStorage, _BMCoreRoutineProvider, 
+                       _BMDatedBasket, _BMEvent, _BMEventExtractor, _BMInteractionProvider, 
+                       _BMItem, _BMItemMO, _BMItemType, _BMManagedObjectConverter, 
+                       _BMMiningTask, _BMMiningTaskConfig, _BMRetrievalFilter, _BMRule, 
+                       _BMRuleExtractor, _BMRuleMO ]
+...

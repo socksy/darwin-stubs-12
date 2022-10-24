@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2CF86840-9ED0-3320-A559-D6D243C59C0C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 65032537-6989-366A-871B-17D4669048A9' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/Collaboration.framework/Versions/A/Collaboration'
+current-version: 84
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SidebarContacts, _SidebarNetworkGroups, _SidebarNetworkUsers, 
+                       _SidebarUsersGroups, _SortABGroupsByName, _SortABPeopleByFirstName, 
+                       _SortIdentitiesByFirstName ]
+    objc-classes:    [ _CBGroupIdentity, _CBIdentity, _CBIdentityAuthority, _CBIdentityPicker, 
+                       _CBIdentityQuery, _CBUserIdentity, _IdentityDataSource, _IdentityPickerInternal, 
+                       _ListObject, _SidebarDataSource ]
+    objc-ivars:      [ _CBIdentity._reserved, _CBIdentityQuery._csQuery, _CBIdentityQuery._delegate, 
+                       _CBIdentityQuery._identities, _CBIdentityQuery._showsHiddenIdentities, 
+                       _IdentityDataSource._disabledIdentities, _IdentityDataSource._groupImage, 
+                       _IdentityDataSource._identities, _IdentityDataSource._userImage, 
+                       _IdentityDataSource._vCardImage, _ListObject._displayName, 
+                       _ListObject._icon, _ListObject._identity, _ListObject._person, 
+                       _ListObject._realName, _SidebarDataSource._addressBookGroups, 
+                       _SidebarDataSource._showsAddressBook, _SidebarDataSource._showsAddressBookGroups, 
+                       _SidebarDataSource._showsNetworkGroups, _SidebarDataSource._showsNetworkUsers, 
+                       _SidebarDataSource._sidebarItems, _SidebarDataSource._usersGroupsState ]
+...

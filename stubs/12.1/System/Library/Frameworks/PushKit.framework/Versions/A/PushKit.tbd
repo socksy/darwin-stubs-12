@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4EF59CC2-6A71-3986-9953-0324ECAF4300', 'x86_64: 4EF59CC2-6A71-3986-9953-0324ECAF4300', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 469B95D3-488C-39E3-8B7E-7EC1C2F0F549', 'arm64e: 469B95D3-488C-39E3-8B7E-7EC1C2F0F549' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/PushKit.framework/Versions/A/PushKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PKNonMacTokenName, _PKPushIncomingCallReportedNotification, 
+                       _PKPushTypeComplication, _PKPushTypeFileProvider, _PKPushTypeUserNotifications, 
+                       _PKPushTypeVoIP ]
+    objc-classes:    [ _PKPublicChannel, _PKPushCredentials, _PKPushPayload, _PKPushRegistry, 
+                       _PKUserNotificationsRemoteNotificationServiceConnection ]
+...

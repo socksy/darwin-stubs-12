@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B5FEA673-B81F-34C8-95AF-FEC6C89F6D66', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B0ACE78B-A6BE-3531-B737-3AB3FEC129EE' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PDSAgent.framework/Versions/A/PDSAgent'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PDSClientVersionNumber, _PDSCurrentServerEnvironment, _PDSProtoBatchRegisterReqReadFrom, 
+                       _PDSProtoBatchRegisterRespReadFrom, _PDSProtoGSTokenAuthReadFrom, 
+                       _PDSProtoMapEntryReadFrom, _PDSProtoTopicReadFrom, _PDSProtoUserAuthReadFrom, 
+                       _PDSProtoUserPushTokenReadFrom, _PDSProtoUserPushTokenRegRequestReadFrom, 
+                       _PDSProtoUserPushTokenRegResponseReadFrom, _PDSProtocolVersionNumber, 
+                       _PDSStringForServerEnvironment ]
+    objc-classes:    [ _PDSBag, _PDSCDCacheContainer, _PDSConfiguration, _PDSCoordinator, 
+                       _PDSDaemon, _PDSDaemonListener, _PDSDaemonRemoteVendor, _PDSEntryStore, 
+                       _PDSHeartbeatTracker, _PDSInternalDaemonListener, _PDSProtoBatchRegisterReq, 
+                       _PDSProtoBatchRegisterResp, _PDSProtoGSTokenAuth, _PDSProtoMapEntry, 
+                       _PDSProtoTopic, _PDSProtoUserAuth, _PDSProtoUserPushToken, 
+                       _PDSProtoUserPushTokenRegRequest, _PDSProtoUserPushTokenRegResponse, 
+                       _PDSRegisterMessage, _PDSRequest, _PDSRequestInfo, _PDSRequestQueue, 
+                       _PDSResponse, _PDSUserTracker, _PDSXPCClient, _PDSXPCServer ]
+...

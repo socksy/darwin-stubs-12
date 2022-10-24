@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DB2BA0CC-0BEE-3BDF-BA36-D3918107EE2E', 'x86_64: DB2BA0CC-0BEE-3BDF-BA36-D3918107EE2E', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CC22E1A3-F846-3E55-8F78-2CABA3100D2D', 'arm64e: CC22E1A3-F846-3E55-8F78-2CABA3100D2D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetStatistics.framework/Versions/A/CoreDuetStatistics'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _CDSBasisObject, _CDSEngine ]
+...

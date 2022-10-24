@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9DC853F4-724C-3C27-B300-C244DF88350B', 'x86_64: 9DC853F4-724C-3C27-B300-C244DF88350B', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9340D308-F8AC-3739-B93D-B80EBF81FE53', 'arm64e: 9340D308-F8AC-3739-B93D-B80EBF81FE53' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement'
+current-version: 2235.60.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SMCopyAllJobDictionaries, _SMCopyEnabledLoginItems_4BTM, 
+                       _SMJobBless, _SMJobCopyDictionary, _SMJobIsEnabled, _SMJobRemove, 
+                       _SMJobSetEnabled, _SMJobSubmit, _SMLaunchdPlistSetUserAllowed_4BTM, 
+                       _SMLoginItemSetEnabled, _SMLoginItemSetUserAllowed_4BTM, __SMLoginItemSetEnabledWithURL, 
+                       __launch_job_routine, __launch_job_routine_async, __launch_server_test_routine, 
+                       __xpc_domain_routine, __xpc_service_routine, _kSMDomainLocalLaunchd, 
+                       _kSMDomainSystemLaunchd, _kSMDomainUserLaunchd, _kSMErrorDomainFramework, 
+                       _kSMErrorDomainIPC, _kSMErrorDomainLaunchd, _kSMInfoKeyAuthorizedClients, 
+                       _kSMInfoKeyPrivilegedExecutables ]
+...

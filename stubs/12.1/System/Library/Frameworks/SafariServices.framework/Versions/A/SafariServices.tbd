@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9AB7A1C7-0E53-34A1-B967-09D56C391F9F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 94F6D24F-5F29-3E4D-8F29-22F6BEAAE076' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/SafariServices.framework/Versions/A/SafariServices'
+current-version: 612.3.6
+compatibility-version: 535
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SFErrorDomain, _SFExtensionMessageKey, _SSGetApplicationNameForUserAgent, 
+                       _SSGetBestURLForUserTypedString, _SSGetFullySimplifiedStringForURL, 
+                       _SSGetSafariDateOfLastActiveUse, _SSGetSyncedDataClasses, 
+                       _SSGetWebSearchURLForSearchQuery, _SSHasDefaultBookmarks, 
+                       _SSRemoveSyncedKeychainData, _SSSyncedTabsServiceEnableStateChanged, 
+                       __SFAppleBNITeamIdentifier, __SFContentBlockerContentHashKey, 
+                       __SFContentBlockerDidRequestReloadNotification, __SFContentBlockerExtensionPointIdentifier, 
+                       __SFExtensionEnabledKey, __SFKeychainLabel, __SFKeychainService, 
+                       __SFMacAppStoreCodingRequirement, __SFMacAppStoreOrDeveloperIDDistributionCodeSigningRequirement, 
+                       __SFSafariContentBlockerDidChangeDistributedNotification, 
+                       __SFSafariExtensionPointIdentifier, __SFSafariServicesAvailable, 
+                       __SFSafariServicesVersion, __SFTouchIDToAutoFillPreferenceKey ]
+    objc-classes:    [ _SFContentBlockerManager, _SFContentBlockerState, _SFPrivacyReport, 
+                       _SFSafariApplication, _SFSafariExtension, _SFSafariExtensionHandler, 
+                       _SFSafariExtensionManager, _SFSafariExtensionRemoteViewController, 
+                       _SFSafariExtensionServiceViewController, _SFSafariExtensionState, 
+                       _SFSafariExtensionViewController, _SFSafariPage, _SFSafariPageProperties, 
+                       _SFSafariTab, _SFSafariToolbarItem, _SFSafariWindow, _SFUniversalLink, 
+                       __SFAppExtensionsStateManager, __SFAutoFillManager, __SFBookmark, 
+                       __SFBookmarkCollection, __SFBookmarkFolder, __SFBookmarkLeaf, 
+                       __SFCodeSigningUtilities, __SFExtensionHelperContentBlockerManager, 
+                       __SFExtensionUtilities, __SFExtensionsStateSecureStorage, 
+                       __SFKeyBagLockStatusManager, __SFSandboxUtilities, __SFSharablePasswordReceiver, 
+                       __SSHistoryAccessSession, __SSURLCompletionSession ]
+...

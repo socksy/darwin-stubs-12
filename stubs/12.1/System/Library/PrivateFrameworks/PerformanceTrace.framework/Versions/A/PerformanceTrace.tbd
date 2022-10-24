@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F0125BD8-8AAA-3180-B5E6-89FD1F8D0EBE', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FA46CB2F-A597-3D75-B95A-7FC180DBA001' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PerformanceTrace.framework/Versions/A/PerformanceTrace'
+current-version: 113.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PerformanceTraceVersionNumber, _PerformanceTraceVersionString, 
+                       _traceConfigTemplateForString, _traceGroupForString, _traceTypeForString ]
+    objc-classes:    [ _PTTraceConfig, _PTTraceSession ]
+...

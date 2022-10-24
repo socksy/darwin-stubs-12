@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 087E1076-E1ED-353B-A6BB-ACFAE7FB547C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E675036D-B5EB-3470-A421-AC79E1A9F59E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/Versions/A/AppleNeuralEngine'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppleNeuralEngineVersionNumber, _AppleNeuralEngineVersionString, 
+                       __ANEDaemonInterface, __ANEDaemonInterfacePrivate, _kANEFCompilerOptionsFilenameKey, 
+                       _kANEFEnablePowerSavingKey, _kANEFInMemoryModelIdentifierKey, 
+                       _kANEFInMemoryModelIsCachedKey, _kANEFIntermediateBufferHandleKey, 
+                       _kANEFModelANECIRValue, _kANEFModelCoreMLValue, _kANEFModelDescriptionKey, 
+                       _kANEFModelInputSymbolIndexArrayKey, _kANEFModelInputSymbolsArrayKey, 
+                       _kANEFModelIsEncryptedKey, _kANEFModelLoadPerformanceStatsKey, 
+                       _kANEFModelMILValue, _kANEFModelOutputSymbolIndexArrayKey, 
+                       _kANEFModelOutputSymbolsArrayKey, _kANEFModelPreCompiledValue, 
+                       _kANEFModelProcedureIDKey, _kANEFModelProcedureNameToIDMapKey, 
+                       _kANEFModelProcedureNameToStatsSizeMapKey, _kANEFModelProceduresArrayKey, 
+                       _kANEFModelTypeKey, _kANEFPerformanceStatsMaskKey, _kANEModelKeyAllSegmentsValue, 
+                       _kANEModelKeyNoSegmentsValue ]
+    objc-classes:    [ __ANEClient, __ANECloneHelper, __ANEDaemonConnection, __ANEDataReporter, 
+                       __ANEDeviceController, __ANEDeviceInfo, __ANEErrors, __ANEHashEncoding, 
+                       __ANEIOSurfaceObject, __ANEInMemoryModel, __ANEInMemoryModelDescriptor, 
+                       __ANELog, __ANEModel, __ANEPerformanceStats, __ANEPerformanceStatsIOSurface, 
+                       __ANEProgramForEvaluation, __ANEQoSMapper, __ANERequest, __ANESandboxingHelper, 
+                       __ANEStrings ]
+...

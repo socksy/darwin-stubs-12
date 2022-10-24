@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9527353D-9779-3DB3-8845-EAD0E18BAFFD', 'x86_64: 9527353D-9779-3DB3-8845-EAD0E18BAFFD', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AAEAB3CF-91F2-3547-8162-6811430AB7FA', 'arm64e: AAEAB3CF-91F2-3547-8162-6811430AB7FA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AppSSOKerberos.framework/Versions/A/AppSSOKerberos'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _free_kerbvalidationinfo, _get_kerbvalidationinfo, _kSOAppSSOKerberosBundleIDs, 
+                       _kSOHeimdalBundleIDs, _kSOKerberosAttributeValueNoSiteCode, 
+                       _kSOKerberosNotificationADPasswordChanged, _kSOKerberosNotificationActionChange, 
+                       _kSOKerberosNotificationActionIgnore, _kSOKerberosNotificationCategoryChange, 
+                       _kSOKerberosNotificationCategoryChangeNow, _kSOKerberosNotificationConfigRemoved, 
+                       _kSOKerberosNotificationConnectionCompleted, _kSOKerberosNotificationFoundExistingCredential, 
+                       _kSOKerberosNotificationGotNewCredential, _kSOKerberosNotificationInternalNetworkAvailable, 
+                       _kSOKerberosNotificationInternalNetworkNotAvailable, _kSOKerberosNotificationLocalPasswordSynced, 
+                       _kSOKerberosNotificationPasswordChangedWithPasswordSync, _kSOKerberosNotificationUserSignedOut, 
+                       _kSOKerberosOperationAttributeDelayUserSetupCleared, _kSOKerberosOperationAttributeForce, 
+                       _kSOKerberosOperationAttributeGSSCredUUID, _kSOKerberosOperationAttributeHomeDirectory, 
+                       _kSOKerberosOperationAttributeHostName, _kSOKerberosOperationAttributeHostSuffixLength, 
+                       _kSOKerberosOperationAttributeIsDefaultRealm, _kSOKerberosOperationAttributeLastLoginDate, 
+                       _kSOKerberosOperationAttributeLocalPasswordChangedDate, _kSOKerberosOperationAttributeNetworkAvailable, 
+                       _kSOKerberosOperationAttributePasswordChangedDate, _kSOKerberosOperationAttributePasswordExpiresDate, 
+                       _kSOKerberosOperationAttributeRealm, _kSOKerberosOperationAttributeRefresh, 
+                       _kSOKerberosOperationAttributeSiteCode, _kSOKerberosOperationAttributeSiteCodeCache, 
+                       _kSOKerberosOperationAttributeUPN, _kSOKerberosOperationAttributeUserCancelledLogin, 
+                       _kSOKerberosOperationAttributeUserName, _kSOKerberosOperationAttributeVerbose, 
+                       _kSOKerberosOperationChangePassword, _kSOKerberosOperationGetCredentialUUID, 
+                       _kSOKerberosOperationGetRealmInfo, _kSOKerberosOperationGetSiteCode, 
+                       _kSOKerberosOperationLogin, _kSOKerberosOperationLogout, _kSOKerberosOperationResetKeychainChoice, 
+                       _kSOKerberosOperationResetRealm, _kSOKerberosOperationSyncPassword, 
+                       _kSOKerberosSuiteName, _kSiteCodeCacheLazyRefreshAge, _kSiteCodeCacheMaxAge, 
+                       _ndrdata_get_buffer, _ndrdata_get_uint16, _ndrdata_get_uint32, 
+                       _ndrdata_get_uint64, _ndrdata_get_uint8, _ndrdata_init ]
+    objc-classes:    [ _SOADSiteDiscovery, _SOAsynchronousBlockOperation, _SOAsynchronousLDAPOperation, 
+                       _SOAsynchronousOperation, _SOAuthorizationWrapper, _SODNSSRVQuery, 
+                       _SODNSSRVResponse, _SOKerberosAgent, _SOKerberosAgentContext, 
+                       _SOKerberosAuthentication, _SOKerberosContext, _SOKerberosCredential, 
+                       _SOKerberosExtensionData, _SOKerberosExtensionProcess, _SOKerberosExtensionUserData, 
+                       _SOKerberosFileManager, _SOKerberosHeimdalPluginSettings, 
+                       _SOKerberosHelper, _SOKerberosOpenDirectory, _SOKerberosPacData, 
+                       _SOKerberosRealmSettings, _SOKerberosServer, _SOKerberosSettingsManager, 
+                       _SOKeychainHelper, _SOLDAPHelper, _SONetLogonParser, _SONetworkIdentity, 
+                       _SOSiteCode, _SOSmartcard, _SOSmartcardEntry ]
+...

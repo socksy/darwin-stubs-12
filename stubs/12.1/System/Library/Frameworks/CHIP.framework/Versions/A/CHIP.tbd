@@ -1,0 +1,33 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FC84DB07-B2E0-39DE-82EB-780E02A9596C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 38E00772-E45B-3D98-B18A-F010F426693B' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/CHIP.framework/Versions/A/CHIP'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CHIPErrorDomain, _CHIPSizeThreadExtendedPanId, _CHIPSizeThreadMasterKey, 
+                       _CHIPSizeThreadNetworkName, _CHIPSizeThreadPSKc, _CHIPVersionNumber, 
+                       _CHIPVersionString ]
+    objc-classes:    [ _CHIPAccountLogin, _CHIPAdministratorCommissioning, _CHIPApplicationBasic, 
+                       _CHIPApplicationLauncher, _CHIPAudioOutput, _CHIPBarrierControl, 
+                       _CHIPBasic, _CHIPBinaryInputBasic, _CHIPBinding, _CHIPBridgedDeviceBasic, 
+                       _CHIPCluster, _CHIPColorControl, _CHIPContentLauncher, _CHIPDescriptor, 
+                       _CHIPDevice, _CHIPDeviceController, _CHIPDiagnosticLogs, _CHIPDoorLock, 
+                       _CHIPElectricalMeasurement, _CHIPEthernetNetworkDiagnostics, 
+                       _CHIPFixedLabel, _CHIPFlowMeasurement, _CHIPGeneralCommissioning, 
+                       _CHIPGeneralDiagnostics, _CHIPGroupKeyManagement, _CHIPGroups, 
+                       _CHIPIdentify, _CHIPKeypadInput, _CHIPLevelControl, _CHIPLowPower, 
+                       _CHIPManualSetupPayloadParser, _CHIPMediaInput, _CHIPMediaPlayback, 
+                       _CHIPNetworkCommissioning, _CHIPOccupancySensing, _CHIPOnOff, 
+                       _CHIPOnOffSwitchConfiguration, _CHIPOnboardingPayloadParser, 
+                       _CHIPOperationalCredentials, _CHIPOptionalQRCodeInfo, _CHIPOtaSoftwareUpdateProvider, 
+                       _CHIPPressureMeasurement, _CHIPPumpConfigurationAndControl, 
+                       _CHIPQRCodeSetupPayloadParser, _CHIPRelativeHumidityMeasurement, 
+                       _CHIPScenes, _CHIPSetupPayload, _CHIPSoftwareDiagnostics, 
+                       _CHIPSwitch, _CHIPTargetNavigator, _CHIPTemperatureMeasurement, 
+                       _CHIPTestCluster, _CHIPThermostat, _CHIPThermostatUserInterfaceConfiguration, 
+                       _CHIPThreadNetworkDiagnostics, _CHIPThreadOperationalDataset, 
+                       _CHIPTvChannel, _CHIPWakeOnLan, _CHIPWiFiNetworkDiagnostics, 
+                       _CHIPWindowCovering ]
+...

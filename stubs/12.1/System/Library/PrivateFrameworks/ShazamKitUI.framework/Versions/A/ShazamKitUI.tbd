@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 15BB33D0-0436-36D9-A85E-10EA8B8959A6', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 521AA7B6-D155-3208-B504-D149508A9A56' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ShazamKitUI.framework/Versions/A/ShazamKitUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _SHListeningLayer ]
+...

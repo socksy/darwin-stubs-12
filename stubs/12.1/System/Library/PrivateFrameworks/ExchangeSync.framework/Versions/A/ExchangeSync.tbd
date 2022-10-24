@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 77D959E7-B171-36C2-8BE5-42F2174E10DE', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B10EA841-EB99-3C71-805C-147BA7F7D1AF' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/Versions/A/ExchangeSync'
+current-version: 2007.0.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ExchangeSyncVersionNumber, _ExchangeSyncVersionString, _kEWSFolderClassCalendar, 
+                       _kEWSFolderClassContacts, _kEWSFolderClassNote, _kEWSFolderClassTasks, 
+                       _kExchangeAccountUpgraderActivityIdentifier, _kExchangeBasicAccountMigrationLastAttemptDate, 
+                       _kExchangeBasicAccountMigrationRetryInterval, _kExchangeBasicAccountMigrationStatus, 
+                       _kExchangeFirstRunActivityIdentifier, _kExchangeMigrationConfigurationURLString, 
+                       _kExchangeRenewCredentialsShouldTriggerMigrationKey, _kExchangeSyncD_SyncNowNotification ]
+    objc-classes:    [ _EXSAccount, _EXSAccountAuthUpgrader, _EXSAccountManager, 
+                       _EXSAccountMetadata, _EXSAlarm, _EXSAttendee, _EXSBaseProperties, 
+                       _EXSCalendarItemProperties, _EXSChangeItem, _EXSDataConsumerInstance, 
+                       _EXSDataConsumerPlugin, _EXSDataManager, _EXSEWSCreateCalendarItemOperation, 
+                       _EXSEWSCreateFolderOperation, _EXSEWSCreateResponseOperation, 
+                       _EXSEWSCreateTaskOperation, _EXSEWSDeleteFolderOperation, 
+                       _EXSEWSDeleteItemOperation, _EXSEWSGetMeetingRequestItemsOperation, 
+                       _EXSEWSMoveItemOperation, _EXSEWSOperation, _EXSEWSRemoveMeetingRequestOperation, 
+                       _EXSEWSSyncProtocol, _EXSEWSSyncUtils, _EXSEWSUpdateCalendarItemOperation, 
+                       _EXSEWSUpdateFolderOperation, _EXSEWSUpdateTaskOperation, 
+                       _EXSEmailAddress, _EXSFolder, _EXSFolderProperties, _EXSGlobalDataManager, 
+                       _EXSIDNADecoder, _EXSIDNAEncoder, _EXSItem, _EXSItemIDType, 
+                       _EXSItemProperties, _EXSLogging, _EXSMain, _EXSMaintenanceActivity, 
+                       _EXSNetworkController, _EXSNotificationController, _EXSOccurrence, 
+                       _EXSPersonaPersistenceLayoutManager, _EXSRecurrenceProperties, 
+                       _EXSSyncEngine, _EXSSyncEngineInstance, _EXSSyncProtocol, 
+                       _EXSSyncProtocolFactory, _EXSTaskItemProperties, _EXSTimeChangeType, 
+                       _EXSTimeZoneType, _EXSXPCInterfaceImplementation, _EXSXPCServiceDelegate ]
+...

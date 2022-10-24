@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 71E4CB98-B38E-34A2-9683-0CE7AA743554', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 733FE5B6-8789-35CA-A07F-91D414C94433' ]
+platform:        iosmac
+install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/Versions/A/VisualTestKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAddExclusionAreaAt, 
+                       ___VTKAddHorizontalGuideAt, ___VTKAddSqureGuideAt, ___VTKAddVerticalGuideAt, 
+                       ___VTKAssertView, ___VTKExclusionAreaStatusBar, ___VTKSetImageComparatorStrategy, 
+                       ___VTKSetImageComparisonOptions, ___VTKSetReferenceImagesDirectory, 
+                       ___VTKSetReferenceItemSourceType ]
+    objc-classes:    [ _VTKAssertID ]
+...

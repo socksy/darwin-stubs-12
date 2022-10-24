@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E0EC251B-70AD-3D32-B7DA-0C70690D3300', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A85D2C00-F696-3CD4-818F-4AEF4AABB715' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/UARPUpdaterService.framework/Versions/A/UARPUpdaterService'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _UARPUpdaterServiceVersionNumber, _UARPUpdaterServiceVersionString ]
+    objc-classes:    [ _UARPServiceUpdaterAccessoryMatchingRule, _UARPServiceUpdaterDASMatchingRule, 
+                       _UARPServiceUpdaterMatchedIOKitRule, _UARPUpdaterServiceBase ]
+...

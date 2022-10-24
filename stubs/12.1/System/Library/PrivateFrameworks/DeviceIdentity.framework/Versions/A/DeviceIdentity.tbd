@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A7BEF5ED-882B-359E-9ED8-10608396DF2D', 'x86_64: A7BEF5ED-882B-359E-9ED8-10608396DF2D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 017B4A87-90D1-33AF-86AC-C42C4F2D296E', 'arm64e: 017B4A87-90D1-33AF-86AC-C42C4F2D296E' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DeviceIdentity.framework/Versions/A/DeviceIdentity'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DeviceIdentityCopyAttestationDictionary, _DeviceIdentityCreateClientCertificateRequest, 
+                       _DeviceIdentityIsSupported, _DeviceIdentityIssueClientCertificateWithCompletion, 
+                       _MobileActivationErrorDomain, _MobileActivationFunctionNameErrorKey, 
+                       _MobileActivationSourceFileLineErrorKey, _kMAOptionsAllowInvalidNetworkCertificates, 
+                       _kMAOptionsBAAAccessControls, _kMAOptionsBAAAppIDKey, _kMAOptionsBAACACert, 
+                       _kMAOptionsBAACertType, _kMAOptionsBAACertTypeBAA, _kMAOptionsBAACertTypeMFi, 
+                       _kMAOptionsBAAClientAttestationData, _kMAOptionsBAAClientAttestationPublicKey, 
+                       _kMAOptionsBAADeleteDuplicateKeychainItems, _kMAOptionsBAADeleteExistingKeysAndCerts, 
+                       _kMAOptionsBAAIgnoreExistingKeychainItems, _kMAOptionsBAAKeySizeInBits, 
+                       _kMAOptionsBAAKeychainAccessGroup, _kMAOptionsBAAKeychainLabel, 
+                       _kMAOptionsBAALocalAuthenticationContext, _kMAOptionsBAAMFiData, 
+                       _kMAOptionsBAAMFiPPUID, _kMAOptionsBAAMFiProperties, _kMAOptionsBAAMFiPropertiesAttestationKeyByte, 
+                       _kMAOptionsBAAMFiPropertiesAttestationKeyMask, _kMAOptionsBAAMFiPropertiesDomainByte, 
+                       _kMAOptionsBAAMFiPropertiesDomainMask, _kMAOptionsBAAMFiPropertiesProvisioningHostByte, 
+                       _kMAOptionsBAAMFiPropertiesProvisioningHostMask, _kMAOptionsBAANetworkTimeoutInterval, 
+                       _kMAOptionsBAANonce, _kMAOptionsBAAOIDAccessControls, _kMAOptionsBAAOIDDeviceIdentifiers, 
+                       _kMAOptionsBAAOIDDeviceIntent, _kMAOptionsBAAOIDDeviceOSInformation, 
+                       _kMAOptionsBAAOIDHardwareProperties, _kMAOptionsBAAOIDIMG4Manifest, 
+                       _kMAOptionsBAAOIDKeyUsageProperties, _kMAOptionsBAAOIDMFiAccessoryData, 
+                       _kMAOptionsBAAOIDMFiAccessoryProperties, _kMAOptionsBAAOIDMFiProductPlanUID, 
+                       _kMAOptionsBAAOIDNonce, _kMAOptionsBAAOIDSToInclude, _kMAOptionsBAAOIDUCRTDeviceIdentifiers, 
+                       _kMAOptionsBAAPerformOperationsOverIPC, _kMAOptionsBAAReturnReferenceDate, 
+                       _kMAOptionsBAASCRTAttestation, _kMAOptionsBAASkipNetworkRequest, 
+                       _kMAOptionsBAAUseAuthenticationUI, _kMAOptionsBAAValidity, 
+                       _kMAOptionsResuseExistingKey, _kMAOptionsUseSoftwareGeneratedKey, 
+                       _mobileactivationErrorHasDomainAndErrorCode ]
+...

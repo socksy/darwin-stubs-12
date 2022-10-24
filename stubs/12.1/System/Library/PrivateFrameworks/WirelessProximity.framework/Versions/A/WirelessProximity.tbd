@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EE7D78E3-C8DA-3F37-8FA2-013273F7F7FC', 'x86_64: EE7D78E3-C8DA-3F37-8FA2-013273F7F7FC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3CF490A1-0770-3288-ABAF-C3656717B3E1', 'arm64e: 3CF490A1-0770-3288-ABAF-C3656717B3E1' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/WirelessProximity.framework/Versions/A/WirelessProximity'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _WPAirPlaySoloAdvertisingMode, _WPAirPlaySoloKeyDeviceAddress, 
+                       _WPAirPlaySoloKeyDeviceTime, _WPBeaconAdvInterval, _WPBeaconTX, 
+                       _WPBeaconType, _WPBeaconTypeATVSetup, _WPBeaconTypeAirPlayTargetPresence, 
+                       _WPBeaconTypeAirPlayTargetPresencePayload, _WPBeaconTypeCompany, 
+                       _WPBeaconTypeCompanyConfig, _WPBeaconTypeCompanyMajor, _WPBeaconTypeCompanyMinor, 
+                       _WPBeaconTypeCompanyUUID, _WPErrorDomain, _WPHeySiriAdvertisingData, 
+                       _WPHeySiriKeyDeviceAddress, _WPHeySiriKeyDeviceTime, _WPHeySiriKeyDeviceUUID, 
+                       _WPHeySiriKeyManufacturerData, _WPHomeKitScanBlobData, _WPHomeKitScanDutyCycle, 
+                       _WPHomeKitScanMaskData, _WPHomeKitScanOptionRange, _WPHomeKitScanOptionRetainDuplicates, 
+                       _WPHomeKitTypes, _WPLogInitOnce, _WPLoggingInit, _WPMagicSwitchAdvertiseTypeInterval, 
+                       _WPMagicSwitchAdvertisingData, _WPMagicSwitchScanBlobData, 
+                       _WPMagicSwitchScanDutyCycle, _WPMagicSwitchScanMaskData, _WPMagicSwitchScanPeers, 
+                       _WPNearbyKeyConnectLatencyCritical, _WPNearbyKeyDeviceAddress, 
+                       _WPNearbyKeyDeviceTime, _WPNearbyKeyManufacturerData, _WPNearbyKeyPaired, 
+                       _WPNearbyKeyRSSI, _WPNearbyLEPipeCapable, _WPObjectDiscoveryKeyAddress, 
+                       _WPObjectDiscoveryKeyChannel, _WPObjectDiscoveryKeyData, _WPObjectDiscoveryKeyOptional, 
+                       _WPObjectDiscoveryKeyRSSI, _WPObjectDiscoveryKeySaturated, 
+                       _WPObjectDiscoveryKeyStatus, _WPObjectDiscoveryKeyTime, _WPObjectDiscoveryScanKeyAdvBuffer, 
+                       _WPObjectDiscoveryScanKeyAdvBufferRate, _WPObjectDiscoveryScanKeyAllowDuplicates, 
+                       _WPObjectDiscoveryScanKeyScanWhenLocked, _WPObjectDiscoveryScanKeyScreenOffRate, 
+                       _WPObjectDiscoveryScanKeyScreenOnRate, _WPObjectDiscoveryScanKeyTimeout, 
+                       _WPPairingKeyAdvertisingChannel, _WPPairingKeyDeviceTime, 
+                       _WPPairingKeyName, _WPPairingKeyPaired, _WPPairingKeyRSSI, 
+                       _WPPuckType, _WPPuckTypeAirPlaySoloAdvertisingChannel, _WPPuckTypeAirPlaySoloAdvertisingData, 
+                       _WPPuckTypeAirPlaySoloRSSI, _WPPuckTypeAirPlaySoloSourcePresence, 
+                       _WPPuckTypeAirPlaySoloTargetPresence, _WPZoneTrackerKeyMajor, 
+                       _WPZoneTrackerKeyMinor, _WPZoneTrackerKeyZone, _WiProxLog, 
+                       _WiproxBTPairingLaunchNotification, _kSPAdvertisementData, 
+                       _kSPChannel, _kSPDeviceAddress, _kSPOptional, _kSPSaturated, 
+                       _kSPScanDate, _kSPStatus, _kSPrssi ]
+    objc-classes:    [ _WPAWDL, _WPAdvertising, _WPAdvertisingRequest, _WPAirPlaySolo, 
+                       _WPCharacteristic, _WPClient, _WPContinuity, _WPDObjectDiscoveryData, 
+                       _WPDataTransfer, _WPDeviceScanner, _WPHeySiri, _WPHomeKit, 
+                       _WPMagicSwitch, _WPNearby, _WPObjectDiscovery, _WPPairing, 
+                       _WPPeerTrackingRequest, _WPRanging, _WPScanRequest, _WPTest, 
+                       _WPTransfer, _WPZoneTracker, _WPZoneTrackingRequest ]
+...

@@ -31,7 +31,7 @@ stubifyFramework() {
   local path="$1"
   local name
 
-  name="$(basename "$path" .framework)"
+  name="$(basename "$path" .framework).tbd"
 
   if [ ! -e "${sysroot}$path/$name" ]; then
     log "Framework '$name' does not have a library to stub"

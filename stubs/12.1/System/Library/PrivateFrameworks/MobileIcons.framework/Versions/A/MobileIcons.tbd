@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 63FE5509-0C37-3241-881A-C5872D68F7A6', 'x86_64: 63FE5509-0C37-3241-881A-C5872D68F7A6', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B0EF42DD-51EF-31F8-8E1E-DCEC722C3C54', 'arm64e: B0EF42DD-51EF-31F8-8E1E-DCEC722C3C54' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MobileIcons.framework/Versions/A/MobileIcons'
+current-version: 372
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _LIBytesNeededForGhostlyImageOfSize, _LIBytesPerRowForGhostlyImageOfWidth, 
+                       _LICopyBestImageForVariantFromBundle, _LICopyBestImageForVariantFromImages, 
+                       _LICopyIconPathsFromBundle, _LICopyIconPathsFromBundleForStyles, 
+                       _LICreateCachedUncompressedDataFromImage, _LICreateDefaultAppClipIcon, 
+                       _LICreateDefaultIcon, _LICreateDeviceAppropriateHomeScreenIconImageFromBundle, 
+                       _LICreateGhostlyVersion, _LICreateGhostlyVersionWithDataWrapper, 
+                       _LICreateIconForBundle, _LICreateIconForBundleAndDisplayGamut, 
+                       _LICreateIconForImage, _LICreateIconForImages, _LICreateIconFromCachedBitmap, 
+                       _LICreateIconOverlay, _LICreateImageFromCachedUncompressedData, 
+                       _LICreateImageFromUncompressedBitmapData, _LICreateUncompressedBitmapDataFromImage, 
+                       _LICreateUncompressedBitmapDataFromImageWithOptions, _LIExpectedImageInputSizeForVariant, 
+                       _LIGetHeaderForUncompressedBitmapData, _LIGetIconVariantDimensionsForStyle, 
+                       _LIGetImageInfoFromCachedUncompressedData, _LIIconContinuousCornerRadiusForVariant, 
+                       _LIIconOutputScaleForVariant, _LIIconOutputSizeForVariant, 
+                       _LIIconOutputVisibleImageBoundsForVariant, _LISideInsetForHomeScreenVariant, 
+                       _LITopInsetForHomeScreenVariant, _MGCopyAnswer, __LICGPathCreateContinuousRoundedRect, 
+                       __LICreateIconDataForBundleURLWithIconName, __LICreateIconDataForBundleURLWithIconNameWithOptions, 
+                       __LICreateIconDataForContainersWithIconsDictionary, __LICreateIconDataForContainersWithIconsDictionaryAndPreferredIconNameWithOptions, 
+                       __LICreateIconForBundleWithIconsDictionaryAndContainers, __copyAppClipDefaultIconImages ]
+...

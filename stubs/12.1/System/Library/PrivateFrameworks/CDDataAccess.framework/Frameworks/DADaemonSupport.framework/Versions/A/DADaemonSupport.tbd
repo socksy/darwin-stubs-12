@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5EA29856-82AE-31FE-9E42-2EE629FBD3DB', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 31C078A9-1073-303B-943A-DED78F53E9B5' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CDDataAccess.framework/Frameworks/DADaemonSupport.framework/Versions/A/DADaemonSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ ___RootDomainConnect, __devicePowerChanged, _gDADHighAvailabilityQueue, 
+                       _gDADMainRunloopStopped, _gDADOperationQueue, _handleSignal ]
+    objc-classes:    [ _DAAgent, _DACoreDAVAgent, _DADAgentManager, _DADBuddyStateObserver, 
+                       _DADMain, _DADREMLocalDBWatcher, _DADREMShareResponseDelegate, 
+                       _DADREMXPCPerformerDelegate, _DADSystemAvailabilityChecker, 
+                       _DADaemonPowerAssertionManager, _DAFolderSyncRequest, _DARefreshManager, 
+                       _DARefreshWrapper, _DATokenRegistrationRequest, _REMDAAccountInfo ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2A7D7DEC-0C17-3BF0-9AB7-198F69F29875', 'x86_64: 2A7D7DEC-0C17-3BF0-9AB7-198F69F29875', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AC4DCF30-D443-35B9-87EE-1FC2F36C0E94', 'arm64e: AC4DCF30-D443-35B9-87EE-1FC2F36C0E94' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/Versions/A/DeviceCheckInternal'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _DCBAASigningController, _DCCryptoProxyImpl, _DCDDeviceMetadata, 
+                       _DCXPCActivityController ]
+...

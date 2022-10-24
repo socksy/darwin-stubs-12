@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 20FEB5D9-32EF-3F98-9BB0-80866CD336E1', 'x86_64: 20FEB5D9-32EF-3F98-9BB0-80866CD336E1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 80597D9D-61F3-3706-8076-8C6089808244', 'arm64e: 80597D9D-61F3-3706-8076-8C6089808244' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CPMLBestShim.framework/Versions/A/CPMLBestShim'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kCPMLAppTitle, _kCPMLAppType, _kCPMLAppUsageTime, _kCPMLBTCondition, 
+                       _kCPMLBundleID, _kCPMLChangeCount, _kCPMLConfidence, _kCPMLConnectStatus, 
+                       _kCPMLDeviceType, _kCPMLEmergenceHalfLife, _kCPMLEmergenceTime, 
+                       _kCPMLEventSunrise, _kCPMLEventSunset, _kCPMLEventTime, _kCPMLExpertProposal, 
+                       _kCPMLExpertProposalMoot, _kCPMLExpertProposalNoDetail, _kCPMLExpertType, 
+                       _kCPMLExpertTypeByEmergence, _kCPMLExpertTypeByEventTime, 
+                       _kCPMLExpertTypeByPrediction, _kCPMLExpertUniqueX1, _kCPMLExpertUniqueX2, 
+                       _kCPMLExpertUniqueX3, _kCPMLLastModifiedDate, _kCPMLRadioCondition, 
+                       _kCPMLTimeSinceLastUsed, _kCPMLUUID, _kCPMLWifiCondition ]
+    objc-classes:    [ _CPMLBestAppShim, _CPMLBestShim, _CPMLBestShimContext ]
+...

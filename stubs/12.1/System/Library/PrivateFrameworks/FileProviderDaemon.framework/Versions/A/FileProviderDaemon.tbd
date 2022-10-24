@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7FB79CA2-EA62-3CDD-8FF2-EFF15204AA0F', 'x86_64: 7FB79CA2-EA62-3CDD-8FF2-EFF15204AA0F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FCDE3599-F9EF-3146-8632-AED7F5E1A342', 'arm64e: FCDE3599-F9EF-3146-8632-AED7F5E1A342' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FileProviderDaemon.framework/Versions/A/FileProviderDaemon'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FPDAppStoreServiceName, _FPDAppStoreServiceXPCInterface ]
+    objc-classes:    [ _FPDAccessControlStore, _FPDActionOperation, _FPDActionOperationQueue, 
+                       _FPDAppMonitor, _FPDDomain, _FPDDomainCleanupResult, _FPDDomainExtensionBackend, 
+                       _FPDDomainIndexer, _FPDDomainIndexerSchedulerAssertion, _FPDDownloadOperation, 
+                       _FPDDownloader, _FPDExtension, _FPDFetchAppLibraryIconOperation, 
+                       _FPDMoveAtom, _FPDMoveOperation, _FPDMoveReader, _FPDMoveWriter, 
+                       _FPDProcessMonitor, _FPDProvider, _FPDProviderDescriptor, 
+                       _FPDRTCReportingSession, _FPDRTCReportingSessionManager, _FPDRequest, 
+                       _FPDServer, _FPDSharedScheduler ]
+...

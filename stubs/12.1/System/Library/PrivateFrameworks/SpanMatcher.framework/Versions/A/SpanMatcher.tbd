@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CA885F10-6AA5-3C43-804D-A6AFEE271206', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7E6E73F4-8B96-3835-961B-F763E949F41C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SpanMatcher.framework/Versions/A/SpanMatcher'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SpanMatcherVersionNumber, _SpanMatcherVersionString, _cdb_bread, 
+                       _cdb_find, _cdb_findinit, _cdb_findnext, _cdb_free, _cdb_get, 
+                       _cdb_hash, _cdb_init, _cdb_make_add, _cdb_make_exists, _cdb_make_find, 
+                       _cdb_make_finish, _cdb_make_put, _cdb_make_start, _cdb_pack, 
+                       _cdb_read, _cdb_seek, _cdb_seqnext, _cdb_unpack ]
+    objc-classes:    [ _CTDFA, _CTDFAState, _CTFuzzyIndex, _CTFuzzyMatch, _CTIntTuple, 
+                       _CTNFA, _CTNFAState, _NSMetaphone, _NSSpanMatch, _NSSpanMatcher, 
+                       _PCTDFA, _TinyCDB ]
+    objc-ivars:      [ _PCTDFA._dataTable, _PCTDFA._edgeTable, _PCTDFA._finalTable, 
+                       _TinyCDB._cdb, _TinyCDB._cdbfind, _TinyCDB._cdbmake, _TinyCDB._fileDesc, 
+                       _TinyCDB._mode, _TinyCDB.blen, _TinyCDB.buf ]
+...

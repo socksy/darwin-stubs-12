@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 36D6372B-470B-3E95-89F3-9B82FFA51651', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B26ABD71-9A75-347F-9887-699C16B6D291' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SecureTransactionService.framework/Versions/A/SecureTransactionService'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NFECP20TerminalTypeToSTS, _NFExpressModeStateToSTSExpressModeState, 
+                       _NFFieldToSTS, _NFTechnologyToSTS, _NFTerminalTypeToSTS, _NFVasModeToSTSTerminalMode, 
+                       _PTA_CCC_AID, _PTA_HYDRA_CORPORATE_AID, _PTA_HYDRA_HOME_AID, 
+                       _SecureTransactionServiceVersionNumber, _SecureTransactionServiceVersionString, 
+                       _StsLogFunc, _StsLogFunc_C, _StsLogFunc_Obj, _StsLogInternal, 
+                       _StsSignpostLog ]
+    objc-classes:    [ _PaymentHandler, _STS18013ReaderAuthInfo, _STS18013RequestElement, 
+                       _STSCredential, _STSEntitlementChecker, _STSField, _STSFieldNFC, 
+                       _STSListener, _STSSession, _STSTestReader, _STSTimer, _STSTransaction18013Request, 
+                       _STSTransactionEndEvent, _STSTransactionHandler, _STSTransactionStartEvent ]
+...

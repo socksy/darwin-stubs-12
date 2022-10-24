@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BC38DF9A-9A40-36F1-96CA-C96AA2079119', 'x86_64: BC38DF9A-9A40-36F1-96CA-C96AA2079119', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2B59326D-9340-339E-832B-EBDAC71F0A0C', 'arm64e: 2B59326D-9340-339E-832B-EBDAC71F0A0C' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/IdentityLookup.framework/Versions/A/IdentityLookup'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ILClassificationUIExtensionPointIdentifier, _ILDefaultLog, 
+                       _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
+                       _ILMessageFilterPrivateErrorDomain ]
+    objc-classes:    [ _ILCallClassificationRequest, _ILCallCommunication, _ILClassification, 
+                       _ILClassificationController, _ILClassificationReportRequest, 
+                       _ILClassificationRequest, _ILClassificationResponse, _ILCommunication, 
+                       _ILMessageClassificationRequest, _ILMessageCommunication, 
+                       _ILMessageFilter, _ILMessageFilterExtension, _ILMessageFilterExtensionContext, 
+                       _ILMessageFilterExtensionHostContext, _ILMessageFilterQueryRequest, 
+                       _ILMessageFilterQueryResponse, _ILMessageFilterReportRequest, 
+                       _ILNetworkResponse ]
+...

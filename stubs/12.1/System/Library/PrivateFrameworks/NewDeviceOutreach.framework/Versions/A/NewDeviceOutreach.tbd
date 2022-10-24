@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7739C0C1-4462-3706-A725-036FAC232658', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 462EC750-CE86-3470-8CBB-FDB699D58F26' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/NewDeviceOutreach.framework/Versions/A/NewDeviceOutreach'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IsInternal, _NewDeviceOutreachVersionNumber, _NewDeviceOutreachVersionString, 
+                       __NDOLogSystem, _kAppAvailabilityType, _kAppAvailablityText, 
+                       _kAppBundleID, _kAppIconURL, _kAppLinkURL, _kAppTitle, _kAppVendorName ]
+    objc-classes:    [ _NDOBAAManager, _NDOManager, _NDOServerVersionUtilities, _NDOWarranty ]
+...

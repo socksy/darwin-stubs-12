@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 220AA328-D6C8-31B5-8701-84F709D4A6E4', 'x86_64: 220AA328-D6C8-31B5-8701-84F709D4A6E4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9A26DA4B-918F-3E70-A935-DC8757E1CE33', 'arm64e: 9A26DA4B-918F-3E70-A935-DC8757E1CE33' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Engram.framework/Versions/A/Engram'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ENCypherErrorDomain, _ENGroupContextErrorDomain, _ENGroupContextErrorItemKey, 
+                       _ENGroupIDErrorDomain ]
+    objc-classes:    [ _ENAccountIdentity, _ENAsyncReducer, _ENAsyncReducerState, 
+                       _ENCypher, _ENCypher_AES128, _ENGroup, _ENGroupContext, _ENGroupContextCoreDataCache, 
+                       _ENGroupContextInMemoryCache, _ENGroupContextNotifyingObserver, 
+                       _ENGroupID, _ENKeyClassRegister, _ENLog, _ENPair, _ENParticipant, 
+                       _ENParticipantDevice, _ENStableGroupID, __ENGroupInfo ]
+    objc-ivars:      [ _ENGroupContextCoreDataCache._container, _ENGroupContextCoreDataCache._queue, 
+                       _ENParticipant._accountPublicKey, _ENParticipant._aliases, 
+                       _ENParticipant._devices, _ENParticipantDevice._cypher, _ENParticipantDevice._devicePublicKey, 
+                       _ENParticipantDevice._identifier ]
+...

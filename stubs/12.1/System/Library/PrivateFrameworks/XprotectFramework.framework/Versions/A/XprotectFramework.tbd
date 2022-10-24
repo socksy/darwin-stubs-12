@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CF040AB4-7932-31AB-BE94-5B178CFFD3D7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F058810C-78B0-3270-B145-370D4CBDF42C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XprotectFramework'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _XPEventKeyAllowed, _XPEventKeyAssessmentAuthority, _XPEventKeyAssessmentClass, 
+                       _XPEventKeyAssessmentResult, _XPEventKeyBlockType, _XPEventKeyCdhash, 
+                       _XPEventKeyEvaluationPath, _XPEventKeyMatchedRuleName, _XPEventKeySigningID, 
+                       _XPEventKeyTeamID, _XPEventKeyURL, _XProtectAnalysisError, 
+                       _XProtectCaspianContext, _XProtectDetectionType, _XProtectIsNotarized, 
+                       _XProtectMalwareType, _XProtectNotarizationTicketDate, _XProtectRevokedByNotaryService, 
+                       _XProtectShouldSkipAnalysis, _XProtectShouldTranslocateDMG, 
+                       _XProtectSignatureName, _XProtectSignatureVersion, _XProtectUpdateLocation, 
+                       _fileIsQuarantined, _fileIsUnixExecutable, _hasLibraryValidation, 
+                       _isAppleInternalSystem, _isInAppBundle, _isSIPEnabled, _itemConformsToUTI, 
+                       _usableRulePath, _xprotectGetLog, _xprotectGetSignpostLog ]
+    objc-classes:    [ _XProtectAnalysis, _XProtectEventReporter, _XProtectSystemScan, 
+                       _XProtectUpdate, _XProtectUpdateBundle ]
+    objc-ivars:      [ _XProtectAnalysis._feedback, _XProtectAnalysis._feedbackQueue, 
+                       _XProtectAnalysis._fileURL, _XProtectAnalysis._lsProperties, 
+                       _XProtectAnalysis._malwareScanOnly, _XProtectAnalysis._results, 
+                       _XProtectAnalysis._xpc, _XProtectSystemScan._system_scan_queue, 
+                       _XProtectSystemScan._xpc, _XProtectSystemScan.plugin_service, 
+                       _XProtectUpdate._system_update_queue, _XProtectUpdate._xpc ]
+...

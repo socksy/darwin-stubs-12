@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 74B55F36-A848-3D34-BCF4-B32A04CF6063', 'x86_64: 74B55F36-A848-3D34-BCF4-B32A04CF6063', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D63D4184-398C-3AA6-B4D7-FFFD3BD309F7', 'arm64e: D63D4184-398C-3AA6-B4D7-FFFD3BD309F7' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomePubSub.framework/Versions/A/BiomePubSub'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BPSDemandMax, _BPSDemandNone, _BPSDemandUnlimited, _BPSPBApproxPercentileDigestReadFrom, 
+                       _BiomePubSubVersionNumber, _BiomePubSubVersionString ]
+    objc-classes:    [ _BMBookmarkClasses, _BMBookmarkNode, _BMBookmarkWrapper, _BMBookmarkablePublisher, 
+                       _BMBookmarkableSubscription, _BPSAggregations, _BPSAggregator, 
+                       _BPSApproxPercentileDigest, _BPSApproxPercentileDigestCentroid, 
+                       _BPSApproximateDistinctCount, _BPSBuffer, _BPSBufferInner, 
+                       _BPSCollect, _BPSCombineLatest, _BPSCompletion, _BPSCorrelate, 
+                       _BPSCorrelateHandler, _BPSCorrelateOrderedMerge, _BPSCorrelationProducer, 
+                       _BPSCountWindow, _BPSCountWindowAssigner, _BPSCountWindowMetadata, 
+                       _BPSDebounce, _BPSDirectAssocationCorrelateHandler, _BPSDrivableSink, 
+                       _BPSEmpty, _BPSFilter, _BPSFilterProducer, _BPSFlatMap, _BPSFuture, 
+                       _BPSFutureResult, _BPSGroupedPublisher, _BPSHandleEvents, 
+                       _BPSHistogram, _BPSLast, _BPSMap, _BPSMerge, _BPSMergeMany, 
+                       _BPSMulticast, _BPSOrderedMerge, _BPSPBApproxPercentileDigest, 
+                       _BPSPartialCompletion, _BPSPassThroughSubject, _BPSPublisher, 
+                       _BPSReduce, _BPSReduceProducer, _BPSRemoveDuplicates, _BPSScan, 
+                       _BPSSequence, _BPSSessionWindow, _BPSSessionWindowAssigner, 
+                       _BPSSink, _BPSSlidingWindowAssigner, _BPSSubscriberList, _BPSSubscription, 
+                       _BPSSubscriptionStatus, _BPSThrottle, _BPSTimeWindowMetadata, 
+                       _BPSTimeWindowProducer, _BPSTimer, _BPSTumblingWindowAssigner, 
+                       _BPSTuple, _BPSWindow, _BPSWindower, _BPSWindowerInput, _BPSZip, 
+                       _BPSZipMany, __BPSAbstractCombineLatest, __BPSAbstractCombineLatestSide, 
+                       __BPSAbstractCorrelateOrderedMerge, __BPSAbstractCorrelateOrderedMergeSide, 
+                       __BPSAbstractOrderedMerge, __BPSAbstractOrderedMergeSide, 
+                       __BPSAbstractZip, __BPSAbstractZipSide, __BPSBookmarkedInner, 
+                       __BPSCollectInner, __BPSCombineLatest2Inner, __BPSCorrelateInner, 
+                       __BPSCorrelateOrderedMergeManyInner, __BPSDebounceInner, __BPSFilterInner, 
+                       __BPSFlatMapOuter, __BPSFlatMapSide, __BPSHandleEventsInner, 
+                       __BPSInnerConduit, __BPSInnerFutureConduit, __BPSLastInnser, 
+                       __BPSMapInner, __BPSMerged, __BPSMergedSide, __BPSMulticastInner, 
+                       __BPSOrderedMergeManyInner, __BPSReduceInner, __BPSRemoveDuplicatesInner, 
+                       __BPSScanInner, __BPSSequenceInner, __BPSThrottleInner, __BPSTimerInner, 
+                       __BPSWindowerInner, __BPSWindowerSide, __BPSZip2Inner, __BPSZipManyInner ]
+    objc-ivars:      [ _BPSBufferInner._lock, _BPSPBApproxPercentileDigest._bufferMultiplier, 
+                       _BPSPBApproxPercentileDigest._centroidCount, _BPSPBApproxPercentileDigest._centroidMeans, 
+                       _BPSPBApproxPercentileDigest._centroidWeights, _BPSPBApproxPercentileDigest._has, 
+                       _BPSPBApproxPercentileDigest._max, _BPSPBApproxPercentileDigest._min, 
+                       __BPSAbstractCombineLatest._downstreamLock, __BPSAbstractCombineLatest._lock, 
+                       __BPSAbstractCorrelateOrderedMerge._downstreamLock, __BPSAbstractCorrelateOrderedMerge._lock, 
+                       __BPSAbstractOrderedMerge._downstreamLock, __BPSAbstractOrderedMerge._lock, 
+                       __BPSAbstractZip._downstreamLock, __BPSAbstractZip._lock, 
+                       __BPSBookmarkedInner._lock, __BPSFlatMapOuter._downstreamLock, 
+                       __BPSFlatMapOuter._lock, __BPSFlatMapOuter._outerLock, __BPSInnerConduit._downstreamLock, 
+                       __BPSInnerConduit._lock, __BPSInnerFutureConduit._downstreamLock, 
+                       __BPSInnerFutureConduit._lock, __BPSMerged._downstreamLock, 
+                       __BPSMerged._lock, __BPSSequenceInner._lock ]
+...

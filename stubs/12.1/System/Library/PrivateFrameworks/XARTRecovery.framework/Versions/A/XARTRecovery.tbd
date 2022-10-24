@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9A8DF4C0-0E36-307A-9DA7-2900252DB753', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F354AAA6-E292-34CA-BA66-AC7D69C9B47A' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/XARTRecovery.framework/Versions/A/XARTRecovery'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _XARTRecoveryVersionNumber, _XARTRecoveryVersionString, _xart_msg_create, 
+                       _xart_msg_create_reply, _xart_msg_get_error_string, _xart_msg_release, 
+                       _xart_msg_request_server_start, _xart_msg_send_with_reply, 
+                       _xrec_directory_count, _xrec_directory_erase_all, _xrec_directory_erase_entry, 
+                       _xrec_directory_fetch_snapshot, _xrec_directory_get_entry, 
+                       _xrec_directory_release, _xrec_error2str ]
+...

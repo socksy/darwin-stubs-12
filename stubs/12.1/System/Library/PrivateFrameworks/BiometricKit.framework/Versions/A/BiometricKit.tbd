@@ -1,0 +1,45 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E6397B67-2E39-3806-9379-994B3D843B27', 'x86_64: E6397B67-2E39-3806-9379-994B3D843B27', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A0AFF90B-651A-319E-B8D3-81633EAFC076', 'arm64e: A0AFF90B-651A-319E-B8D3-81633EAFC076' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiometricKit.framework/Versions/A/BiometricKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppendCommentToPGM, _BKErrorDomain, _BKLogCode, _BKLogEvent, 
+                       _LoadRawImageAsPGM, _RIESAdd, _RIESClear, _RIESDelete, _RIESInit, 
+                       _RIESLoad, _RIESSave, _RIESUpdate, _SaveRawImageAsPGM, __BKLogEventOrCode, 
+                       _absoluteToMiliseconds, _absoluteToNanoseconds, _dictionaryGetBool, 
+                       _dictionaryGetData, _dictionaryGetDouble, _dictionaryGetInteger, 
+                       _getBootArgs, _getSensorPatchVersion, _isEphemeralMultiUser, 
+                       _isFaceIDPlatform, _isInternalBuild, _isTouchIDPlatform, _kBiometricKitEnrollProgressDetailExtendedComponentID, 
+                       _kBiometricKitEnrollProgressDetailMergedInComponents, _kBiometricKitEnrollProgressDetailNewComponentID, 
+                       _kBiometricKitEnrollProgressDetailNewNodeCoordinates, _kBiometricKitEnrollProgressDetailNewNodeID, 
+                       _kBiometricKitEnrollProgressDetailReason, _kBiometricKitEnrollProgressDetailRedundantNode, 
+                       _kBiometricKitEnrollProgressDetailRemovedComponentID, _kBiometricKitEnrollProgressDetailRemovedNodeID, 
+                       _kBiometricKitEnrollProgressDetailResultComponentID, _kBiometricKitIdentityAccessoryKey, 
+                       _kBiometricKitIdentityAttributeKey, _kBiometricKitIdentityCreationTimeKey, 
+                       _kBiometricKitIdentityEntityKey, _kBiometricKitIdentityFlagsKey, 
+                       _kBiometricKitIdentityMatchCountKey, _kBiometricKitIdentityNameKey, 
+                       _kBiometricKitIdentityTypeKey, _kBiometricKitIdentityUUIDKey, 
+                       _kBiometricKitIdentityUpdateCountKey, _kBiometricKitIdentityUserIDKey, 
+                       _kBiometricKitTemplateDetailLargestComponentArea, _kBiometricKitTemplateDetailLargestComponentNodes, 
+                       _kBiometricKitTemplateDetailTotalArea, _kBiometricKitTemplateDetailTotalNodes, 
+                       _kBiometricKitTemplateUpdated, _localizeAbsolute, _nanosecondsToAbsolute, 
+                       _rotateBitmap90Data16, _rotateBitmap90Data8, _roundMostSignificant ]
+    objc-classes:    [ _BKAccessory, _BKAccessoryGroup, _BKDevice, _BKDeviceDescriptor, 
+                       _BKDeviceManager, _BKDevicePearl, _BKDeviceTouchID, _BKEnrollOperation, 
+                       _BKEnrollPearlOperation, _BKEnrollPearlProgressInfo, _BKEnrollPearlResultInfo, 
+                       _BKEnrollResultInfo, _BKEnrollTouchIDOperation, _BKExtendEnrollTouchIDOperation, 
+                       _BKFaceDetectOperation, _BKFaceDetectStateInfo, _BKFaceOcclusionInfo, 
+                       _BKFaceWUPoseEligibilityInfo, _BKFingerDetectOperation, _BKIdentity, 
+                       _BKMatchEvent, _BKMatchOperation, _BKMatchPearlOperation, 
+                       _BKMatchPearlResultInfo, _BKMatchResultInfo, _BKMatchTouchIDOperation, 
+                       _BKOperation, _BKPresenceDetectOperation, _BKSystemProtectedConfiguration, 
+                       _BKUserProtectedConfiguration, _BiometricKit, _BiometricKitAccessory, 
+                       _BiometricKitAccessoryGroup, _BiometricKitEnrollProgressCoordinates, 
+                       _BiometricKitEnrollProgressInfo, _BiometricKitEnrollProgressMergedComponent, 
+                       _BiometricKitIdentity, _BiometricKitMatchInfo, _BiometricKitTemplateInfo, 
+                       _BiometricPreferences, _BiometricSupportTools ]
+...

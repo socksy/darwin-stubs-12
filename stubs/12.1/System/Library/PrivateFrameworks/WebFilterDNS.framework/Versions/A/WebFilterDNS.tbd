@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 424A105D-E4CE-3D61-AB2E-601A98AC8029', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CB49A966-972F-3828-A412-C9DE3BD1F093' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/WebFilterDNS.framework/Versions/A/WebFilterDNS'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _LookupNameForAddr, _NameResolvesToAddr, _NameResolvesToName, 
+                       _WCFConnectionDealloc, _WCFConnectionNew, _WCFIsServerRunning, 
+                       _WCFLookupNameForAddr, _WCFNameResolvesToAddr, _WCFNameResolvesToName, 
+                       __WCFIsConnectionValid, __WCFMachPort, __rpcCall_LookupNameForAddr, 
+                       __rpcCall_NameResolvesToAddr, __rpcCall_NameResolvesToName ]
+...

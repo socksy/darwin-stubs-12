@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D767BF04-DD32-381D-873F-51BDEE2B5FAC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 57133AB5-2433-3925-A9E8-131033536DD4' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreCDPUI.framework/Versions/A/CoreCDPUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CoreCDPUIVersionNumber, _CoreCDPUIVersionString, __CDPLogSystem, 
+                       __CDPSignpostCreate, __CDPSignpostGetNanoseconds, __CDPSignpostLogSystem, 
+                       _kiCDPLocalizedAlertMessageKey, _kiCDPLocalizedAlertTitleKey ]
+    objc-classes:    [ _CDPEnrollViewController, _CDPOption, _CDPPrintBorderView, 
+                       _CDPRecoveryKeyPrintController, _CDPRecoveryKeySheetBaseController, 
+                       _CDPRecoveryKeySheetController, _CDPStateBaseUIController, 
+                       _CDPStateUIController, _CDPStateiCloudPrefUIController, _CDPTrustedDeviceViewItem, 
+                       _CDPUIAccessCodeEntryTextField, _CDPUIDeviceToDeviceEncryptionCancelCreateViewModel, 
+                       _CDPUIDeviceToDeviceEncryptionFlowContext, _CDPUIDeviceToDeviceEncryptionHelper, 
+                       _CDPUIDeviceToDeviceEncryptionIneligibilityAlertViewModel, 
+                       _CDPUIDeviceToDeviceEncryptionMessagingViewModel, _CDPUIDeviceToDeviceEncryptionUIProviderImp, 
+                       _CDPUIDeviceToDeviceEncryptionUpgradeMessageViewModel, _CDPUIInheritanceUIProviderImpl, 
+                       _CDPiCloudPrefRecoveryKeyController, _iCDPEnrollDevice ]
+...

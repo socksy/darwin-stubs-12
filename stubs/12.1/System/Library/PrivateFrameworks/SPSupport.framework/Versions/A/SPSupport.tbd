@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3816B74C-6F2A-3C07-AA88-7B1F619902A0', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 63DA428F-2858-3B10-9BE0-0BB57D25CF9F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SPSupport.framework/Versions/A/SPSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OSLogForCategory, __comparePropertyOrders ]
+    objc-classes:    [ _SPDevice, _SPDocument, _SPReporter ]
+    objc-ivars:      [ _SPDevice.children, _SPDevice.entry ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 09216C47-DF8B-36D8-8299-92C6E4F11ABE', 'x86_64: 09216C47-DF8B-36D8-8299-92C6E4F11ABE', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 82D33D9E-1716-3CB2-AC65-F22663FA4E71', 'arm64e: 82D33D9E-1716-3CB2-AC65-F22663FA4E71' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/InternationalSupport.framework/Versions/A/InternationalSupport'
+current-version: 69.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ISBackstopLanguage, _ISBackstopLocale, _InternationalSupportVersionNumber, 
+                       _InternationalSupportVersionString ]
+    objc-classes:    [ _ISUtilities ]
+...

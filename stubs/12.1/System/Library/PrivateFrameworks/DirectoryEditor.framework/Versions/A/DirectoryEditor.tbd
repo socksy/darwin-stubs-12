@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 575E4964-0A11-32F3-90DE-23F0E5C2CE81', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 69827995-61FD-3533-B618-D2CEFDF53617' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DirectoryEditor.framework/Versions/A/DirectoryEditor'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _DirectoryEditorView ]
+    objc-ivars:      [ _DirectoryEditorView._authForLocalNode, _DirectoryEditorView._controller, 
+                       _DirectoryEditorView._odSession ]
+...

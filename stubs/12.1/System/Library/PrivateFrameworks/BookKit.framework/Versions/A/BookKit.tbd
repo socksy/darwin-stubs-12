@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 71A8146C-078C-3C82-A1E4-2C791128A4E8', 'x86_64: 71A8146C-078C-3C82-A1E4-2C791128A4E8', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DD613704-B8AF-388A-80E3-434FB602E32E', 'arm64e: DD613704-B8AF-388A-80E3-434FB602E32E' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BookKit.framework/Versions/A/BookKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BKAgentDynamicCast, _BKAgentLog, _BKApplicationAccessBundleID, 
+                       _BKDisableBookStorePreferenceKey, _BKPreferenceApplicationID, 
+                       _BKRestrictExplicitContentPreferenceKey, _BKSyncCloudSettingsAgentLog, 
+                       _BookKitVersionNumber, _BookKitVersionString, _kBKAgentErrorAssetNotFound, 
+                       _kBKAgentErrorDomain, _kBKAgentErrorNoAssetID, _kBKAgentLibraryUpdatedNotification, 
+                       _kBKAgentMetadataKeyAccountID, _kBKAgentMetadataKeyArtistName, 
+                       _kBKAgentMetadataKeyBookDescription, _kBKAgentMetadataKeyBookInfo, 
+                       _kBKAgentMetadataKeyBookLongDescription, _kBKAgentMetadataKeyBookmarkTime, 
+                       _kBKAgentMetadataKeyBookmarkTimeUpdatedDate, _kBKAgentMetadataKeyChapterTimes, 
+                       _kBKAgentMetadataKeyCoverImageData, _kBKAgentMetadataKeyCoverImageDataReplaced, 
+                       _kBKAgentMetadataKeyDescription, _kBKAgentMetadataKeyDesktopSupportLevel, 
+                       _kBKAgentMetadataKeyDisplayName, _kBKAgentMetadataKeyFileSize, 
+                       _kBKAgentMetadataKeyGeneratedItemId, _kBKAgentMetadataKeyGenerationCount, 
+                       _kBKAgentMetadataKeyGenre, _kBKAgentMetadataKeyGrouping, _kBKAgentMetadataKeyHumanVersionNumber, 
+                       _kBKAgentMetadataKeyIsLocked, _kBKAgentMetadataKeyIsProof, 
+                       _kBKAgentMetadataKeyIsSample, _kBKAgentMetadataKeyItemId, 
+                       _kBKAgentMetadataKeyItemName, _kBKAgentMetadataKeyItemSortName, 
+                       _kBKAgentMetadataKeyKind, _kBKAgentMetadataKeyMigrationVersion, 
+                       _kBKAgentMetadataKeyPageCount, _kBKAgentMetadataKeyParts, 
+                       _kBKAgentMetadataKeyPath, _kBKAgentMetadataKeyPurchaseDate, 
+                       _kBKAgentMetadataKeyRating, _kBKAgentMetadataKeyReleaseDate, 
+                       _kBKAgentMetadataKeyScrollDirection, _kBKAgentMetadataKeySeriesAdamId, 
+                       _kBKAgentMetadataKeyShouldDisableOptimizeSpeed, _kBKAgentMetadataKeyShouldDisableTouchEmulation, 
+                       _kBKAgentMetadataKeySourcePath, _kBKAgentMetadataKeyStoreFrontId, 
+                       _kBKAgentMetadataKeyTrashedPath, _kBKAgentMetadataKeyUpdateDate, 
+                       _kBKAgentMetadataKeyUserComment, _kBKAgentMetadataKeyVersionNumber, 
+                       _kBKAgentMetadataKeyYear, _kBKAgentMetadataMigrationVersion, 
+                       _kBKAgentMetadataPermlink, _kBKAgentRestartedNotification, 
+                       _kBKHasPendingUpdate, _kBKInsertionDate ]
+    objc-classes:    [ _BKAgent, _BKAgentServiceDelegate, _BKBookKitBook, _BKSecurePreferences, 
+                       _BKSyncCloudSettingsAgent, _BKSyncCloudSettingsAgentServiceDelegate ]
+...

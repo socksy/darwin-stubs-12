@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EAC9A66B-431B-399D-813E-3E0344978B12', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 488D7B1A-DB29-30E4-B670-748CC38B8EC6' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Recap.framework/Versions/A/Recap'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DKDCenterRectOverRect, _DKDRectWithSize, _RCPCGImageBackedImageFromImage, 
+                       _RCPHIDEventMatchingPredicate, _RCPHIDEventTransformLocation, 
+                       _RCPLogPlayback, _RCPLogWorkarounds, _RCPLoggingSubsystem, 
+                       _RCPMachTimestampFromTimeInterval, _RCPSetNonDecayingThreadPriority, 
+                       _RCPTimeIntervalFromMachTimestamp, __CLTLogLevel, __RCPEventHIDDigitizerEventCountOfTouchingContacts, 
+                       __RCPEventHIDEnumerateChildren, _kRPCEventStreamErrorDomainFile ]
+    objc-classes:    [ _BackBoardScrollEventStream, _BaseScrollEventStream, _CLIArguments, 
+                       _CLTOption, _CLTOptionParser, _CLTTool, _RCPDisabledWorkarounds, 
+                       _RCPDiscreteGestureSpec, _RCPEvent, _RCPEventAction, _RCPEventDeliveryServicePool, 
+                       _RCPEventEnvironment, _RCPEventScreen, _RCPEventSenderProperties, 
+                       _RCPEventStream, _RCPEventStreamRecorder, _RCPInlinePlayer, 
+                       _RCPMovie, _RCPPlayer, _RCPPlayerDisplayLinkWaiter, _RCPPlayerPlaybackOptions, 
+                       _RCPPointerTrackingChildEventStream, _RCPRecorder, _RCPRecorderConfig, 
+                       _RCPSyntheticEventStream, _RCPSyntheticFluidSwipeEventStream, 
+                       _RCPTimelineView, _RCPTraceLayer, _RCPVirtualHIDService, _RCPVizualizerView, 
+                       _RCPWorkarounds, _SSSRecapEventTrack, _SSSRecapPath, _WindowServerScrollEventStream, 
+                       __RCPEventActionSetPointerLocation, __RCPEventDigitizerStreamState ]
+...

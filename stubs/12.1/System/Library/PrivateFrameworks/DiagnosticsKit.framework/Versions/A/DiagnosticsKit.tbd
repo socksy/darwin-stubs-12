@@ -1,0 +1,37 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F01218D9-13D7-3418-91BE-3BC05B1923B1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 64461E42-4BDB-3AA2-A580-3BE842979C4D' ]
+platform:        macosx
+install-name:    '@rpath/DiagnosticsKit.framework/Versions/A/DiagnosticsKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CACHE_DIRECTORY, _DKErrorDomain, _DKErrorLocalizedDescriptionForCode, 
+                       _DKTemporaryDirectoryURL, _DiagnosticsKitLogHandleForCategory, 
+                       _DiagnosticsKitVersionNumber, _DiagnosticsKitVersionString, 
+                       _HELPER_APP_BUNDLE_ID, _HELPER_APP_PATH, _HOME_DIRECTORY, 
+                       _TEMP_DIRECRORY, _XPC_BUNDLE_DIRECTORY, _XPC_BUNDLE_ID, _kDKBundleIdentifierKey, 
+                       _kDKComponentAttributesKey, _kDKComponentIdentityKey, _kDKDefaultBundleIdentifier, 
+                       _kDKDiagnosticAttributeFreeSpaceRequiredKey, _kDKDiagnosticAttributeIdentifierKey, 
+                       _kDKDiagnosticAttributeNameKey, _kDKDiagnosticAttributeRequiresUnlockKey, 
+                       _kDKDiagnosticAttributeSupportedDevicesKey, _kDKDiagnosticParametersKey, 
+                       _kDKDiagnosticParametersParametersKey, _kDKDiagnosticParametersPredicatesKey, 
+                       _kDKDiagnosticParametersSpecificationsKey, _kDKDiagnosticPredicatesKey, 
+                       _kDKDiagnosticSpecificationsKey, _kDKDiagnosticsRestrictedService, 
+                       _kDKDiagnosticsRestrictedUIService, _kDKDiagnosticsService, 
+                       _kDKDiagnosticsUIService, _kDKReportComponentsKey, _kDKReporterAttributeManifestKey, 
+                       _kDKReporterAttributeManifestResourcesKey, _kDKReporterAttributeManifestVersionKey, 
+                       _kDKReporterAttributeNameKey, _kDKReportersService ]
+    objc-classes:    [ _DKAnalytics, _DKAssetUploadItem, _DKAssetUploadItems, _DKCanonicalVersion, 
+                       _DKComponent, _DKComponentIdentity, _DKComponentPredicate, 
+                       _DKDiagnosticAttributes, _DKDiagnosticContext, _DKDiagnosticContextMock, 
+                       _DKDiagnosticController, _DKDiagnosticControllerMock, _DKDiagnosticHostContext, 
+                       _DKDiagnosticManager, _DKDiagnosticParameters, _DKDiagnosticRegistry, 
+                       _DKDiagnosticResult, _DKDiagnosticService, _DKDiagnosticServiceRequest, 
+                       _DKDiagnosticXPCManager, _DKEnterSandbox, _DKExtensionAdapter, 
+                       _DKExtensionDiscovery, _DKExtensionRequest, _DKMutableDiagnosticResult, 
+                       _DKReport, _DKReportHostContext, _DKReportManager, _DKReportPlanner, 
+                       _DKReporterAttributes, _DKReporterContext, _DKReporterController, 
+                       _DKReporterRegistry, _DKReportingConcurrentRequest, _DKReportingConcurrentRequestGroup, 
+                       _DKRequestContext, _DKUtilities, _DiagnosticsKit_Subsystem ]
+...

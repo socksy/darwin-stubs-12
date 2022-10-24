@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9DCDF038-E27D-3ABF-A02A-95E25A139EDA', 'x86_64: 9DCDF038-E27D-3ABF-A02A-95E25A139EDA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4A87FE1B-E651-3744-92D1-1D6E96414BE3', 'arm64e: 4A87FE1B-E651-3744-92D1-1D6E96414BE3' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/NewsFoundation.framework/Versions/A/NewsFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NFDeviceHasExtendedColorDisplay, _NFDeviceIsA7, _NFDeviceIsA8, 
+                       _NFDeviceModelString, _NFDeviceOSVersion, _NFDevicePlatform, 
+                       _NFGeneralDeviceString, _NFInternalBuild, _NFLockSync, _NFPromiseInvokeOnQueue, 
+                       _NFSeedBuild, _NFStateMachineErrorDomain, _NFStoreDemoMode, 
+                       _NewsFoundationVersionNumber, _NewsFoundationVersionString, 
+                       __UIValueCGRectValue, _kNFPromiseSealingErrorCode, _kNFPromiseSealingErrorName, 
+                       _kNFReachabilityChangedNotification, _zalgo, _zalgoIfMain ]
+    objc-classes:    [ _NFArchiver, _NFEventManager, _NFEventTrigger, _NFLazy, _NFMultiDelegate, 
+                       _NFMutexLock, _NFPendingPromise, _NFPromise, _NFPromiseSeal, 
+                       _NFReachability, _NFStateMachine, _NFStateMachineEvent, _NFStateMachineState, 
+                       _NFStateMachineTransition, _NFUnfairLock, _NFVoid ]
+...

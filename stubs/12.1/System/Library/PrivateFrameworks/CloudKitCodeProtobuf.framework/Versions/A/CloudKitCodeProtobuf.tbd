@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B29B4571-1A5C-3585-8140-3C629D01F28B', 'x86_64: B29B4571-1A5C-3585-8140-3C629D01F28B', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9CFCFA2E-9DCD-3DB3-99A7-A3DE81804B6D', 'arm64e: 9CFCFA2E-9DCD-3DB3-99A7-A3DE81804B6D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CloudKitCodeProtobuf.framework/Versions/A/CloudKitCodeProtobuf'
+current-version: 1930.13
+swift-version:   7
+...

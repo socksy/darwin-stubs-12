@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 54CCE521-D0A7-320E-B711-0491A7E8FAE0', 'x86_64: 54CCE521-D0A7-320E-B711-0491A7E8FAE0', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1EDA6A51-5305-31AC-8289-8C9CA0160255', 'arm64e: 1EDA6A51-5305-31AC-8289-8C9CA0160255' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AggregateDictionary.framework/Versions/A/AggregateDictionary'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ADClientAddValueForScalarKey, _ADClientBatchKeys, _ADClientCheckpoint, 
+                       _ADClientClearDistributionKey, _ADClientClearScalarKey, _ADClientCommit, 
+                       _ADClientDayChanged, _ADClientDebug, _ADClientGetLogsMessages, 
+                       _ADClientIsEnabled, _ADClientPushValueForDistributionKey, 
+                       _ADClientSendBarrier, _ADClientSetLogsMessages, _ADClientSetValueForDistributionKey, 
+                       _ADClientSetValueForScalarKey, _ADClientSignificantTimeChanged, 
+                       _ADDatabaseUtilitiesCleanUpCorruption, _ADDaysSince1970, _ADIsInternalDevice, 
+                       _ADMonotonicTimeGetCurrent, _ADPushTimeIntervalForDistributionKeySinceStartTime, 
+                       _ADPushTimeIntervalForDistributionKeyTimingBlock ]
+...

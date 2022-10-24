@@ -1,0 +1,59 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DBD9F5E8-D04F-313D-A301-D5C3242686CF', 'x86_64: DBD9F5E8-D04F-313D-A301-D5C3242686CF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EF78E4FE-C8B6-3190-82CE-643F4C266109', 'arm64e: EF78E4FE-C8B6-3190-82CE-643F4C266109' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ChronoServices.framework/Versions/A/ChronoServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CHSAvocadoSizeClassFromString, _CHSChronoEventServicePublisherEntitlement, 
+                       _CHSChronoServicesStartupNotification, _CHSColorSchemeDescription, 
+                       _CHSDescriptionForAvocadoSizeClass, _CHSDescriptionForAvocadoSizeClassMask, 
+                       _CHSDescriptionForWidgetVisibility, _CHSErrorDomain, _CHSFlushPowerlog, 
+                       _CHSIsWidgetExtensionPoint, _CHSLogChronoServices, _CHSNSURLSessiondServiceInfoKeyIsHighPriority, 
+                       _CHSNSURLSessiondServiceInfoKeySessionIdentifier, _CHSWidgetEnvironmentDataForBundleIdentifier, 
+                       _CHSWidgetFamilyDescription, _CHSWidgetFamilyFromString, _CHSWidgetFamilyMaskContainsFamily, 
+                       _CHSWidgetFamilyMaskDescription, _CHSWidgetFamilyMaskEnumerateFamilies, 
+                       _CHSWidgetFamilyMaskFromWidgetFamily, _CHSWidgetLocationDescription, 
+                       _CHSWidgetTextSizeAdjustmentDescription, _CHSWidgetVisibilityKey, 
+                       _ChronoLoggingSubsystem, _ChronoServicesVersionNumber, _ChronoServicesVersionString, 
+                       _NSStringForAvocadoSizeClass, _NSStringFromWidgetFamily, _NSStringFromWidgetLocation, 
+                       __CHSRestartChronod, _chs_debugDescriptionForErrorCode ]
+    objc-classes:    [ _CHSApplicationProcessStateChangeConsumer, _CHSArrayBox, _CHSAvocadoDescriptor, 
+                       _CHSAvocadoDescriptorProvider, _CHSAvocadoDescriptorsBox, 
+                       _CHSChronoEventServiceListener, _CHSChronoEventServicePublisher, 
+                       _CHSChronoEventServiceSpecification, _CHSChronoServicesConnection, 
+                       _CHSChronoServicesToolConnection, _CHSChronoToolServiceSpecification, 
+                       _CHSChronoWidgetServiceSpecification, _CHSConfiguredWidgetContainerDescriptor, 
+                       _CHSConfiguredWidgetContainerDescriptorsBox, _CHSConfiguredWidgetDescriptor, 
+                       _CHSDictionaryBox, _CHSMutableAvocadoDescriptor, _CHSMutableScreenshotPresentationAttributes, 
+                       _CHSMutableWidgetConfiguration, _CHSMutableWidgetExtensionInfo, 
+                       _CHSMutableWidgetMetricsSpecification, _CHSNSURLSessiondService, 
+                       _CHSPlaceholderRequest, _CHSProactiveService, _CHSScreenshotManager, 
+                       _CHSScreenshotPresentationAttributes, _CHSSizeConfiguration, 
+                       _CHSSnapshotContext, _CHSTimelineController, _CHSTimelineReloadRequest, 
+                       _CHSToolSupportService, _CHSURLSessionToken, _CHSWidget, _CHSWidgetConfiguration, 
+                       _CHSWidgetConfigurationHostsBox, _CHSWidgetConfigurationReader, 
+                       _CHSWidgetExtensionInfo, _CHSWidgetHost, _CHSWidgetKey, _CHSWidgetKeysBox, 
+                       _CHSWidgetMetrics, _CHSWidgetMetricsSpecification, __CHSWidgetConfigurationHost ]
+    objc-ivars:      [ _CHSAvocadoDescriptor._containerBundleIdentifier, _CHSAvocadoDescriptor._defaultIntent, 
+                       _CHSAvocadoDescriptor._defaultIntentProvider, _CHSAvocadoDescriptor._displayName, 
+                       _CHSAvocadoDescriptor._eventMachServiceName, _CHSAvocadoDescriptor._extensionBundleIdentifier, 
+                       _CHSAvocadoDescriptor._fetchDefaultIntentCompletions, _CHSAvocadoDescriptor._intentType, 
+                       _CHSAvocadoDescriptor._kind, _CHSAvocadoDescriptor._localeToken, 
+                       _CHSAvocadoDescriptor._supportedFamilies, _CHSAvocadoDescriptor._transparent, 
+                       _CHSAvocadoDescriptor._version, _CHSAvocadoDescriptor._widgetDescription, 
+                       _CHSAvocadoDescriptor._widgetVisibility, _CHSScreenshotPresentationAttributes._allowsPrivacySensitiveContent, 
+                       _CHSScreenshotPresentationAttributes._colorScheme, _CHSWidgetConfiguration._containerDescriptors, 
+                       _CHSWidgetConfiguration._metricsSpecification, _CHSWidgetExtensionInfo._allowsMixedLocalizations, 
+                       _CHSWidgetExtensionInfo._availableLocalizations, _CHSWidgetExtensionInfo._bundleIdentifier, 
+                       _CHSWidgetExtensionInfo._bundleURL, _CHSWidgetExtensionInfo._configurations, 
+                       _CHSWidgetExtensionInfo._containerBundleIdentifier, _CHSWidgetExtensionInfo._containerURL, 
+                       _CHSWidgetExtensionInfo._dataProtectionLevel, _CHSWidgetExtensionInfo._descriptors, 
+                       _CHSWidgetExtensionInfo._entitlements, _CHSWidgetExtensionInfo._isDevelopmentExtension, 
+                       _CHSWidgetExtensionInfo._lastModifiedDate, _CHSWidgetExtensionInfo._nominatedContainerBundleIdentifiers, 
+                       _CHSWidgetExtensionInfo._placeholderURLs, _CHSWidgetExtensionInfo._snapshotURLs, 
+                       _CHSWidgetExtensionInfo._systemDataContainerURL, _CHSWidgetExtensionInfo._timelineURLs, 
+                       _CHSWidgetExtensionInfo._version, _CHSWidgetExtensionInfo._wantsLocation ]
+...

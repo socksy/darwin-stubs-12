@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BE429D77-6080-3D27-B4EE-12EE022386B4', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8A27CF70-79ED-3EBE-B835-962044896640' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/JavaRuntimeSupport.framework/Versions/A/JavaRuntimeSupport'
+current-version: 79
+exports:
+  - archs:           [ x86_64 ]
+    symbols:         [ _JRSCopyCanonicalLanguageForPrimaryLanguage, _JRSCopyOSJavaSupportVersion, 
+                       _JRSCopyOSName, _JRSCopyOSVersion, _JRSCopyPrimaryLanguage, 
+                       _JRSSetDefaultLocalization ]
+    objc-classes:    [ _JRSSecurity ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '$ld$previous$/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/JavaRuntimeSupport$$1$10.0$10.16$$', 
+                       _JRSAccessibilityUnregisterUniqueIdForUIElement, _JRSFontAlignStyleForFractionalMeasurement, 
+                       _JRSFontAlignStyleForIntegerMeasurement, _JRSFontCreateFallbackFontForCharacters, 
+                       _JRSFontGetAdvancesForGlyphsAndStyle, _JRSFontGetBoundingBoxesForGlyphsAndStyle, 
+                       _JRSFontGetRenderingStyleForContext, _JRSFontGetRenderingStyleForHints, 
+                       _JRSFontSetRenderingStyleOnContext, _JRSFontStyleIsAntialiased, 
+                       _JRSFontStyleUsesFractionalMetrics, _JRSMenuDidReuseItemNotification, 
+                       _JRSUIControlCreate, _JRSUIControlDraw, _JRSUIControlGetHitPart, 
+                       _JRSUIControlGetScrollBarOffsetFor, _JRSUIControlGetScrollBarPartBounds, 
+                       _JRSUIControlRelease, _JRSUIControlSetAlignmentHorizontal, 
+                       _JRSUIControlSetAlignmentVertical, _JRSUIControlSetAnimating, 
+                       _JRSUIControlSetDirection, _JRSUIControlSetOrientation, _JRSUIControlSetPresentationState, 
+                       _JRSUIControlSetScrollBarPart, _JRSUIControlSetSegmentPosition, 
+                       _JRSUIControlSetShowArrows, _JRSUIControlSetSize, _JRSUIControlSetState, 
+                       _JRSUIControlSetUserInterfaceLayoutDirection, _JRSUIControlSetValueByKey, 
+                       _JRSUIControlSetVariant, _JRSUIControlSetWidget, _JRSUIControlSetWindowType, 
+                       _JRSUIControlShouldScrollToClick, _JRSUIGetKey, _JRSUIRendererCreate, 
+                       _JRSUIRendererRelease ]
+    objc-classes:    [ _JRSAppKitAWT, _JRSDrag, _JRSInputMethodController, _JRSRenderServer, 
+                       _JRSSymbolicator ]
+...

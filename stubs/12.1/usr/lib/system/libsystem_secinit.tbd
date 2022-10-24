@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 796A0F0D-1FDE-3417-AB55-9584022AB706', 'x86_64: 796A0F0D-1FDE-3417-AB55-9584022AB706', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6A8FEE92-740F-3963-8F1B-98112A619010', 'arm64e: 6A8FEE92-740F-3963-8F1B-98112A619010' ]
+platform:        zippered
+install-name:    '/usr/lib/system/libsystem_secinit.dylib'
+current-version: 106.40.3
+parent-umbrella: System
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __libsecinit_initializer, _libsecinit_delete_all_data_container_content_for_current_user, 
+                       _libsecinit_fileoperation_save, _libsecinit_fileoperation_set_attributes, 
+                       _libsecinit_fileoperation_symlink ]
+...

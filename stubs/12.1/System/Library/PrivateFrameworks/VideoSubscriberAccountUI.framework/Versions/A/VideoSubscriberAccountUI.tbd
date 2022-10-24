@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FD5F8EEA-020A-3081-8C5C-384A83C74078', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9F7F02F9-929B-3D47-AE05-738A65285250' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/Versions/A/VideoSubscriberAccountUI'
+current-version: 402.20.2
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _VSAppSettingsFacadeAppsDidChangeNotification, _VSWLKAppInstallationOperationNotificationUserInfoAppAdamIDKey, 
+                       _VSWLKAppInstallationOperationNotificationUserInfoInstallProgressKey, 
+                       _VSWLKAppInstallationOperationProgressDidChange, _kVSDeveloperTwoCharCode ]
+    objc-classes:    [ _VSAMSStorefrontFetchAllOperation, _VSAppDescription, _VSAppSettingsFacade, 
+                       _VSAppSettingsViewModel, _VSFetchAllSupportedAppsOperation, 
+                       _VSFontCenter, _VSIdentityProviderFetchAllOperation, _VSIdentityProviderFetchChannelAppsOperation, 
+                       _VSIdentityProviderFetchOperation, _VSIdentityProviderFilter, 
+                       _VSIdentityProviderRequest, _VSIdentityProviderRequestManager, 
+                       _VSIdentityProviderStorefrontCollection, _VSIdentityProviderStorefrontParser, 
+                       _VSImageLoadOperation, _VSNonChannelAppDecider, _VSStorefront, 
+                       _VSStorefrontFilter, _VSTopShelfPurgingAccountStore, _VSViewControllerFactory, 
+                       _VSWLKAppInstallationOperation ]
+...

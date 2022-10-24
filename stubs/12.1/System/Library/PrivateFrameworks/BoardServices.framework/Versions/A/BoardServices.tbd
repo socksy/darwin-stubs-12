@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B7E46076-6387-3265-8A32-81A43D0631CA', 'x86_64: B7E46076-6387-3265-8A32-81A43D0631CA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 22228D26-400F-391E-A638-40C510B60FA6', 'arm64e: 22228D26-400F-391E-A638-40C510B60FA6' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BoardServices.framework/Versions/A/BoardServices'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BSBoardServicesVersionNumber, _BSBoardServicesVersionString, 
+                       _BSServiceBootstrapLog, _BSServiceConnectionEndpointInstanceKey, 
+                       _BSServiceConnectionEndpointServiceKey, _BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain, 
+                       _BSServiceConnectionEndpointTargetDescriptionForMachName, 
+                       _BSServiceConnectionErrorCreate, _BSServiceConnectionErrorCreateWithInfo, 
+                       _BSServiceConnectionErrorDomain, _BSServiceEndpointGrantNamespace, 
+                       _BSServiceInjectionLog, _BSServiceLog, _BSServiceMethodNameErrorKey, 
+                       _BSServiceXPCErrorsLog, _BSServiceXPCLog, _BSXPCServiceConnectionExecuteCallOut, 
+                       _NSStringFromBSServiceConnectionErrorCode, _NSStringFromBSServiceDomainStartType ]
+    objc-classes:    [ _BSMutableServiceInterface, _BSService, _BSServiceConnection, 
+                       _BSServiceConnectionEndpoint, _BSServiceConnectionEndpointInjector, 
+                       _BSServiceConnectionEndpointMonitor, _BSServiceConnectionListener, 
+                       _BSServiceDomain, _BSServiceDomainSpecification, _BSServiceInterface, 
+                       _BSServiceManager, _BSServiceQuality, _BSServiceSpecification, 
+                       _BSServicesConfiguration, _BSXPCServiceConnection, _BSXPCServiceConnectionChildContext, 
+                       _BSXPCServiceConnectionContext, _BSXPCServiceConnectionEventHandler, 
+                       _BSXPCServiceConnectionListener, _BSXPCServiceConnectionMessage, 
+                       _BSXPCServiceConnectionMessageReply, _BSXPCServiceConnectionNullContext, 
+                       _BSXPCServiceConnectionPeer, _BSXPCServiceConnectionProxy, 
+                       _BSXPCServiceConnectionRootClientEndpointContext, _BSXPCServiceConnectionRootContext, 
+                       _BSXPCServiceConnectionRootServerContext, __BSServiceConnectionConfiguration, 
+                       __BSServiceDispatchingQueueImpl, __BSServiceOutgoingEndpoint ]
+    objc-ivars:      [ _BSServiceInterface._client, _BSServiceInterface._clientWaitsForActivation, 
+                       _BSServiceInterface._identifier, _BSServiceInterface._server, 
+                       _BSXPCServiceConnectionMessage._sendFlag, _BSXPCServiceConnectionMessage._targetQueue ]
+...

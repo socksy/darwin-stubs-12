@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 488778F8-96EF-37AA-A622-D1D82258D6B2', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CFB4B3DF-C139-343F-AE2E-6CE67EA36C2B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SearchSuggestions.framework/Versions/A/SearchSuggestions'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SGTLocalizedSuggestion, _SGTNormalizedQueryString, _SGTNormalizedQueryStringIgnoreDiacritics, 
+                       _SGTSearchSuggestionsErrorDomain, _SGTSearchSuggestionsSupportedScopes, 
+                       _SearchSuggestionsVersionNumber, _SearchSuggestionsVersionString, 
+                       _splitCounts ]
+    objc-classes:    [ _SGTSearchSuggestions ]
+...

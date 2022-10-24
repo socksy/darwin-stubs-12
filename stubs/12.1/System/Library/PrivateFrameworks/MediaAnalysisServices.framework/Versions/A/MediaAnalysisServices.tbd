@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9DCE8618-866E-3ACC-B85D-72F018311A31', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 85F7F10F-CB90-318F-A76B-F6840413B275' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MediaAnalysisServices.framework/Versions/A/MediaAnalysisServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MADSignpostLog, _MediaAnalysisServicesVersionNumber, _MediaAnalysisServicesVersionString ]
+    objc-classes:    [ _MADEmbeddingGenerationRequest, _MADEmbeddingGenerationResult, 
+                       _MADImageSafetyClassificationRequest, _MADImageSafetyClassificationResult, 
+                       _MADRequest, _MADResult, _MADService, _MADServicePrivate, 
+                       _MADServiceProxy, _MADServicePublic, _MADVIDocumentRecognitionRequest, 
+                       _MADVIDocumentRecognitionResult, _MADVIMachineReadableCodeDetectionRequest, 
+                       _MADVIMachineReadableCodeDetectionResult, _MADVIMachineReadableCodeDetectionResultItem, 
+                       _MADVIVisualSearchGatingDomainInfo, _MADVIVisualSearchGatingRequest, 
+                       _MADVIVisualSearchGatingResult, _MADVIVisualSearchGatingResultItem, 
+                       _MADVIVisualSearchRegionAttributes, _MADVIVisualSearchRequest, 
+                       _MADVIVisualSearchResult, _MADVIVisualSearchResultItem ]
+...

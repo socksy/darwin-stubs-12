@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B0A9CCE0-CD6E-3204-BC05-4FBF552CD89A', 'x86_64: B0A9CCE0-CD6E-3204-BC05-4FBF552CD89A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 612B3FE8-23F3-390E-A019-8A3A54F9EEAF', 'arm64e: 612B3FE8-23F3-390E-A019-8A3A54F9EEAF' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AuthenticationServicesCore.framework/Versions/A/AuthenticationServicesCore'
+current-version: 612.3.6
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ASCAgentBundleIdentifier, _ASCAgentServiceName, _ASCAuthorizationErrorDomain, 
+                       _ASCAuthorizationPresentationContextDataKey, _ASCAuthorizationPresenterClientEntitlementName, 
+                       _ASViewServiceClientEntitlement, _ASViewServiceProcess, _ascCredentialRequestTypesAllPublicKey, 
+                       _authenticationServicesViewServiceBundleIdentifier, _descriptionForErrorCode ]
+    objc-classes:    [ _ASAuthorizationRemoteViewController, _ASCAgent, _ASCAgentInterface, 
+                       _ASCAgentListener, _ASCAgentProxy, _ASCAppleIDCredential, 
+                       _ASCAppleIDLoginChoice, _ASCAuthorizationPresentationContext, 
+                       _ASCAuthorizationPresenter, _ASCAuthorizationPresenterHostInterface, 
+                       _ASCAuthorizationRemotePresenter, _ASCAuthorizationTrafficController, 
+                       _ASCCredentialRequestContext, _ASCPasswordCredential, _ASCPasswordLoginChoice, 
+                       _ASCPlatformPublicKeyCredentialAssertion, _ASCPlatformPublicKeyCredentialLoginChoice, 
+                       _ASCPlatformPublicKeyCredentialRegistration, _ASCPublicKeyCredentialAssertionOptions, 
+                       _ASCPublicKeyCredentialCreationOptions, _ASCPublicKeyCredentialDescriptor, 
+                       _ASCSecurityKeyPublicKeyCredentialAssertion, _ASCSecurityKeyPublicKeyCredentialLoginChoice, 
+                       _ASCSecurityKeyPublicKeyCredentialRegistration, _ASCViewServiceInterface, 
+                       _ASCWebKitSPISupport, _ASFeatureManager ]
+...

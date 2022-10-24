@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9E588B9F-03BB-307A-BF34-86A7D3942EAD', 'x86_64: 9E588B9F-03BB-307A-BF34-86A7D3942EAD', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 932F5B30-098C-3366-B6AD-E045813F6FDA', 'arm64e: 932F5B30-098C-3366-B6AD-E045813F6FDA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CryptoKitCBridging.framework/Versions/A/CryptoKitCBridging'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CryptoKitCBridgingVersionNumber, _CryptoKitCBridgingVersionString, 
+                       _SPAKE2Alishaz0Size, _SPAKE2CtxSize, _SSPBSecretShareReadFrom, 
+                       _ccss_sizeof_parameters_fix, _ciphersuiteForKeyByteCount, 
+                       _coordinateSizeForCurve, _getCMACContextSize, _getContextSizeForECBMode, 
+                       _getDigestSizeForDigestInfo, _getGCMCtxSize, _getHMACContextSizeForDigestInfo, 
+                       _getccec_full_ctx_size, _getccec_pub_ctx_size, _keyIsCompactRepresentable ]
+    objc-classes:    [ _CKSSShare, _RSABSSATokenBlinder, _RSABSSATokenIssuer, _RSABSSATokenReady, 
+                       _RSABSSATokenWaitingActivation, _SEPUtils, _SSPBSecretShare ]
+    objc-ivars:      [ _CKSSShare._share, _CKSSShare._share_size, _SSPBSecretShare._associatedData, 
+                       _SSPBSecretShare._ciphertext, _SSPBSecretShare._has, _SSPBSecretShare._iv, 
+                       _SSPBSecretShare._shareX, _SSPBSecretShare._shareY, _SSPBSecretShare._tag, 
+                       _SSPBSecretShare._threshold, _SSPBSecretShare._version ]
+...

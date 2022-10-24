@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AE1DCC4D-9638-39BE-B5FF-23215E7920C2', 'x86_64: AE1DCC4D-9638-39BE-B5FF-23215E7920C2', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D5C92126-68AD-3B15-80C3-4AA57D5E4AB9', 'arm64e: D5C92126-68AD-3B15-80C3-4AA57D5E4AB9' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/NetAppsUtilities.framework/Versions/A/NetAppsUtilities'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NACancelableCancel, _NAEmptyResult, _NAEqualObjects, _NAErrorDomain, 
+                       _NAFutureCallbackStack, _NAStringFromBOOL, _NSStringFromNADiffOperationType, 
+                       __NADictionaryOfMetrics, __NAPopScopedDescriptor, __NAPushScopedDescriptor, 
+                       _kNAIdentityBuilderDefaultComparisonBlock, _kNAIdentityBuilderDefaultDoubleComparisionBlock, 
+                       _kNAIdentityBuilderDefaultFloatComparisionBlock, _kNAIdentityBuilderDefaultHashBlock, 
+                       _kNAIdentityBuilderDefaultNSNumberComparisonBlock, _kNAIdentityBuilderPointerComparisonBlock, 
+                       _kNAIdentityBuilderPointerHashBlock ]
+    objc-classes:    [ _NACancelationToken, _NADeallocationSentinel, _NADecayingTimer, 
+                       _NADelegateDispatcher, _NADelegateMethodLogSettings, _NADescriptionBuilder, 
+                       _NAFuture, _NAGroupDiffOperation, _NAGroupedItemDiff, _NAIdentity, 
+                       _NAIdentityBuilder, _NAItemDiffOperation, _NAMutableTreeNode, 
+                       _NAPair, _NAPromise, _NAQueue, _NAScheduler, _NASimpleDiffableItemGroup, 
+                       _NATreeNode, _NAUniqueArrayDiff, _NAUniqueArrayDiffOptions, 
+                       _NAValueThrottler ]
+...

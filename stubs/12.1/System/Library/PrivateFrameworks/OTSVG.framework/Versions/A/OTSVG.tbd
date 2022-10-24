@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8F39EAF8-7041-38AA-B87E-9C27432D03AA', 'x86_64: 8F39EAF8-7041-38AA-B87E-9C27432D03AA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E020464A-8821-38EE-A8D7-2568E1D6F23B', 'arm64e: E020464A-8821-38EE-A8D7-2568E1D6F23B' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/OTSVG.framework/Versions/A/OTSVG'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OTSVGDocumentCreate, _OTSVGDocumentCreateWithData, _OTSVGDocumentEnumerateIDs, 
+                       _OTSVGDocumentGetIntrinsicRect, _OTSVGDocumentRelease, _OTSVGGlyphRecordingCreate, 
+                       _OTSVGGlyphRecordingCreateFromDocument, _OTSVGGlyphRecordingCreateFromID, 
+                       _OTSVGGlyphRecordingGetBoundingRect, _OTSVGGlyphRecordingPlayback, 
+                       _OTSVGGlyphRecordingPlaybackRecordingsAtPositions, _OTSVGGlyphRecordingRelease, 
+                       _OTSVGTableCreateFromData, _OTSVGTableGetDocumentIndexForGlyph, 
+                       _OTSVGTableRelease ]
+...

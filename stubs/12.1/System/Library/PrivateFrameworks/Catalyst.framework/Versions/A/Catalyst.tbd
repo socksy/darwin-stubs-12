@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F235EEAA-AC64-33C3-847A-B0172C57A27B', 'x86_64: F235EEAA-AC64-33C3-847A-B0172C57A27B', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AFE4AEC9-DD27-3736-BA70-52B9609301A5', 'arm64e: AFE4AEC9-DD27-3736-BA70-52B9609301A5' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Catalyst.framework/Versions/A/Catalyst'
+current-version: 8.9
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CATAssertIsNotQueue, _CATAssertIsQueue, _CATErrorDomain, 
+                       _CATErrorWithCodeAndUserInfo, _CATErrorWithDomainCodeAndUserInfo, 
+                       _CATFormattedStringForKey, _CATGetCatalystQueue, _CATLocalizedKey, 
+                       _CATSetCatalystQueue, _CATUnlocalizedKey ]
+    objc-classes:    [ _CATAddress, _CATArbitrator, _CATBatchRemoteTaskOperation, 
+                       _CATBlockOperationObserver, _CATCollectionController, _CATEndPoint, 
+                       _CATIDSMessageOptions, _CATIDSServiceConnection, _CATIDSServiceConnectionMetadata, 
+                       _CATIDSServiceConnectionTerminal, _CATIDSServiceTransport, 
+                       _CATMessage, _CATMutableTaskProgress, _CATNetworkReachability, 
+                       _CATNotificationMessage, _CATOperation, _CATOperationQueue, 
+                       _CATProperty, _CATRemoteConnection, _CATRemoteConnectionSocketOptions, 
+                       _CATRemoteConnectionTrustDecision, _CATRemoteTaskOperation, 
+                       _CATRemoteTransport, _CATSerialOperationQueue, _CATSessionMessage, 
+                       _CATSessionMessageDidInvalidate, _CATSessionMessageInvalidate, 
+                       _CATSessionMessageResume, _CATSessionMessageResumed, _CATSharingBenignError, 
+                       _CATSharingBroadcastTerminal, _CATSharingDevice, _CATSharingDeviceDiscovery, 
+                       _CATSharingFatalError, _CATSharingServiceTransport, _CATSocket, 
+                       _CATState, _CATStateMachine, _CATStateMachineEvent, _CATTaskBlockServer, 
+                       _CATTaskClient, _CATTaskMessage, _CATTaskMessageCancel, _CATTaskMessageError, 
+                       _CATTaskMessageFetchProgress, _CATTaskMessageIncrementalProgress, 
+                       _CATTaskMessageProgressUpdate, _CATTaskMessageStart, _CATTaskOperation, 
+                       _CATTaskProgress, _CATTaskRequest, _CATTaskResultObject, _CATTaskServer, 
+                       _CATTaskSession, _CATTransition, _CATTransport, _CATXPCTransport ]
+...

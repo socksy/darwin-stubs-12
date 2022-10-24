@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 32F366C1-97CF-33D5-9CDC-ADE404A2DC25', 'x86_64: 32F366C1-97CF-33D5-9CDC-ADE404A2DC25', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 04F566BD-7430-3BDF-AACD-31AFCB34E98E', 'arm64e: 04F566BD-7430-3BDF-AACD-31AFCB34E98E' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/UserActivity.framework/Versions/A/UserActivity'
+current-version: 511
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _UAAlwaysAdvertise, _UABestAppSuggestionManagerServiceName, 
+                       _UAContinuityErrorDomain, _UAResumableActivitiesManagerServiceName, 
+                       _UASharedPasteboardAUXServiceName, _UASharedPasteboardControllServiceName, 
+                       _UASharedPasteboardManagerServiceName, _UAUserActivityAdvertisePriority, 
+                       _UAUserActivityAlwaysEligibleKey, _UAUserActivityAlwaysPickKey, 
+                       _UAUserActivityAutoPullActivitiesListKey, _UAUserActivityEligibleEvenWhenInBackgroundKey, 
+                       _UAUserActivityHasWebPageURLOptionKey, _UAUserActivityIsForPairedDeviceOptionKey, 
+                       _UAUserActivityIsHighPriorityOptionKey, _UAUserActivityIsNotificationOptionKey, 
+                       _UAUserActivityItemIsNotActiveKey, _UAUserActivityManagerActivityContinuationIsEnabledChangedNotification, 
+                       _UAUserActivityStreamsPayload, _UAUserActivityTypeNowPlaying, 
+                       _UAUserActivityTypeSiri, _UAUserActivityTypeTeamIDOverideKey, 
+                       _UAUserActivityUserInfoPayload, _UActivityCreationXPCServiceName, 
+                       __LSGetBestAppSuggestionManagerProtocolInterface, __LSGetBestAppSuggestionManagerResponseProtocolInterface, 
+                       __LSGetResumableActivitiesAdministrativeProtocolInterface, 
+                       __LSGetResumableActivitiesSysdiagnoseSupportProtocolInterface, 
+                       __LSGetUserActivityClientProtocolInterface, __LSGetUserActivityClientResponseProtocolInterface, 
+                       __LSUserActivityContainsFileProviderURLKey, __LSUserActivityContainsUnsynchronizedCloudDocsKey, 
+                       __LSUserActivityOptionInvalidateAfterFetchKey, __UABestAppSuggestionChangedNotification, 
+                       __UACopyPackedDataForObject, __UACopyPackedDataForObjectWithSubstitution, 
+                       __UACopyUnpackedObjectFromData, __UACopyUnpackedObjectFromDataWithSubstitution, 
+                       __UAGetSharedPasteboardAUXProtocolInterface, __UAGetSharedPasteboardControllProtocolInterface, 
+                       __UAGetSharedPasteboardManagerProtocolInterface, __UAGetSharedPasteboardManagerResponseProtocolInterface, 
+                       __UAUserActivityContainsCloudDocsKey, __UAUserActivityContainsFileProviderURLKey, 
+                       __UAUserActivityContainsUnsynchronizedCloudDocsKey, __UAUserActivityContentAttributeSetPayloadKey, 
+                       __UAUserActivityContinuationInteractionKey, __UAUserActivityDidContinueToAppStoreApplicationIdentifierKey, 
+                       __UAUserActivityDidContinueToAppStoreNotification, _kUACanModifyAnySuggestedActionEntitlement, 
+                       _kUADynamicUserActivitesPreferences, _kUADynamicUserActivitiesKey, 
+                       _kUADynamicUserActivityAppActivityKey, _kUADynamicUserActivityDynamicActivityKey, 
+                       _kUADynamicUserActivityHashKey, _kUADynamicUserActivityTeamIDKey, 
+                       _kUAIsDefaultFrontmostAppEntitlement ]
+    objc-classes:    [ _UABestAppSuggestion, _UABestAppSuggestionManager, _UAPasteboardDataProvider, 
+                       _UAPasteboardGeneration, _UAPasteboardItem, _UAResumableActivitiesControlManager, 
+                       _UASharedPasteboard, _UASharedPasteboardInfo, _UASharedPasteboardItemInfo, 
+                       _UASharedPasteboardManager, _UASharedPasteboardTypeInfo, _UAUserActivity, 
+                       _UAUserActivityInfo, _UAUserActivityManager, _UAUserActivityProxy ]
+...

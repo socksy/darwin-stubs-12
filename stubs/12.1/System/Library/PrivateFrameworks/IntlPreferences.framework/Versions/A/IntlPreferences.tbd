@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 07469531-4C68-3602-9218-D301E9D7A4E3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E8E5EC23-16A8-338D-805A-22DBD5335827' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IntlPreferences.framework/Versions/A/IntlPreferences'
+current-version: 367.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IPAllowToChangeEnablingStatePropertyKey, _IPAppleLanguagesSchemaVersionCurrent, 
+                       _IPAppleLanguagesSchemaVersionGoldzulA, _IPAppleLanguagesSchemaVersionJazzkonA, 
+                       _IPAppleLanguagesSchemaVersionJazzkonA_1, _IPBackstopLanguage, 
+                       _IPBackstopLocale, _IPBackstopRegion, _IPBundleIDPropertyKey, 
+                       _IPEnabledPropertyKey, _IPIconImagePropertyKey, _IPInputSourceIDPropertyKey, 
+                       _IPInputSourceObjectsPropertyKey, _IPLanguageCodePropertyKey, 
+                       _IPLanguageCodeUndefined, _IPLocalizedInputSourceNamePropertyKey, 
+                       _IPLocalizedLanguagePropertyKey, _IPMetaDataPropertyKey, _IPSystemProvidedPropertyKey, 
+                       _NSPersonNameDefaultDisplayNameOrderKey, _NSPersonNameDefaultNamePreferencesDomain, 
+                       _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShortNameFormatKey, 
+                       _NSPersonNameDefaultShouldPreferNicknamesKey, _NSPersonNamePreferencesDidChangeNotification, 
+                       _kAppleLanguagesKey, _kAppleLocaleKey ]
+    objc-classes:    [ _IPAddInputSourceSheetController, _IPAddLanguageSheetController, 
+                       _IPInflectionSettingsButtonController, _IPInputSource, _IPInternationalAnalytics, 
+                       _IPKeyboardLayoutWebView, _IPLanguage, _IPLanguageCellView, 
+                       _IPLanguageListGenerator, _IPLanguageListManager, _IPLanguageTextFieldCell, 
+                       _IPSettingsUtilities, _IPSystemDefaultsManager, _IP_HK_MO_yue_Hant_migrator, 
+                       _IP_Zawgyi_migrator, _IP_pa_Arab_to_pa_Aran_migrator, _ISMigrator, 
+                       _ISRootMigrator, _IntlUtility, _NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:      [ _IntlUtility.mBidiLanguagesArray, _IntlUtility.mBidiTestedLanguagesArray ]
+...

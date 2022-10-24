@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CC4592FD-4F4A-3E3C-B500-9062CF9F032A', 'x86_64: CC4592FD-4F4A-3E3C-B500-9062CF9F032A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 37041E0A-1B51-34AA-8F25-104EC153CC42', 'arm64e: 37041E0A-1B51-34AA-8F25-104EC153CC42' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AudioServerApplication.framework/Versions/A/AudioServerApplication'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _ASAAudioDevice, _ASAAudioFormat, _ASABooleanControl, _ASABox, 
+                       _ASAClockDevice, _ASAControl, _ASACoreAudio, _ASALevelControl, 
+                       _ASAObject, _ASAPlaythrough, _ASAPlugin, _ASASelectorControl, 
+                       _ASASliderControl, _ASAStream ]
+...

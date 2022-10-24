@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E327D34F-0212-3BF4-ABD1-F1A601E8F240', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 295344FF-1E8D-353F-A812-F2515BA60776' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleNVMe.framework/Versions/A/AppleNVMe'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppleNVMeDeviceSupportsPanicLogAccess, _AppleNVMeNamespaceAccessFindServiceByNSType, 
+                       _AppleNVMeNamespaceAccessFindServiceByName, _AppleNVMeNamespaceAccessGetBlockCount, 
+                       _AppleNVMeNamespaceAccessGetBlockSize, _AppleNVMeNamespaceAccessOpenConection, 
+                       _AppleNVMeNamespaceAccessReadData, _AppleNVMeNamespaceAccessUnmapRange, 
+                       _AppleNVMeNamespaceAccessWriteData, _AppleNVMePanicLogGetSize, 
+                       _AppleNVMePanicLogSourcePath, _AppleNVMeReadPanicLogData, 
+                       _AppleNVMeVersionNumber, _AppleNVMeVersionString, _sNVMeEmbeddedNamespaceTypeNames ]
+...

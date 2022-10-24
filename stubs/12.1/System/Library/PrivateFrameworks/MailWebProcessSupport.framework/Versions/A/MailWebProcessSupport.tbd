@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C544444D-63FF-3B4E-973B-381443FA3B2F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 458D1077-9C4B-3190-A8A8-1AD1852A9A37' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MailWebProcessSupport.framework/Versions/A/MailWebProcessSupport'
+current-version: 3693.40
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kBodyFieldSource, _kBodyFieldSourceLength, _kConstantsSource, 
+                       _kConstantsSourceLength, _kDocumentExtrasSource, _kDocumentExtrasSourceLength, 
+                       _kElementExtrasSource, _kElementExtrasSourceLength, _kHTMLDocumentExtrasSource, 
+                       _kHTMLDocumentExtrasSourceLength, _kHTMLElementExtrasSource, 
+                       _kHTMLElementExtrasSourceLength, _kNodeExtrasSource, _kNodeExtrasSourceLength, 
+                       _kRangeExtrasSource, _kRangeExtrasSourceLength ]
+    objc-classes:    [ _MSAttachmentItem, _MSComposeBundlePageController, _MSPDFAttachmentController ]
+...

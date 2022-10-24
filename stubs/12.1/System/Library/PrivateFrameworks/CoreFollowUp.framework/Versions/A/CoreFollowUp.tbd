@@ -1,0 +1,39 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F1B6B04F-AF14-3C7F-A373-3F5C44E1DAF3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 340FCC07-B6DF-3FBA-83A6-B11C4FEBFD85' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/CoreFollowUp'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CoreFollowUpVersionNumber, _CoreFollowUpVersionString, _FLDaemonExportedInterface, 
+                       _FLError, _FLErrorDomain, _FLFollowUpActionLaunchArgumentsKey, 
+                       _FLFollowUpBridgeBundleIdentifier, _FLFollowUpBridgeUrlPrefix, 
+                       _FLFollowUpHomeBundleIdentifier, _FLFollowUpItemsKey, _FLFollowUpNotificationBundleIdentifier, 
+                       _FLFollowUpNotificationDefaultCategory, _FLFollowUpNotificationSampleCategory, 
+                       _FLFollowUpNotifyingAppIdKey, _FLFollowUpPhotosBundleIdentifier, 
+                       _FLFollowUpPreferencesBundleIdentifier, _FLFollowUpPreferencesIdentifierPrefix, 
+                       _FLFollowUpPreferencesUrlPrefix, _FLFollowUpSingleActionKey, 
+                       _FLFollowUpSingleItemKey, _FLFollowUpViewModelKey, _FLFollowUpiCloudBundleIdentifier, 
+                       _FLGroupIdentifierAccount, _FLGroupIdentifierAppleServices, 
+                       _FLGroupIdentifierDevice, _FLGroupIdentifierNewDeviceOutreach, 
+                       _FLGroupIdentifierNoGroup, _FLGroupIdentifierUnknown, _FLHSA2ActionChangePassword, 
+                       _FLInternalItemApprovalWarning, _FLItemRefreshResultFailure, 
+                       _FLItemRefreshResultRemoved, _FLItemRefreshResultSuccess, 
+                       _FLLoc, _FLLocDeviceSpecific, _FLNotificationOptionBannerAlert, 
+                       _FLNotificationOptionExtensionActions, _FLNotificationOptionExtensionForNotification, 
+                       _FLNotificationOptionForce, _FLNotificationOptionKeepOnLockscreen, 
+                       _FLNotificationOptionLockscreen, _FLNotificationOptionNotificationCenter, 
+                       _FLNotificationOptionSpringboardAlert, _FLUserInfoPropertyAbsoluteFormatKey, 
+                       _FLUserInfoPropertyRelativeIsCeilingKey, _FLUserInfoPropertyRelativePluralDaysFormatKey, 
+                       _FLUserInfoPropertyRelativeSingleDayKey, _FLUserInfoPropertyRelativeZeroDayKey, 
+                       __FLLogSystem, __FLLogSystemQuery, __FLSignpostCreate, __FLSignpostGetNanoseconds, 
+                       __FLSignpostLogSystem ]
+    objc-classes:    [ _FLApprovedItemsDecorator, _FLApprovedItemsFilter, _FLConstants, 
+                       _FLDaemon, _FLEnvironment, _FLExtensionHostContext, _FLFollowUpAction, 
+                       _FLFollowUpController, _FLFollowUpItem, _FLFollowUpNotification, 
+                       _FLGroupViewModelImpl, _FLHSA2LoginNotification, _FLHSA2PasswordResetNotification, 
+                       _FLHeadlessActionHandler, _FLHeadlessExtensionLoader, _FLItemChangeObserver, 
+                       _FLItemDetailViewModel, _FLTelemetryFactory, _FLTelemetryProcessor, 
+                       _FLTopLevelViewModel, _FLUIHelperController, _FLUtilities ]
+...

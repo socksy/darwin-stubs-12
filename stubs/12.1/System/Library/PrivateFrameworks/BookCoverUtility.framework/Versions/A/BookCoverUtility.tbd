@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E3BB2281-963C-3344-B868-38C642DD653F', 'x86_64: E3BB2281-963C-3344-B868-38C642DD653F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1B124D5B-35DD-31AE-ABFB-646401CF8EE9', 'arm64e: 1B124D5B-35DD-31AE-ABFB-646401CF8EE9' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BookCoverUtility.framework/Versions/A/BookCoverUtility'
+current-version: 1632
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BCUCoverEffectsFilterInfoAlternativeAppearanceKey, _BCUCoverEffectsFilterInfoContentRTLKey, 
+                       _BCUCoverEffectsFilterInfoCoverEffectStyleKey, _BCUCoverEffectsFilterOptionMinificationFilter, 
+                       _BCUCoverEffectsIdentifierAudiobook, _BCUCoverEffectsIdentifierAudiobookNight, 
+                       _BCUCoverEffectsIdentifierAudiobookNightShadowOnly, _BCUCoverEffectsIdentifierAudiobookNightWithShadow, 
+                       _BCUCoverEffectsIdentifierAudiobookShadowOnly, _BCUCoverEffectsIdentifierAudiobookWithShadow, 
+                       _BCUCoverEffectsIdentifierBookBinding, _BCUCoverEffectsIdentifierBookBindingNight, 
+                       _BCUCoverEffectsIdentifierBookBindingNightShadowOnly, _BCUCoverEffectsIdentifierBookBindingNightWithShadow, 
+                       _BCUCoverEffectsIdentifierBookBindingRTL, _BCUCoverEffectsIdentifierBookBindingRTLNight, 
+                       _BCUCoverEffectsIdentifierBookBindingRTLNightShadowOnly, _BCUCoverEffectsIdentifierBookBindingRTLNightWithShadow, 
+                       _BCUCoverEffectsIdentifierBookBindingRTLShadowOnly, _BCUCoverEffectsIdentifierBookBindingRTLWithShadow, 
+                       _BCUCoverEffectsIdentifierBookBindingShadowOnly, _BCUCoverEffectsIdentifierBookBindingWithShadow, 
+                       _BCUCoverEffectsIdentifierIdentity, _BCUCoverEffectsIdentifierPDF, 
+                       _BCUCoverEffectsIdentifierPDFNight, _BCUCoverEffectsIdentifierPDFNightShadowOnly, 
+                       _BCUCoverEffectsIdentifierPDFNightWithShadow, _BCUCoverEffectsIdentifierPDFShadowOnly, 
+                       _BCUCoverEffectsIdentifierPDFWithShadow, _BCUCoverEffectsIdentifierSeriesStack, 
+                       _BCUInsetsZero, _BCUPriorityDefault, _BCUPriorityHigh, _BCUPriorityLow, 
+                       _BCUPriorityUndefined, _BCUPriorityVeryHigh, _BCUPriorityVeryLow, 
+                       _BookCoverUtilityLog ]
+    objc-classes:    [ _BCUCoverEffects, _BCUImageRenderContext, _BCULayerRenderer, 
+                       _BCUPurgeableImage, __BCUCoverEffectsAssets, __BCUCoverEffectsAudiobook, 
+                       __BCUCoverEffectsBase, __BCUCoverEffectsBookBinding, __BCUCoverEffectsBookBindingLarge, 
+                       __BCUCoverEffectsIdentity, __BCUCoverEffectsPDF, __BCUCoverEffectsSeriesStack, 
+                       __BCUCoverEffectsShadow, __BCULayerRendererOperation ]
+...

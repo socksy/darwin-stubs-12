@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E1DAA745-F984-3510-B5C5-7957ADBD36D4', 'x86_64: E1DAA745-F984-3510-B5C5-7957ADBD36D4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E3C031AD-3017-38B6-B539-29DCC6E54431', 'arm64e: E3C031AD-3017-38B6-B539-29DCC6E54431' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SuggestionsSpotlightMetrics.framework/Versions/A/SuggestionsSpotlightMetrics'
+current-version: 1153.10
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SGSM2ContactOpportunityInSpotlightReadFrom, _SGSM2ContactResultInSpotlightReadFrom, 
+                       _SGSM2ContactResultSelectedInSpotlightReadFrom, _SGSM2EventOpportunityInSpotlightReadFrom, 
+                       _SGSM2EventResultInSpotlightReadFrom, _SGSM2EventResultSelectedInSpotlightReadFrom, 
+                       _SGSM2NoResultSelectedInSpotlightReadFrom, _SGSM2OtherResultSelectedInSpotlightReadFrom, 
+                       _SuggestionsSpotlightMetricsVersionNumber, _SuggestionsSpotlightMetricsVersionString ]
+    objc-classes:    [ _SGSM2ContactOpportunityInSpotlight, _SGSM2ContactResultInSpotlight, 
+                       _SGSM2ContactResultSelectedInSpotlight, _SGSM2EventOpportunityInSpotlight, 
+                       _SGSM2EventResultInSpotlight, _SGSM2EventResultSelectedInSpotlight, 
+                       _SGSM2NoResultSelectedInSpotlight, _SGSM2OtherResultSelectedInSpotlight, 
+                       _SGSMFeedbackListener, _SGSMMutableSearchState ]
+    objc-ivars:      [ _SGSM2ContactOpportunityInSpotlight._key, _SGSM2ContactResultInSpotlight._has, 
+                       _SGSM2ContactResultInSpotlight._key, _SGSM2ContactResultInSpotlight._visible, 
+                       _SGSM2ContactResultSelectedInSpotlight._key, _SGSM2EventOpportunityInSpotlight._key, 
+                       _SGSM2EventResultInSpotlight._has, _SGSM2EventResultInSpotlight._key, 
+                       _SGSM2EventResultInSpotlight._visible, _SGSM2EventResultSelectedInSpotlight._key, 
+                       _SGSM2NoResultSelectedInSpotlight._key, _SGSM2OtherResultSelectedInSpotlight._key ]
+...

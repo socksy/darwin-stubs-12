@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B5C198EC-9C6E-3A97-9AE1-AA12AC20B900', 'x86_64: B5C198EC-9C6E-3A97-9AE1-AA12AC20B900', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 479B8ECF-EC05-35B3-920C-4204A982FA94', 'arm64e: 479B8ECF-EC05-35B3-920C-4204A982FA94' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/QuickLookUIIosmac.framework/Versions/A/QuickLookUIIosmac'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _QuickLookUIIosmacVersionNumber, _QuickLookUIIosmacVersionString, 
+                       _sharedQLIosMacPanelHelper ]
+    objc-classes:    [ _QLIosmacPreviewViewHelper ]
+...

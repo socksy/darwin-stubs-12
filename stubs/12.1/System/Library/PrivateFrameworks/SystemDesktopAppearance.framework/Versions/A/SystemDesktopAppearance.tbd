@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0D2BC0B3-3CA5-304F-8994-9E0007CD50DA', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5EAE8077-7138-315E-9E1B-3089F04A5E8A' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemDesktopAppearance.framework/Versions/A/SystemDesktopAppearance'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ObliterateDevice, __OSVersion, _kSDADefaultDesktopInOrderedPictures, 
+                       _kSDADefaultDesktopPictureFilename, _kSDAFakeDesktopPicturesDarkArray, 
+                       _kSDAFakeDesktopPicturesLightArray ]
+    objc-classes:    [ _SystemDesktopAppearance ]
+...

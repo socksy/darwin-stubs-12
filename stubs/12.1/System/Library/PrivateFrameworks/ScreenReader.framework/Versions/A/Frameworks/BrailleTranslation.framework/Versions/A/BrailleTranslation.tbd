@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 66FB9311-41E2-38F0-A39D-F23B8E6A59F4', 'x86_64: 66FB9311-41E2-38F0-A39D-F23B8E6A59F4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D2A3F49D-2E9A-3A34-8DBC-EB42730389B0', 'arm64e: D2A3F49D-2E9A-3A34-8DBC-EB42730389B0' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ScreenReader.framework/Versions/A/Frameworks/BrailleTranslation.framework/Versions/A/BrailleTranslation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BRLTFlagsForMode, _BRLTLog, _BRLTModeDescription, _BRLTModeForFlags, 
+                       _BRLTSConnectionHasEntitlement, _BRLTTranslationServiceClientInterface, 
+                       _BRLTTranslationServiceInterface, _BRLTTranslatorClassIsValid, 
+                       _kBRLTTranslationServiceIdentifier, _kBTDuxburyServiceIdentifier, 
+                       _kBTLiblouisServiceIdentifier ]
+    objc-classes:    [ _BRLTBrailleBuffer, _BRLTBrailleChar, _BRLTBrailleStateManager, 
+                       _BRLTBrailleString, _BRLTSLoopbackTranslationService, _BRLTSTranslationService, 
+                       _BRLTSTranslator, _BRLTScriptString, _BRLTTable, _BRLTTableEnumerator, 
+                       _BRLTTokenRange, _BRLTTranslationParameters, _BRLTTranslationService ]
+...

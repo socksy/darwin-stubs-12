@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7F64F7D9-0A96-333C-A7D4-D17C6C349DDC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 36AB6042-C2CE-3748-B361-5004A26BE73D' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DiskImages2.framework/Versions/A/DiskImages2'
+current-version: 126.60.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DIErrorDomain, _DIErrorVerboseInfoKey, _DiskImages2_Attach ]
+    objc-classes:    [ _DIAttachParams, _DIAttachedDeviceInfo, _DIBaseParams, _DIBlockDevice, 
+                       _DICommonAttach, _DIConvertParams, _DICreateParams, _DICreateRAWParams, 
+                       _DICreateUDSBParams, _DIDeviceHandle, _DIError, _DIHelpers, 
+                       _DIIOIterator, _DIIOMedia, _DIIOObject, _DIURL, _DIUserDataParams, 
+                       _DIVerifyParams, _DiskImages2 ]
+...

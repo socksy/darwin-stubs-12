@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 079FFFF0-D60C-31D7-A387-3EA4ED46631B', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AC4DAD02-CB02-31C2-954B-60C6FAEDC5D9' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MemoryDiagnostics.framework/Versions/A/MemoryDiagnostics'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MREBundleStringForUnbundledProcess, _MREErrorDomain, _RMECheckEntitlement, 
+                       _ReportMemoryExceptionFromTask, _memgraph_from_task_save_immediate ]
+...

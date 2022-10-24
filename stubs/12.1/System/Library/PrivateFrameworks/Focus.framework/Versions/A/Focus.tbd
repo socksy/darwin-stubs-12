@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BD86DDF9-D2E9-345D-8A34-DCDE9E853BBC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7850160F-A03A-3344-AE93-DF94224A3104' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Focus.framework/Versions/A/Focus'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ Carousel, ControlCenter, CoverSheet, FocusSettingsUI, FocusUI, 
+                         FocusUIModule, NanoSettings, NanoSettingsGlance, SUIATPTests, 
+                         SUIMacTests, SUIWatchTests, SpringBoard, SpringBoardFramework ]
+    symbols:         [ _FCLogActivities, _FCRegisterLogging, _FocusVersionNumber, 
+                       _FocusVersionString, __FocusUserDefaults ]
+    objc-classes:    [ _FCActivityManager, __FCActivity, __FCActivityLifetime ]
+...

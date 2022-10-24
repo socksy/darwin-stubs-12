@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 14762226-171B-3BF1-B6E7-A8CCAD97B40D', 'x86_64: 14762226-171B-3BF1-B6E7-A8CCAD97B40D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C69AD793-AA3D-3AAB-BF69-80A8EE0C7DA2', 'arm64e: C69AD793-AA3D-3AAB-BF69-80A8EE0C7DA2' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/NewsToday.framework/Versions/A/NewsToday'
+current-version: 2981.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ Health, HealthArticles, HealthArticlesPlugin, HealthArticlesPluginTests, 
+                         Home, HomeArticles, NanoNews, NewsEngagement, NewsEngagementTests, 
+                         NewsInternalSettings, NewsPersonalization, NewsServices, 
+                         NewsTag, NewsToday, NewsToday2, NewsTodayIntents, NewsTodayTests, 
+                         NewsTodayUI, nanonewscd, nanonewsgd, newsd ]
+    symbols:         [ _FCConsumedArticleFilterMethodForReadArticlesFilterMethod, 
+                       _FCConsumedArticleFilterMethodForSeenArticlesFilterMethod, 
+                       _NNCreateHeadlineSyncableHeadline, _NNHeadlineSyncableResultFromHeadline, 
+                       _NNHeadlineSyncableResultFromResult, _NNHeadlineSyncableSectionFromSection, 
+                       _NNSetupCompanionSyncLog, _NTArticleIDsRequestWithArticles, 
+                       _NTAssetFileURL, _NTAssetFileURLWithData, _NTAssetFileURLWithFile, 
+                       _NTDefaultModuleIdentifier, _NTDeleteOnDiskAssets, _NTDesiredHeadlineFieldAssetOptionsWithAssetSizes, 
+                       _NTDesiredHeadlineFieldOptionsWithAssetOptions, _NTErrorDomain, 
+                       _NTHeadlineAdElementFromFCHeadline, _NTHeadlineAnalyticsElementFromFCHeadline, 
+                       _NTHeadlineBackingElementFromFCHeadline, _NTHeadlineFromFCHeadline, 
+                       _NTHeadlineSourceNameImageHeightFromNameImageSizePreset, _NTHeadlineSourceNameImageMaskAssetHandleFromFCHeadline, 
+                       _NTHeadlineThumbnailFromFCHeadline, _NTHeadlineThumbnailLengthFromThumbnailSizePreset, 
+                       _NTIsUserInExperiment, _NTNewsSourceIdentifier, _NTParsecSourceIdentifier, 
+                       _NTPossiblySimulateCrashWithError, _NTSectionFeedItemsLimit, 
+                       _NTSharedLog, _NTShouldUseParsecResults, _NTUnknownSourceIdentifier, 
+                       _NTXPCSuitableError, _NewsTodayVersionNumber, _NewsTodayVersionString ]
+    objc-classes:    [ _FRRingBuffer, _NTAggregationBudgetInfo, _NTArticleIDsSectionFetchDescriptor, 
+                       _NTArticleListSectionFetchDescriptor, _NTCatchUpOperation, 
+                       _NTCatchUpOperationArticleIDsRequest, _NTCatchUpOperationForYouFetchInfo, 
+                       _NTCatchUpOperationForYouRequest, _NTCatchUpOperationResults, 
+                       _NTCatchUpOperationTagRequest, _NTCostAwareLimitTransformation, 
+                       _NTFeedTransformationFeedItem, _NTFeedTransformationHeadlineItem, 
+                       _NTFeedTransformationIncrementalPersonalizedDiversifiedLimit, 
+                       _NTFeedTransformationItemFeedTransformation, _NTFeedTransformationLimit, 
+                       _NTFeedTransformationWebEmbedItem, _NTForYouSectionFetchDescriptor, 
+                       _NTHeadline, _NTHeadlinePersonalizationMetadata, _NTItemAggregationResult, 
+                       _NTItemsSectionFetchDescriptor, _NTNewsModuleDescriptorsOperation, 
+                       _NTNewsModuleDescriptorsOperationPrefetchedContent, _NTNewsSourceAvailabilityEntry, 
+                       _NTNewsTodayResultOperation, _NTNewsTodayResultsContentFillAggregator, 
+                       _NTNewsTodayResultsExplicitAllocationAggregator, _NTNewsTodayResultsFetchDescriptor, 
+                       _NTNewsTodayResultsSourceFetchHelper, _NTNewsTodayResultsSourceFetchHelperSectionDescriptor, 
+                       _NTNoContentModuleDescriptorsOperation, _NTNoContentSourceAvailabilityEntry, 
+                       _NTNoContentTodayResultOperation, _NTNoContentTodayResultsFetchDescriptor, 
+                       _NTParsecModuleDescriptorsOperation, _NTPersonalizationFeatureCTRLookupOperation, 
+                       _NTPersonalizationFeatureCTRLookupRequest, _NTPersonalizedSectionFetchDescriptor, 
+                       _NTPersonalizedSectionLimitTransformation, _NTPersonalizedSectionSortTransformation, 
+                       _NTQueueConfigSectionQueueDescriptor, _NTSection, _NTSectionConfigSectionDescriptor, 
+                       _NTSectionFeedFilterTransformation, _NTSectionPlaceholderDescriptor, 
+                       _NTSectionPresencePersonalizationAbsoluteRequest, _NTSectionPresencePersonalizationOperation, 
+                       _NTSectionPresencePersonalizationRelativeRequest, _NTSourceAvailabilityManager, 
+                       _NTTagSectionFetchDescriptor, _NTTodayContext, _NTTodayHeadlineProtoitem, 
+                       _NTTodayItemOperation, _NTTodayModuleDescriptorsOperation, 
+                       _NTTodayResultOperation, _NTTodayResults, _NTTodayResultsSource, 
+                       _NTTodayWebEmbedProtoitem ]
+...

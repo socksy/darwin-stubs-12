@@ -1,0 +1,45 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DD1B6CF2-BC0C-3560-A1B9-8188186ECD26', 'x86_64: DD1B6CF2-BC0C-3560-A1B9-8188186ECD26', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 572C8450-52D0-3C50-93FA-3BB1417696F1', 'arm64e: 572C8450-52D0-3C50-93FA-3BB1417696F1' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/KeyboardServices.framework/KeyboardServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _KSCKErrorDomain, _KSCloudKitAccountDidChange, _KSCloudKitAccountDidChangeAccountChangedKey, 
+                       _KSCloudKitAccountDidChangeDeviceToDeviceKey, _KSCloudKitAccountDidChangeStatusKey, 
+                       _KSCloudKitAccountDidChangeUserChangedKey, _KSCloudKitAccountDidSuccessfullyCreateZone, 
+                       _KSCloudKitIdentitiesDidChange, _KSDeviceProtectionClassDidChange, 
+                       _KSTextReplacementDidChangeNotification, _KeyboardServicesVersionNumber, 
+                       _KeyboardServicesVersionString, __KSDevicesMigrationStateDidChange, 
+                       __KSGetSetting, __KSTIBuddySetupDidFinishNotification_Private, 
+                       __KSTRCKStoreDidReceiveChangesNotification, __KSTRLegacyStoreDidImportChangesNotification, 
+                       __KSTRLegacyStoreDidImportUbiquitousChanges, __KSTRShouldCleanupResources, 
+                       __KSTextReplacementDeleteDidFailEntriesKey, __KSTextReplacementDeleteDidFailErrorsKey, 
+                       __KSTextReplacementEntryDidFailErrorKey, __KSTextReplacementErrorDomain, 
+                       __KSTextReplacementServerInterface, __KSTextReplacementUpdateDidFailEntriesKey, 
+                       __KSTextReplacementUpdateDidFailErrorsKey, __KSUserWordsWereDownloadedFilesKey, 
+                       __KSUserWordsWereDownloadedLanguageKey, __KSUserWordsWereDownloadedNotification, 
+                       _dataModelName, _kKSApplePreferencesDomain, _kKeyboardServicesCloudKitContainerID, 
+                       _kMaxOperationRetryCount, _kMaxTextReplacementLength, _kRetryWaitInSeconds, 
+                       _kTextReplacementEntitlement, _kiOSMajorVersForCloudKitSync, 
+                       _kiOSMinorVersForCloudKitSync, _kosxMajorVersForCloudKitSync, 
+                       _kosxMinorSubversionForCloudKitSync, _kosxMinorVersForCloudKitSync, 
+                       _ksDefaultDateNormalise, _ksDefaultEnabled, _ksDefaultPullTime, 
+                       _ksDefaultPushTime, _ksDefaultSaveDynamicData, _ksDefaultSaveLanguageModel, 
+                       _ksDefaultSizeNormalise, _ksDefaultSortDynamicData, _ksDefaultSortLanguageModel ]
+    objc-classes:    [ _ArraySlice, _ArraySlicer, __KSAggdLogger, __KSCKSyncStateManagedObject, 
+                       __KSCloudKitManager, __KSControlFileController, __KSDeviceInfo, 
+                       __KSDeviceStateMonitor, __KSFileDirectory, __KSFileEntry, 
+                       __KSFileFile, __KSRequestThrottle, __KSSystemTask, __KSTIUserDictionaryEntryValue, 
+                       __KSTIUserDictionaryTransaction, __KSTRClient, __KSTaskScheduler, 
+                       __KSTextReplacementCKStore, __KSTextReplacementClientStore, 
+                       __KSTextReplacementCoreDataStore, __KSTextReplacementEntry, 
+                       __KSTextReplacementHelper, __KSTextReplacementLegacyStore, 
+                       __KSTextReplacementManagedObject, __KSTextReplacementManager, 
+                       __KSTextReplacementServer, __KSTextReplacementServerConnection, 
+                       __KSUserWordsInfo, __KSUserWordsSynchroniser, __KSUserWordsSynchroniserCloudKitManager, 
+                       __KSUtilities, __KSiCloudDeviceListMonitor ]
+    objc-ivars:      [ __KSFileEntry._fileBlob ]
+...

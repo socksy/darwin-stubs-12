@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F8EC5315-49BD-3C3A-8D67-7FE12464DE63', 'x86_64: F8EC5315-49BD-3C3A-8D67-7FE12464DE63', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7AD9130A-47B9-3CF6-B4DF-ED6E8A7411B0', 'arm64e: 7AD9130A-47B9-3CF6-B4DF-ED6E8A7411B0' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/NewsURLResolution.framework/Versions/A/NewsURLResolution'
+current-version: 2981.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ IMDPersistence, IMDPersistenceAgent, MobileSafari, MobileSafariUI, 
+                         PersonalizationPortraitInternals, PersonalizationPortraitTests, 
+                         Safari, SafariServices, SafariShared, SafariSharedUnitTests ]
+    symbols:         [ _NRErrorDomain, _NewsURLResolutionVersionNumber, _NewsURLResolutionVersionString ]
+    objc-classes:    [ _NRNewsDaemonBloomFilterInfoService, _NRNewsURLResolutionOperation, 
+                       _NRURLResolutionManager, _NRWebURLResolutionOperation ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 25AE47E1-EF8C-3D64-9AA6-718B3B71C8EF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8E668C85-4E00-3B18-B151-A991C795C805' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PassKitUIFoundation.framework/Versions/A/PassKitUIFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PKGlyphViewSize ]
+    objc-classes:    [ _PKAppleCashCardView, _PKAppleHomeKeyCardView, _PKAuthenticator, 
+                       _PKAuthenticatorEvaluationContext, _PKAuthenticatorEvaluationRequest, 
+                       _PKAuthenticatorEvaluationResponse, _PKAuthenticatorSharedRootContext, 
+                       _PKCategoryVisualizationCardView, _PKFingerprintGlyphView, 
+                       _PKGlyphView, _PKMetalRenderLoop, _PKPassFaceViewCategoryVisualizationRendererState, 
+                       _PKPassFaceViewRendererState, _PKPaymentRemoteInstrumentThumbnailView, 
+                       _PKPeerPayment3DCharacter, _PKPeerPayment3DScene, _PKPeerPayment3DStore, 
+                       _PKPeerPayment3DTextView, _PKPhoneGlyphLayer, _PKRenderLoop, 
+                       _PKTexturedCardRenderer, _PKTexturedCardView, _PKUISpringAnimationFactory ]
+    objc-ivars:      [ _PKRenderLoop._delegate, _PKRenderLoop._drawing, _PKRenderLoop._invalidated ]
+...

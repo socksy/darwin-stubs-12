@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7712205D-1B5A-35FA-BE7E-71CDDD685796', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AF2CF3DE-B095-320C-B117-19CADA2BD317' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PrintingPrivate.framework/Versions/A/PrintingPrivate'
+current-version: 209
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CreateTemporaryFile, _HttpConnectionFromURI, _LoadAndGetPMPrinterInfoBundle, 
+                       _LoadAndGetPrintCocoaUIBundle, _PKPrinterBonjourDomain, _PKPrinterInterfaceIndex, 
+                       _PKPrinterIsLocal, _PKPrinterRegistrationType, _PMCopyUsersDesktopPathPrivate, 
+                       _PMCopyUsersDocumentFolderURLPrivate, _PMCreatePrinterInfoControllerPrivate, 
+                       _PMCreatePrinterSupplyControllerPrivate, _PMGetOrientationImage, 
+                       _PMPaperCreatePaperSizeStringPrivate, _PMPrepareAppKitPageSetupDialogWithPrintInfoPrivate, 
+                       _PMPrepareAppKitPrintDialogWithThumbnailPrivate, _RequestPrinterAttributes, 
+                       _ValidatePrinterIconData, _WriteICNSFile, _createPaperSizeCFString ]
+    objc-classes:    [ _PK2Printer, _PKBrowser, _PKNode, _PKQueueCreationController, 
+                       _PKServer, _PMInkView, _PMXPCSupport ]
+    objc-ivars:      [ _PK2Printer._dnssdName, _PK2Printer._identifier, _PK2Printer._isManagedPrinter, 
+                       _PK2Printer._power, _PK2Printer._printerURL, _PK2Printer._txts, 
+                       _PKQueueCreationController._cancelButton, _PKQueueCreationController._delegate, 
+                       _PKQueueCreationController._isCancelled, _PKQueueCreationController._printer, 
+                       _PKQueueCreationController._progressIndicator, _PKQueueCreationController._progressTextField, 
+                       _PKQueueCreationController._progressView, _PKQueueCreationController._queueID, 
+                       _PKQueueCreationController._topLevelNibObjects, _PKQueueCreationController._xpc ]
+...

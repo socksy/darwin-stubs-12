@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 312E30D0-80F2-33B4-9A4D-288C9C180707', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 53913488-C05A-3263-8C59-5F508F631248' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/ReplayKit.framework/Versions/A/ReplayKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RPApplicationInfoBundleIdentifierKey, _RPAudioPacketPool_Alloc, 
+                       _RPAudioPacketPool_Create, _RPAudioPacketPool_Destroy, _RPAudioPacketPool_Free, 
+                       _RPLogSetLogLevel, _RPRecordingErrorDomain, _RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer, 
+                       _RPSampleBufferUtilities_CreateAudioSampleBuffer, _RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer, 
+                       _RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval, 
+                       _RPSampleBufferUtilities_CreateSampleBufferFromIOSurface, 
+                       _RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer, 
+                       _RPSampleBufferUtilities_EncodeAudioSampleBuffer, _RPSampleBufferUtilities_ReleaseAudioSampleBuffer, 
+                       _RPSampleBufferUtilities_SecondsPresentationTimeForSample, 
+                       _RPVideoEditorExtensionAppNameKey, _RPVideoEditorExtensionBundleIdentifierKey, 
+                       _RPVideoEditorExtensionFileAttachmentKey, _RPVideoEditorExtensionMoviePathKey, 
+                       _RPVideoEditorExtensionOverrideShareMessageKey, _RPVideoEditorExtensionOverrideTintColorKey, 
+                       _RPVideoSampleOrientationKey, _ReplayKitVersionNumber, _ReplayKitVersionString, 
+                       ___RPLogLevel, _kRPBroadcastActivityViewServiceProtocol, _kRPVideoEditorViewServiceProtocol ]
+    objc-classes:    [ _RPAppAudioCaptureManager, _RPAppAudioHAL, _RPAudioHardwareUtility, 
+                       _RPAudioMixUtility, _RPBlurWindow, _RPBorderlessEffectWindow, 
+                       _RPBroadcastActivityController, _RPBroadcastActivityExtensionHostContext, 
+                       _RPBroadcastActivityExtensionNSViewController, _RPBroadcastActivityHostRemoteNSViewController, 
+                       _RPBroadcastActivityHostViewController, _RPBroadcastActivityViewController, 
+                       _RPBroadcastActivityViewServiceExtensionContext, _RPBroadcastActivityViewServiceExtensionHostContext, 
+                       _RPBroadcastConfiguration, _RPBroadcastController, _RPBroadcastExtensionHostContext, 
+                       _RPBroadcastExtensionProxy, _RPBroadcastHandler, _RPBroadcastHostViewController, 
+                       _RPBroadcastSampleHandler, _RPDaemonProxy, _RPDimAndShadowWindow, 
+                       _RPDimAndShadowWindowContentView, _RPExtensionContext, _RPExtensionHostContext, 
+                       _RPIOSurfaceObject, _RPMacUtility, _RPPipView, _RPPipViewController, 
+                       _RPPreviewViewController, _RPRemoteViewContainerWindow, _RPRemoteWindowController, 
+                       _RPScreenRecorder, _RPStoreInfo, _RPStoreManager, _RPStreamingActivity, 
+                       _RPStreamingActivityKey, _RPThread, _RPTransparentWindow, 
+                       _RPVideoEditorHostRemoteNSViewController, _RPVideoEditorViewServiceExtensionHostContext ]
+    objc-ivars:      [ _RPBorderlessEffectWindow.noSourceWindow, _RPDimAndShadowWindow.animatesTransitions, 
+                       _RPDimAndShadowWindow.dimLayer, _RPDimAndShadowWindow.groupLayer, 
+                       _RPDimAndShadowWindow.shadowCenterKnockoutLayer, _RPDimAndShadowWindow.shadowLayer ]
+...

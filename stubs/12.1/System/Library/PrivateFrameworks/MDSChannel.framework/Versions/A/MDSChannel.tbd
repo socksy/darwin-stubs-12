@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 66FB9E4F-B935-3618-B721-F325259DA59C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C87E3CF0-8874-305A-9EA5-B9736A38F763' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MDSChannel.framework/Versions/A/MDSChannel'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MDSChannelAccessTokenCreate, _MDSChannelCopyAccessToken, 
+                       _MDSChannelCreate, _MDSChannelGetProperties, _MDSChannelHasCapability, 
+                       _MDSChannelPeerCreate, _MDSChannelPeerFetchAccessTokenForUID, 
+                       _MDSChannelPeerFirstReplyChunk, _MDSChannelPeerNextReplyChunk, 
+                       _MDSChannelPeerRequest, _MDSChannelRequest, _MDSChannelSetNotificationCenter, 
+                       _kMDSCCFSCreateFileReferenceURLFromIDs, _kMDSCCPerUserAccessTokens, 
+                       _kMDSCCPlaceboOnlyForProperties, _kMDSCCPushNotifications, 
+                       _kMDSClientVolumePath, _kMDSLiveQuerySupport, _kMDSServerVolumePath, 
+                       _kMDSSubmountPartialPath ]
+...

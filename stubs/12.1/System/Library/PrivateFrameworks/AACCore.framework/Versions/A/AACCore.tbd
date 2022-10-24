@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 02B6592F-96FC-3A59-AE2F-8953158D4C36', 'x86_64: 02B6592F-96FC-3A59-AE2F-8953158D4C36', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0A051339-20B3-3337-BE2A-F1F0752CC4F7', 'arm64e: 0A051339-20B3-3337-BE2A-F1F0752CC4F7' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AACCore.framework/Versions/A/AACCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AACLoggingSubsystem, _AEAssessmentStateDidChangeNotificationName, 
+                       _AEAssessmentStatePublisherRegisteringMachServiceName, _AECoreError, 
+                       _AECoreErrorDomain, _AECoreErrorUserInfo, _AELocalizedStringFromTableInBundle, 
+                       _AEPolicySessionFailedToActivateSubsystemsKey, _AEPolicySessionFailedToDeactivateSubsystemsKey ]
+    objc-classes:    [ _AEActivePolicySession, _AEAssessmentApplicationDescriptor, 
+                       _AEAssessmentIndividualConfiguration, _AEAssessmentModeGestalt, 
+                       _AEAssessmentState, _AEAssessmentStatePublishingProxy, _AEAssessmentStatePublishingXPCInterfaceFactory, 
+                       _AEAssessmentStateSourceRegisteringProxy, _AEAssessmentStateSourceRegisteringXPCInterfaceFactory, 
+                       _AEFileSystem, _AELifecycleEventHandlingProxy, _AELifecycleEventHandlingXPCInterfaceFactory, 
+                       _AELocalizedErrorDescriptions, _AEOSGestalt, _AEOptionMirror, 
+                       _AEPerformancePrimitivesProvider, _AEPolicyBundle, _AEPreferencesProvider ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 191E652D-EC2E-3313-89EE-BD4917B3FECA', 'x86_64: 191E652D-EC2E-3313-89EE-BD4917B3FECA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 562CE0C5-5AB4-32FA-B1B7-AB2309C46FD7', 'arm64e: 562CE0C5-5AB4-32FA-B1B7-AB2309C46FD7' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/Versions/A/ParsecSubscriptionServiceSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ParsecSubscriptionServiceSupportVersionNumber, _ParsecSubscriptionServiceSupportVersionString ]
+    objc-classes:    [ _PSSSSubscriptionManager, _PSSSSubscriptionManagerInternal ]
+...

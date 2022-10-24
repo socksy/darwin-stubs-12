@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: ABA6BA23-1DC1-3F67-BDD7-85A41701C7D9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1A1C9EB1-7DE7-3534-AB51-0DBDCD127D6C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/TestFlightCore.framework/Versions/A/TestFlightCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _TFBetaAppLaunchScreenProvider, _TFBetaApplicationProxy, _TFBetaLaunchHandle, 
+                       _TFBetaLaunchHandleConfiguration, _TFFeedbackSession, _TFLocale ]
+...

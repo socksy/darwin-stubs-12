@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FCA69DB4-AEAF-3199-91FF-3C04A357B639', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 82E0C4F2-E7AE-31C2-B624-CD2B12F8B4AF' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices'
+current-version: 612.3.6
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ASAuthorizationAllSupportedPublicKeyCredentialDescriptorTransports, 
+                       _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 
+                       _ASAuthorizationErrorDomain, _ASAuthorizationOperationImplicit, 
+                       _ASAuthorizationOperationLogin, _ASAuthorizationOperationLogout, 
+                       _ASAuthorizationOperationRefresh, _ASAuthorizationProviderAuthorizationOperationConfigurationRemoved, 
+                       _ASAuthorizationPublicKeyCredentialAttestationKindDirect, 
+                       _ASAuthorizationPublicKeyCredentialAttestationKindEnterprise, 
+                       _ASAuthorizationPublicKeyCredentialAttestationKindIndirect, 
+                       _ASAuthorizationPublicKeyCredentialAttestationKindNone, _ASAuthorizationPublicKeyCredentialResidentKeyPreferenceDiscouraged, 
+                       _ASAuthorizationPublicKeyCredentialResidentKeyPreferencePreferred, 
+                       _ASAuthorizationPublicKeyCredentialResidentKeyPreferenceRequired, 
+                       _ASAuthorizationPublicKeyCredentialUserVerificationPreferenceDiscouraged, 
+                       _ASAuthorizationPublicKeyCredentialUserVerificationPreferencePreferred, 
+                       _ASAuthorizationPublicKeyCredentialUserVerificationPreferenceRequired, 
+                       _ASAuthorizationScopeEmail, _ASAuthorizationScopeFullName, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransportBluetooth, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransportNFC, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransportUSB, 
+                       _ASCredentialIdentityStoreErrorDomain, _ASExtensionErrorDomain, 
+                       _ASWebAuthenticationSessionErrorDomain, _ASWebAuthenticationSessionWebBrowserSupportCapabilitiesKey, 
+                       _ASWebAuthenticationSessionWebBrowserSupportCapabilityIsSupportedKey, 
+                       _ASWebAuthenticationSessionWebBrowserSupportCapabilitySupportsEphemeralBrowserSessionKey, 
+                       _AuthenticationServicesAgentMain, __authenticationSessionRequestServerErrorDomain ]
+    objc-classes:    [ _ASAuthorization, _ASAuthorizationAppleIDButton, _ASAuthorizationAppleIDCredential, 
+                       _ASAuthorizationAppleIDProvider, _ASAuthorizationAppleIDRequest, 
+                       _ASAuthorizationController, _ASAuthorizationOpenIDRequest, 
+                       _ASAuthorizationPasswordProvider, _ASAuthorizationPasswordRequest, 
+                       _ASAuthorizationPlatformPublicKeyCredentialAssertion, _ASAuthorizationPlatformPublicKeyCredentialAssertionRequest, 
+                       _ASAuthorizationPlatformPublicKeyCredentialDescriptor, _ASAuthorizationPlatformPublicKeyCredentialProvider, 
+                       _ASAuthorizationPlatformPublicKeyCredentialRegistration, _ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest, 
+                       _ASAuthorizationProviderExtensionAuthorizationRequest, _ASAuthorizationProviderExtensionAuthorizationResult, 
+                       _ASAuthorizationPublicKeyCredentialParameters, _ASAuthorizationRequest, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialAssertion, _ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialProvider, _ASAuthorizationSecurityKeyPublicKeyCredentialRegistration, 
+                       _ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest, 
+                       _ASAuthorizationSingleSignOnCredential, _ASAuthorizationSingleSignOnProvider, 
+                       _ASAuthorizationSingleSignOnRequest, _ASAuthorizationViewController, 
+                       _ASCredentialIdentityStore, _ASCredentialIdentityStoreState, 
+                       _ASCredentialProviderExtensionContext, _ASCredentialProviderViewController, 
+                       _ASCredentialServiceIdentifier, _ASPasswordCredential, _ASPasswordCredentialIdentity, 
+                       _ASWebAuthenticationSession, _ASWebAuthenticationSessionRequest, 
+                       _ASWebAuthenticationSessionRequestClient, _ASWebAuthenticationSessionWebBrowserSessionManager, 
+                       __ASCredentialListViewController, __ASCredentialProviderExtensionConfigurationViewController, 
+                       __ASDevice, __ASExtensionViewController, __ASIncomingCallObserver, 
+                       __ASPasswordCredentialAuthenticationViewController, __ASWebAuthenticationSessionRequestServer ]
+...

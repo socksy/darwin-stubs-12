@@ -1,0 +1,43 @@
+--- !tapi-tbd-v2
+archs:           [ arm64, arm64e ]
+uuids:           [ 'arm64: 00000000-0000-0000-0000-000000000000', 'arm64e: 046C3412-AF1D-3326-B48F-E867896EFD07' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FRC.framework/Versions/A/FRC'
+current-version: 102
+exports:
+  - archs:           [ arm64, arm64e ]
+    symbols:         [ _FRCFlowConsistencyFrameScoreKey, _FRCFlowConsistencyRegionScoreKey, 
+                       _FRCGatingCauseKey, _FRCGatingStatusKey, _FRCGetAlignedInputFrameSizeForUsage, 
+                       _FRCGetInputFrameSizeForUsage, _FRCGetReverseRotation, _FRCGetUsageFromSize, 
+                       _FRCLivePhotoBurstDropDurationKey, _FRCLivePhotoNumberOfGapsKey, 
+                       _FRCLivePhotoRetimingRecipeKey, _FRCProcessingModeKey, _FRCProcessingTimeKey, 
+                       _FRCTotalInterpolatedFramesKey, _FRCUsageKey, _FRCVersionNumber, 
+                       _FRCVersionString, _TileInfoMake, _calcNormalizationParams, 
+                       _checkMemoryFootPrint, _checkMemoryLeaks, _compareBuffers, 
+                       _compareBuffersFP16, _compareCVPixelBuffers, _copyTextureToBuffer, 
+                       _createPixelBuffer, _createPixelBufferPool, _createPixelBufferPoolWithExtendedPixels, 
+                       _createRGBA8TextureFromCVPixelBuffer, _createTextures, _createTexturesFromCVPixelBuffer, 
+                       _deinterleave2, _deinterleave3, _deinterleave4, _deserializeLivePhotoMetadata, 
+                       _findIRAPs, _get4xDownSizeUsage, _getFigLivePhotoMetadataV3, 
+                       _getOpticalFlowTensorSize, _getQuarterSizeUsage, _getSynthesisTensorSize, 
+                       _interleave2, _interleave4, _isBufferCopyNecessaryForCVtoTextureConversion, 
+                       _loadTexture, _loadTextureArray, _loadTextureInterleaved, 
+                       _readBGRA, _readBuffer, _readBufferInterlaeved, _readData, 
+                       _readData32, _readPNG, _readYUVPlanar, _saveTensorBuffer, 
+                       _saveTensorBufferWithChannelOffset, _saveTextureArray, _saveTextureBufferFlt32, 
+                       _saveTextureInterleaved, _swapWidthAndHeight, _write64RGBAHalf, 
+                       _writeBGRA, _writeBuffer, _writeBufferFlt32, _writeBufferInterlaeved, 
+                       _writeBufferWithVerticalOffset, _writeData, _writeData32, 
+                       _writePNG, _writeYUVPlanar ]
+    objc-classes:    [ _Backwarp, _BodyPoint, _Correlation, _EspressoModel, _FRCBodyBoundingBoxDetector, 
+                       _FRCFaceHandLegBlock, _FRCFaceHandLegRectangle, _FRCFrame, 
+                       _FRCFrameBurstyDropInfo, _FRCFrameDropDetector, _FRCFrameInsertionPoint, 
+                       _FRCFrameInternalTimingInfo, _FRCFrameInterpolator, _FRCFrameMetadata, 
+                       _FRCFrameTimingInfo, _FRCLivePhotoMetadataReader, _FRCMetalBase, 
+                       _FRCScaler, _FeatureExtractor, _FlowEstimate, _Forwarp, _GPUSynthesis, 
+                       _LiteSynthesis, _Normalization, _OpticalFlow, _OpticalFlowAnalyzer, 
+                       _Pyramid, _Synthesis, _SynthesisGridNet, _Tiling ]
+    objc-ivars:      [ _EspressoModel._callbackQueue, _EspressoModel._context, _EspressoModel._net, 
+                       _EspressoModel._plan, _FRCMetalBase._commandQueue, _FRCMetalBase._device, 
+                       _FRCMetalBase._mtlLibrary ]
+...

@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 634CDA29-A045-3C77-91E3-A5110EF74A81', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 739CC20E-5AF1-3B4D-8762-54D5E6244E90' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/VideoDecodeAcceleration.framework/Versions/A/VideoDecodeAcceleration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _VDADecoderCreate, _VDADecoderDecode, _VDADecoderDestroy, 
+                       _VDADecoderFlush, _kVDADecoderConfiguration_Height, _kVDADecoderConfiguration_SourceFormat, 
+                       _kVDADecoderConfiguration_Width, _kVDADecoderConfiguration_avcCData, 
+                       _kVDADecoderConfiguration_forceSW, _myVTOutputCallback, _mykVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder ]
+...

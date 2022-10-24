@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5188C3D4-4877-39BD-A3F3-8E3A2BACF304', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 988F3396-AE52-36F7-A6A2-BA155397A352' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ReminderKitUI.framework/Versions/A/ReminderKitUI'
+current-version: 560
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ReminderKitUIVersionNumber, _ReminderKitUIVersionString ]
+    objc-classes:    [ _REMReminderCreationContext, _REMReminderCreationRemoteViewController, 
+                       _REMReminderCreationViewController ]
+...

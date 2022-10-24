@@ -27,7 +27,7 @@ while getopts "o:s:" opt; do
 done
 
 stub_name() {
-  echo "${1%.dylib}.tbd"
+  echo "${1%.tbd}.tbd"
 }
 
 out=$(realpath "$out")

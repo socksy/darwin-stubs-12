@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 6C29A71F-44B9-3C89-A688-5ADA3D70E08A', 'x86_64: 6C29A71F-44B9-3C89-A688-5ADA3D70E08A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A494C5BD-CC4E-33AB-A0C2-92E5881B4B1D', 'arm64e: A494C5BD-CC4E-33AB-A0C2-92E5881B4B1D' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/Versions/A/NearbyInteraction'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable, _NINearbyObjectDirectionNotAvailable, 
+                       _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
+                       _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
+                       _NINearbyObjectQuaternionNotAvailable, _NINotifySystemShutdownWithReason, 
+                       _NITruthTagLabelKey, _NITruthTagSourceClientApp, _NITruthTagSourceDirectUserInput, 
+                       _NITruthTagSourceKey, _kNISystemShutdownCompletionTimeoutSeconds ]
+    objc-classes:    [ _NICarKeyConfiguration, _NICarKeyEventNotifier, _NIConfiguration, 
+                       _NIDeviceCapabilities, _NIDiscoveryToken, _NIHomeDeviceConfiguration, 
+                       _NINearbyAccessoryConfiguration, _NINearbyObject, _NINearbyPeerConfiguration, 
+                       _NIRegionPredicate, _NISession, __NIWiFiRangingTestConfiguration ]
+...

@@ -1,0 +1,43 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9FE3AB97-6741-3A84-B158-E0D9882BF4F1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0D678705-F3D7-354E-8049-E2B0652E2D4F' ]
+platform:        iosmac
+install-name:    '/System/Library/PrivateFrameworks/MaterialKit.framework/Versions/A/MaterialKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ AXHearingSupport, AppPredictionUIWidget, AssistantUI, BannerKitTest, 
+                         BatteryCenterUI, BatteryCenterUITest, BatteryWidget, CarPlay, 
+                         ChargingViewService, ChronoUIServices, ControlCenterUI, 
+                         ControlCenterUIKit, CoverSheet, FocusUI, HomeUI, LoginUI, 
+                         MaterialKitTester, MaterialKitTests, MediaControls, MediaRemoteUI, 
+                         MobileSafari, MusicUIService, NotificationCenter, PassKitUI, 
+                         Pegasus, PencilKit, PineBoard, PlatterKit, PreBoard, RecentsAppPopover, 
+                         ScreenTimeSettingsUI, ScreenTimeUI, SearchUI, Setup, Sharing, 
+                         SharingViewService, Siri, SiriUI, SleepLockScreen, SpotlightUIInternal, 
+                         SpringBoard, SpringBoard-Tests, SpringBoardCore, SpringBoardFoundation, 
+                         SpringBoardHome, SpringBoardUI, TVRemoteUI, TVSystemUI, 
+                         UNSNotificationAuthorizationAlertExtension, UserNotificationsUIKit, 
+                         UserNotificationsUIKitTests, WidgetConfigurationExtension, 
+                         Widgets, WorkflowUI, WorkflowUIServices ]
+    symbols:         [ _MTCompareBlurInputQualities, _MTCoreMaterialPlatformColorsStyleNameForUserInterfaceStyle, 
+                       _MTCoreMaterialRecipeForMaterialRecipe, _MTCoreMaterialRecipeForMaterialRecipeAndUserInterfaceStyle, 
+                       _MTCoreMaterialRecipeForMaterialRecipeAndUserInterfaceStyleInShadow, 
+                       _MTCoreMaterialVisualStyleCategoryForVisualStyleCategory, 
+                       _MTCoreMaterialVisualStyleForVisualStyle, _MTEdgeInsetsInvert, 
+                       _MTIsUIBlurEffectStyleDynamic, _MTIsValidBlurInputQuality, 
+                       _MTIsValidVisualStyle, _MTLogLuma, _MTLogMaterials, _MTLogSubsystem, 
+                       _MTMainScreenScale, _MTMaterialRecipeForUIBlurEffectStyle, 
+                       _MTRectApplyInsets, _MTRectApplyOutsets, _MTRegisterMaterialKitLogging, 
+                       _MTStringFromMaterialRecipe, _MaterialKitVersionNumber, _MaterialKitVersionString, 
+                       _NSStringFromMTLumaDodgeGraphicsQuality, _NSStringFromMTLumaDodgePillBackgroundLuminance, 
+                       _NSStringFromMTLumaDodgePillStyle, __MTCoreMaterialRecipeNameForMaterialRecipeAndUserInterfaceStyle, 
+                       __MTCoreMaterialRecipeNameForSystemColor, __MTCoreMaterialRecipeNameForSystemColorCompatibleWithTraitCollection, 
+                       __MTInternalVibrancyEffectStyleForPublicStyle ]
+    objc-classes:    [ _MTLumaDodgePillDomain, _MTLumaDodgePillSettings, _MTLumaDodgePillStyleSettings, 
+                       _MTLumaDodgePillView, _MTMappedImageCache, _MTMaterialShadowView, 
+                       _MTMaterialView, _MTPillView, _MTShadowView, _MTStaticColorPillView, 
+                       _MTStylingProvidingSolidColorView, _MTVisualStyling, _MTVisualStylingProvider, 
+                       __MTClientDemarcatedCurrentContainerPathProvider, __MTLumaDodgePillLowQualityEffectView, 
+                       __MTStaticVisualStylingMaterialView, __MTVisualStylingVibrancyEffect ]
+...

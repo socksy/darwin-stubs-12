@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E0D72582-304E-3AC3-9253-EC56F37D81AD', 'x86_64: E0D72582-304E-3AC3-9253-EC56F37D81AD', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3115126C-9273-3AA5-B61C-6B36405473B3', 'arm64e: 3115126C-9273-3AA5-B61C-6B36405473B3' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticLogCollection.framework/Versions/A/DiagnosticLogCollection'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DLCAlertTitleKey, _DLCCollectLogs, _DLCCollectLogsWithCompletionHandler, 
+                       _DLCDefaultRadarComponentKey, _DLCDefaultRadarComponentVersionKey, 
+                       _DLCGatheringDisplayFlagsKey, _DLCLogBacktraceWithLevel, _DLCLogBacktraceWithLevelV, 
+                       _DLCLogEventWithLevel, _DLCLogEventWithLevelV, _DLCLogGatheringFlagsKey, 
+                       _DLCLogPathKey, _DLCLogWithLevel, _DLCLogWithLevelV, _DLCLoggingStringForMessageData, 
+                       _DLCSessionAction, _DLCSessionAddLogFile, _DLCSessionBeginSession, 
+                       _DLCSessionConnect, _DLCSessionDiconnect, _DLCSessionEndSession, 
+                       _DLCSessionEvent, _DLCSessionLogCallInfo, _DLCSessionLogWithLevel, 
+                       _DLCSessionLogWithLevelV, _DLCSessionNoteCheckpoint, _DLCSessionPerformSnapshot, 
+                       _DLCSessionPulse, _DLCSessionSetFailureReason, _DLCSessionSetInitiator, 
+                       _DLCSessionSetRecipient, _DLCSessionShouldLogCheckpoints, 
+                       _DLCSessionShouldLogLevel, _DLCSessionSyncLoggingsPreferences, 
+                       _DLCShouldLogLevel, _DLCShouldLogMessageBodies, _DLCWarn, 
+                       _DLCWarnV, __DLCLogEventWithLevelV, __DLCLogWithLevelFileAndLine, 
+                       __DLCLogWithLevelV, __DLCWarnV ]
+...

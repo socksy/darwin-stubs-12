@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 90AF4153-163D-30FA-8A72-0E5DE7E7B417', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 66E7D3DC-8239-34CD-840D-17A4B27D6607' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AudioDSPManager.framework/Versions/A/AudioDSPManager'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AudioDSPManagerCreate, _AudioDSPManagerErrorDomain, __ZN3adm15make_error_codeENS_5ErrorE ]
+...

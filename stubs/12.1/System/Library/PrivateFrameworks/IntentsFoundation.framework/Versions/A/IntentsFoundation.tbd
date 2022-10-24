@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4DC8ACA1-748A-36FD-A118-C765E8FABEAD', 'x86_64: 4DC8ACA1-748A-36FD-A118-C765E8FABEAD', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9BABEB36-4A36-340A-8881-DA4B7369D852', 'arm64e: 9BABEB36-4A36-340A-8881-DA4B7369D852' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IntentsFoundation.framework/Versions/A/IntentsFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IFMergeDictionaries, _IntentsFoundationVersionNumber, _IntentsFoundationVersionString ]
+    objc-classes:    [ _IFObjectHasher, _INFGrammarCollection, _INFPartOfSpeech, 
+                       _INFSentence, _INFSentenceToken ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3702AB90-FFF4-322A-AFDD-C12A33E594CC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DE7B67D8-BCD2-32AF-B632-8D08E74A2374' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/ScriptingBridge.framework/Versions/A/ScriptingBridge'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _SBAppContext, _SBAppLocator, _SBApplication, _SBElementArray, 
+                       _SBObject ]
+    objc-ivars:      [ _SBAppContext._application, _SBAppContext._classNamesForCodes, 
+                       _SBAppContext._codesForClassNames, _SBAppContext._codesForPropertyNames, 
+                       _SBAppContext._codesForScriptingClassNames, _SBAppContext._delegate, 
+                       _SBAppContext._inheritanceCodesForClassCodes, _SBAppContext._locator, 
+                       _SBAppContext._name, _SBAppContext._propertyNamesForCodes, 
+                       _SBAppContext._scriptingClassNamesForCodes, _SBAppContext._sendMode, 
+                       _SBAppContext._thunksForSelectors, _SBAppContext._thunksForSelectorsForClassCodes, 
+                       _SBAppContext._timeout, _SBAppLocator._address, _SBAppLocator._isCurrentProcess, 
+                       _SBAppLocator._launchFlags, _SBElementArray._elementCode, 
+                       _SBElementArray._parent, _SBElementArray._reserved, _SBObject._ctx, 
+                       _SBObject._reserved, _SBObject._specifier ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ arm64, arm64e ]
+uuids:           [ 'arm64: 00000000-0000-0000-0000-000000000000', 'arm64e: 09D4E3BB-E7C3-356C-86D9-1BE17E09CFB9' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/OAHSoftwareUpdate.framework/Versions/A/OAHSoftwareUpdate'
+exports:
+  - archs:           [ arm64, arm64e ]
+    symbols:         [ _OAHSUAnalyticsDateKey, _OAHSUAnalyticsErrorCodeKey, _OAHSUAnalyticsSuccessKey, 
+                       _OAHSUErrorDomain, _OAHSULogObject, _OAHSUPredicateUpdateProductPredicateTag, 
+                       _OAHSoftwareUpdateOptionsKeyDownloadDirectory, _OAHSoftwareUpdateOptionsKeyDownloadOnly, 
+                       _OAHSoftwareUpdateOptionsMessageKey, _OAHSoftwareUpdateOptionsOSBuildVersionKey, 
+                       _OAHSoftwareUpdateOptionsTitleKey, _OAHSoftwareUpdateStatusKeyDownloadedBytes, 
+                       _OAHSoftwareUpdateStatusKeyEstimatedTimeRemaining, _OAHSoftwareUpdateStatusKeyPercentComplete, 
+                       _OAHSoftwareUpdateStatusKeyState, _OAHSoftwareUpdateStatusKeyStateDescription, 
+                       _OAHSoftwareUpdateVersionNumber, _OAHSoftwareUpdateVersionString ]
+    objc-classes:    [ _OAHSUAnalytics, _OAHSUError, _OAHSULog, _OAHSUNVRAM, _OAHSUPrefs, 
+                       _OAHSoftwareUpdateConstants, _OAHSoftwareUpdateController, 
+                       _OAHSoftwareUpdateDownloader, _OAHSoftwareUpdateWindowController ]
+...

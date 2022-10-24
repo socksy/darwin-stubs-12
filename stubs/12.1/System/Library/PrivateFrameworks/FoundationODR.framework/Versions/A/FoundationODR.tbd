@@ -1,0 +1,7 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 58A1AB29-08D2-3E74-97B5-D4BCD6616AF9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5F693A88-9E39-316E-AA95-13012E4D45CD' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FoundationODR.framework/Versions/A/FoundationODR'
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7A739D3A-673D-3AFF-A7BE-698A391E21A1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7FAF7A91-0E4C-35B9-85C1-50521281CD9E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/BluetoothServices.framework/Versions/A/BluetoothServices'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BTErrorDomain, _BTErrorF, _BTNestedErrorF, _BTXPCGetNextClientID ]
+    objc-classes:    [ _BTAudioRoutingRequest, _BTAudioRoutingResponse, _BTAudioSession, 
+                       _BTBannerUISession, _BTBluetoothPairingSession, _BTCloudAccountInfo, 
+                       _BTCloudDevice, _BTCloudDeviceSupportInformation, _BTCloudServicesClient, 
+                       _BTMagicPairingSettings, _BTServicesClient ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 730E7CAC-0491-3F60-A9F9-A219854DD158', 'x86_64: 730E7CAC-0491-3F60-A9F9-A219854DD158', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 28A6D4FF-AF7B-3FC4-95CE-B5C4D950A1AF', 'arm64e: 28A6D4FF-AF7B-3FC4-95CE-B5C4D950A1AF' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/MailKit.framework/Versions/A/MailKit'
+current-version: 3693.40
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MEComposeSessionErrorDomain, _MEContentBlockerMangerReload, 
+                       _MEMailAppExtensionsEnabledStateChanged, _MEMailExtensionCapabilitiesKey, 
+                       _MEMailExtensionCapabilityComposeSession, _MEMailExtensionCapabilityContentBlocking, 
+                       _MEMailExtensionCapabilityMessageActions, _MEMailExtensionCapabilityMessageSecurity, 
+                       _MEMailExtensionErrorDomain, _MEMailExtensionErrorExtensionIdentifierKey, 
+                       _MEMailExtensionsLog, _MEMessageSecurityErrorDomain, _MEVisibleMessagesReload ]
+    objc-classes:    [ _MEAddressAnnotation, _MEAppExtensionsController, _MEComposeContext, 
+                       _MEComposeExtensionValidationError, _MEComposeExtensionsHelper, 
+                       _MEComposeSession, _MEDecodedMessage, _MEDecodedMessageBanner, 
+                       _MEEmailAddress, _MEEncodedOutgoingMessage, _MEExtensionHostContext, 
+                       _MEExtensionManager, _MEExtensionViewController, _MEMailComposeToolbarItemInfo, 
+                       _MEMessage, _MEMessageAction, _MEMessageActionDecision, _MEMessageActionDestination, 
+                       _MEMessageActionFlagChange, _MEMessageEncodingResult, _MEMessageRecipients, 
+                       _MEMessageSecurityInformation, _MEMessageSigner, _MEOutgoingMessageEncodingStatus, 
+                       _MERemoteExtension, _MERemoteExtensionContext ]
+...

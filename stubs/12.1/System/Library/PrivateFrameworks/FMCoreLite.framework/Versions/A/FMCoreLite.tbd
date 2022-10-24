@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FFF38E44-AAF6-3BDD-B50F-11F02B6B5162', 'x86_64: FFF38E44-AAF6-3BDD-B50F-11F02B6B5162', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BF658F16-D80D-3E7E-BBE7-3777F310F1F9', 'arm64e: BF658F16-D80D-3E7E-BBE7-3777F310F1F9' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FMCoreLite.framework/Versions/A/FMCoreLite'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FMAlertCategoryNone, _FMEmptyResult, _FMErrorDomain, _FMFutureCallbackStack, 
+                       __FMBlockDescriptor, __FMDictionaryOfMetrics, __FMFutureDidPerformCallback, 
+                       __FMFutureWillPerformCallback, __FMPopScopedDescriptor, __FMPushScopedDescriptor, 
+                       __FMScopedDescriptor, _kFMDataArchiverErrorDomain, _kFMSynchronizerTimeoutNever ]
+    objc-classes:    [ _FMAlert, _FMCancelationToken, _FMConcurrentMutableArray, 
+                       _FMConcurrentMutableDictionary, _FMDataArchiver, _FMFuture, 
+                       _FMInternalFileContainer, _FMPair, _FMPreferencesUtil, _FMPromise, 
+                       _FMQueue, _FMReadWriteLock, _FMScheduler, _FMSharedFileContainer, 
+                       _FMSynchronizer, _FMValueThrottler, _FMWeakForwardingContainer, 
+                       _FMXPCServiceDescription, _FMXPCSession, _FMXPCTimer, __FMLazyFuture ]
+...

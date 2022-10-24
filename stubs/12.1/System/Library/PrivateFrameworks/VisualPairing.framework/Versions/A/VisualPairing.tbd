@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F627E333-E5B6-3D0B-BC8B-5BA33A60D68D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3C160243-A265-324E-A317-0CD92BA9E097' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/VisualPairing.framework/Versions/A/VisualPairing'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _VPPresenterView, _VPScannerView ]
+...

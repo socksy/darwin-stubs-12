@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E456A1D9-C2EF-3965-BDD6-60EE08297F3A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5CBF01B3-9C87-3171-8202-72632490AE1C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/XQuery.framework/Versions/A/XQuery'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _XQuery, _XQueryContext ]
+...

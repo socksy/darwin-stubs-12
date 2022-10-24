@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DC09CCAA-6A00-3D21-86EB-EAB7F824C6A1', 'x86_64: DC09CCAA-6A00-3D21-86EB-EAB7F824C6A1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5AA094D3-F9CF-37C4-A1F3-97DA2EC94239', 'arm64e: 5AA094D3-F9CF-37C4-A1F3-97DA2EC94239' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ExtensionFoundation.framework/Versions/A/ExtensionFoundation'
+current-version: 34.5
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _EXExtensionIsPredicateSafeToExecuteWithObject, _EXExtensionIsSafeKeyPathForObject, 
+                       _EXExtensionKitErrorDomain, _EXExtensionMain, _EXGetExtensionClass, 
+                       _EXGetExtensionContextInternalClass, _EXGetExtensionContextVendorClass, 
+                       __EXAuditTokenForCurrentProcess, __EXAuditTokenGetEntitlementValue, 
+                       __EXAuditTokenGetPID, __EXDefaultLog, __EXDiscoveryLog, __EXLegacyLog, 
+                       __EXRegistrationLog, __EXStartService, __kEXCatalystSDKVariantKey, 
+                       __kEXConcreteExtensionKey, _kEXInternalSubserviceName, _kExtensionKitErrorDomain ]
+    objc-classes:    [ _EXConcreteExtension, _EXEnumerator, _EXFrameworkScanner, 
+                       _EXSwiftUI_Subsystem, _EXUIKit_Subsystem, __EXDefaults, __EXExtension, 
+                       __EXExtensionProcess, __EXExtensionRep, __EXQuery, __EXQueryObserver, 
+                       __EXRunningExtension, __EXService, __EXServiceClient ]
+...

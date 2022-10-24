@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FFCE21B7-3D08-3110-B978-DE6A31E696FF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3AB0ED04-7528-364F-9F12-1F310819D798' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/LockoutUI.framework/Versions/A/LockoutUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _LOErrorDomain, _LOErrorResponsePinErrorKey, _LOErrorResponseUserInfoKey, 
+                       _LOLockoutUIVersionNumber, _LOLockoutUIVersionString ]
+    objc-classes:    [ _LOViewController ]
+...

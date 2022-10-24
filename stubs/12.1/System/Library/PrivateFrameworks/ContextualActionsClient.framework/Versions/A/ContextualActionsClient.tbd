@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4E338D39-AA3F-3089-9DFF-26FC50D071EF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D101D568-0E9B-3AA6-A0E9-E0B88B49A9F7' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ContextualActionsClient.framework/Versions/A/ContextualActionsClient'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CAXContextualActionsXPCInterface, _CAXPBContextualActionContentReadFrom, 
+                       _CAXPBContextualActionParameterReadFrom, _CAXPBContextualActionReadFrom, 
+                       _CAXPBContextualActionsFeedbackEventReadFrom, _CAXPBPredictionContextReadFrom, 
+                       _CAXPBSuggestionReadFrom, _ContextualActionsClientVersionNumber, 
+                       _ContextualActionsClientVersionString, _kCAXContextualActionsXPCInterfaceMachServiceName ]
+    objc-classes:    [ _CAXBiomeContextualActionsFeedbackStream, _CAXContextualAction, 
+                       _CAXContextualActionContent, _CAXContextualActionParameter, 
+                       _CAXContextualActionsClient, _CAXContextualActionsFeedbackEvent, 
+                       _CAXContextualActionsPredictionElement, _CAXContextualActionsPredictor, 
+                       _CAXContextualActionsPredictorDriver, _CAXContextualActionsSuggestionReceiver, 
+                       _CAXPBContextualAction, _CAXPBContextualActionContent, _CAXPBContextualActionParameter, 
+                       _CAXPBContextualActionsFeedbackEvent, _CAXPBPredictionContext, 
+                       _CAXPBSuggestion, _CAXPredictionContext, _CAXShortcutsSessionSummary, 
+                       _CAXSuggestion, _CAXSuggestionProvider ]
+    objc-ivars:      [ _CAXPBContextualAction._actionIdentifier, _CAXPBContextualAction._parameters, 
+                       _CAXPBContextualActionContent._contentMetadata, _CAXPBContextualActionContent._contentType, 
+                       _CAXPBContextualActionParameter._parameterMetadata, _CAXPBContextualActionParameter._parameterType, 
+                       _CAXPBContextualActionsFeedbackEvent._deviceContext, _CAXPBContextualActionsFeedbackEvent._selectedAction, 
+                       _CAXPBContextualActionsFeedbackEvent._sessionIdentifier, _CAXPBContextualActionsFeedbackEvent._suggestion, 
+                       _CAXPBPredictionContext._contents, _CAXPBPredictionContext._previousActions, 
+                       _CAXPBPredictionContext._searchTerm, _CAXPBPredictionContext._sourceAppName, 
+                       _CAXPBPredictionContext._suggestionDate, _CAXPBSuggestion._modelVersion, 
+                       _CAXPBSuggestion._suggestedActions ]
+...

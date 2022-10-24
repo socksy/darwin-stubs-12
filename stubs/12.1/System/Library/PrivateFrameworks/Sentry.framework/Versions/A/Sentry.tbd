@@ -1,0 +1,44 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 23498328-0EFF-36ED-BFB6-9820FF8F89A3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 09C8EF3C-3C7C-3D4E-8F40-CCEC40B4CE10' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Sentry.framework/Versions/A/Sentry'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _HTConfigChangeNotificationToken, _HangTracerCollectOSSignposts, 
+                       _STYAbsoluteTimeToMachContinuousTime, _STYDiagnosticsCollectorErrorDomain, 
+                       _STYFrameworkDefaults, _STYMachAbsoluteTimeToMachContinuousTime, 
+                       _STYMachContinuousTimeIntervalToCFTimeInterval, _STYMachContinuousTimeToCFAbsoluteTime, 
+                       _STYMachContinuousTimeToMachAbsoluteTime, _STYMachContinuousTimeToTimespec, 
+                       _STYPerformanceCheckerErrorDomain, _STYTimeIntervalToMachContinuousTimeInterval, 
+                       _STYUserScenarioErrorDomain, _STYWakeDebuggingSignposts, _STYWakeFromDarkWakeSignposts, 
+                       _STYWakeFromSleepSignposts, _STYWakeFromStandbySignposts, 
+                       _STYWakeLog, _SentryVersionNumber, _SentryVersionString, __reportToAbc, 
+                       _appDisplayName, _bundleIdFromProcessImagePath, _currentLevels, 
+                       _descriptionForSymptomsErrorCode, _dictionaryToString, _eventEndToNow, 
+                       _getReporter, _hangtracerStoppedMonitoring, _htInteractionQueue, 
+                       _kSTYFilepathToSavedTailspinKey, _kSTYHddScaleKey, _kSTYHeavyMemoryPressureNotification, 
+                       _kSTYHeavyThermalPressureNotification, _kSTYNoMemoryPressureNotification, 
+                       _kSTYNoThermalPressureNotification, _kSTYPerfProblemDetectedNotification, 
+                       _kSTYScenarioEndTimeKey, _kSTYScenarioReportKey, _kSTYScenarioReportRefKey, 
+                       _kSTYScenarioStartTimeKey, _kSTYTailspinFilenameKey, _kSTYTailspinSaveOperationCompletedNotification, 
+                       _kSTYTailspinSaveOperationFailedErrorKey, _kSTYTargetLatencyKey, 
+                       _lastPublishedTimeForMemory, _lastPublishedTimeForThermals, 
+                       _machCtsTimeToMs, _monitorDelayedSignpostIntervals, _monitorMemoryPressure, 
+                       _monitorThermalPressure, _outstandingTailspinSaveRequests, 
+                       _perfIssueDetectionTimeLogs, _pollTimer, _postMemoryNotification, 
+                       _postThermalNotification, _processResponse, _refreshHTPreferences, 
+                       _refreshPreferences, _reportToAbc, _responseRecieved, _sentryConfigChangeNotificationToken, 
+                       _signpostSupportQueue, _startMonitoringSystemConditions, _stopMonitoringSystemConditions, 
+                       _symptomsSignatureForEvent, _symptomsSignatureForInterval, 
+                       _valueForInfoPlistKeyInImagePath ]
+    objc-classes:    [ _STYAbcHelper, _STYDeviceInfo, _STYDiagCollectorLogger, _STYDiagnosticUploader, 
+                       _STYDiagnosticsCollector, _STYDirectories, _STYFrameworkHelper, 
+                       _STYHIDWakeEventFetcher, _STYIOPMNotificationMonitor, _STYPendingDiagnostic, 
+                       _STYPerformanceChecker, _STYScenarioReport, _STYScenarioReportLogger, 
+                       _STYSentryDiagnosticsHelper, _STYSignpostsMonitor, _STYSlowWakeMonitor, 
+                       _STYSystemWakeDataProvider, _STYURLSessionHelper, _STYUserScenario, 
+                       _STYUserScenarioCache, _STYWakeDetector, _STYWakeDetectorDebugInfo, 
+                       _STYWakeDiagnosticManager, _STYWakeEvent ]
+...

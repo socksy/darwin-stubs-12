@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 13706400-E0E2-3577-8D35-1E4C50F2BAFA', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 02ADEE2B-896D-3B9C-B8D3-CB818A4943C8' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FamilyCircleUI.framework/Versions/A/FamilyCircleUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FALogStringForQualityOfService, _FAProfilePictureStoreDefaultDiameter, 
+                       _FAProfilePictureStoreDidReloadImagesNotification, _FamilyCircleUIVersionNumber, 
+                       _FamilyCircleUIVersionString, __FALogSystem, __FASignpostCreate, 
+                       __FASignpostGetNanoseconds, __FASignpostLogSystem ]
+    objc-classes:    [ _FACircularImageView, _FACreateChildController, _FAInviteLinkMetadata, 
+                       _FAInviteLinkMetadataProvider, _FAMugshotMarqueeView, _FAProfilePictureStore, 
+                       _FASharedServicesResponse, _FASharingController, _FASharingTransportItem, 
+                       _FASharingTransportItemView, _FASharingViewController, _FASignedOutFamilyInvitationPrompt ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D881760A-D268-39B2-897E-F2DFE93674BF', 'x86_64: D881760A-D268-39B2-897E-F2DFE93674BF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6E935C94-9000-389C-A476-5C0E1067F5FA', 'arm64e: 6E935C94-9000-389C-A476-5C0E1067F5FA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AppleSystemInfo.framework/Versions/A/AppleSystemInfo'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ASI_BusSpeedInHz, _ASI_CPUSpeedInHz, _ASI_CopyBusSpeedDescription, 
+                       _ASI_CopyCPUDescription, _ASI_CopyCPUKind, _ASI_CopyComputerModelName, 
+                       _ASI_CopyCurrentBusSpeedDescription, _ASI_CopyCurrentCPUDescription, 
+                       _ASI_CopyCurrentRAMDescription, _ASI_CopyCurrentRAMDescriptionWithType, 
+                       _ASI_CopyDiskSizeDescription, _ASI_CopyFormattedSerialNumber, 
+                       _ASI_CopyHostUUID, _ASI_CopyIOPlatformSerialNumberString, 
+                       _ASI_CopyMachineConfigurationCode, _ASI_CopyRAMDescription, 
+                       _ASI_GetComputerUniqueIdentfier, _ASI_GetCurrentCPUDescriptionWithFormat, 
+                       _ASI_GetLocalizedCPUDescriptionForCPUDescription, _ASI_IsPlatformFeatureEnabled, 
+                       _ASI_NumberOfCPUs, _ASI_PhysicalMemoryIsUpgradable, _ASI_PhysicalMemorySize ]
+...

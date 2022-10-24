@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AB3B63A6-9312-3247-815F-6817A7E1AEA9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DA531D41-8AB9-31C6-88D2-A552CBE5F62B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ContactsAssistantServices.framework/Versions/A/ContactsAssistantServices'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NonEmptyOrNilArray, _NonEmptyOrNilString, _YESOrNilNumber ]
+    objc-classes:    [ _CNAssistantConversion, _CNAssistantID ]
+...

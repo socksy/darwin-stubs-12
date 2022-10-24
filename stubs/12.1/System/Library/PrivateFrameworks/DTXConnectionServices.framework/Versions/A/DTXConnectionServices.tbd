@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B487C9A3-7140-3D02-BB62-76DCDAED7A08', 'x86_64: B487C9A3-7140-3D02-BB62-76DCDAED7A08', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8E6D584E-A966-3BAA-A7B7-04BD77498FFC', 'arm64e: 8E6D584E-A966-3BAA-A7B7-04BD77498FFC' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DTXConnectionServices.framework/Versions/A/DTXConnectionServices'
+current-version: 64551.27.2
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CFArrayCreateWithDTXPrimitiveArray, _CFDictionaryCreateWithDTXPrimitiveDictionary, 
+                       _DTXConnectionServicesVersionNumber, _DTXConnectionServicesVersionString, 
+                       _DTXPrimitiveArrayAppendBuffer, _DTXPrimitiveArrayAppendValues, 
+                       _DTXPrimitiveArrayCreate, _DTXPrimitiveArrayCreateWithTypesAndValues, 
+                       _DTXPrimitiveArrayDestroy, _DTXPrimitiveArrayGetSerialized, 
+                       _DTXPrimitiveArrayReferencingSerialized, _DTXPrimitiveDictionaryAddBufferPair, 
+                       _DTXPrimitiveDictionaryAddPrimitivePair, _DTXPrimitiveDictionaryCreate, 
+                       _DTXPrimitiveDictionaryDestroy, _DTXPrimitiveDictionaryGetSerialized, 
+                       _DTXPrimitiveDictionaryReferencingSerialized, _DTXSpawnSubtask, 
+                       _DTXSpawn_CPUTypeKey, _DTXSpawn_DYLDForcePlatformKey, _DTXSpawn_StderrPathKey, 
+                       _DTXSpawn_StdinPathKey, _DTXSpawn_StdoutPathKey, _DTXSpawn_SuspendedKey, 
+                       _DTXSpawn_TimeoutKey, _DTXSubtaskCheckin, '_OBJC_EHTYPE_$_DTXDecompressionException', 
+                       __DTXPrimitiveDictionaryEnumerate, __DTXPrimitiveDictionaryGetCount, 
+                       __createObjectFromPrimitiveType, _kDTXAckBarrierMessage, _kDTXBarrierMessage, 
+                       _kDTXHeartbeatMessage, _kDTXInterruptionMessage ]
+    objc-classes:    [ _DTXBlockCompressorFactory, _DTXBlockCompressorLibCompression, 
+                       _DTXChannel, _DTXConnection, _DTXDecompressionException, _DTXFileDescriptorTransport, 
+                       _DTXMachTransport, _DTXMessage, _DTXMessageParser, _DTXMessageTransmitter, 
+                       _DTXProxyChannel, _DTXProxyRequestHandler, _DTXRemoteInvocationReceipt, 
+                       _DTXResourceTracker, _DTXService, _DTXSharedMemoryTransport, 
+                       _DTXSocketTransport, _DTXTransport, __DTXProxy ]
+    objc-ivars:      [ _DTXBlockCompressorLibCompression._lz4ScratchBuffer, _DTXBlockCompressorLibCompression._lzfseScratchBuffer, 
+                       __DTXProxy._proxyChannel ]
+...

@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DDBA22F0-92EC-3337-A867-E6D2F03A4B88', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4326D143-0BB7-34B1-A471-A5D3928A791C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PortraitCore.framework/Versions/A/PortraitCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PortraitCoreVersionNumber, _PortraitCoreVersionString ]
+...

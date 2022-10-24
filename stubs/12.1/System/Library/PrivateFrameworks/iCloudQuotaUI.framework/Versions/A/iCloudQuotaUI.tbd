@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4FDB4B26-D7F9-312F-B822-95C822C2E9CE', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4F2780A2-9B97-33E2-B917-B65A153747B0' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/iCloudQuotaUI.framework/Versions/A/iCloudQuotaUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ICQInternetPrivacyViewModelStatusDescription, _NSPPrivacyProxyAccountTypeDescription, 
+                       _NSPPrivacyProxyUserTierDecription ]
+    objc-classes:    [ _ICQInternetPrivacyBannerModel, _ICQInternetPrivacyPrefPaneViewController, 
+                       _ICQInternetPrivacyQuotaFetcher, _ICQInternetPrivacyQuotaInfoResponse, 
+                       _ICQInternetPrivacyRestrictions, _ICQInternetPrivacyViewModel ]
+...

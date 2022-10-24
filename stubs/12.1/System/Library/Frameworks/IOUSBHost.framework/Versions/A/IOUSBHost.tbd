@@ -1,0 +1,42 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9D801AAE-4405-3420-94F2-9180F824947D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D9D4E555-AF91-3798-9B68-9C5DFDA781AD' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/IOUSBHost.framework/Versions/A/IOUSBHost'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IOUSBGetBillboardDescriptor, _IOUSBGetConfigurationMaxPowerMilliAmps, 
+                       _IOUSBGetContainerIDDescriptor, _IOUSBGetEndpointAddress, 
+                       _IOUSBGetEndpointBurstSize, _IOUSBGetEndpointDirection, _IOUSBGetEndpointIntervalEncodedMicroframes, 
+                       _IOUSBGetEndpointIntervalFrames, _IOUSBGetEndpointIntervalMicroframes, 
+                       _IOUSBGetEndpointMaxPacketSize, _IOUSBGetEndpointMaxStreams, 
+                       _IOUSBGetEndpointMaxStreamsEncoded, _IOUSBGetEndpointMult, 
+                       _IOUSBGetEndpointNumber, _IOUSBGetEndpointType, _IOUSBGetNextAssociatedDescriptor, 
+                       _IOUSBGetNextAssociatedDescriptorWithType, _IOUSBGetNextCapabilityDescriptor, 
+                       _IOUSBGetNextCapabilityDescriptorWithType, _IOUSBGetNextDescriptor, 
+                       _IOUSBGetNextDescriptorWithType, _IOUSBGetNextEndpointDescriptor, 
+                       _IOUSBGetNextInterfaceAssociationDescriptor, _IOUSBGetNextInterfaceDescriptor, 
+                       _IOUSBGetPlatformCapabilityDescriptor, _IOUSBGetSuperSpeedDeviceCapabilityDescriptor, 
+                       _IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor, _IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor, 
+                       _IOUSBHostCIDeviceSpeedToString, _IOUSBHostCIExceptionTypeToString, 
+                       _IOUSBHostCILinkStateEnabled, _IOUSBHostCILinkStateToString, 
+                       _IOUSBHostCIMessageStatusFromIOReturn, _IOUSBHostCIMessageStatusToIOReturn, 
+                       _IOUSBHostCIMessageStatusToString, _IOUSBHostCIMessageTypeToString, 
+                       _IOUSBHostDefaultControlCompletionTimeout, _IOUSBHostDevicePropertyKeyContainerID, 
+                       _IOUSBHostDevicePropertyKeyCurrentConfiguration, _IOUSBHostDevicePropertyKeySerialNumberString, 
+                       _IOUSBHostDevicePropertyKeyVendorString, _IOUSBHostErrorDomain, 
+                       _IOUSBHostInterfacePropertyKeyAlternateSetting, _IOUSBHostMatchingPropertyKeyConfigurationValue, 
+                       _IOUSBHostMatchingPropertyKeyDeviceClass, _IOUSBHostMatchingPropertyKeyDeviceProtocol, 
+                       _IOUSBHostMatchingPropertyKeyDeviceReleaseNumber, _IOUSBHostMatchingPropertyKeyDeviceSubClass, 
+                       _IOUSBHostMatchingPropertyKeyInterfaceClass, _IOUSBHostMatchingPropertyKeyInterfaceNumber, 
+                       _IOUSBHostMatchingPropertyKeyInterfaceProtocol, _IOUSBHostMatchingPropertyKeyInterfaceSubClass, 
+                       _IOUSBHostMatchingPropertyKeyProductID, _IOUSBHostMatchingPropertyKeyProductIDArray, 
+                       _IOUSBHostMatchingPropertyKeyProductIDMask, _IOUSBHostMatchingPropertyKeySpeed, 
+                       _IOUSBHostMatchingPropertyKeyVendorID, _IOUSBHostPropertyKeyLocationID, 
+                       _IOUSBHostVersionNumber, _IOUSBHostVersionString ]
+    objc-classes:    [ _IOUSBHostCIControllerStateMachine, _IOUSBHostCIDeviceStateMachine, 
+                       _IOUSBHostCIEndpointStateMachine, _IOUSBHostCIPortStateMachine, 
+                       _IOUSBHostControllerInterface, _IOUSBHostDevice, _IOUSBHostIOSource, 
+                       _IOUSBHostInterface, _IOUSBHostObject, _IOUSBHostPipe, _IOUSBHostStream ]
+...

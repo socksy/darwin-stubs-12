@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F33E3331-AD28-35D2-87BF-7478773209A5', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6627B260-F84B-39EF-8F92-B6D649633230' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AccessibilitySupport.framework/Versions/A/Frameworks/AccessibilityVisuals.framework/Versions/A/AccessibilityVisuals'
+current-version: 2
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXVAccessibilityVisualsSpaceUUID, _AXVBrailleTransliterationAttribute, 
+                       _AXVBundle, _AXVCaptionWindowLevel, _AXVCreateIconWithImageMask, 
+                       _AXVDefaultVoiceOverStyleBorderWidth, _AXVFiniteRectForRect, 
+                       _AXVGetIdealFont, _AXVGetIdealSizeForFont, _AXVImageRepresentationFileExtension, 
+                       _AXVLocalizedString, _AXVScrollDeltaEqual, _AXVScrollDirectionNull, 
+                       _AXVTintImage, _AXVisualsAgentDelegateXPCInterface, _AXVisualsAgentXPCInterface ]
+    objc-classes:    [ _AXVAHUDFeature, _AXVBorderedLayer, _AXVBorderedView, _AXVBorderedWindow, 
+                       _AXVBorderedWindowController, _AXVBorderedZoomWindow, _AXVBrailleInfo, 
+                       _AXVBrailleWindow, _AXVCGFullscreenZoomController, _AXVCaptionWindow, 
+                       _AXVCutoutWindow, _AXVCutoutWindowController, _AXVFileManager, 
+                       _AXVFullscreenZoomController, _AXVHighlightCurtainView, _AXVHighlightOutlineHintViewController, 
+                       _AXVHighlightOutlineView, _AXVHighlightPointView, _AXVHighlightView, 
+                       _AXVLabelHighlightView, _AXVLabeledElement, _AXVLayoutConstraintUtilities, 
+                       _AXVMenuInfo, _AXVMenuItem, _AXVMenuItemView, _AXVMenuWindow, 
+                       _AXVMouseCursor, _AXVMouseCursorManager, _AXVMutableWindowSpace, 
+                       _AXVNumberedLabeledElementsOverlayController, _AXVOverlayWindow, 
+                       _AXVProgressIndicatorView, _AXVRotorInfo, _AXVRotorWindow, 
+                       _AXVScreenCaptureManager, _AXVScrollMenu, _AXVScrollMenuItem, 
+                       _AXVScrollMenuSuggestedEventPayload, _AXVSearchDropDownWindow, 
+                       _AXVSearchWindow, _AXVSpeechMenuWindow, _AXVSpeechStyleWindow, 
+                       _AXVStyledMenu, _AXVStyledMenuItem, _AXVStyledMenuView, _AXVTitleWindow, 
+                       _AXVTitledHighlightView, _AXVView, _AXVVoiceOverStyleWindow, 
+                       _AXVWindow, _AXVWindowManager, _AXVWindowSpace ]
+...

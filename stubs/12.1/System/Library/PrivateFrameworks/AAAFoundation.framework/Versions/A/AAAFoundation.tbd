@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B0D13B4F-4F76-35B5-BB75-6C84C3590AB1', 'x86_64: B0D13B4F-4F76-35B5-BB75-6C84C3590AB1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A88222E7-ED8F-399A-84DE-004F1FCE2786', 'arm64e: A88222E7-ED8F-399A-84DE-004F1FCE2786' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AAAFoundation.framework/Versions/A/AAAFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AAAFoundationVersionNumber, _AAAFoundationVersionString, 
+                       _AFUtilitiesAppleIDPrefPath, _AFUtilitiesEnergySaverPath, 
+                       _AFUtilitiesInternetAccountsPrefPath, _AFUtilitiesMailAppBundleIdentifier, 
+                       _AFUtilitiesParentalControlsPrefPath, _AFUtilitiesPhotosAppBundleIdentifier, 
+                       _AFUtilitiesSecurityPrefPath, _AFUtilitiesSharingPrefPath, 
+                       _AFUtilitiesSoftwareUpdateBundleIdentifier, _AFUtilitiesStoreAppBundleIdentifier, 
+                       __AAFLogSystem ]
+    objc-classes:    [ _AAFKeychainItem, _AAFKeychainItemDescriptor, _AAFKeychainManager, 
+                       _AAFPromise, _AAFService, _AAFXPCSession, _AAFXPCSessionConfig, 
+                       _AFUtilities ]
+...

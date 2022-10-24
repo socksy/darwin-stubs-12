@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A397A841-1C4C-37EC-8DBD-64496D3C962E', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 95A9CDE7-BC4D-3303-82D2-E26B9DF6DDE9' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Spotlight.framework/Versions/A/Spotlight'
+current-version: 2183.10
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SPAppDelegatePreferencesChanged, _SPBodyColor, _SPBodyFont, 
+                       _SPDescriptionBodyColorOfWeight, _SPDescriptionBodyFontOfWeightSize, 
+                       _SPDescriptionBodyLineSpacingOfSize, _SPDescriptionTitleColorOfWeight, 
+                       _SPDescriptionTitleFontOfWeight, _SPHeaderColor, _SPHeaderFont, 
+                       _SPLinkColor, _SPLogInit, _SPMessageTracingSearchSessionOpenMethodClearedPreviousSearch, 
+                       _SPMessageTracingSearchSessionOpenMethodKeyboardShortcut, 
+                       _SPMessageTracingSearchSessionOpenMethodMenuBarItem, _SPMicroFont, 
+                       _SPQuaternaryColor, _SPRowKeyColorOfWeight, _SPRowKeyFontOfWeight, 
+                       _SPRowValueColorOfWeight, _SPRowValueFontOfWeight, _SPSecondaryColor, 
+                       _SPSecondaryFont, _SPSecondaryTextAttributes, _SPSmallHeaderColor, 
+                       _SPSmallHeaderFont, _SPTertiaryColor, _SPTextAttributesForFontAndColor, 
+                       _SPTextColumnsBodyColorOfWeight, _SPTextColumnsBodyFontOfWeight, 
+                       _SPTextColumnsTitleColorOfWeight, _SPTextColumnsTitleFontOfWeight, 
+                       _SPTinyFont, _SPWebSearchURLFromQueryWithHandler, _SpotlightVersionNumber, 
+                       _SpotlightVersionString, _areExplicitBooksForbidden, _bootDriveIsFast, 
+                       _spotlightPrefsId ]
+    objc-classes:    [ _PRSCalculationResult, _PRSCalculatorResult, _PRSConversion, 
+                       _PRSConversionResult, _PRSCurrencyConversionResult, _PRSDictionaryResult, 
+                       _PRSPurchaseHistoryManager, _PRSUnitConversionResult, _SPAppDefaults, 
+                       _SPApplicationQuery, _SPApplicationQueryResult, _SPClientSession, 
+                       _SPCoreSpotlightQuery, _SPCoreSpotlightResult, _SPDefaults, 
+                       _SPFolderQuery, _SPGroupHeadingResult, _SPKCalculatorQuery, 
+                       _SPKCoreParsecInterface, _SPKDictionaryQuery, _SPKParsecQuery, 
+                       _SPMessageTracing, _SPMessageTracingSearchSession, _SPMetadataGroupHeadingResult, 
+                       _SPMetadataQuery, _SPMetadataResult, _SPParsecGroupHeadingResult, 
+                       _SPPreviewController, _SPQueryTask, _SPSearchSuggestionsBuilder, 
+                       _SPShortcuts, _SPSuggestionCardSection, _SPTTRResult, _SPTTRSupport, 
+                       _SPUISearchModel, _SPUISearchModelGeneral, _SPURLQuery, _SPURLResult, 
+                       __SPResultsArrays ]
+    objc-ivars:      [ _SPQueryTask._queryStartTime, _SPQueryTask._shortcutResultChecked, 
+                       _SPQueryTask._topHitSection ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 277A3F4B-1B3B-3A76-AEB6-F334BE498DB4', 'x86_64: 277A3F4B-1B3B-3A76-AEB6-F334BE498DB4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 03089A16-FEBF-340B-B582-980AB1A1CD70', 'arm64e: 03089A16-FEBF-340B-B582-980AB1A1CD70' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/OSASubmissionClient.framework/Versions/A/OSASubmissionClient'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OSASubmissionClientVersionNumber, _OSASubmissionClientVersionString ]
+    objc-classes:    [ _OSASubmissionClient, _OSASubmissionClientOptions, _OSASubmissionScheduler ]
+...

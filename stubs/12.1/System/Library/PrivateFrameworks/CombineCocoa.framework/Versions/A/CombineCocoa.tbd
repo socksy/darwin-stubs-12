@@ -1,0 +1,9 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BDA21EE2-4248-3243-86FD-BAD651F3A3DB', 'x86_64: BDA21EE2-4248-3243-86FD-BAD651F3A3DB', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9A881861-A5A5-3C72-BA30-F1DBD85A650C', 'arm64e: 9A881861-A5A5-3C72-BA30-F1DBD85A650C' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CombineCocoa.framework/Versions/A/CombineCocoa'
+current-version: 278.102
+...

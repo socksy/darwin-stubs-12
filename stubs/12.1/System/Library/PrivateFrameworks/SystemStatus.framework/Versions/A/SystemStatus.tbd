@@ -1,0 +1,63 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FE05E99A-F436-3E9C-9302-69869B582603', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 59FB9271-F392-3F39-8F79-FD8C47E9FC4C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemStatus.framework/Versions/A/SystemStatus'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _STDynamicAttributionEntitlement, _STDynamicAttributionServiceName, 
+                       _STDynamicAttributionXPCClientInterface, _STDynamicAttributionXPCServerInterface, 
+                       _STIsValidDataForStatusDomain, _STIsValidDiffForStatusDomain, 
+                       _STIsValidUserInteractionForStatusDomain, _STStatusDomainEntitlement, 
+                       _STStatusDomainEntitlementValueBattery, _STStatusDomainEntitlementValueCalling, 
+                       _STStatusDomainEntitlementValueFocus, _STStatusDomainEntitlementValueLocation, 
+                       _STStatusDomainEntitlementValueMedia, _STStatusDomainEntitlementValuePlaygrounds, 
+                       _STStatusDomainEntitlementValueVoiceControl, _STStatusDomainEntitlementValueWifi, 
+                       _STStatusDomainPublisherEntitlement, _STStatusDomainPublisherServiceName, 
+                       _STStatusDomainPublisherXPCClientInterface, _STStatusDomainPublisherXPCServerInterface, 
+                       _STStatusDomainServiceName, _STStatusDomainXPCClientInterface, 
+                       _STStatusDomainXPCServerInterface, _STSystemStatusDescriptionForDomain, 
+                       _STSystemStatusLogDynamicAttribution, _STSystemStatusLogObservation, 
+                       _STSystemStatusLogPublishing, _STSystemStatusLoggingSubsystem, 
+                       _STValidStatusDomainDataTypes, _STValidStatusDomainDiffTypes, 
+                       _STValidStatusDomainUserInteractionTypes, _SystemStatusVersionNumber, 
+                       _SystemStatusVersionString ]
+    objc-classes:    [ _STActivityAttribution, _STActivityAttributionCatalog, _STActivityAttributionCatalogDiff, 
+                       _STActivityAttributionList, _STActivityAttributionListDiff, 
+                       _STBatteryStatusDomain, _STBatteryStatusDomainData, _STBatteryStatusDomainDataDiff, 
+                       _STBatteryStatusDomainPublisher, _STCallingStatusDomain, _STCallingStatusDomainCallDescriptor, 
+                       _STCallingStatusDomainData, _STCallingStatusDomainDataDiff, 
+                       _STCallingStatusDomainPublisher, _STCallingStatusDomainUserInteraction, 
+                       _STDynamicActivityAttribution, _STDynamicActivityAttributionListener, 
+                       _STDynamicActivityAttributionManager, _STDynamicActivityAttributionMonitor, 
+                       _STDynamicActivityAttributionPublisher, _STDynamicActivityAttributionXPCClientHandle, 
+                       _STDynamicAttributionXPCServerHandle, _STFocusStatusDomain, 
+                       _STFocusStatusDomainData, _STFocusStatusDomainDataDiff, _STFocusStatusDomainPublisher, 
+                       _STFocusStatusDomainUserInteraction, _STListData, _STListDataDiff, 
+                       _STLocationStatusDomain, _STLocationStatusDomainData, _STLocationStatusDomainDataDiff, 
+                       _STLocationStatusDomainPublisher, _STMediaStatusDomain, _STMediaStatusDomainData, 
+                       _STMediaStatusDomainDataDiff, _STMediaStatusDomainPublisher, 
+                       _STMutableActivityAttributionCatalog, _STMutableActivityAttributionList, 
+                       _STMutableBatteryStatusDomainData, _STMutableCallingStatusDomainData, 
+                       _STMutableFocusStatusDomainData, _STMutableListData, _STMutableLocationStatusDomainData, 
+                       _STMutableMediaStatusDomainData, _STMutablePlaygroundsStatusDomainData, 
+                       _STMutableVoiceControlStatusDomainData, _STMutableWifiStatusDomainData, 
+                       _STPlaygroundsStatusDomain, _STPlaygroundsStatusDomainData, 
+                       _STPlaygroundsStatusDomainDataDiff, _STPlaygroundsStatusDomainPublisher, 
+                       _STPlaygroundsStatusDomainUserInteraction, _STStatusDomain, 
+                       _STStatusDomainPublisher, _STStatusDomainPublisherXPCServerHandle, 
+                       _STStatusDomainXPCServerHandle, _STUserInteractionHandlingStatusDomainPublisher, 
+                       _STUserInteractionReportingStatusDomain, _STVoiceControlStatusDomain, 
+                       _STVoiceControlStatusDomainData, _STVoiceControlStatusDomainDataDiff, 
+                       _STVoiceControlStatusDomainPublisher, _STWifiStatusDomain, 
+                       _STWifiStatusDomainData, _STWifiStatusDomainDataDiff, _STWifiStatusDomainPublisher ]
+    objc-ivars:      [ _STBatteryStatusDomainData._batterySaverModeActive, _STBatteryStatusDomainData._chargingDescription, 
+                       _STBatteryStatusDomainData._chargingDescriptionType, _STBatteryStatusDomainData._chargingState, 
+                       _STBatteryStatusDomainData._percentCharge, _STFocusStatusDomainData._modeIdentifier, 
+                       _STFocusStatusDomainData._modeName, _STFocusStatusDomainData._modeSymbol, 
+                       _STListData._objects, _STPlaygroundsStatusDomainData._playgroundsActive, 
+                       _STVoiceControlStatusDomainData._listeningState, _STVoiceControlStatusDomainData._voiceControlActive, 
+                       _STWifiStatusDomainData._associatedToIOSHotspot, _STWifiStatusDomainData._signalStrengthBars, 
+                       _STWifiStatusDomainData._wifiActive ]
+...

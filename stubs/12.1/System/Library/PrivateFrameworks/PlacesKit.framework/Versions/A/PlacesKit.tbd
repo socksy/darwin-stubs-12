@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AA92F6E1-BD80-38D0-9C2B-0BB9AEB13541', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A1AAC07D-5066-3BA4-90A2-31590554623D' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PlacesKit.framework/Versions/A/PlacesKit'
+current-version: 421.0.100
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PKPlacesCoarseLocationMediaInfoKey, _PXMapStoreDefaultCapacityPerNode, 
+                       _PXMapStoreMinimumRectWidth, _PXMapStoreStoreItemsInLeafNodesOnly, 
+                       _PXQuadTreeNodeCanBeSubdivided, _PXQuadTreeNodeExtendCapacity, 
+                       _PXQuadTreeNodeFindItemsInRect, _PXQuadTreeNodeFree, _PXQuadTreeNodeHasCapacity, 
+                       _PXQuadTreeNodeInsertItem, _PXQuadTreeNodeMake, _PXQuadTreeNodeMoveItemsToChildNodes, 
+                       _PXQuadTreeNodeOptimize, _PXQuadTreeNodeRemoveItem, _PXQuadTreeNodeRunCollector, 
+                       _PXQuadTreeNodeSubdivide, _cornerRadius, _kPKExtendedTraitCollectionChangedNotification, 
+                       _kPKExtendedTraitCollectionKey, _kPXPlacesPhotoAssetsStoreImportBatchSize, 
+                       _mapPointComparator, _minCountLabelHeight, _minCountLabelWidth, 
+                       _pk_dispatch_on_main_queue, _stringForCoordinate, _stringForDiffEntryType ]
+    objc-classes:    [ _PKExtendedTraitCollection, _PXPlacesGeotaggableSortDescriptor, 
+                       _PXPlacesImageCache, _PXPlacesMapController, _PXPlacesMapFetchResultController, 
+                       _PXPlacesMapGeometricClusterLayout, _PXPlacesMapInPlaceLayoutDiffer, 
+                       _PXPlacesMapInPlaceUpdatePlan, _PXPlacesMapLayout, _PXPlacesMapLayoutChange, 
+                       _PXPlacesMapLayoutDiffer, _PXPlacesMapLayoutItemImpl, _PXPlacesMapLayoutResultImpl, 
+                       _PXPlacesMapPassthroughSelectionHandler, _PXPlacesMapPinRenderer, 
+                       _PXPlacesMapPipeline, _PXPlacesMapPipelineExecutionContext, 
+                       _PXPlacesMapPipelineFactory, _PXPlacesMapPointAnnotation, 
+                       _PXPlacesMapThumbnailAnnotationView, _PXPlacesMapThumbnailClusterLayout, 
+                       _PXPlacesMapThumbnailRenderer, _PXPlacesMapUpdatePlanResultImpl, 
+                       _PXPlacesMapView, _PXPlacesMapViewPort, _PXPlacesPhotoAssetsStore, 
+                       _PXPlacesPinAnnotationView, _PXPlacesPopoverImageFactory, 
+                       _PXPlacesStore, _PXPlacesTestDataGenerator, _PXPlacesTestDataPoint, 
+                       __PXMapStoreChange, __PXPlacesImageCacheKey, ___PKObject ]
+...

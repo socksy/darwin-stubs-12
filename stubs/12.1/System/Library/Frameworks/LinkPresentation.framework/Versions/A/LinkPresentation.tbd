@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 062CC373-1E89-322B-84FB-B49E73138065', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C50732B0-3977-3F82-961B-D20F77B818F5' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/LinkPresentation.framework/Versions/A/LinkPresentation'
+current-version: 185.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    re-exports:      [ '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting' ]
+    symbols:         [ _LPErrorDomain, _LPLogChannelFetching, _LPLogChannelPlugin, 
+                       _LPLogChannelSerialization, _LPLogChannelTranscoding, _LPLogChannelUI, 
+                       _LPLogChannelVideo, _LPYouTubePlayerErrorDomain ]
+    objc-classes:    [ _LPARAsset, _LPARAssetAttachmentSubstitute, _LPARAssetMetadata, 
+                       _LPARAssetProperties, _LPAppLinkPresentationProperties, _LPAppStoreStoryMetadata, 
+                       _LPAppleMusicTVShowMetadata, _LPAppleNewsMetadata, _LPApplePhotosMomentMetadata, 
+                       _LPApplePhotosStatusMetadata, _LPAppleTVMetadata, _LPArtworkMetadata, 
+                       _LPAudio, _LPAudioMetadata, _LPAudioProperties, _LPBusinessChatMetadata, 
+                       _LPCaptionBarPresentationProperties, _LPCaptionButtonCollapsedPresentationProperties, 
+                       _LPCaptionButtonPresentationProperties, _LPCaptionPresentationProperties, 
+                       _LPCaptionRowPresentationProperties, _LPEvent, _LPEventTimeline, 
+                       _LPFaceTimeInviteMetadata, _LPFileMetadata, _LPGameCenterInvitationMetadata, 
+                       _LPIconMetadata, _LPImage, _LPImageAttachmentSubstitute, _LPImageMetadata, 
+                       _LPImagePresentationProperties, _LPImageProperties, _LPInlineMediaPlaybackInformation, 
+                       _LPLinkHTMLGenerator, _LPLinkHTMLTextGenerator, _LPLinkMetadata, 
+                       _LPLinkMetadataObserver, _LPLinkMetadataPresentationTransformer, 
+                       _LPLinkMetadataPreviewTransformer, _LPLinkMetadataStatusTransformer, 
+                       _LPLinkMetadataStoreTransformer, _LPLinkView, _LPLyricExcerptMetadata, 
+                       _LPMIMETypeRegistry, _LPMapCollectionMetadata, _LPMapCollectionPublisherMetadata, 
+                       _LPMapMetadata, _LPMessagesPayload, _LPMetadataProvider, _LPMultipleMetadataPresentationTransformer, 
+                       _LPPresentationSpecializations, _LPSharingMetadataWrapper, 
+                       _LPSharingStatusMetadata, _LPSourceApplicationMetadata, _LPSpecializationMetadata, 
+                       _LPStreamingAudioPlayer, _LPSummarizedLinkMetadata, _LPTestingOverrides, 
+                       _LPVideo, _LPVideoAttachmentSubstitute, _LPVideoMetadata, 
+                       _LPVideoProperties, _LPWalletPassMetadata, _LPWebLinkPresentationProperties, 
+                       _LPYouTubePlayerView, _LPYouTubeURLComponents, _LPiCloudFamilyInvitationMetadata, 
+                       _LPiCloudSharingMetadata, _LPiTunesMediaAlbumMetadata, _LPiTunesMediaArtistMetadata, 
+                       _LPiTunesMediaAudioBookMetadata, _LPiTunesMediaBookMetadata, 
+                       _LPiTunesMediaMovieBundleMetadata, _LPiTunesMediaMovieMetadata, 
+                       _LPiTunesMediaMusicVideoMetadata, _LPiTunesMediaPlaylistMetadata, 
+                       _LPiTunesMediaPodcastEpisodeMetadata, _LPiTunesMediaPodcastMetadata, 
+                       _LPiTunesMediaRadioMetadata, _LPiTunesMediaSoftwareMetadata, 
+                       _LPiTunesMediaSongMetadata, _LPiTunesMediaTVEpisodeMetadata, 
+                       _LPiTunesMediaTVSeasonMetadata, _LPiTunesUserProfileMetadata ]
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B8203714-5528-382B-802C-44E1EBCBBB49', 'x86_64: B8203714-5528-382B-802C-44E1EBCBBB49', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: ADB285DC-253E-3844-9E12-FC585B967116', 'arm64e: ADB285DC-253E-3844-9E12-FC585B967116' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting'
+current-version: 185.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _URLFormattingTestingOverrides ]
+...

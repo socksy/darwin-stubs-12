@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 583572F8-D8BA-3D5B-BB8D-8C33B603199A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5C515494-6ECD-3068-B5E7-F6810AD62DBD' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ExposureNotificationDaemon.framework/Versions/A/ExposureNotificationDaemon'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ENAdvertisementStoreErrorDomain, _ENBundleIdentifierForURLSessions, 
+                       _ENConfigurationManagerErrorDomain, _ENDownloadManagerDownloadsAvailable, 
+                       _ENExposureDetectionDaemonSessionErrorDomain, _ENNestedTestResultErrorF, 
+                       _ENReadLinesFromFile, _ENSQLiteBindFoundationValue, _ENSQLiteColumnAsData, 
+                       _ENSQLiteColumnAsDate, _ENSQLiteColumnAsNaturalType, _ENSQLiteColumnAsString, 
+                       _ENSQLiteColumnAsUUID, _ENTestResultErrorF ]
+    objc-classes:    [ _ENActiveEntity, _ENAdvertisement, _ENAdvertisementDatabase, 
+                       _ENAdvertisementDatabaseQuerySession, _ENAdvertisementMetadata, 
+                       _ENAdvertisementSQLiteStore, _ENBeaconCountMetrics, _ENChaffTestResultSession, 
+                       _ENConfigurationManager, _ENConfigurationStore, _ENCoreTelephonyUtility, 
+                       _ENDifferentialPrivacyManager, _ENDownloadEndpoint, _ENDownloadManager, 
+                       _ENDownloadManagerState, _ENExposureCalculationSession, _ENExposureDatabase, 
+                       _ENExposureDetectionDaemonSession, _ENExposureDetectionDaemonSessionState, 
+                       _ENExposureDetectionManager, _ENLoggingPrefs, _ENPersistentTemporaryExposureKey, 
+                       _ENRegionHistory, _ENRegionHistoryManager, _ENRegionMonitor, 
+                       _ENRegionMonitorCoreLocationDataSource, _ENRegionMonitorTelephonyDataSource, 
+                       _ENSQLiteConnection, _ENSecKey, _ENSecureArchiveFileWrapper, 
+                       _ENTemporaryExposureKeyManager, _ENTestResultCertificateRequest, 
+                       _ENTestResultChaffRequest, _ENTestResultManager, _ENTestResultNetworkRequest, 
+                       _ENTestResultSession, _ENTestResultUploadRequest, _ENTestResultVerificationRequest, 
+                       _ENXPCClient, _ENXPCServiceListener, _ENXPCTimer ]
+...

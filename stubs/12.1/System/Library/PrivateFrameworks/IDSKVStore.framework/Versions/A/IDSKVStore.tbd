@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A5B3767C-90A0-35CE-894A-C0503B64625D', 'x86_64: A5B3767C-90A0-35CE-894A-C0503B64625D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6C7DDA5B-955B-35FD-9E59-F8848F6D6A9C', 'arm64e: 6C7DDA5B-955B-35FD-9E59-F8848F6D6A9C' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IDSKVStore.framework/Versions/A/IDSKVStore'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _IDSKVDeleteContext, _IDSKVStore ]
+...

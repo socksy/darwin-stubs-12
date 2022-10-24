@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E3DB790B-B826-3ED7-B791-234667648E01', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8FE96ADB-FF5C-355C-A09B-92E574C39A9D' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IMCorePipeline.framework/Versions/A/IMCorePipeline'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IMCoreBlastdoorErrorDomain, _IMCoreReceivePipelineErrorDomain ]
+    objc-classes:    [ _IMPipelineComponent, _IMPromise, _IMResult ]
+    objc-ivars:      [ _IMPromise._completionBlocks, _IMPromise._result, _IMResult._inError, 
+                       _IMResult._inValue, _IMResult._state ]
+...

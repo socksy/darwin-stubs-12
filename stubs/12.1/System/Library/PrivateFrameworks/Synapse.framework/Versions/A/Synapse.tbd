@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7CC6B44D-E00D-30D4-9999-08D29740BBC4', 'x86_64: 7CC6B44D-E00D-30D4-9999-08D29740BBC4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3DB9E025-0F99-3E81-B722-2C555EAB47DB', 'arm64e: 3DB9E025-0F99-3E81-B722-2C555EAB47DB' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Synapse.framework/Versions/A/Synapse'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SYContentItemLinkPreviewDidFinishLoadingNotification, _SYContentItemSourceIdentifierWeb, 
+                       _SYContentItemUTI, _SYDefaultsDomain, _SYDefaultsIndicatorCoverageKey, 
+                       _SYErrorDomain, _SYNotesUserActivityInfoKeyDomainID, _SYNotesUserActivityInfoKeyNoteID, 
+                       _SYNotesUserActivityKeyContentItemData, _SYNotesUserActivityKeyPreferNewDocument, 
+                       _SYNotesUserActivityTypeCreateLink, _SYNotesUserActivityTypeEditNote, 
+                       _SYSearchableItemCustomKeyIsLinkItem, _SYSystemPaperActivationMethodAddHighlight, 
+                       _SYSystemPaperActivationMethodBacklink, _SYSystemPaperActivationMethodHotCorner, 
+                       _SYSystemPaperActivationMethodKeyboard, _SYSystemPaperActivationMethodNewHighlight, 
+                       _SYSystemPaperActivationMethodSwipe, _SYSystemPaperActivationMethodSwipeFinger, 
+                       _SYSystemPaperActivationMethodSwipePencil, _SYSystemPaperActivationMethodSwipeWithPIP, 
+                       _SYSystemPaperActivationMethodSwipeWithPIPFinger, _SYSystemPaperActivationMethodSwipeWithPIPPencil, 
+                       _SYSystemPaperDismissMethodDone, _SYSystemPaperDismissMethodHotCorner, 
+                       _SYSystemPaperDismissMethodKeyboard, _SYSystemPaperDismissMethodReturnToApp, 
+                       _SYSystemPaperDismissMethodSwipe, _SYSystemPaperDismissMethodTimeout ]
+    objc-classes:    [ _SYActivityObserver, _SYActivityObserverContext, _SYAddLinkContextClient, 
+                       _SYAddLinkContextService, _SYBacklinkIndicatorClient, _SYBacklinkIndicatorService, 
+                       _SYBacklinkIndicatorUsage, _SYBacklinkMonitor, _SYBacklinkMonitorClient, 
+                       _SYBacklinkMonitorService, _SYContentItem, _SYContentItemManager, 
+                       _SYDefaults, _SYDefaultsClient, _SYFeatureEligibility, _SYItemIndexingManager, 
+                       _SYLinkContextClient, _SYLinkContextService, _SYLinkableContentItemFinder, 
+                       _SYNotesActivationCommand, _SYNotesActivationObserver, _SYSystemPaperAnalytics ]
+...

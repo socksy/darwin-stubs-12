@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7CBAA389-B4A4-3C44-9E23-3A50B4297DB9', 'x86_64: 7CBAA389-B4A4-3C44-9E23-3A50B4297DB9', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5ED6B680-38F4-3862-973E-0517B8F8FEDD', 'arm64e: 5ED6B680-38F4-3862-973E-0517B8F8FEDD' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MobileContainerManager.framework/Versions/A/MobileContainerManager'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MCMErrorDomain, _MCMFunctionNameErrorKey, _MCMPathArgumentErrorKey, 
+                       _MCMSourceFileLineErrorKey, _kMCMACLFailureError, _kMCMBadInitializerValuesError, 
+                       _kMCMBadReplyContentsError, _kMCMBundleOwnerMigrationFailError, 
+                       _kMCMCacheAddError, _kMCMCacheFailedToRebuildError, _kMCMCacheInconsistencyError, 
+                       _kMCMCacheInvalidDataError, _kMCMCacheRemoveError, _kMCMContainerNotFoundError, 
+                       _kMCMContainersWithClassInitError, _kMCMCreateBaseDirectoryError, 
+                       _kMCMCreateContainerClassDirectoryError, _kMCMCreateDeathRowDirectoryError, 
+                       _kMCMCreateReplaceDirectoryError, _kMCMCreateStagingDirectoryError, 
+                       _kMCMCreateSubDirectoryError, _kMCMCreateTempDirectoryError, 
+                       _kMCMDataProtectionFailLockedError, _kMCMDestroyContainerError, 
+                       _kMCMExceptionError, _kMCMExistingContainerReplaceError, _kMCMFailureToGetErrorReply, 
+                       _kMCMGetMetadataErrorError, _kMCMIdentifierNotFoundInDbError, 
+                       _kMCMInvalidCommandError, _kMCMInvalidContainerObjectError, 
+                       _kMCMInvalidEntitlementInfoError, _kMCMInvalidMetadataError, 
+                       _kMCMInvalidMetadataURLMismatchError, _kMCMInvalidParametersError, 
+                       _kMCMInvalidReplyError, _kMCMInvalidURLError, _kMCMMismatchedClassReplaceError, 
+                       _kMCMMismatchedUserReplaceError, _kMCMMoveStagingToLiveError, 
+                       _kMCMMoveToDeathRowError, _kMCMNilIdentifierError, _kMCMNotEntitledForOperationError, 
+                       _kMCMPathNotFoundError, _kMCMPendingUpdateNoLongerValidError, 
+                       _kMCMReadEntitlementFileError, _kMCMReadMetadataError, _kMCMRegenerateUUIDMoveError, 
+                       _kMCMRemoveIndividualStagingDirectoryError, _kMCMRemoveLegacyDirectoryError, 
+                       _kMCMRemoveStagingDirectoryError, _kMCMRemoveTempContainerError, 
+                       _kMCMReplaceContainerError, _kMCMReplaceMoveToTempError, _kMCMReplaceRecoverError, 
+                       _kMCMReplaceRemoveError, _kMCMReplaceURLError, _kMCMRestoreContainerError, 
+                       _kMCMRestorePathExistsError, _kMCMSQLiteError, _kMCMSQLiteUnexpectedNumChangesError, 
+                       _kMCMSameContainerReplaceError, _kMCMSetSandboxMappingError, 
+                       _kMCMSetupProxyError, _kMCMStageForDeleteError, _kMCMStageSharedContentFailureError, 
+                       _kMCMSuccess, _kMCMUndefinedContainerClassError, _kMCMUnknownSubdirectoriesForClassError, 
+                       _kMCMValueNotFoundForKeyError, _kMCMWriteEntitlementFileError, 
+                       _kMCMWriteMetadataDictionaryError, _kMCMXPCInterruptedReplyError, 
+                       _kMCMXPCInvalidReplyError, _kMCMXPCSetupError, _kMCMXPCUnknownReplyError ]
+    objc-classes:    [ _MCMAppContainer, _MCMAppDataContainer, _MCMContainer, _MCMContainerManager, 
+                       _MCMDataContainer, _MCMFrameworkContainer, _MCMInternalDaemonDataContainer, 
+                       _MCMPluginKitPluginContainer, _MCMPluginKitPluginDataContainer, 
+                       _MCMSharedDataContainer, _MCMSharedSystemDataContainer, _MCMSystemDataContainer, 
+                       _MCMTempDirDataContainer, _MCMVPNPluginContainer, _MCMVPNPluginDataContainer, 
+                       _MCMXPCServiceDataContainer ]
+...

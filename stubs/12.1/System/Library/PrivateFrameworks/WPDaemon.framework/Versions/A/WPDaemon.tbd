@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DCFF35CD-6601-39E6-9A36-267078CE9531', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3BB536EC-91BC-3636-8BAF-139ACA42B057' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/WPDaemon.framework/Versions/A/WPDaemon'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _WPErrorDomain, _WPLogInitOnce, _WPLoggingInit, _WiProxLog, 
+                       _advertisingHeader, _kAppleManufacturerTypeBottom, _kAppleManufacturerTypeTop, 
+                       _kCBAdditionalAppleMfgAdvertisements, _kCBAdvAppleMfgTypeKey, 
+                       _kCBAdvOptionUseFGInterval, _kGapManufacturerDataType, _kSPAdvertisementData, 
+                       _kSPChannel, _kSPDeviceAddress, _kSPOptional, _kSPSaturated, 
+                       _kSPScanDate, _kSPStatus, _kSPrssi, _kWPDFrameworkMessageQueue ]
+    objc-classes:    [ _Endpoint, _PipeDataTransfer, _PipeInfo, _WPAdvertisingRequest, 
+                       _WPAdvertisingRequestsQueue, _WPCharacteristic, _WPDAdvertisingData, 
+                       _WPDAdvertisingManager, _WPDClient, _WPDConnection, _WPDManager, 
+                       _WPDObjectDiscoveryClient, _WPDObjectDiscoveryData, _WPDObjectDiscoveryManager, 
+                       _WPDPendingCompletions, _WPDPersistence, _WPDPipeManager, 
+                       _WPDScanManager, _WPDSearchPartyAgent, _WPDStat, _WPDState, 
+                       _WPDStatsManager, _WPDXPCInterfaces, _WPDZoneManager, _WPDaemonServer, 
+                       _WPPeerTrackingRequest, _WPScanRequest, _WPZoneTrackingRequest ]
+...

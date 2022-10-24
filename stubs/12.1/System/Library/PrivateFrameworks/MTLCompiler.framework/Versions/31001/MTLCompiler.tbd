@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 04A03207-72AB-3A57-944D-925A0E7B1B71', 'x86_64: 04A03207-72AB-3A57-944D-925A0E7B1B71', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3F206E14-B740-33CC-837C-6432EA2391A3', 'arm64e: 3F206E14-B740-33CC-837C-6432EA2391A3' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/31001/MTLCompiler'
+exports:
+  - archs:           [ x86_64 ]
+    weak-def-symbols: [ __ZTINSt3__117bad_function_callE, __ZTISt11logic_error, __ZTISt12length_error, 
+                        __ZTISt9exception, __ZTSNSt3__117bad_function_callE, __ZTSSt11logic_error, 
+                        __ZTSSt12length_error, __ZTSSt9exception ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MTLCodeGenServiceBuildRequest, _MTLCodeGenServiceCreate, 
+                       _MTLCodeGenServiceDestroy, _MTLCodeGenServiceSetPluginPath ]
+...

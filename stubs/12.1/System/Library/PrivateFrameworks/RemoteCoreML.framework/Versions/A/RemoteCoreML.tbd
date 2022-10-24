@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 98641B20-ABB5-33A7-8B72-F682349BD45F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4ABBEB12-FC18-371A-9ED7-C377934B00AE' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/RemoteCoreML.framework/Versions/A/RemoteCoreML'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RemoteCoreMLVersionNumber, _RemoteCoreMLVersionString, _g_inbound_connection, 
+                       _kMLAckFailNetworkHeaderEncoding, _kMLAckSuccessNetworkHeaderEncoding, 
+                       _kMLCustomNetworkHeaderEncoding, _kMLErrorNetworkHeaderEncoding, 
+                       _kMLIncomingDataNetworkHeaderEncoding, _kMLLoadNetworkHeaderEncoding, 
+                       _kMLNetworkFamilyKey, _kMLNetworkLocalAddrKey, _kMLNetworkLocalPortKey, 
+                       _kMLNetworkNameIdentifierKey, _kMLNetworkPortNumberKey, _kMLNetworkPskKey, 
+                       _kMLNetworkUseAWDLKey, _kMLNetworkUseBonjourKey, _kMLNetworkUseTLSKey, 
+                       _kMLNetworkUseUDPKey, _kMLPredictNetworkHeaderEncoding, _kMLTextNetworkHeaderEncoding, 
+                       _kMLUnLoadNetworkHeaderEncoding ]
+    objc-classes:    [ __MLLog, __MLNetworkHeaderEncoding, __MLNetworkOptions, __MLNetworkPacket, 
+                       __MLNetworkUtilities, __MLNetworking, __MLRemoteConnection, 
+                       __MLRemoteCoreMLErrors, __MLServer ]
+...

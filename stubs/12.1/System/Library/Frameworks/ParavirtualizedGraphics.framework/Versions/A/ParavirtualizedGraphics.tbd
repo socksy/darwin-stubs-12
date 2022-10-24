@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AEEBFA3A-4AD9-30BE-B5E3-E1ECB4C21AC6', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5A1E6091-9383-379B-A6EC-8E1A9476083D' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/ParavirtualizedGraphics.framework/Versions/A/ParavirtualizedGraphics'
+exports:
+  - archs:           [ arm64, arm64e ]
+    objc-classes:    [ _PGIOSurfaceHostDevice, _PGIOSurfaceHostDeviceDescriptor ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PGCopyOptionROMURL, _PGNewDeviceWithDescriptor, _PGResumeErrorDomain, 
+                       _ParavirtualizedGraphicsVersionNumber, _ParavirtualizedGraphicsVersionString ]
+    objc-classes:    [ _PGDeviceDescriptor, _PGDisplayDescriptor, _PGDisplayMode ]
+...

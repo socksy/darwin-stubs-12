@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EC42EB98-4C5A-34DE-8929-ACCCF6525E8D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6BF44398-AD4F-3811-8F2F-8624632CE596' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MetricKitServices.framework/Versions/A/MetricKitServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MetricKitServicesVersionNumber, _MetricKitServicesVersionString ]
+    objc-classes:    [ _MXHangTracerService, _MXPowerlogService, _MXReportCrashService, 
+                       _MXService, _MXSpinTracerService, _MXUtilities ]
+...

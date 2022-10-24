@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 070EBEF3-61BA-30D6-BB12-33B8DF4CB42D', 'x86_64: 070EBEF3-61BA-30D6-BB12-33B8DF4CB42D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0BB01266-000E-3A1A-9ACA-ABAA06B0D295', 'arm64e: 0BB01266-000E-3A1A-9ACA-ABAA06B0D295' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CommunicationsFilter.framework/Versions/A/CommunicationsFilter'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CMFAgentName, _CMFBlockListAddItemForAllServices, _CMFBlockListCopyItemsForAllServicesService, 
+                       _CMFBlockListIsItemBlocked, _CMFBlockListRemoveItemFromAllServices, 
+                       _CMFBlockListUpdatedNotification, _CMFDictionaryResultKey, 
+                       _CMFItemCopyBusinessID, _CMFItemCopyEmailAddress, _CMFItemCopyPhoneNumber, 
+                       _CMFItemCreateWithBusinessID, _CMFItemCreateWithEmailAddress, 
+                       _CMFItemCreateWithPhoneNumber, _CMFItemGetType, _CMFSyncAgentBlockListUpdated, 
+                       _CMFXPCEventCode, _CMFXPCParameterKeyItem, _CMFXPCResponseKey, 
+                       _CreateCMFItemFromString ]
+    objc-classes:    [ _CommunicationFilterItem ]
+...

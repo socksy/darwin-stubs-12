@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E9C1578A-BB7A-321D-BADB-3C6F13A89589', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BBC68FCD-7A96-3338-BA2C-189603EBCB7D' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/KernelManagement.framework/Versions/A/KernelManagement'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _KMExtensionPathForBundleIdentifier, _KMLoadExtensionsWithIdentifiers, 
+                       _KMLoadExtensionsWithPaths, _KMUnloadExtensionsWithIdentifiers, 
+                       _KernelManagementVersionNumber, _KernelManagementVersionString, 
+                       _OSKernelManagementErrorDomain ]
+    objc-classes:    [ _KernelManagementClient ]
+...

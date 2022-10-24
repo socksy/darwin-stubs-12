@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 963B2D6F-E016-381A-99BA-207C30DA4760', 'x86_64: 963B2D6F-E016-381A-99BA-207C30DA4760', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9502A6E1-F696-3587-8D0B-D9CE677B89BB', 'arm64e: 9502A6E1-F696-3587-8D0B-D9CE677B89BB' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ContactsDonation.framework/Versions/A/ContactsDonation'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CNDDonationsEnabledNotificationName, _CNDDonationsEnabledPreferencesKey, 
+                       _CNDSIMCardItemIdentifierTransform, _CNDSIMCardItemValueTransform, 
+                       _CNDonationAccountsBundleIdentifier, _CNDonationCoreRoutineBundleIdentifier, 
+                       _CNDonationErrorDomain, _CNDonationOriginBundleIdentifierKey, 
+                       _CNDonationOriginClusterIdentifierKey, _CNDonationOriginDonationDateKey, 
+                       _CNDonationOriginDonationIdentifierKey, _CNDonationOriginExpirationDateKey, 
+                       _CNDonationOriginPlistEncodingVersionKey, _CNDonationSIMCardBundleIdentifier, 
+                       _CNDonationStoreMeCardIdentifier, _CNDonationStoreMeCardValuesDidChangeNotification, 
+                       _CNDonationToolBundleIdentifier, _CNDonationValueEmailAddressKey, 
+                       _CNDonationValueLabelKey, _CNDonationValueNameComponentsFamilyNameKey, 
+                       _CNDonationValueNameComponentsGivenNameKey, _CNDonationValueNameComponentsKey, 
+                       _CNDonationValueNameComponentsMiddleNameKey, _CNDonationValueNameComponentsNamePrefixKey, 
+                       _CNDonationValueNameComponentsNameSuffixKey, _CNDonationValueNameComponentsNicknameKey, 
+                       _CNDonationValueOriginKey, _CNDonationValuePhoneNumberKey, 
+                       _CNDonationValuePlistEncodingVersionKey, _CNDonationValuePostalAddressCityKey, 
+                       _CNDonationValuePostalAddressCountryKey, _CNDonationValuePostalAddressDonationStyleAddress, 
+                       _CNDonationValuePostalAddressDonationStyleKey, _CNDonationValuePostalAddressDonationStyleLocation, 
+                       _CNDonationValuePostalAddressISOCountryCodeKey, _CNDonationValuePostalAddressKey, 
+                       _CNDonationValuePostalAddressPostalCodeKey, _CNDonationValuePostalAddressStateKey, 
+                       _CNDonationValuePostalAddressStreetKey, _CNDonationValuePostalAddressSubAdministrativeAreaKey, 
+                       _CNDonationValuePostalAddressSubLocalityKey, _ContactsDonationVersionNumber, 
+                       _ContactsDonationVersionString ]
+    objc-classes:    [ _CNDCoreTelephonyServices, _CNDDonationPreferences, _CNDDonorExtension, 
+                       _CNDDonorLoader, _CNDInMemoryDonationPreferences, _CNDSIMCardItem, 
+                       _CNDSIMCardMonitor, _CNDonationAgentXPCAdapter, _CNDonationExtensionRequestHandler, 
+                       _CNDonationLoggerProvider, _CNDonationOrigin, _CNDonationStore, 
+                       _CNDonationValue, _CNMutableDonationOrigin, __CNDExtensionContext, 
+                       __CNDHostExtensionContext, __CNDRemoteExtensionContext, __CNDonationAccountLogger, 
+                       __CNDonationAgentLogger, __CNDonationAgentXPCMethodScope, 
+                       __CNDonationAnalyticsLogger, __CNDonationExtensionLogger, 
+                       __CNDonationPreferencesLogger, __CNDonationToolLogger, __CNEmailAddressDonationValue, 
+                       __CNImageDataDonationValue, __CNNameComponentsDonationValue, 
+                       __CNPhoneNumberDonationValue, __CNPostalAddressDonationValue ]
+    objc-ivars:      [ _CNDonationOrigin._bundleIdentifier, _CNDonationOrigin._clusterIdentifier, 
+                       _CNDonationOrigin._donationDate, _CNDonationOrigin._donationIdentifier, 
+                       _CNDonationOrigin._expirationDate ]
+...

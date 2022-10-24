@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 17AED761-574D-3A53-845D-B46E820AF849', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EEFFE61D-FF6B-3E08-93FA-D8D9E827E710' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DeauthorizationKit.framework/Versions/A/DeauthorizationKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _APMechanismSetContextValue, _APMechanismSetResult, _DKEACSAccountOptionAdminUserID, 
+                       _DKEACSAccountOptionAdminUserPassword, _DKEACSAdminInitiated, 
+                       _DKEACSBootstrapTokenString, _DKEACSConsiderPreliminaryChecksNonFatal, 
+                       _DKEACSPassword, _DKEACSSkipSystemModalBlur, _DKEACSTaskIdentifiersToSkip, 
+                       _DKEACSUID, _DKErrorDomain, _DKHelperDaemonServiceInterface, 
+                       _DKIntegrityCheckErrorDomain, _DKLogObject, _DKNotificationEACSDomain, 
+                       _DKNotificationNameEACSTerminated, _DKPrefEnableFeature, _DKPrefFakeAccountRemoval, 
+                       _DKPrefFakeCompromisedSystem, _DKPrefFakeEFIPassword, _DKPrefFakeFullSecurity, 
+                       _DKPrefFakeInvalidDiskLayout, _DKPrefFakeNeedsPhotosSync, 
+                       _DKPrefFakeNeedsiCloudSync, _DKPrefFakeSealedSystem, _DKPrefFakeSupportedHardware, 
+                       _DKPrefFakeTimeMachineEnabled, _DKPrefFakeUpdateBootPolicyFailure, 
+                       _DKPrefFakeValidDiskLayout, _DKPrefFakeiMessageFacetimeSignout, 
+                       _DKPrefMDMAllowEraseContentAndSettings, _DKPrefMDMInitiated, 
+                       _DKPrefObliterationOptionsOverridePath, _DKPrefPerformDryRunObliteration, 
+                       _DKPrefSkipBootPolicyCalls, _DKPrefSkipFindMyDeactivation, 
+                       _DKPrefSkipNVRAM, _DKPrefSkipReboot, _DKPrefSkipSystemModalBlur, 
+                       _DKPrefiCloudSyncTime, _DKSyncingAppPhotos, _DKSyncingAppiCloud, 
+                       _DKTaskConfirmationCheckIdentifier, _DKTaskDeactivateFindMyIdentifier, 
+                       _DKTaskEFICheckIdentifier, _DKTaskOtherUsersCheckIdentifier, 
+                       _DKTaskOtherVolumesCheckIdentifier, _DKTaskPrepareForRebootIdentifier, 
+                       _DKTaskRemoveiMessageFaceTimeIdentifier, _DKTaskSystemIntegrityCheckIdentifier, 
+                       _DKTaskTimeMachineBackupCheckIdentifier, _DKTaskUnregisterAccountRemovalIdentifier, 
+                       _DKTaskUnregisterAppleIDsIdentifier, _DKTaskiCloudDataUploadCheckIdentifier, 
+                       _DeauthorizationKitVersionNumber, _DeauthorizationKitVersionString, 
+                       _OtherUsersKey, __HandleProgressNotify, __HandleTimeMachineProgressNotify ]
+    objc-classes:    [ _AuthorizationUtilities, _DKAdminAuthorizationWindowController, 
+                       _DKAppLaunchUtilities, _DKAuthContextManager, _DKConfirmationWindowController, 
+                       _DKConstants, _DKContainerViewController, _DKDiskLayoutWarningWindowController, 
+                       _DKDiskManagementUtilities, _DKEraseAllContentAndSettingsManager, 
+                       _DKHelperDaemon, _DKHelperDaemonController, _DKHelperDaemonInterfaces, 
+                       _DKLogging, _DKMultipleUsersWarningWindowController, _DKPrefs, 
+                       _DKSignOutDataSyncTableCellView, _DKSignOutDataSyncWindowController, 
+                       _DKSyncingApp, _DKTask, _DKTaskAccountRemoval, _DKTaskClearCTNetworkSettings, 
+                       _DKTaskDeactivateFindMy, _DKTaskEFICheck, _DKTaskIntegrityCheck, 
+                       _DKTaskMessagesFaceTimeSignOut, _DKTaskOtherUsersCheck, _DKTaskOtherVolumesCheck, 
+                       _DKTaskPrepareForReboot, _DKTaskTimeMachineBackUp, _DKTaskUnregisterAppleIDs, 
+                       _DKTaskUserConfirmationCheck, _DKTaskiCloudDataUploadCheck, 
+                       _DKTimeMachineBackupWindowController, _DKUtilities, _DKWindow ]
+...

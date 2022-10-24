@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8412B63E-2FD6-3B3A-8234-C52B38F59CB0', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 303A822E-FBB8-3BC6-8F2B-5A0BDAB24728' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AirPlayReceiverKit.framework/Versions/A/AirPlayReceiverKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AirPlayReceiverKitVersionNumber, _AirPlayReceiverKitVersionString, 
+                       _SBufConsumerCreate, _SBufConsumerRegisterAudioSampleBufferCallbackForRendering, 
+                       _SBufConsumerRegisterCallbackForCopyProperty, _SBufConsumerRegisterCallbackForDisconnect, 
+                       _SBufConsumerRegisterVideoSampleBufferCallbackForRendering, 
+                       _gLogCategory_AirPlayReceiverKit, _kAPRKMediaPlayerCurrentItemKey, 
+                       _kAPRKMediaPlayerNotificationNameStallCountChanged, _kAPRKMediaPlayerPreviousItemKey, 
+                       _kReachabilityChangedNotification ]
+    objc-classes:    [ _APRKContentKeyHelper, _APRKMediaPlayer, _APRKMetadata, _APRKPlayerItem, 
+                       _APRKReachability, _APRKResourceLoaderHelper, _APRKStreamRecorder, 
+                       _APRKStreamRenderer, _APRKStreamRenderingManager, _APRKUtilities ]
+...

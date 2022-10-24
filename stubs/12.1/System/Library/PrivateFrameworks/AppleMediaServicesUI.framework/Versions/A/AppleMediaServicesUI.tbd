@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D394CFAF-CDFF-3980-AE6D-769715E3200C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3B1C076C-6DB1-33CD-AB6A-9DD14F4D8DCF' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/Versions/A/AppleMediaServicesUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AMSStringFromSize, _AMSUIDynamicClientOptionsKeyMarketingItemQueryParams, 
+                       _AMSUIEngagementTaskErrorDomain, _AMSUIWebPluginPurchaseContentTypeApp ]
+    objc-classes:    [ _AMSPaymentVerificationTokenResult, _AMSUIAddFundsViewController, 
+                       _AMSUIAgeVerificationTask, _AMSUIAlertDialogTask, _AMSUIAppearance, 
+                       _AMSUIAuthKitUpdateTask, _AMSUIAuthenticateTask, _AMSUIAutomaticDownloadKindsSetTask, 
+                       _AMSUIBannerAppearance, _AMSUIBannerMessageViewController, 
+                       _AMSUIBubbleTipAppearance, _AMSUIBubbleTipInlineAnchorInfo, 
+                       _AMSUIBubbleTipViewController, _AMSUIBundleViewController, 
+                       _AMSUICGRectHelper, _AMSUICodeRedeemerViewController, _AMSUICommonBarButtonItem, 
+                       _AMSUICommonButton, _AMSUICommonCollectionView, _AMSUICommonCollectionViewCell, 
+                       _AMSUICommonControl, _AMSUICommonDynamicColor, _AMSUICommonImageView, 
+                       _AMSUICommonLabel, _AMSUICommonNavigationBar, _AMSUICommonNavigationController, 
+                       _AMSUICommonNavigationItem, _AMSUICommonScreen, _AMSUICommonStackView, 
+                       _AMSUICommonTextView, _AMSUICommonView, _AMSUICommonViewController, 
+                       _AMSUICommonVisualEffectView, _AMSUIDynamicImpressionItem, 
+                       _AMSUIDynamicImpressionMetrics, _AMSUIDynamicImpressionMetricsIdentifier, 
+                       _AMSUIDynamicViewController, _AMSUIEngagementTask, _AMSUIImageLoader, 
+                       _AMSUIInlineDialogViewController, _AMSUIMarketingItemViewController, 
+                       _AMSUIMessageGroup, _AMSUIMessageRequest, _AMSUIPaymentVerificationTokenFetchTask, 
+                       _AMSUISubscriptionsViewController, _AMSUIToastAppearance, 
+                       _AMSUIToastViewController, _AMSUIWebAppearance, _AMSUIWebViewController ]
+...

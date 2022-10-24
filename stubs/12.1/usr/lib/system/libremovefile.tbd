@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3611DC3A-03D7-3B5E-A7F3-89C5FB002F2B', 'x86_64: 3611DC3A-03D7-3B5E-A7F3-89C5FB002F2B', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DCBB4D26-765D-3FE9-825D-40CB4CBD2D6A', 'arm64e: DCBB4D26-765D-3FE9-825D-40CB4CBD2D6A' ]
+platform:        zippered
+install-name:    '/usr/lib/system/libremovefile.dylib'
+current-version: 60
+parent-umbrella: System
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ ___removefile_init_random, ___removefile_random_char, ___removefile_randomize_buffer, 
+                       ___removefile_rename_unlink, ___removefile_sunlink, ___removefile_tree_walker, 
+                       _removefile, _removefile_cancel, _removefile_state_alloc, 
+                       _removefile_state_free, _removefile_state_get, _removefile_state_set, 
+                       _removefileat ]
+...

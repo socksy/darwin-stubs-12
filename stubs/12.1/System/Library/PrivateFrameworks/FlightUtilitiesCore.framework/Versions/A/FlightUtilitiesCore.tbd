@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 32E24C28-84CD-38FC-B3A2-4B2F0696C77C', 'x86_64: 32E24C28-84CD-38FC-B3A2-4B2F0696C77C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 13B2E3D5-4D00-397C-ABAA-949841CB1D8D', 'arm64e: 13B2E3D5-4D00-397C-ABAA-949841CB1D8D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/Versions/A/FlightUtilitiesCore'
+current-version: 144
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FUFactoryProvider_Default, _FUFactoryProvider_Parsec ]
+    objc-classes:    [ _FUAirline, _FUAirport, _FUFlight, _FUFlightFactory, _FUFlightLeg, 
+                       _FUFlightStep, _FUStepTime, _FUUtils ]
+    objc-ivars:      [ _FUFlightStep._delayFromSchedule ]
+...

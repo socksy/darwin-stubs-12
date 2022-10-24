@@ -1,0 +1,39 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BF22FC42-9BB4-3339-B942-06A0BECB455C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1E93573F-7717-32DA-A695-AD759E3EDC00' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/Versions/A/CoreEmbeddedSpeechRecognition'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CESRAssetModelStatusContinuousListening, _CESRAssetModelStatusOfflineOnly, 
+                       _CESRAssetModelStatusOnDeviceSearch, _CESRAssetModelStatusPreferOverServer, 
+                       _CESRAssetTypeToString, _CESRCorrectionPronunciationReadFrom, 
+                       _CESRMappedLocaleForSpeechProfile, _CESRModelPropertiesKey, 
+                       _CESRSpeechParametersKey, _CESRSpeechServiceDelegateGetXPCInterface, 
+                       _CESRSpeechServiceGetXPCInterface, _CESRSpeechServiceName, 
+                       _CESRUserCorrectionsProfileEntryReadFrom, _CESRUserDataContactFirstKey, 
+                       _CESRUserDataContactFirstPhoneticKey, _CESRUserDataContactLastKey, 
+                       _CESRUserDataContactLastPhoneticKey, _CESRUserDataContactMiddleKey, 
+                       _CESRUserDataContactMiddlePhoneticKey, _CoreEmbeddedSpeechRecognitionVersionNumber, 
+                       _CoreEmbeddedSpeechRecognitionVersionString, _CoreEmbeddedSpeechRecognizerInstanceUUIDBackground, 
+                       _CoreEmbeddedSpeechRecognizerInstanceUUIDInteractive, _CoreEmbeddedSpeechRecognizerTaskDictation, 
+                       _CoreEmbeddedSpeechRecognizerTaskSearchOrMessaging, _CoreEmbeddedSpeechRecognizerTaskSiriDictation, 
+                       _CoreEmbeddedSpeechRecognizerTaskTshot, _CoreEmbeddedSpeechRecognizerTaskVoiceMail, 
+                       _CoreEmbeddedSpeechRecognizerTaskWebSearch ]
+    objc-classes:    [ _CESRAssetConfig, _CESRAssistantOnDeviceSampling, _CESRContextualData, 
+                       _CESRCorrectionPronunciation, _CESRFidesASRRecord, _CESRModelProperties, 
+                       _CESRSpeechParameters, _CESRTrialAssetManager, _CESRUserCorrectionsProfileEntry, 
+                       _CESRUserData, _CESRUserDataContactWord, _CESRUserDataOptions, 
+                       _CESRVocabularyCategory, _CoreEmbeddedSpeechRecognizer, _FetchHomeKitDataDelegate, 
+                       _TrialNamespaceProjectPair, __CESRHomeKitNames, __CESRModelPropertiesMutation, 
+                       __CESRSpeechParametersMutation ]
+    objc-ivars:      [ _CESRCorrectionPronunciation._apgId, _CESRCorrectionPronunciation._asrPronunciationData, 
+                       _CESRCorrectionPronunciation._has, _CESRCorrectionPronunciation._language, 
+                       _CESRCorrectionPronunciation._orthography, _CESRCorrectionPronunciation._tokenOffset, 
+                       _CESRCorrectionPronunciation._ttsPronunciations, _CESRCorrectionPronunciation._ttsVersion, 
+                       _CESRUserCorrectionsProfileEntry._alternativesCorrectionsCount, 
+                       _CESRUserCorrectionsProfileEntry._correctedText, _CESRUserCorrectionsProfileEntry._has, 
+                       _CESRUserCorrectionsProfileEntry._pronunciationData, _CESRUserCorrectionsProfileEntry._spellingCorrectionsCount, 
+                       _CESRUserCorrectionsProfileEntry._tap2editCorrectionsCount ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1085F719-E839-3394-B203-0FE26F313677', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B603F933-2941-3CF6-8123-54D832E79219' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/BiometricKitUI.framework/Versions/A/BiometricKitUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BKSetupAssistantClientIdentifier, _BiometricKitUIVersionNumber, 
+                       _BiometricKitUIVersionString, _RAW_SECURE_PAIRING_TOKEN_NAME, 
+                       __BKUILoggingFacility, _biometric_kit_ui_log ]
+    objc-classes:    [ _BKMesaSecureIntentProvider, _BKSecureIntentViewModel, _BKUIAlertView, 
+                       _BKUIBlueButton, _BKUIBundleEnrollViewController, _BKUIBundleSettings, 
+                       _BKUICurvesView, _BKUIDevice, _BKUIDeviceImageView, _BKUIFingerSecurePairingStateObserver, 
+                       _BKUIFingerprintEnrollBuddyClientAdapterView, _BKUIFingerprintEnrollViewController, 
+                       _BKUIFunctionBarController, _BKUIMagicKeyBoardClientAdapterController, 
+                       _BKUIMagicKeyboardEnrollmentPrepUIController, _BKUISetupAssistantFingerprintEnrollClientController, 
+                       _BKUISystemPrefsPairingView, _BKUITouchIDArrowView, _BKUIUtils, 
+                       _BiometricKitUI, _BiometricKitUIEnrollViewController, _BuddySecureIntentClientView, 
+                       _SettingsSecureIntentClientView, __BKUIImageView ]
+...

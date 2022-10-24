@@ -26,15 +26,12 @@ done
 mkdir -p "$out"
 
 @out@/libexec/stubify.sh -r -s "$sysroot" -o "$out" \
-  /usr/lib/libSystem.B.dylib \
-  /usr/lib/libcups.2.dylib \
-  /usr/lib/libcupscgi.1.dylib \
-  /usr/lib/libcupsimage.2.dylib \
-  /usr/lib/libcupsmime.1.dylib \
-  /usr/lib/libcupsppdc.1.dylib \
-  /usr/lib/libXplugin.1.dylib \
-  /usr/lib/libsandbox.1.dylib \
-  /usr/lib/libcompression.dylib
+  usr/lib/libSystem.B \
+  usr/lib/libcups.2 \
+  usr/lib/libcupsimage.2 \
+  usr/lib/libXplugin.1 \
+  usr/lib/libsandbox.1 \
+  usr/lib/libcompression
 
 @out@/libexec/frameworks-tbd.sh -s "$sysroot" -o "$out"
 

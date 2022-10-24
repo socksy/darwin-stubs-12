@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CE19DFED-1CBC-3039-AC12-999E017F4548', 'x86_64: CE19DFED-1CBC-3039-AC12-999E017F4548', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 34A9BCB2-ED43-39E7-B87C-A0C9F0BBCFE2', 'arm64e: 34A9BCB2-ED43-39E7-B87C-A0C9F0BBCFE2' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetSync.framework/Versions/A/CoreDuetSync'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ __DKSync3Coordinator, __DKSyncCoordinatorFactory ]
+...

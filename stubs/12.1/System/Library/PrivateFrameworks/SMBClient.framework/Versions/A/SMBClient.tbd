@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FAFDB8DD-81E7-3565-B2AE-5D89229A315F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9234E84B-5BC5-3192-A858-024F77D18B86' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SMBClient.framework/Versions/A/SMBClient'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SMBAllocateAndSetContext, _SMBCheckForAlreadyMountedShare, 
+                       _SMBCloseFile, _SMBConvertFromCodePageToUTF8, _SMBConvertFromUTF16ToUTF8, 
+                       _SMBConvertFromUTF8ToCodePage, _SMBConvertFromUTF8ToUTF16, 
+                       _SMBConvertGMT, _SMBCreateFile, _SMBCreateNamedStreamFile, 
+                       _SMBCreateNetBIOSName, _SMBCreateURLString, _SMBDeviceIoControl, 
+                       _SMBFrameworkVersion, _SMBGetDfsReferral, _SMBGetMultichannelProperties, 
+                       _SMBGetMultichannelSessionInfoProperties, _SMBGetNicInfoProperties, 
+                       _SMBGetNodeStatus, _SMBGetServerProperties, _SMBGetShareAttributes, 
+                       _SMBListSnapshots, _SMBMountShare, _SMBMountShareEx, _SMBMountShareExDict, 
+                       _SMBNetFsCancel, _SMBNetFsCloseSession, _SMBNetFsCreateSessionRef, 
+                       _SMBNetFsCreateURL, _SMBNetFsGetMountInfo, _SMBNetFsGetServerInfo, 
+                       _SMBNetFsLockSession, _SMBNetFsMount, _SMBNetFsOpenSession, 
+                       _SMBNetFsParseURL, _SMBNetFsTreeConnectForEnumerateShares, 
+                       _SMBNetFsUnlockSession, _SMBOpenServer, _SMBOpenServerEx, 
+                       _SMBOpenServerWithMountPoint, _SMBQueryDir, _SMBRawTransaction, 
+                       _SMBReadFile, _SMBReleaseServer, _SMBRemountServer, _SMBResolveNetBIOSName, 
+                       _SMBResolveNetBIOSNameEx, _SMBRetainServer, _SMBSetNetworkIdentity, 
+                       _SMBTransactMailSlot, _SMBTransactNamedPipe, _SMBWriteFile ]
+...

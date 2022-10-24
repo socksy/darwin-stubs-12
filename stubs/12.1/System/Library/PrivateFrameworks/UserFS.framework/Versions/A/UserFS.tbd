@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EEA7FAA3-B031-3611-956C-880B812775A8', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5C60A34E-7359-3B23-9B05-08FD0BC9C207' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/UserFS.framework/Versions/A/UserFS'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _LiveFSUSBLocalStorageClient ]
+...

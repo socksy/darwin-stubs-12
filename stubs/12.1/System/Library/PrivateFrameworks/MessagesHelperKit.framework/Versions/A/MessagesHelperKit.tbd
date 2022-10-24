@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AD010954-47D5-3090-9EE8-F14B3817BE06', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FE236CB3-F5EA-3C37-8FE9-1E2E9DED0914' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MessagesHelperKit.framework/Versions/A/MessagesHelperKit'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SOAControllerLastConnectionDiedNotification ]
+    objc-classes:    [ _SOAAccountWatcher, _SOAActiveChatManager, _SOAController, 
+                       _SOAPlugInController, _SOAReceiver ]
+...

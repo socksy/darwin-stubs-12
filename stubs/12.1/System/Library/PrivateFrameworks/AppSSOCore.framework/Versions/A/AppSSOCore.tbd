@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4EC465AA-060B-3EB6-94BB-93151CAFF2B7', 'x86_64: 4EC465AA-060B-3EB6-94BB-93151CAFF2B7', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 05C69104-0FEF-35B9-8D5C-4E3E00DB882A', 'arm64e: 05C69104-0FEF-35B9-8D5C-4E3E00DB882A' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AppSSOCore.framework/Versions/A/AppSSOCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SOAuthorizationOptionCoreNoUserInterface, _SOErrorDomain, 
+                       _SOErrorSubcodeKey, _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_handleResponseImpersonationCredential, _appSSO_init, 
+                       _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ _SOAuthorizationCore, _SOAuthorizationCredentialCore, _SOAuthorizationHintsCore, 
+                       _SOAuthorizationParametersCore, _SOAuthorizationRequestParametersCore, 
+                       _SOAuthorizationResultCore, _SOConfiguration, _SOConfigurationClient, 
+                       _SOConfigurationVersion, _SOErrorHelper, _SOFullProfile, _SOInternalProtocols, 
+                       _SOServiceConnection, _SOUtils ]
+...

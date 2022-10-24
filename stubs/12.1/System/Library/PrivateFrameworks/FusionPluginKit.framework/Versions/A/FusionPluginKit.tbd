@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D1E11A2A-5848-36EC-94DC-5BDB57FBE5D7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B3B8F15A-53D3-3994-BFC1-B5E21452BB7E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FusionPluginKit.framework/Versions/A/FusionPluginKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FusionPluginKitVersionNumber, _FusionPluginKitVersionString, 
+                       _getLogHandle ]
+    objc-classes:    [ _FNPluginManager, _FusionPluginClient, _HSMessage, _HSMessageRequest, 
+                       _HSMessageResponse ]
+...

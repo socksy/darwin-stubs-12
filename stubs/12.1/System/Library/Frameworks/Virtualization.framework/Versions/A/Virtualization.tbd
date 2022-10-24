@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 48C5CF93-78AF-3DAA-847B-1ABE5C36B07F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F2FC7D4B-847D-3F8F-9DC7-261CA54DF34E' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/Virtualization.framework/Versions/A/Virtualization'
+current-version: 59.4
+exports:
+  - archs:           [ x86_64 ]
+    symbols:         [ __VZVirtualMachineGuestTypeMacOS ]
+  - archs:           [ arm64, arm64e ]
+    objc-classes:    [ _VZMacAuxiliaryStorage, _VZMacHardwareModel, _VZMacMachineIdentifier, 
+                       _VZMacOSBootLoader, _VZMacOSConfigurationRequirements, _VZMacOSInstaller, 
+                       _VZMacOSRestoreImage, _VZMacPlatformConfiguration ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _VZErrorDomain, __VZVirtualMachineGuestTypeLinux ]
+    objc-classes:    [ _VZAudioDeviceConfiguration, _VZAudioInputStreamSource, _VZAudioOutputStreamSink, 
+                       _VZBootLoader, _VZBridgedNetworkDeviceAttachment, _VZBridgedNetworkInterface, 
+                       _VZDirectoryShare, _VZDirectorySharingDevice, _VZDirectorySharingDeviceConfiguration, 
+                       _VZDiskImageStorageDeviceAttachment, _VZEntropyDeviceConfiguration, 
+                       _VZFileHandleNetworkDeviceAttachment, _VZFileHandleSerialPortAttachment, 
+                       _VZFileSerialPortAttachment, _VZGenericPlatformConfiguration, 
+                       _VZGraphicsDeviceConfiguration, _VZHostAudioInputStreamSource, 
+                       _VZHostAudioOutputStreamSink, _VZKeyboardConfiguration, _VZLinuxBootLoader, 
+                       _VZMACAddress, _VZMacGraphicsDeviceConfiguration, _VZMacGraphicsDisplayConfiguration, 
+                       _VZMemoryBalloonDevice, _VZMemoryBalloonDeviceConfiguration, 
+                       _VZMultipleDirectoryShare, _VZNATNetworkDeviceAttachment, 
+                       _VZNetworkDevice, _VZNetworkDeviceAttachment, _VZNetworkDeviceConfiguration, 
+                       _VZPlatformConfiguration, _VZPointingDeviceConfiguration, 
+                       _VZSerialPortAttachment, _VZSerialPortConfiguration, _VZSharedDirectory, 
+                       _VZSingleDirectoryShare, _VZSocketDevice, _VZSocketDeviceConfiguration, 
+                       _VZStorageDeviceAttachment, _VZStorageDeviceConfiguration, 
+                       _VZUSBKeyboardConfiguration, _VZUSBScreenCoordinatePointingDeviceConfiguration, 
+                       _VZVirtioBlockDeviceConfiguration, _VZVirtioConsoleDeviceSerialPortConfiguration, 
+                       _VZVirtioEntropyDeviceConfiguration, _VZVirtioFileSystemDevice, 
+                       _VZVirtioFileSystemDeviceConfiguration, _VZVirtioNetworkDeviceConfiguration, 
+                       _VZVirtioSocketConnection, _VZVirtioSocketDevice, _VZVirtioSocketDeviceConfiguration, 
+                       _VZVirtioSocketListener, _VZVirtioSoundDeviceConfiguration, 
+                       _VZVirtioSoundDeviceInputStreamConfiguration, _VZVirtioSoundDeviceOutputStreamConfiguration, 
+                       _VZVirtioSoundDeviceStreamConfiguration, _VZVirtioTraditionalMemoryBalloonDevice, 
+                       _VZVirtioTraditionalMemoryBalloonDeviceConfiguration, _VZVirtualMachine, 
+                       _VZVirtualMachineConfiguration, _VZVirtualMachineView, __VZ16550SerialPortConfiguration, 
+                       __VZAudioDevice, __VZCustomVirtioDevice, __VZCustomVirtioDeviceConfiguration, 
+                       __VZDebugStub, __VZDebugStubConfiguration, __VZDiskImage, 
+                       __VZDiskImageAccessor, __VZDiskImageDescriptor, __VZDiskImageFormat, 
+                       __VZEFIBootLoader, __VZEFIVariableStore, __VZFramebuffer, 
+                       __VZFramebufferView, __VZGDBDebugStub, __VZGDBDebugStubConfiguration, 
+                       __VZGraphicsDevice, __VZHostOnlyNetworkDeviceAttachment, __VZKeyEvent, 
+                       __VZKeyboard, __VZLinearFramebufferGraphicsDeviceConfiguration, 
+                       __VZMemory, __VZMouse, __VZMouseEvent, __VZPL011SerialPortConfiguration, 
+                       __VZPointingDevice, __VZScreenCoordinatePointerEvent, __VZScreenCoordinatePointingDevice, 
+                       __VZScrollWheelEvent, __VZSerialPort, __VZSocketSerialPortAttachment, 
+                       __VZUSBMouseConfiguration, __VZVNCAuthenticationSecurityConfiguration, 
+                       __VZVNCNoSecuritySecurityConfiguration, __VZVNCSecurityConfiguration, 
+                       __VZVNCServer, __VZVirtioDeviceSpecificConfiguration, __VZVirtioGenericDeviceSpecificConfiguration, 
+                       __VZVirtioInputDeviceSpecificConfiguration, __VZVirtioMouseInputDeviceConfiguration, 
+                       __VZVirtioQueue, __VZVirtioQueueElement, __VZVirtioSoundDevice, 
+                       __VZVirtualMachineConfigurationDecoder, __VZVirtualMachineConfigurationEncoder, 
+                       __VZVirtualMachineStartOptions, __VZXNUBootLoader ]
+...

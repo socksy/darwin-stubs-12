@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 93F1A841-E5C8-390B-9AAB-9B92C7276CEC', 'x86_64: 93F1A841-E5C8-390B-9AAB-9B92C7276CEC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BC2D716E-9CA1-315B-87B1-309E92D8B38D', 'arm64e: BC2D716E-9CA1-315B-87B1-309E92D8B38D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SpeechDetector.framework/Versions/A/SpeechDetector'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SDLogContextFacilityLocalSRBridge, _SDLogInitIfNeeded, _SDLoggingSubsystem, 
+                       _kSDLoggingContextFramework ]
+    objc-classes:    [ _OSDAnalyzer, _OSDFeatures ]
+...

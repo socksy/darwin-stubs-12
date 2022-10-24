@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0A584B2B-D5AF-3785-A199-9A59A24C072F', 'x86_64: 0A584B2B-D5AF-3785-A199-9A59A24C072F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FF68087F-B614-3492-9F7E-9594953599EE', 'arm64e: FF68087F-B614-3492-9F7E-9594953599EE' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/MetricKit.framework/Versions/A/MetricKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    re-exports:      [ '/System/Library/PrivateFrameworks/SignpostMetrics.framework/Versions/A/SignpostMetrics' ]
+    symbols:         [ _MetricKitVersionNumber, _MetricKitVersionString ]
+    objc-classes:    [ _MXAnimationMetric, _MXAppExitMetric, _MXAppLaunchMetric, 
+                       _MXAppResponsivenessMetric, _MXAppRunTimeMetric, _MXAverage, 
+                       _MXBackgroundExitData, _MXCPUExceptionDiagnostic, _MXCPUMetric, 
+                       _MXCallStackFrame, _MXCallStackThread, _MXCallStackTree, _MXCellularConditionMetric, 
+                       _MXCrashDiagnostic, _MXDiagnostic, _MXDiagnosticPayload, _MXDiskIOMetric, 
+                       _MXDiskWriteExceptionDiagnostic, _MXDisplayMetric, _MXForegroundExitData, 
+                       _MXGPUMetric, _MXHangDiagnostic, _MXHistogram, _MXHistogramBucket, 
+                       _MXLocationActivityMetric, _MXMemoryMetric, _MXMetaData, _MXMetric, 
+                       _MXMetricManager, _MXMetricPayload, _MXNetworkTransferMetric, 
+                       _MXSignpostIntervalData, _MXSignpostMetric, _MXUnitAveragePixelLuminance, 
+                       _MXUnitSignalBars ]
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 692A8345-F42C-34DF-92AD-4F8B1ECE563F', 'x86_64: 692A8345-F42C-34DF-92AD-4F8B1ECE563F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FFBB0FAC-5E99-30EA-A106-0DC8598C9FE8', 'arm64e: FFBB0FAC-5E99-30EA-A106-0DC8598C9FE8' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SignpostMetrics.framework/Versions/A/SignpostMetrics'
+current-version: 69
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __MXSignpostMetricsSnapshot ]
+...

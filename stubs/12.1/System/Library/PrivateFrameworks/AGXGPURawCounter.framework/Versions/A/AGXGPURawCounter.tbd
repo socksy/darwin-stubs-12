@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4A786CFE-6BAA-34D6-B8BF-3A6044CE2E37', 'x86_64: 4A786CFE-6BAA-34D6-B8BF-3A6044CE2E37', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DD7FBBA6-FDE3-30BE-9B3E-DBF6565F83EF', 'arm64e: DD7FBBA6-FDE3-30BE-9B3E-DBF6565F83EF' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AGXGPURawCounter.framework/Versions/A/AGXGPURawCounter'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __ZN16AGXGPURawCounter14createInstanceEj, __ZN16AGXGPURawCounter15destroyInstanceEv, 
+                       __ZN16AGXGPURawCounter8instanceEv, __ZNK16AGXGPURawCounter19sourceBufferMinSizeEv, 
+                       __ZNK16AGXGPURawCounter25sourceBufferSizeAlignmentEv ]
+...

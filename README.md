@@ -5,7 +5,11 @@ nixpkgs.
 
 ## Generation
 
-    nix run -f scripts -c generate-all -s "$MACOS_10_12_SYSROOT" -o stubs/10.12
+    nix run -f scripts -c generate-all -s "$MACOS_SYSROOT" -o stubs/11.1
+
+Where `$MACOS_SYSROOT` is likely to be 
+
+    /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 
 ## Framework Names
 

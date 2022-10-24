@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 48BE174E-5D11-3820-8B9A-1BA370E7C5E6', 'x86_64: 48BE174E-5D11-3820-8B9A-1BA370E7C5E6', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 54640415-ACD9-33FB-89FB-BBAD1CF46A5A', 'arm64e: 54640415-ACD9-33FB-89FB-BBAD1CF46A5A' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomeSync.framework/Versions/A/BiomeSync'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BMSyncErrorDomain ]
+    objc-classes:    [ _BMSyncService ]
+...

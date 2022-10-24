@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BD309172-2B83-3B76-840F-3D48F82CD147', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4DDB6F84-0BC3-361F-8137-B763D8079636' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MobileStorage.framework/Versions/A/MobileStorage'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MobileStorageCopyAndFixPlist, _MobileStorageCopyCryptexNonceWithError, 
+                       _MobileStorageCopyDevices, _MobileStorageCopyDevicesWithError, 
+                       _MobileStorageCopyPersonalizationIdentifiersWithError, _MobileStorageCopyPersonalizationManifestWithError, 
+                       _MobileStorageCopyPersonalizationNonceWithError, _MobileStorageMount, 
+                       _MobileStorageMountPersonalizedBundleWithError, _MobileStorageMountWithError, 
+                       _MobileStorageRemoteCopyCryptexNonceWithError, _MobileStorageRemoteCopyDevicesWithError, 
+                       _MobileStorageRemoteCopyMountedImageSignaturesWithError, _MobileStorageRemoteCopyPersonalizationIdentifiersWithError, 
+                       _MobileStorageRemoteCopyPersonalizationManifestWithError, 
+                       _MobileStorageRemoteCopyPersonalizationNonceWithError, _MobileStorageRemoteMountPersonalizedBundleWithError, 
+                       _MobileStorageRemoteMountWithError, _MobileStorageRemoteRollCryptexNonceWithError, 
+                       _MobileStorageRemoteRollPersonalizationNonceWithError, _MobileStorageRemoteUnmountWithError, 
+                       _MobileStorageRollCryptexNonceWithError, _MobileStorageRollPersonalizationNonceWithError, 
+                       _MobileStorageSync, _MobileStorageSyncWithError, _MobileStorageUnmount, 
+                       _MobileStorageUnmountWithError, _kDiskImageMountPathKey, _kDiskImageMountedNotification, 
+                       _kMSMBackingImage, _kMSMDiskImagePersonalizedImageType, _kMSMDiskImageTypeCryptex, 
+                       _kMSMDiskImageTypeDeveloper, _kMSMDiskImageTypeKey, _kMSMDiskImageTypePersonalized, 
+                       _kMSMDiskImageTypePersonalizedAutomation, _kMSMDiskImageTypePersonalizedDebug, 
+                       _kMSMDiskImageTypePersonalizedDemo, _kMSMDiskImageTypePersonalizedDeveloper, 
+                       _kMSMDiskImageTypePersonalizedFactory, _kMSMDiskImageTypePersonalizedFieldService, 
+                       _kMSMDiskImageTypePersonalizedFieldServiceDiagnostic, _kMSMDiskImageTypePersonalizedFieldServiceRepair, 
+                       _kMSMDiskImageTypePersonalizedProdAutomation, _kMSMImageInfoPlistKey, 
+                       _kMSMImageTrustCacheKey, _kMSMPerformLosslessQuery, _kMSMPersonalizationImageURL, 
+                       _kMSMPersonalizationMountedBundleURL, _kMSMPersonalizationSigningServerURL, 
+                       _kMSMPersonalizationUseCredentials, _kMSMPersonalizationUseCryptexFlow, 
+                       _kMSMSignatureKey, _kMassStorageMountedNotification, _kMassStorageUnmountedNotification, 
+                       _kMobileStorageDeviceNodeKey, _kMobileStorageDeviceTypeDiskImage, 
+                       _kMobileStorageDeviceTypeKey, _kMobileStorageDeviceTypeMassStorage, 
+                       _kMobileStorageDeviceTypePTPCamera, _kMobileStorageFilesystemTypeKey, 
+                       _kMobileStorageIsMountedKey, _kMobileStorageIsReadOnlyKey, 
+                       _kMobileStorageMountPathKey, _kMobileStorageSignatureKey, 
+                       _kMobileStorageSupportsContentProtection, _kPTPCameraAttachedNotification, 
+                       _kStorageMounterName ]
+...

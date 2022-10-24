@@ -1,0 +1,52 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3147B518-7189-3289-BC6C-D99C7E9EE24B', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BAC7055F-D5D6-35B2-BF21-794BED75D98F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PAImagingCore.framework/Versions/A/PAImagingCore'
+current-version: 421.0.100
+exports:
+  - archs:           [ x86_64 ]
+    weak-def-symbols: [ __ZTIN2PA10RectFinderE, __ZTIN2PA14PathRectFinderE, __ZTIN2PA16AnchorRectFinderE, 
+                        __ZTIN2PA16centerRectFinderE, __ZTIN2PA24AnchorRectFinderVerticalE, 
+                        __ZTIN2PA26AnchorRectFinderHorizontalE, __ZTSN2PA10RectFinderE, 
+                        __ZTSN2PA14PathRectFinderE, __ZTSN2PA16AnchorRectFinderE, 
+                        __ZTSN2PA16centerRectFinderE, __ZTSN2PA24AnchorRectFinderVerticalE, 
+                        __ZTSN2PA26AnchorRectFinderHorizontalE ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CompareLab, _PAImageFormatInvalid, _PAImagingCoreVersionNumber, 
+                       _PAImagingCoreVersionString, _PMRDurationUnits, _PMRFPSUnits, 
+                       _PMRTimestampUnits, __Z12clippedPointRKN2PA8Vector2dERKNS_13LineSegment2dE, 
+                       __Z15CGRectTranslate6CGRectN2PA8Vector2dE, __Z15projectionPointRKN2PA8Vector2dERKNS_13LineSegment2dE, 
+                       __Z17intersectionPointRKN2PA6Quad2dES2_RK8CGVectord, __Z17pointFromVertexIDRK6CGRecti, 
+                       __Z17vertexIDFromPointRK6CGRectRK7CGPoint, __Z17vertexIDFromPointRK6CGRectRK7CGPointd, 
+                       __Z24CGRectEqualToRectWithTol6CGRectS_d, __Z27canExpandWithAbsoluteAnchormRKN2PA6Quad2dERK6CGRectR7CGPoint, 
+                       __Z30aspectRatioConstrainedFromRect6CGRect13PAAspectRatio7CGPoint, 
+                       __Z30aspectRatioConstrainedFromRect6CGRect13PAAspectRatio7CGPointd, 
+                       __Z35deriveScaledRectFromConstrainedRect6CGRectS_N2PA6Quad2dE7CGPoint, 
+                       __Z39deriveTranslatedRectFromConstrainedRect6CGRectN2PA6Quad2dE8CGVector, 
+                       __Z3AbsO7DataSet, __Z3AbsRK7DataSet, __Z3ExpO7DataSet, __Z3ExpRK7DataSet, 
+                       __Z3LogO7DataSet, __Z3LogRK7DataSet, __Z6SquareO7DataSet, 
+                       __Z6SquareRK7DataSet, __Z7logQuadP8NSStringN2PA6Quad2dE, __Z7logRectP8NSString6CGRect, 
+                       __ZN7DataSet3AbsEv, __ZN7DataSet3ExpEv, __ZN7DataSet3LogEv, 
+                       __ZN7DataSet3PowEd, __ZN7DataSet6SquareEv, __ZN7DataSetmIEd, 
+                       __ZN7DataSetmLERKS_, __ZN7DataSetpLEd, __ZmiRK7DataSetd, __ZplRK7DataSetd, 
+                       _kConsolidateImagesWhenExportingLibraryKey, _kDefaultColorSpace, 
+                       _kExportAttachmentsWithMastersKey, _kExportFolderNamingPresetKey, 
+                       _kExportNamingPresetKey, _kExportPresetsKey, _kExportSizeLarge, 
+                       _kExportSizeMedium, _kExportSizeSmall, _kExportVideoPresetsKey, 
+                       _kIncludePreviewsWhenExportingLibraryKey, _kPMRStdDevDefaultTolerance, 
+                       _kRKExportDestinationPathKey, _kRKExportFileNamingPolicyKey, 
+                       _kRKExportFinalDestinationPathKey, _kRKExportSettingsKey, 
+                       _kRKExportVersionKey, _kShowAlertWhenExportLibraryFinishedKey, 
+                       _kShowAlertWhenExportMastersFinishedKey, _kShowAlertWhenExportVersionsFinishedKey ]
+    objc-classes:    [ _IPAHistogramDifferencer, _IPARenderedImageData, _PACGUtilities, 
+                       _PACropModel, _PAExportImageFormat, _PAImageDifferencer, _PAImagingCore, 
+                       _PAJPEGExportFormat, _PALauncher, _PAPNGExportFormat, _PAPSDExportFormat, 
+                       _PATIFFExportFormat, _PATimer, _PMRDataSet, _PMRMeasurement, 
+                       _PMRMeasurementList, _PMRMutableDataSet, _PMRStatistics, _PMRStdDevMeasurementFilter, 
+                       _PMRStreamingStatistics, _PMRTimer, _RKExportSettings ]
+    objc-ivars:      [ _IPARenderedImageData._histogramA, _IPARenderedImageData._histogramB, 
+                       _IPARenderedImageData._histogramG, _IPARenderedImageData._histogramR, 
+                       _IPARenderedImageData._histograms, _PMRDataSet._data ]
+...

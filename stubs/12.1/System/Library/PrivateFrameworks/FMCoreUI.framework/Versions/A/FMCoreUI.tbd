@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2C2126A0-1C8D-302D-82BC-60626B4844A9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 13D957E1-E289-3027-B24E-9BEC4DC2E6CA' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FMCoreUI.framework/Versions/A/FMCoreUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _FMAnnotationView ]
+...

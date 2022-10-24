@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AC8EA9CF-685C-3267-B09F-5086CDFEC0F0', 'x86_64: AC8EA9CF-685C-3267-B09F-5086CDFEC0F0', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5EFCABB9-5077-3074-9B4C-8AE8678AC1B2', 'arm64e: 5EFCABB9-5077-3074-9B4C-8AE8678AC1B2' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IntentsServices.framework/Versions/A/IntentsServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _INSAssistantErrorDomain, _INSExtensionServiceTraceCompletionHandlerWithCode, 
+                       _INSGetAceVersionNumberFromString, _INSJSONEncodedIntent, 
+                       _INSJSONEncodedIntentResponse, _INSJSONEncodedSlotResolutionResult, 
+                       _INSSiriAceErrorDomain, _INSSiriSerializedUserActivityKey, 
+                       _IntentsServicesVersionNumber, _IntentsServicesVersionString ]
+    objc-classes:    [ _INSAnalytics, _INSDeviceInfo, _INSExtensionService ]
+...

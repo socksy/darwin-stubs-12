@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: DA994147-DF89-3935-A9C8-0649436C94F0', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8B05C979-A53C-3F1D-8C8D-3AABCCD9FD6F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppSupportUI.framework/Versions/A/AppSupportUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NUIContainerViewDirectionalInsetsUseDefault, _NUIContainerViewDirectionalInsetsUseSystem, 
+                       _NUIContainerViewInsetsUseDefault, _NUIContainerViewInsetsUseSystem, 
+                       _NUIContainerViewLengthIsDefault, _NUIContainerViewLengthIsSystem, 
+                       _NUIContainerViewLengthMakeSystem, _NUIContainerViewLengthNoBaseline, 
+                       _NUIContainerViewLengthUseDefault, _NUIContainerViewLengthUseSystem, 
+                       _NUIContainerViewSizeUnbounded, _NUIContainerViewSizeUseDefault, 
+                       _NUILayoutPriorityUseDefault, __NUIArrangementInvalidRect, 
+                       __NUIArrangementInvalidSize ]
+    objc-classes:    [ _NUIBoxArrangement, _NUIContainerBoxView, _NUIContainerFlowView, 
+                       _NUIContainerGridView, _NUIContainerStackView, _NUIContainerView, 
+                       _NUIContentScrollView, _NUIGridArrangement, _NUISizeCache ]
+...

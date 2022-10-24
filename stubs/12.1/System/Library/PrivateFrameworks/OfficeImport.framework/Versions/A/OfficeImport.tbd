@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C2AC314B-006A-3A88-B3DD-9868EBE2B0DC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1A942074-B13E-32AD-AD95-A64143274F63' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/OfficeImport.framework/Versions/A/OfficeImport'
+current-version: 292
+exports:
+  - archs:           [ x86_64 ]
+    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTISt11logic_error, __ZTISt12length_error, __ZTISt9exception, 
+                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSSt11logic_error, __ZTSSt12length_error, __ZTSSt9exception ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _HTMLError, _HTMLHeight, _HTMLMainContent, _HTMLPageCount, 
+                       _HTMLResources, _HTMLWidth, _OICopyHTMLForOfficeData, _OICopyHTMLFromFileAtURL, 
+                       _OICopyHTMLThumbnailForOfficeData, _OICopyHTMLThumbnailFromFileAtURL, 
+                       _OICopyPrecomputedThumbnailDataFromFileAtURLIfPresent, _OIErrorDomain, 
+                       _OIPreviewProcessWithData, _OIPreviewProcessWithDataAndOptions, 
+                       _OIPreviewProcessWithURL, _OIPreviewProcessWithURLAndOptions, 
+                       _kOIPreviewOptionsNoDecorations, _kOIPreviewOptionsPassphrase ]
+    objc-classes:    [ _OISpotlightImporter ]
+...

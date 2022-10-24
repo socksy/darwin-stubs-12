@@ -1,0 +1,44 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 01D66A6B-3811-3EFC-A145-D2CBD553D889', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0FE9391B-CA4A-3905-9E6F-08064B54A493' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleMobileFileIntegrity.framework/Versions/A/AppleMobileFileIntegrity'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AMFICopySwiftPlaygroundsSigningKey, _AMFIExecutionPreflight, 
+                       _AppleMobileFileIntegrityVersionNumber, _AppleMobileFileIntegrityVersionString, 
+                       _allowedInChroot, _amfi_interface_authorize_local_signing, 
+                       _amfi_interface_cdhash_in_trustcache, _amfi_interface_get_local_signing_private_key, 
+                       _amfi_interface_get_local_signing_public_key, _amfi_interface_query_bootarg_state, 
+                       _amfi_interface_set_local_signing_public_key, _appSandboxEntitlements, 
+                       _entitlementsThatForceHardening, _errorCodeForMISError, _errorCodeForProfileManagerError, 
+                       _errorStringForAMFIErrorCode, _hardenedRuntimeEntitlements, 
+                       _hardenedRuntimeJITEntitlement, _hexStringForData, _kAMFIPreflightOptionsCpuSubType, 
+                       _kAMFIPreflightOptionsCpuType, _kAMFIPreflightOptionsFlags, 
+                       _kAMFIPreflightOptionsSliceOffset, _matchIn, _restrictionExemptEntitlements, 
+                       _softRestrictedEntitlements, _systemExtensionEntitlements, 
+                       _systemExtensionEntitlementsThatAllowJit, _unrestrictedEntitlements, 
+                       _unrestrictedWhenSIPisOff ]
+    objc-classes:    [ _AMFIError, _AMFIFMKLog, _AMFIPathValidator_ios, _AMFIPathValidator_macos, 
+                       _AMFIRequirementsManager ]
+    objc-ivars:      [ _AMFIPathValidator_ios._areEntitlementsValidated, _AMFIPathValidator_ios._bootargs, 
+                       _AMFIPathValidator_ios._cdhash, _AMFIPathValidator_ios._error, 
+                       _AMFIPathValidator_ios._flags, _AMFIPathValidator_ios._isValid, 
+                       _AMFIPathValidator_ios._offset, _AMFIPathValidator_ios._signerType, 
+                       _AMFIPathValidator_ios._url, _AMFIPathValidator_ios._validated, 
+                       _AMFIPathValidator_macos._allowsLegacyDebug, _AMFIPathValidator_macos._areEntitlementsValidated, 
+                       _AMFIPathValidator_macos._bootargs, _AMFIPathValidator_macos._code, 
+                       _AMFIPathValidator_macos._error, _AMFIPathValidator_macos._flags, 
+                       _AMFIPathValidator_macos._hasOnlySoftRestrictedEntitlements, 
+                       _AMFIPathValidator_macos._hasRestrictedEntitlements, _AMFIPathValidator_macos._infoDict, 
+                       _AMFIPathValidator_macos._isApple, _AMFIPathValidator_macos._isDevelopment, 
+                       _AMFIPathValidator_macos._isSigned, _AMFIPathValidator_macos._isValid, 
+                       _AMFIPathValidator_macos._sdkVersion, _AMFIPathValidator_macos._shouldUnrestrict, 
+                       _AMFIPathValidator_macos._teamIdentifier, _AMFIPathValidator_macos._unsatisfiedEntitlements, 
+                       _AMFIPathValidator_macos._validated, _AMFIRequirementsManager._allowUnsafeDynamicLinking, 
+                       _AMFIRequirementsManager._appleRequirement, _AMFIRequirementsManager._basicRequirement, 
+                       _AMFIRequirementsManager._developerRequirement, _AMFIRequirementsManager._dyldSimRequirement, 
+                       _AMFIRequirementsManager._isRunningInternalBuild, _AMFIRequirementsManager._legacyDebuggerRequirement, 
+                       _AMFIRequirementsManager._queue, _AMFIRequirementsManager._restrictedRequirement ]
+...

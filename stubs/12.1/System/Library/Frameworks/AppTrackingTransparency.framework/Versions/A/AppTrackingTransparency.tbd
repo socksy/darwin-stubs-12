@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9EFB9592-4715-3BBF-9EF4-33916BAB3DEB', 'x86_64: 9EFB9592-4715-3BBF-9EF4-33916BAB3DEB', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5C75CDBB-F645-34B7-9067-117487E60A28', 'arm64e: 5C75CDBB-F645-34B7-9067-117487E60A28' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/AppTrackingTransparency.framework/Versions/A/AppTrackingTransparency'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppTrackingTransparencyVersionNumber, _AppTrackingTransparencyVersionString ]
+    objc-classes:    [ _ATFollowUpManager, _ATTrackingEnforcementManager, _ATTrackingManager ]
+...

@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 20AEA7F6-6D67-3B63-8F8D-26E4E9B69294', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8C4CD837-6B69-3662-887F-04BE6935BC3C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Mangrove.framework/Versions/A/Mangrove'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CGXPCServicesDefaultsLoggingEnabled, _CGXPC_CurrentDisplayModeGetResolution, 
+                       _CGXPC_DisplayStatusQuery, _CGXPC_DisplayStreamCreate, _CGXPC_DisplayStreamCreateRunLoopSource, 
+                       _CGXPC_DisplayStreamGetTypeID, _CGXPC_DisplayStreamStart, 
+                       _CGXPC_DisplayStreamStop, _CGXPC_GetDisplayBounds, _CGXPC_GetPerformanceDataForMainConnection, 
+                       _CGXPC_MainDisplayID, _CGXPC_RegisterCallbackAndBringAirDisplayOnline, 
+                       _CGXPC_RegisterCallbacksAndBringAirDisplayOnline, _CGXPC_UnregisterCallbackAndBringAirDisplayOffline, 
+                       _kCGXPCClientPID, _kCGXPCDeltaX, _kCGXPCDeltaY, _kCGXPCDirtyRects, 
+                       _kCGXPCMovedRects ]
+...

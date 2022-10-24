@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1B60F6A0-BD54-37DB-BCC1-DF50D386479C', 'x86_64: 1B60F6A0-BD54-37DB-BCC1-DF50D386479C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2C1AF22C-6685-387E-AC98-DDA5F9373BFD', 'arm64e: 2C1AF22C-6685-387E-AC98-DDA5F9373BFD' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreEmoji.framework/Versions/A/CoreEmoji'
+current-version: 142
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CEMCopyEmojiTokens, _CEMCreateEmojiCharacterSet, _CEMCreateEmojiLocaleData, 
+                       _CEMCreateStringByStrippingEmojiCharacters, _CEMEMFSearchEngineCreateBundleForLocaleIdentifier, 
+                       _CEMEMFSearchEngineIsLocaleSupported, _CEMEmojiLocaleDataCopyCommonEmojiTokens, 
+                       _CEMEmojiLocaleDataCreateEmojiTokensForString, _CEMEmojiLocaleDataEnumerateSearchResultsInStringWithBlock, 
+                       _CEMEmojiLocaleDataGetLocaleIdentifier, _CEMEmojiTokenCopyName, 
+                       _CEMEmojiTokenCopyNameWithCount, _CEMEmojiTokenCopyRelatedEmoji, 
+                       _CEMEmojiTokenCreateCopyRemovingModifiers, _CEMEmojiTokenCreateHairStyleVariant, 
+                       _CEMEmojiTokenCreatePresentationVariant, _CEMEmojiTokenCreateSkinToneVariant, 
+                       _CEMEmojiTokenCreateWithIndex, _CEMEmojiTokenCreateWithLongCharacter, 
+                       _CEMEmojiTokenCreateWithString, _CEMEmojiTokenGetGender, _CEMEmojiTokenGetHairStyle, 
+                       _CEMEmojiTokenGetIndex, _CEMEmojiTokenGetLocaleData, _CEMEmojiTokenGetPresentationStyle, 
+                       _CEMEmojiTokenGetSkinTone, _CEMEmojiTokenGetString, _CEMEmojiTokenIsCommon, 
+                       _CEMEmojiTokenIsSupportedForLocaleAndSearchMode, _CEMEmojiTokenSupportsHairStyleVariants, 
+                       _CEMEmojiTokenSupportsPresentationStyle, _CEMEmojiTokenSupportsSkinToneVariants, 
+                       _CEMEmojiTokensAreEquivalent, _CEMEnumerateEmojiTokensInStringWithBlock, 
+                       _CEMEnumerateEmojiTokensInStringWithLocaleAndBlock, _CEMGetSharedEmojiCharacterSet, 
+                       _CEMLongCharacterIsEmoji, _CEMStringContainsEmoji, _CEMStringIsSingleEmoji ]
+...

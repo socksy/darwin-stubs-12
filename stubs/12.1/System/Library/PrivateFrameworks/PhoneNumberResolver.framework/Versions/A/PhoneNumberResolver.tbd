@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7B0A81EE-9774-3443-9AD4-1B360AEA3734', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D368D749-D5C2-3223-9BCF-6112664FBC5F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PhoneNumberResolver.framework/Versions/A/PhoneNumberResolver'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PNRErrorDomain, _PNRLogSubsystem, _PNRResourceManagerErrorDomain, 
+                       _PhoneNumberResolverVersionNumber, _PhoneNumberResolverVersionString, 
+                       _kPNRPhoneNumberCountryKey, _kPNRPhoneNumberKey ]
+    objc-classes:    [ _PNRPhoneNumberResolutionResult, _PNRPhoneNumberResolutionResultSet, 
+                       _PNRPhoneNumberResolver, _PNRResourceManager, _PNRStringsFileReaderResult, 
+                       _PNRUtils ]
+...

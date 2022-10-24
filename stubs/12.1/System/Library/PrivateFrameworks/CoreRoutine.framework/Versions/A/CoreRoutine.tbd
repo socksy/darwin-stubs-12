@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7FC71BCE-C7E5-3345-9EE8-D230C9EAEC3A', 'x86_64: 7FC71BCE-C7E5-3345-9EE8-D230C9EAEC3A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5CA30F5B-F229-364B-9C36-32A662924317', 'arm64e: 5CA30F5B-F229-364B-9C36-32A662924317' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreRoutine.framework/Versions/A/CoreRoutine'
+current-version: 783.0.12
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RTConflictingItemIdentifierKey, _RTDetailedErrorsKey, _RTErrorDomain, 
+                       _RTLocationsOfInterestDidChangeNotification, _RTMachServiceEvent, 
+                       _RTMachServiceInternal, _RTMachServiceRegistration, _RTVisitConfidenceHigh, 
+                       _RTVisitConfidenceLow, __RTMultiErrorCreate, __RTSafeArray, 
+                       _kRTEstimatedLocationAverageSpeedUnknown, _kRTEstimatedLocationFallbackModelDefault, 
+                       _kRTEstimatedLocationTimeIntervalUnknown, _kRTSignalGeneratorOptionsKeyAltitude, 
+                       _kRTSignalGeneratorOptionsKeyEntry, _kRTSignalGeneratorOptionsKeyExit, 
+                       _kRTSignalGeneratorOptionsKeyHorizontalUncertainty, _kRTSignalGeneratorOptionsKeyLatitude, 
+                       _kRTSignalGeneratorOptionsKeyLocation, _kRTSignalGeneratorOptionsKeyLocations, 
+                       _kRTSignalGeneratorOptionsKeyLongitude, _kRTSignalGeneratorOptionsKeySourceAccuracy, 
+                       _kRTSignalGeneratorOptionsKeyVerticalUncertainty, _kRTSignalGeneratorOptionsKeyWeeklyVisits, 
+                       _kRTStoredHintEnumerationOptionsHintLocationDefaultBoundingBoxRadius, 
+                       _personalizedLabelsMask ]
+    objc-classes:    [ _RTAddress, _RTAddressSubPremise, _RTDiagnosticOptions, _RTEnumerationOptions, 
+                       _RTEstimatedLocationOptions, _RTFetchFingerprintsOptions, 
+                       _RTFingerprint, _RTHint, _RTInferredMapItem, _RTLocation, 
+                       _RTLocationOfInterest, _RTLocationOfInterestEnumerationOptions, 
+                       _RTLocationOfInterestTransition, _RTLocationOfInterestVisit, 
+                       _RTMapItem, _RTMapItemExtendedAttributes, _RTMapServiceOptions, 
+                       _RTMotionActivity, _RTPair, _RTPlaceInference, _RTPlaceInferenceOptions, 
+                       _RTPredictedDate, _RTPredictedLocationOfInterest, _RTRoutineManager, 
+                       _RTScenarioTrigger, _RTScenarioTriggerSettled, _RTScenarioTriggerUnsettled, 
+                       _RTSignalGeneratorOptions, _RTSource, _RTSourceCoreRoutine, 
+                       _RTSourceCoreRoutineLearnedLocation, _RTSourceCoreRoutineVehicleEvent, 
+                       _RTSourceEventKit, _RTSourceMapsSupport, _RTSourceMapsSupportFavoritePlace, 
+                       _RTSourceMapsSupportHistoryEntry, _RTSourceMapsSupportHistoryEntryPlaceDisplay, 
+                       _RTSourceMapsSupportHistoryEntryRoute, _RTStoredHintEnumerationOptions, 
+                       _RTStoredLocationEnumerationContext, _RTStoredLocationEnumerationOptions, 
+                       _RTStoredVisitFetchOptions, _RTTokenBucket, _RTVehicleEvent, 
+                       _RTVisit, _RTWiFiAccessPoint ]
+...

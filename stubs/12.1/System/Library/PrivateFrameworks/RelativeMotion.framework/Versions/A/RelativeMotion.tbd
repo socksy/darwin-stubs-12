@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D07A6FAF-21C4-3E38-8794-1B440E75E8CB', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4F0BF1A6-AF5D-3CDB-BE13-DDD800E0D583' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/RelativeMotion.framework/Versions/A/RelativeMotion'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kRMErrorDomain ]
+    objc-classes:    [ _RMAttitude, _RMAudioListenerPoseManager, _RMDummyData, _RMDummyDataManager, 
+                       _RMInternalServiceClient, _RMLogItem, _RMMediaSession, _RMMediaSessionObserver, 
+                       _RMMediaSessionOptions, _RMMediaSessionStatus, _RMPose, _RMRelativeMotionManager ]
+...

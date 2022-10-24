@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E24E578E-9C84-3B39-A538-63571A69B9F4', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7CE39154-BEFD-3EE3-A5A4-6504C6373CCF' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/FindMyDeviceUI.framework/Versions/A/FindMyDeviceUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _FMDUIFMMController, _FMDUIFMMiCloudSettingsController ]
+...

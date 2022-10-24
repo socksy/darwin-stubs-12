@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 82F66D36-431C-393A-B9EB-676DACE3C92A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1D41960C-E665-3B8B-B664-B14F6E475B22' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleDisplayTCONControl.framework/Versions/A/AppleDisplayTCONControl'
+current-version: 31
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppleDisplayTCONControlVersionNumber, _AppleDisplayTCONControlVersionString ]
+    objc-classes:    [ _ADIOReportingInterface ]
+...

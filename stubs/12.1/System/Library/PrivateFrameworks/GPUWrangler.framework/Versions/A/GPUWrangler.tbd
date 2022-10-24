@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 765AE938-41B0-3FA4-8104-7BBA1FCE7A5C', 'x86_64: 765AE938-41B0-3FA4-8104-7BBA1FCE7A5C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 934E493B-FD23-3342-B91E-5BC61C59C798', 'arm64e: 934E493B-FD23-3342-B91E-5BC61C59C798' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/GPUWrangler.framework/Versions/A/GPUWrangler'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _GPUWranglerClose, _GPUWranglerDispatchEvent, _GPUWranglerForEachGPU, 
+                       _GPUWranglerGPUByID, _GPUWranglerGPUCopyProperty, _GPUWranglerGPUCopyPropertyStr, 
+                       _GPUWranglerGPUCopyRegistryService, _GPUWranglerGPUEject, 
+                       _GPUWranglerGPUEjectCancel, _GPUWranglerGPUEjectFinalize, 
+                       _GPUWranglerGPUEjectFinalized, _GPUWranglerGPUGetAsicSubSystemID, 
+                       _GPUWranglerGPUGetAttribute, _GPUWranglerGPUGetFramebufferAccelIndex, 
+                       _GPUWranglerGPUGetFramebufferCount, _GPUWranglerGPUGetFramebufferRegistryEntryID, 
+                       _GPUWranglerGPUGetID, _GPUWranglerGPUGetPCIDeviceID, _GPUWranglerGPUGetPCIVendorID, 
+                       _GPUWranglerGPUGetPropertyBool, _GPUWranglerGPUGetPropertyU64, 
+                       _GPUWranglerGPUGetRegistryEntryID, _GPUWranglerGPUGetTypeID, 
+                       _GPUWranglerGPUGetUserPtr, _GPUWranglerGPUIsDiscrete, _GPUWranglerGPUIsEjectFinalized, 
+                       _GPUWranglerGPUIsEjectFinalizing, _GPUWranglerGPUIsEjected, 
+                       _GPUWranglerGPUIsIntegrated, _GPUWranglerGPUIsRemovable, _GPUWranglerGPUSetAttribute, 
+                       _GPUWranglerGPUSetUserPtr, _GPUWranglerGetEventPort, _GPUWranglerGetTypeID, 
+                       _GPUWranglerOpen, _GPUWranglerOpenWithTimeout, _GPUWranglerRegisterEventBlock, 
+                       _GPUWranglerWaitForPublish, __GPUWranglerGPUGetFlags, __GPUWranglerGPUGetKernGPU, 
+                       __GPUWranglerGPULoadDrivers, __GPUWranglerSetConfiguration ]
+...

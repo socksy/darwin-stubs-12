@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 17F03110-C180-31E6-B4C0-B00133F7A2F0', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BFEE75C3-E0D4-3897-9DD8-8008AE341861' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CalendarNotification.framework/Versions/A/CalendarNotification'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CALNDefaultCalendarDirectory, _CALNStringFromNotificationPresentationOptions, 
+                       _EKEngineLog, _EKEngineLogNobo, _EKEngineLogReminders, _EKEngineLogTimer ]
+    objc-classes:    [ _CALNBundle, _CALNCUIKIconProvider, _CALNDefaultIconIdentifierVersionProvider, 
+                       _CALNGEORouteHypothesizer, _CALNGEORouteHypothesizerProvider, 
+                       _CALNInMemoryNotificationStorage, _CALNInMemoryTimeToLeaveRefreshStorage, 
+                       _CALNInMemoryTriggeredEventNotificationDataStorage, _CALNLegacyNotificationIconUpdater, 
+                       _CALNLogSubsystem, _CALNMutableNotificationContent, _CALNMutableNotificationRecord, 
+                       _CALNMutableNotificationSound, _CALNMutableTriggeredEventNotificationData, 
+                       _CALNNotificationContent, _CALNNotificationFilter, _CALNNotificationIconCache, 
+                       _CALNNotificationIdentifier, _CALNNotificationIdentifierComponents, 
+                       _CALNNotificationRecord, _CALNNotificationSound, _CALNPersistentNotificationStorage, 
+                       _CALNPersistentTimeToLeaveRefreshStorage, _CALNPersistentTriggeredEventNotificationDataStorage, 
+                       _CALNRouteHypothesisMapper, _CALNTriggeredEventNotificationData, 
+                       _CalendarNotificationMessageTracer, _EKEventCounterEngine, 
+                       _EKMessageEngine, _EKNotificationEngine, _EKNotificationInfo, 
+                       _EKNotificationInfoAction, _EKRemindersEngine, _EKTravelEngine, 
+                       _EKTravelEngineAgendaEntry, _EKTravelEngineOriginalEvent, 
+                       _EKTravelEngineThrottle ]
+    objc-ivars:      [ _CALNNotificationContent._body, _CALNNotificationContent._categoryIdentifier, 
+                       _CALNNotificationContent._date, _CALNNotificationContent._defaultActionURL, 
+                       _CALNNotificationContent._expirationDate, _CALNNotificationContent._iconIdentifier, 
+                       _CALNNotificationContent._peopleIdentifiers, _CALNNotificationContent._sectionIdentifier, 
+                       _CALNNotificationContent._shouldHideTime, _CALNNotificationContent._shouldSuppressSyncDismissalWhenRemoved, 
+                       _CALNNotificationContent._sound, _CALNNotificationContent._subtitle, 
+                       _CALNNotificationContent._summaryArgument, _CALNNotificationContent._summaryArgumentCount, 
+                       _CALNNotificationContent._threadIdentifier, _CALNNotificationContent._title, 
+                       _CALNNotificationContent._userInfo, _CALNNotificationRecord._content, 
+                       _CALNNotificationRecord._date, _CALNNotificationRecord._shouldPlaySound, 
+                       _CALNNotificationRecord._shouldPresentAlert, _CALNNotificationRecord._sourceClientIdentifier, 
+                       _CALNNotificationRecord._sourceIdentifier, _CALNNotificationSound._alertTopic, 
+                       _CALNNotificationSound._alertType, _CALNTriggeredEventNotificationData._alarmID, 
+                       _CALNTriggeredEventNotificationData._hasDisplayedLeaveByMessage, 
+                       _CALNTriggeredEventNotificationData._hasDisplayedLeaveNowMessage, 
+                       _CALNTriggeredEventNotificationData._hasDisplayedRunningLateMessage, 
+                       _CALNTriggeredEventNotificationData._hypothesis, _CALNTriggeredEventNotificationData._isOffsetFromTravelTimeStart, 
+                       _CALNTriggeredEventNotificationData._lastFireTimeOfAlertOffsetFromTravelTime, 
+                       _CALNTriggeredEventNotificationData._lastTimeNotificationAdded ]
+...

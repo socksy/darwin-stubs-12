@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5ED73814-6D2A-3A85-B3C0-AE5179FFF1DA', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C63FDBFF-8932-373A-84D0-3D0C5A6C6D0B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/KRExperiments.framework/Versions/A/KRExperiments'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ mmaintenanced ]
+    symbols:         [ _KRExperimentsHandleUpdate, _KRExperimentsInit, _KRExperimentsVersionNumber, 
+                       _KRExperimentsVersionString ]
+...

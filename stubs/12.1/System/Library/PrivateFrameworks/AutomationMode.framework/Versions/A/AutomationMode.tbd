@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BD24597B-48E5-30C3-89B3-7FC2BC8E8896', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 04E9B9DC-9FC7-34B5-A2F4-67281CC8680E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AutomationMode.framework/Versions/A/AutomationMode'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _XAMAutomationModeDoesNotRequireAuthenticationFilePath, _XAMAutomationModeReaderMachServiceName, 
+                       _XAMAutomationModeRequiresAuthentication, _XAMAutomationModeStateChangedNotificationName, 
+                       _XAMAutomationModeStateFilePath, _XAMAutomationModeWriterMachServiceName, 
+                       _XAMCreateNoAuthenticationRequiredCookie, _XAMCreateNoAuthenticationRequiredCookieWithCompletion, 
+                       _XAMDisableAutomationMode, _XAMDisableAutomationModeWithCompletion, 
+                       _XAMEnableAutomationMode, _XAMEnableAutomationModeWithCompletion, 
+                       _XAMIsAutomationModeEnabled, _XAMLog, _XAMRegisterAutomationModeChangeHandler, 
+                       _XAMRemoveNoAuthenticationRequiredCookie, _XAMRemoveNoAuthenticationRequiredCookieWithCompletion, 
+                       _XAMResetSharedObserver, _XAMResetSharedWriter, _XAMUnregisterAutomationModeChangeHandler ]
+...

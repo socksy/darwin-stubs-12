@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 6BAF6B2B-2BCB-39A0-A0ED-52BFF1F5E48C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 57C54DF4-D1E7-38FE-8268-F96DCA3DCB42' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _EFILoginCopyGraphics, _EFILoginCopyInterfaceGraphics, _EFILoginCopyNotificationMessageGraphics, 
+                       _EFILoginCopyRegistryString, _EFILoginCopyUserGraphics, _EFILoginCopyUserGraphicsForVolume, 
+                       _EFILoginCopyUserNamesData, _EFILoginGraphicsIsUpToDate, _kEFILoginDataKey, 
+                       _kEFILoginFileNameKey, _kEFILoginRecoveryServiceLocationKey, 
+                       _kEFILoginRecoveryServiceRecordNumberKey, _kEFILoginRecoveryServiceRedirectURLKey, 
+                       _kEFILoginRecoveryServiceSerialNumberKey ]
+    objc-classes:    [ _EFILWLogging ]
+...

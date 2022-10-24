@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E981A2B4-A771-33F7-B997-27567D38CFA5', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DEF2CC32-EE23-3EE4-BD91-749A13E65B0E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/HomeKitMetrics.framework/Versions/A/HomeKitMetrics'
+current-version: 807.3.22
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _HMMLogEvent ]
+...

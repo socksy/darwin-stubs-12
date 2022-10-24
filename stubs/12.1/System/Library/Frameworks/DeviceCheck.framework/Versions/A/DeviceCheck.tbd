@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9195FF1C-8464-3CA3-9A16-D21C59FEA29F', 'x86_64: 9195FF1C-8464-3CA3-9A16-D21C59FEA29F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 10EE5643-E1E2-3B5A-8C11-17A8C7E07322', 'arm64e: 10EE5643-E1E2-3B5A-8C11-17A8C7E07322' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/DeviceCheck.framework/Versions/A/DeviceCheck'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DCErrorDomain ]
+    objc-classes:    [ _DCAppAttestService, _DCContext, _DCDevice, _DCDeviceMetadataDaemonConnection, 
+                       _DCDeviceMetadataInterface ]
+...

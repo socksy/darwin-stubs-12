@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E87531E4-DCA6-3EDF-9566-C1832DB8E875', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 54A3CE93-2B86-3358-AFFC-016B85C68150' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreUtilsUI.framework/Versions/A/CoreUtilsUI'
+current-version: 0
+compatibility-version: 0
+swift-version:   7
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '_$s11CoreUtilsUI13CUUISwiftTestCMa', '_$s11CoreUtilsUI13CUUISwiftTestCMm', 
+                       '_$s11CoreUtilsUI13CUUISwiftTestCMn', '_$s11CoreUtilsUI13CUUISwiftTestCN', 
+                       '_$s11CoreUtilsUI13CUUISwiftTestCfD', '_$s11CoreUtilsUI13CUUISwiftTestCfd' ]
+    objc-classes:    [ _CUUIEnvironment ]
+...

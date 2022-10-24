@@ -1,0 +1,40 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A78964A6-0DE6-3526-A908-A96FE21243CD', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CC206006-02B4-35B6-84F1-B099B88084EC' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/StoreUI.framework/Versions/A/StoreUI'
+current-version: 379
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FRBundleAppIsFrontmostChangedEvent, _FRBundleAuthenticateFinishedEvent, 
+                       _FRBundleUserChangedEvent, _FRBundleViewDidBecomeVisibleEvent, 
+                       _FRBundleViewWillBeHiddenEvent, _FRCachesDirectory, _FRDefaultPagesToolbarItemIdentifier, 
+                       _FRDefaultProgressToolbarItemIdentifier, _FRJSCodeRedeemerFunctionNameFadeIn, 
+                       _FRJSCodeRedeemerFunctionNameFadeOut, _FRJSCodeRedeemerFunctionNameRestart, 
+                       _FRJSCodeRedeemerFunctionNameSetFadeDuration, _FRJSCodeRedeemerFunctionNameSetSessionTimeout, 
+                       _FRJSCodeRedeemerFunctionNameShowStatus, _FRJSCodeRedeemerFunctionNameShutdown, 
+                       _FRJSCodeRedeemerFunctionNameStop, _FRJSCodeRedeemerPropertyNameIsSupported, 
+                       _FRLocalizedString, _FRParentalControl_MCXIdentifier, _FRParentalControl_RestrictPurchaseKey, 
+                       _FRParentalControl_RestrictPurchaseLimitKey, _FRParentalControl_iTunesGamesLimitKey, 
+                       _FRParentalControl_iTunesRestrictGamesKey, _FRStoreReachabilityChangedNotification, 
+                       _FRTabItemUserInfoPostDataKey, _FRTabItemUserInfoReferrerKey, 
+                       _FRToolbarIdentifier, _FRToolbarItemBadgeCountKey, _FRToolbarItemBadgeGlyphsKey, 
+                       _FRToolbarItemBadgeRectKey, _FRToolbarItemEnabledKey, _FRToolbarItemGlyphKey, 
+                       _FRToolbarItemGlyphURLKey, _FRToolbarItemIdentifierKey, _FRToolbarItemPostDataKey, 
+                       _FRToolbarItemReferrerKey, _FRToolbarItemTitleKey, _FRToolbarItemURLKey, 
+                       _NSBackFrontToolbarItemIdentifier, _NSSearchToolbarItemIdentifier, 
+                       _gAuthorized ]
+    objc-classes:    [ _FRContentViewController, _FRJSAccount, _FRJSAccountCreationSecureContext, 
+                       _FRJSAppleAccountStore, _FRJSCodeRedeemer, _FRJSFacebookSession, 
+                       _FRJSHistory, _FRJSRootObject, _FRJSStorage, _FRJSWindow, 
+                       _FRManagedUser, _FRPageToolbarView, _FRParentalControlPreferencesModule, 
+                       _FRPreferencesModule, _FRSearchField, _FRSharingHelper, _FRStoreReachability, 
+                       _FRStoreWebViewController, _FRSuggester, _FRTabBarItem, _FRTabBarItemBadgedIcon, 
+                       _FRToolbarButton, _FRToolbarManager, _FRViewNavigationController, 
+                       _FRWKView, _FRWindowBackgroundView, __FRWKLocalIconProtocol ]
+    objc-ivars:      [ _FRManagedUser._limitValue, _FRManagedUser._restrictPurchase, 
+                       _FRManagedUser._user, _FRParentalControlPreferencesModule._user, 
+                       _FRParentalControlPreferencesModule.authorizationView, _FRParentalControlPreferencesModule.limitPopUpButton, 
+                       _FRPreferencesModule.preferencesView ]
+...

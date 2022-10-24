@@ -1,0 +1,64 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 88D4B1DE-5238-3F47-952C-5FD14143DB0E', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6C97682E-1FA5-3D61-8FBA-186071716771' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Suggestions.framework/Versions/A/Suggestions'
+current-version: 329.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _GetQueryStringAndAttributesFromInput, _SGTAddressBookAccessAllowed, 
+                       _SGTAppCopyDefaultValueKeys, _SGTAppGetDefaultValueForKey, 
+                       _SGTCoreRecentsAccessAllowed, _SGTHumanDateRangeLastDay, _SGTHumanDateRangeLastMonth, 
+                       _SGTHumanDateRangeLastWeek, _SGTHumanDateRangeLastYear, _SGTHumanDateRangeNextMonth, 
+                       _SGTHumanDateRangeNextWeek, _SGTHumanDateRangeNextYear, _SGTHumanDateRangePastDay, 
+                       _SGTHumanDateRangePastMonth, _SGTHumanDateRangePastWeek, _SGTHumanDateRangePastYear, 
+                       _SGTHumanDateRangePreviousDay, _SGTHumanDateRangePreviousMonth, 
+                       _SGTHumanDateRangePreviousWeek, _SGTHumanDateRangePreviousYear, 
+                       _SGTHumanDateRangeThisMonth, _SGTHumanDateRangeThisWeek, _SGTHumanDateRangeThisYear, 
+                       _SGTHumanDateRangeToday, _SGTHumanDateRangeTomorrow, _SGTHumanDateRangeYesterday, 
+                       _SGTItemMailAttachmentKinds, _SGTItemMailAttachmentName, _SGTItemMailAttachmentTypeTrees, 
+                       _SGTItemMailAttachmentTypes, _SGTItemMailFlagColor, _SGTItemMailPriority, 
+                       _SGTItemMailStatus, _SGTItemMailbox, _SGTMailQueryGeniusAccountKey, 
+                       _SGTMailQueryGeniusDisplayNameKey, _SGTMailQueryGeniusImageKey, 
+                       _SGTMailQueryGeniusRepresentedObjectKey, _SGTQueryGeniusDisplayCriteriaSortFieldDateValue, 
+                       _SGTQueryGeniusDisplayCriteriaSortFieldKey, _SGTQueryGeniusDisplayCriteriaSortOrderKey, 
+                       _SGTQueryGeniusDisplayCriteriaSortOrderMaxValue, _SGTQueryGeniusDisplayCriteriaSortOrderMinValue, 
+                       _SuggestionsVersionNumber, _SuggestionsVersionString, __MDQueryCreateQueryDictionaryWithOptionsDict_serially, 
+                       __SGTAppGetDefaultValues, __SGTAppPreferenceExists, __SGTAppPreferenceIsKindOfClass, 
+                       __SGTCreateSimpleQueryEvaluator, __SGTQueryCreateQueryString, 
+                       __SGTQueryCreateQueryStringWithFuzzyThreshold, __SGTSanitizeInputString, 
+                       __SGTSuggestionsPboardType, __valueEvaluator, _kSGTUserQueryAttributedInputDateEndKey, 
+                       _kSGTUserQueryAttributedInputDateKey, _kSGTUserQueryAttributedInputDateStartKey ]
+    objc-classes:    [ _SGTBaseCollector, _SGTCategory, _SGTCompletionTableView, 
+                       _SGTCompletionWindow, _SGTCoreSpotlightBasedSuggester, _SGTCoreSpotlightCollector, 
+                       _SGTDateSuggester, _SGTDateSuggestion, _SGTFileLabelSuggester, 
+                       _SGTFileLabelSuggestion, _SGTFolderNameField, _SGTFolderSuggester, 
+                       _SGTFolderSuggestion, _SGTHasAttachmentSuggester, _SGTISODateRange, 
+                       _SGTInput, _SGTMDQueryItem, _SGTMailFlagColorSuggester, _SGTMailPrioritySuggester, 
+                       _SGTMailQueryGenius, _SGTMailStatusSuggester, _SGTMailStatusSuggestion, 
+                       _SGTMailboxSuggester, _SGTMailboxSuggestion, _SGTQueryGenius, 
+                       _SGTRecentsSuggester, _SGTSearchField, _SGTSearchFieldCell, 
+                       _SGTSearchQueryContext, _SGTSearchQuerySuggester, _SGTSpotlightBasedSuggester, 
+                       _SGTSpotlightCollector, _SGTSpotlightSuggester, _SGTStringComparator, 
+                       _SGTSuggester, _SGTSuggestion, __SGTQueryScopeMenuOverride ]
+    objc-ivars:      [ _SGTCompletionTableView._lastMousePositionWasOverList, _SGTCompletionWindow._initDone, 
+                       _SGTISODateRange._displayName, _SGTISODateRange._isoEnd, _SGTISODateRange._isoStart, 
+                       _SGTMDQueryItem._attributesAndValues, _SGTMDQueryItem._matchingAttributes, 
+                       _SGTSearchQueryContext._NLRange, _SGTSearchQueryContext._NLScope, 
+                       _SGTSearchQueryContext._additionalAttributeNames, _SGTSearchQueryContext._attributeNames, 
+                       _SGTSearchQueryContext._excludeScopes, _SGTSearchQueryContext._input, 
+                       _SGTSearchQueryContext._inputString, _SGTSearchQueryContext._isNLSearch, 
+                       _SGTSearchQueryContext._matchesFinderFilesOnly, _SGTSearchQueryContext._matchesSupportFiles, 
+                       _SGTSearchQueryContext._maxCount, _SGTSearchQueryContext._queryString, 
+                       _SGTSearchQueryContext._rankingTerms, _SGTSearchQueryContext._scopes, 
+                       _SGTSearchQueryContext._searchId, _SGTSearchQueryContext._sortingAttributeNames, 
+                       _SGTStringComparator._alignment, _SGTStringComparator._allScoreCombinations, 
+                       _SGTStringComparator._hasLogScore, _SGTStringComparator._logScore, 
+                       _SGTStringComparator._spotlightScore, _SGTStringComparator._stringA, 
+                       _SGTStringComparator._stringB, _SGTStringComparator._tailAlignment, 
+                       _SGTStringComparator.hasEmptySentence, __SGTQueryScopeMenuOverride._action, 
+                       __SGTQueryScopeMenuOverride._item, __SGTQueryScopeMenuOverride._spin, 
+                       __SGTQueryScopeMenuOverride._spinnerMessage, __SGTQueryScopeMenuOverride._target, 
+                       __SGTQueryScopeMenuOverride._title ]
+...

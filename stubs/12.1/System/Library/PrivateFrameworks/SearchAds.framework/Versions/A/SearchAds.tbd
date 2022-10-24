@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9BA8365A-B03E-324E-AA1F-18934C99026D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D76495FC-08D2-3A92-9B8D-393944FCABA1' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SearchAds.framework/Versions/A/SearchAds'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SearchAdsVersionNumber, _SearchAdsVersionString ]
+    objc-classes:    [ _ADAppAdvertisement, _ADAppRepresentation, _ADCapService, 
+                       _ADDESRecordsManager, _ADDaemonMetricsHelper, _ADDataObject, 
+                       _ADInstallAttributionData, _ADLandingCapService, _ADLocationManager, 
+                       _ADMetricManager, _ADParameterFactory, _ADResponseData, _ADSearchAdsSettings, 
+                       _ADSearchCriteria, _ADSearchObject, _ADSearchSession, _ADUnfairLock ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A7199A51-B92F-3830-B27D-1674D336051A', 'x86_64: A7199A51-B92F-3830-B27D-1674D336051A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 61DBE03E-849B-3260-BE98-2EA83B555F88', 'arm64e: 61DBE03E-849B-3260-BE98-2EA83B555F88' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SPFinder.framework/Versions/A/SPFinder'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SPFinderDisabledReasonBlockedDeviceRegion, _SPFinderDisabledReasonCannotPublishAnonymously, 
+                       _SPFinderDisabledReasonCompanionNearby, _SPFinderDisabledReasonFindMyiPhoneOff, 
+                       _SPFinderDisabledReasonLocationServices, _SPFinderDisabledReasonLocationServicesFindMyFramework, 
+                       _SPFinderDisabledReasonLowAccountSecurity, _SPFinderDisabledReasonNone, 
+                       _SPFinderDisabledReasonServiceDisabled, _SPFinderDisabledReasonUserOptOut, 
+                       _SPFinderDisabledReasoniCloudSignedOut, _SPFinderStateChangedNotification ]
+    objc-classes:    [ _SPAdvertisement, _SPAdvertisementCache, _SPAdvertisementCacheSearchCriteria, 
+                       _SPAdvertisementCacheSearchResult, _SPBeaconAdvertisement, 
+                       _SPBeaconPayload, _SPBeaconPayloadCacheSearchCriteria, _SPBeaconPayloadCacheSearchResult, 
+                       _SPEstimatedLocation, _SPFinderInterface, _SPFinderStateInfo, 
+                       _SPFinderStateManager, _SPScheduler, _SPSchedulerInformation, 
+                       _SPSearchResultMarker ]
+...

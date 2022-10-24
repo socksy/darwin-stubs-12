@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2E157BE6-32AB-3C9E-9CA2-593A93931544', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 21819BB0-B065-38A3-A2B6-802B914F7069' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreMLTestFramework.framework/Versions/A/CoreMLTestFramework'
+exports:
+  - archs:           [ x86_64 ]
+    weak-def-symbols: [ __ZTINSt3__113basic_filebufIcNS_11char_traitsIcEEEE, __ZTINSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTINSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__117bad_function_callE, __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__113basic_filebufIcNS_11char_traitsIcEEEE, __ZTSNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTSNSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__117bad_function_callE, __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CoreMLTestFrameworkVersionNumber, _CoreMLTestFrameworkVersionString ]
+    objc-classes:    [ __MLTBlobbyInteractor, __MLTBundleInferenceTest, __MLTError, 
+                       __MLTFeatureTransformer, __MLTGradientTestDataProvider, __MLTImageReader, 
+                       __MLTInferenceBundleTester, __MLTInferenceTestDataProvider, 
+                       __MLTInferenceTester, __MLTInferenceTesterConfiguration, __MLTInferenceValidator, 
+                       __MLTInputGenerator, __MLTInputGeneratorUtils, __MLTJSONReader, 
+                       __MLTLogger, __MLTModelComparator, __MLTModelComparatorConfiguration, 
+                       __MLTModelLoader, __MLTModelUpdateGradientTester, __MLTModelUpdateGradientTesterConfiguration, 
+                       __MLTModelUpdateTestDataProvider, __MLTModelUpdateTester, 
+                       __MLTModelUpdateTesterConfiguration, __MLTModelUpdateValidator, 
+                       __MLTModelUpdateValidatorConfiguration, __MLTMultiArrayUtils, 
+                       __MLTPerfEnergyTracer, __MLTPerfMemoryTracer, __MLTPerfTimeTracer, 
+                       __MLTPerfTracer, __MLTTestInput, __MLTValidationDataBatchProviderWrapper, 
+                       __URLSessionHelper ]
+...

@@ -1,0 +1,9 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BF0EF296-2D6D-3415-9F70-D1447C549335', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 453ACA17-8D5C-3FC0-A849-B388084D963B' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print'
+current-version: 272
+parent-umbrella: Carbon
+...

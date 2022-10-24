@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A99157E7-3028-3898-ACDD-38C10A05AD86', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4516EDB0-6D46-3F1D-8A4B-D2C95133D405' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IOCEC.framework/Versions/A/IOCEC'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IOCECFrameStringWithFrame, _IOCECInterfaceCloseReceiveQueue, 
+                       _IOCECInterfaceCopyProperty, _IOCECInterfaceCreate, _IOCECInterfaceCreateWithService, 
+                       _IOCECInterfaceGetTypeID, _IOCECInterfaceListenerCreate, _IOCECInterfaceListenerGetTypeID, 
+                       _IOCECInterfaceListenerRegisterAddInterfaceCallback, _IOCECInterfaceListenerScheduleWithDispatchQueue, 
+                       _IOCECInterfaceListenerUnscheduleFromDispatchQueue, _IOCECInterfaceOpenReceiveQueue, 
+                       _IOCECInterfaceRegisterReceiveCallback, _IOCECInterfaceRegisterStatusCallback, 
+                       _IOCECInterfaceRegisterTerminatedCallback, _IOCECInterfaceScheduleWithDispatchQueue, 
+                       _IOCECInterfaceSendFrame, _IOCECInterfaceSetLogicalAddressMask, 
+                       _IOCECInterfaceUnscheduleFromDispatchQueue, _IOCECPhysicalAddressStringWithAddress ]
+...

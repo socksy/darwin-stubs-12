@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B38ADA79-77B5-3768-B0C6-AF1A8A498F4C', 'x86_64: B38ADA79-77B5-3768-B0C6-AF1A8A498F4C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5BF0111E-8115-377F-9C50-ECE57B8E458D', 'arm64e: 5BF0111E-8115-377F-9C50-ECE57B8E458D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/OAuth.framework/Versions/A/OAuth'
+current-version: 25
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OAAuthTokenKey, _OAConsumerKeyKey, _OANonceKey, _OASignatureKey, 
+                       _OASignatureMethodKey, _OATimestampKey, _OAVersionKey, _oauth_version ]
+    objc-classes:    [ _OACredential, _OAHMAC_SHA1Signer, _OAPlainTextSigner, _OAURLRequestSigner ]
+    objc-ivars:      [ _OACredential._consumerKey, _OACredential._consumerSecret, 
+                       _OACredential._oauthToken, _OACredential._oauthTokenSecret, 
+                       _OAURLRequestSigner._credential, _OAURLRequestSigner._signatureMethod ]
+...

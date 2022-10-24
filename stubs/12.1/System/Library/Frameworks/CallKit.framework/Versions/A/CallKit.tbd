@@ -1,0 +1,48 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7AA0AC70-D38C-31C8-AEE3-6338727F02F9', 'x86_64: 7AA0AC70-D38C-31C8-AEE3-6338727F02F9', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F5F7877F-D21B-3660-916D-C1546E535FBF', 'arm64e: F5F7877F-D21B-3660-916D-C1546E535FBF' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/CallKit.framework/Versions/A/CallKit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CXCallDirectoryDefaultHostBundleIdentifier, _CXCallDirectoryDefaultHostServiceName, 
+                       _CXCallDirectoryMaintenanceHostBundleIdentifier, _CXCallDirectoryMaintenanceHostServiceName, 
+                       _CXCallDirectoryManagerIdentificationEntriesChangedNotification, 
+                       _CXCallDirectoryStoreExtensionsChangedNotification, _CXCallDirectoryStoreMigratorLatestSchemaVersion, 
+                       _CXErrorDomain, _CXErrorDomainCallDirectoryManager, _CXErrorDomainCallDirectoryStore, 
+                       _CXErrorDomainIncomingCall, _CXErrorDomainNotificationServiceExtension, 
+                       _CXErrorDomainRequestTransaction ]
+    objc-classes:    [ _CXAbstractProvider, _CXAccount, _CXAction, _CXAnswerCallAction, 
+                       _CXCall, _CXCallAction, _CXCallController, _CXCallControllerHost, 
+                       _CXCallDirectoryExtension, _CXCallDirectoryExtensionContext, 
+                       _CXCallDirectoryExtensionManager, _CXCallDirectoryHost, _CXCallDirectoryIdentificationEntry, 
+                       _CXCallDirectoryLabeledPhoneNumberEntryData, _CXCallDirectoryManager, 
+                       _CXCallDirectoryMutableLabeledPhoneNumberEntryData, _CXCallDirectoryMutablePhoneNumberEntryData, 
+                       _CXCallDirectoryNSExtensionManager, _CXCallDirectoryPhoneNumberEntryData, 
+                       _CXCallDirectoryProvider, _CXCallDirectorySanitizer, _CXCallDirectoryStore, 
+                       _CXCallDirectoryStoreExtension, _CXCallDirectoryStoreIdentificationEntry, 
+                       _CXCallDirectoryStoreMigrationResult, _CXCallDirectoryStoreMigrator, 
+                       _CXCallFailureContext, _CXCallObserver, _CXCallSource, _CXCallSourceManager, 
+                       _CXCallUpdate, _CXEnableVideoCallAction, _CXEndCallAction, 
+                       _CXExtensionCallSource, _CXExtensionProvider, _CXHandle, _CXHandoffContext, 
+                       _CXInProcessCallSource, _CXInProcessProvider, _CXJoinCallAction, 
+                       _CXJoinCallActivity, _CXJoinCallActivitySession, _CXLabeledHandle, 
+                       _CXNetworkExtensionMessageController, _CXNetworkExtensionMessageControllerHost, 
+                       _CXNotificationServiceExtensionVoIPXPCClient, _CXNotificationServiceExtensionVoIPXPCHost, 
+                       _CXPlayDTMFCallAction, _CXProvider, _CXProviderConfiguration, 
+                       _CXProviderExtensionContext, _CXProviderExtensionHostContext, 
+                       _CXProviderExtensionVendorContext, _CXPullCallAction, _CXRemoveVoicemailAction, 
+                       _CXSandboxExtendedURL, _CXScreenShareAttributes, _CXSendMMIOrUSSDCodeAction, 
+                       _CXSenderIdentity, _CXSetGroupCallAction, _CXSetHeldCallAction, 
+                       _CXSetMutedCallAction, _CXSetPlayedVoicemailAction, _CXSetRelayingCallAction, 
+                       _CXSetScreenShareAttributesCallAction, _CXSetSendingVideoCallAction, 
+                       _CXSetSharingScreenCallAction, _CXSetTTYTypeCallAction, _CXSetTrashedVoicemailAction, 
+                       _CXSetVideoPresentationSizeCallAction, _CXSetVideoPresentationStateCallAction, 
+                       _CXStartCallAction, _CXTransaction, _CXTransactionGroup, _CXTransactionManager, 
+                       _CXVoicemail, _CXVoicemailAction, _CXVoicemailController, 
+                       _CXVoicemailControllerHost, _CXVoicemailObserver, _CXVoicemailProvider, 
+                       _CXVoicemailSource, _CXVoicemailUpdate, _CXXPCCallSource, 
+                       _CXXPCProvider, _CXXPCVoicemailSource ]
+...

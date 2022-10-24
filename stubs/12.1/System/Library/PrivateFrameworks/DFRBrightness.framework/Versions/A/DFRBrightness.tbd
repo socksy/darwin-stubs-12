@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0FDD77F6-B35D-3E8B-AB01-743CE036C691', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A469AA5A-4255-3223-8CD4-BCEC67D505D6' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DFRBrightness.framework/Versions/A/DFRBrightness'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DFRBrightnessClientCopyProperty, _DFRBrightnessClientCreate, 
+                       _DFRBrightnessClientDisplaySetDimmingStep, _DFRBrightnessClientDisplaySetDimmingStepWithOptions, 
+                       _DFRBrightnessClientDisplayTurnOff, _DFRBrightnessClientDisplayTurnOffWithPeriod, 
+                       _DFRBrightnessClientDisplayTurnOn, _DFRBrightnessClientDisplayTurnOnWithPeriod, 
+                       _DFRBrightnessClientGetBurninCounterValue, _DFRBrightnessClientGetDimmingStep, 
+                       _DFRBrightnessClientGetDisplayState, _DFRBrightnessClientRegisterDisplayStateUpdateCallback, 
+                       _DFRBrightnessClientScheduleWithDispatchQueue, _DFRBrightnessClientSetBurninCounterValue, 
+                       _DFRBrightnessClientSetProperty, _DFRBrightnessClientUnregisterDisplayStateUpdateCallback, 
+                       _DFRBrightnessClientUnscheduleWithDispatchQueue, _DFRBrightnessVersionNumber, 
+                       _DFRBrightnessVersionString, __COREBRIGHTNESS_LOG_DEFAULT, 
+                       _init_default_corebrightness_log ]
+    objc-classes:    [ _DFRBrightnessClient ]
+...

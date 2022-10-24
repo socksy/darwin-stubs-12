@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E136AC73-95CE-38C7-B200-BDC7A8748B5D', 'x86_64: E136AC73-95CE-38C7-B200-BDC7A8748B5D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4DD7FF9B-5692-3966-A28E-FC12F9B084C5', 'arm64e: 4DD7FF9B-5692-3966-A28E-FC12F9B084C5' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomeFoundation.framework/Versions/A/BiomeFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BMAbsoluteTimeFromCFAbsoluteTime, _BMAbsoluteTimeFromContinuousTime, 
+                       _BMAbsoluteTimeGetCurrent, _BMAbsoluteTimeGetOffsets, _BMAbsoluteTimeInitWithSyntheticStart, 
+                       _BMAbsoluteTimeSetSyntheticStartFromRemoteTime, _BMAbsoluteTimeToCFAbsoluteTime, 
+                       _BMAppleInternalReadEntitlement, _BMAppleInternalWriteEntitlement, 
+                       _BMArbitraryTimestampToCFAbsoluteTime, _BMCopyValueForEntitlement, 
+                       _BMCopyValuesForEntitlement, _BMDevicePlatformFromModelString, 
+                       _BMDevicePlatformGetDescription, _BMReadEntitlement, _BMStreamIdentifierIsPathSafe, 
+                       _BMWriteEntitlement, _BiomeFoundationVersionNumber, _BiomeFoundationVersionString, 
+                       ___biome_log_create, ___biome_log_create_for_category ]
+    objc-classes:    [ _BMCoreAnalyticsEvents, _BMDeviceMetadataUtils, _BMPaths, 
+                       _BMPublicStreamUtilities, _BMStoreDirectory ]
+...

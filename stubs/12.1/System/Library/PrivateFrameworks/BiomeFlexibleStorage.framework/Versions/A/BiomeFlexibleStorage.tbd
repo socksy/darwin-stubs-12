@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C1E695C5-6FD5-311B-B6B3-1837A07CF5FB', 'x86_64: C1E695C5-6FD5-311B-B6B3-1837A07CF5FB', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D99A1566-E2CE-3672-8C84-4C02C9915EAC', 'arm64e: D99A1566-E2CE-3672-8C84-4C02C9915EAC' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomeFlexibleStorage.framework/Versions/A/BiomeFlexibleStorage'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BiomeFlexibleStorageVersionNumber, _BiomeFlexibleStorageVersionString ]
+    objc-classes:    [ _BMRegistrar, _BMRemoteSQLStoreManager, _BMSQLRow, _BMSQLStore, 
+                       _BMSQLStoreManager, _BMSelectExpression, _BMTable, _BMTableSchema, 
+                       _BMTableStore, _BMTableUpsertSubscriber, _BiomeFlexibleStorageDirectory, 
+                       __BMRegistrarRegistration ]
+...

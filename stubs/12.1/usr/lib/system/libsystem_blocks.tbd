@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5A764E2F-FC3E-3288-8C65-C56BEC2886F1', 'x86_64: 5A764E2F-FC3E-3288-8C65-C56BEC2886F1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B7B7480C-F144-3501-8B95-AF95ACEF7BED', 'arm64e: B7B7480C-F144-3501-8B95-AF95ACEF7BED' ]
+platform:        zippered
+install-name:    '/usr/lib/system/libsystem_blocks.dylib'
+current-version: 79
+parent-umbrella: System
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _Block_size, __Block_copy, __Block_extended_layout, __Block_has_signature, 
+                       __Block_isDeallocating, __Block_layout, __Block_object_assign, 
+                       __Block_object_dispose, __Block_release, __Block_signature, 
+                       __Block_tryRetain, __Block_use_RR2, __Block_use_stret, __NSConcreteAutoBlock, 
+                       __NSConcreteFinalizingBlock, __NSConcreteGlobalBlock, __NSConcreteMallocBlock, 
+                       __NSConcreteStackBlock, __NSConcreteWeakBlockVariable ]
+...

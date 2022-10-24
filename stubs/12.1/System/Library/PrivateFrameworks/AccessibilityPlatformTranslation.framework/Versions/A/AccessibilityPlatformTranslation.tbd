@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1C9046CF-7802-3A22-89EF-65F7F3018029', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CB613D65-7AC0-3425-8008-A2155379845B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/Versions/A/AccessibilityPlatformTranslation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXPConvertValue, _AXPCustomActionIdentifier, _AXPCustomActionName, 
+                       _AXPCustomRotorDirection, _AXPCustomRotorName, _AXPCustomRotorSystemType, 
+                       _AXPCustomRotorTargetElement, _AXPCustomRotorTargetRange, 
+                       _AXPCustomRotorUUID, _AXPIsCatalyst, _AXPIsGoodOldAppleCatalystApp, 
+                       _AXPIsiOSAppOnMac, _AXPLinkedOnOrAfterGozul, _AXPNilOrEmptyString, 
+                       __AXPActionToString, __AXPAttributeToString, __AXPNotificationToString ]
+    objc-classes:    [ _AXPMacPlatformElement, _AXPTranslationObject, _AXPTranslator, 
+                       _AXPTranslatorRequest, _AXPTranslatorResponse ]
+...

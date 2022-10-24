@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1255EBD1-5613-372D-B15B-46A3FB424B43', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DECF9B50-3027-35F4-BE54-57D5A75E8E1B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/UVFSXPCService.framework/Versions/A/UVFSXPCService'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _UVFSXPCServiceVersionNumber, _UVFSXPCServiceVersionString ]
+...

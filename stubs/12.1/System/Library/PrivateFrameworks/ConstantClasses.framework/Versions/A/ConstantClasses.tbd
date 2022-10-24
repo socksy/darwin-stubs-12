@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EBB5AE28-8AED-3E0A-AF99-A183FA425D12', 'x86_64: EBB5AE28-8AED-3E0A-AF99-A183FA425D12', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EAE87CF5-E6D5-3741-906D-90ADBE1EF947', 'arm64e: EAE87CF5-E6D5-3741-906D-90ADBE1EF947' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ConstantClasses.framework/Versions/A/ConstantClasses'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CFStringHashNSString, __NSConstantDictionaryKeyHash ]
+    objc-classes:    [ __NSConstantArray, __NSConstantArrayEnumerator, __NSConstantData, 
+                       __NSConstantDate, __NSConstantDictionary, __NSConstantDictionaryEnumerator, 
+                       __NSConstantNumber, __NSConstantNumberBool, __NSConstantNumberFloat, 
+                       __NSConstantNumberInt ]
+    objc-ivars:      [ __NSConstantArrayEnumerator.capacity, __NSConstantArrayEnumerator.index, 
+                       __NSConstantArrayEnumerator.objects, __NSConstantDictionaryEnumerator.capacity, 
+                       __NSConstantDictionaryEnumerator.currentKey, __NSConstantDictionaryEnumerator.keyIndex ]
+...

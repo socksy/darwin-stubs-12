@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2791604A-5F7B-32EA-9341-8822020589BD', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A24D45A6-00EA-3C48-BA2A-CE2B4EAB849B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/Versions/A/DMCEnrollmentLibrary'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DMCEnrollmentLibraryVersionNumber, _DMCEnrollmentLibraryVersionString, 
+                       _kMCBridgeAssignedManagedAppleIDKey, _kMCBridgeEnrollmentModeKey, 
+                       _kMCBridgeFriendlyNameKey, _kMCBridgeManagedAppleIDKey, _kMCBridgeOrganizationNameKey, 
+                       _kMCBridgeProfileIdentifierKey, _kWebAuthCallbackURLScheme ]
+    objc-classes:    [ _DMCAuthenticationHelper, _DMCEnrollmentDirtyState, _DMCEnrollmentFlowController, 
+                       _DMCEnrollmentFlowControllerBase, _DMCMAIDAuthenticator, _DMCServiceDiscoveryHelper, 
+                       _DMCUnenrollmentFlowController ]
+...

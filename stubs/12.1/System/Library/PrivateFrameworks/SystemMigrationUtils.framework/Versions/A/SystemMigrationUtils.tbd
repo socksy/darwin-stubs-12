@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 289D9B8D-C29B-39FC-B121-D601BD7F6EEF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 05AF1FB5-6E13-34FC-9437-37848010BC85' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemMigrationUtils.framework/Versions/A/SystemMigrationUtils'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SMAnalyticsCAEventPayloadKeyApplicationsCopyDuration, _SMAnalyticsCAEventPayloadKeyApplicationsTotalSize, 
+                       _SMAnalyticsCAEventPayloadKeyAverageTransferRate, _SMAnalyticsCAEventPayloadKeyBetaReEnrollmentFeature, 
+                       _SMAnalyticsCAEventPayloadKeyEnginePhase, _SMAnalyticsCAEventPayloadKeyError, 
+                       _SMAnalyticsCAEventPayloadKeyFinalResult, _SMAnalyticsCAEventPayloadKeyHomeDirectoriesCopyDuration, 
+                       _SMAnalyticsCAEventPayloadKeyHomeDirectoriesTotalSize, _SMAnalyticsCAEventPayloadKeyODSTIssuingSuccess, 
+                       _SMAnalyticsCAEventPayloadKeyODSTRetries, _SMAnalyticsCAEventPayloadKeyOriginatingApplication, 
+                       _SMAnalyticsCAEventPayloadKeyPath, _SMAnalyticsCAEventPayloadKeyPathingDuration, 
+                       _SMAnalyticsCAEventPayloadKeyRequestState, _SMAnalyticsCAEventPayloadKeySourceConnectionMedium, 
+                       _SMAnalyticsCAEventPayloadKeySourceModelID, _SMAnalyticsCAEventPayloadKeySourceOSType, 
+                       _SMAnalyticsCAEventPayloadKeySourceType, _SMAnalyticsCAEventPayloadKeySourceVersion, 
+                       _SMAnalyticsCAEventPayloadKeyTotalDataSize, _SMAnalyticsCAEventPayloadKeyTotalDuration, 
+                       _SMUDTFirmlinkDestinationKey, _SMUDTFirmlinkSourceKey, _SMUDTTemplateReceiptIdentifier, 
+                       _SMUDataTemplateErrorDomain, _SystemMigrationUtilsVersionNumber, 
+                       _SystemMigrationUtilsVersionString, _getPairedVolumeWithRole, 
+                       _logBatteryState ]
+    objc-classes:    [ _SMAnalyticsConstantsTransformer, _SMAnalyticsManager, _SMConnectionFamilyIcons, 
+                       _SMLogging, _SMPathSizer, _SMSystemConfiguration, _SMSystem_FileManager_DiskBased, 
+                       _SMSystem_FileManager_ROSV, _SMSystem_FileManager_Traditional, 
+                       _SMTask, _SMToolBox, _SMUDataTemplateUtilities, _SMUPaneIdentifiersTransformer, 
+                       _SMUVersion, _SMUtilities ]
+...

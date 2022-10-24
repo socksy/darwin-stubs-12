@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0F8CB328-2D4E-3FD7-A7A0-846913F4581A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DD618553-5479-3BDD-A09C-59DB0F4A1DC6' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/OpenDirectoryConfigUI.framework/Versions/A/OpenDirectoryConfigUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ODCUIAuthSucceededNotification ]
+    objc-classes:    [ _ODCServersView, _ODCSummaryView ]
+    objc-ivars:      [ _ODCServersView._authView, _ODCServersView._controller, _ODCServersView._locked, 
+                       _ODCServersView._remoteAdminName, _ODCServersView._remotePassword, 
+                       _ODCServersView._remoteServerName, _ODCSummaryView._authView, 
+                       _ODCSummaryView._controller, _ODCSummaryView._locked ]
+...

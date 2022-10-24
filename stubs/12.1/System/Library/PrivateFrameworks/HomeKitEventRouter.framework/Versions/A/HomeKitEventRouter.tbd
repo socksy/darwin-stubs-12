@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F75CAB6F-F999-3CE9-B5BA-BFD14BEA008F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3FD9F9A3-0579-35D0-B268-F3CAC935F1E5' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/HomeKitEventRouter.framework/Versions/A/HomeKitEventRouter'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _HMEErrorDomain, _HMEProtoEventInfoReadFrom, _HMEProtoEventMetadataReadFrom, 
+                       _HMEProtoEventReadFrom ]
+    objc-classes:    [ _HMEEvent, _HMEEventInfo, _HMEEventMetadata, _HMELastEventStore, 
+                       _HMEMemoryEventBus, _HMEMessageDatagramClient, _HMEMessageDatagramServer, 
+                       _HMEPendingEventsCollection, _HMEPendingTopicsCombiner, _HMEPersistentConnectionClient, 
+                       _HMEPersistentConnectionServer, _HMEProtoEvent, _HMEProtoEventInfo, 
+                       _HMEProtoEventMetadata, _HMERouterClient, _HMERouterServer, 
+                       _HMETopicRouter ]
+    objc-ivars:      [ _HMEProtoEvent._eventData, _HMEProtoEvent._eventMetadata, 
+                       _HMEProtoEventInfo._event, _HMEProtoEventInfo._topic, _HMEProtoEventMetadata._cachePolicy, 
+                       _HMEProtoEventMetadata._combinePolicy, _HMEProtoEventMetadata._has, 
+                       _HMEProtoEventMetadata._qos, _HMEProtoEventMetadata._source, 
+                       _HMEProtoEventMetadata._timestamp ]
+...

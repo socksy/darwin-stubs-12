@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 194B1180-239D-30EA-9859-71A8FC8DCBA0', 'x86_64: 194B1180-239D-30EA-9859-71A8FC8DCBA0', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 84AB4975-BA36-3FDA-B328-55994FCAC7A4', 'arm64e: 84AB4975-BA36-3FDA-B328-55994FCAC7A4' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FeatureFlags.framework/Versions/A/FeatureFlags'
+current-version: 56
+swift-version:   7
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '_$s12FeatureFlags02isA7EnabledySbAA0aB3Key_pF', '_$s12FeatureFlags0aB3KeyMp', 
+                       '_$s12FeatureFlags0aB3KeyP6domains12StaticStringVvgTj', '_$s12FeatureFlags0aB3KeyP6domains12StaticStringVvgTq', 
+                       '_$s12FeatureFlags0aB3KeyP7features12StaticStringVvgTj', '_$s12FeatureFlags0aB3KeyP7features12StaticStringVvgTq', 
+                       '_$s12FeatureFlags0aB3KeyTL' ]
+...

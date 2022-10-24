@@ -1,0 +1,63 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 520F78DC-BC8B-3B00-82A3-40AA8C94E16F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FDE3C293-1C13-3160-9752-67604B1E8443' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/OctagonTrust.framework/Versions/A/OctagonTrust'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OTAccountSettingsXReadFrom, _OTCDPRecoveryInformationReadFrom, 
+                       _OTCliqueChanged, _OTCurrentSecureElementIdentitiesReadFrom, 
+                       _OTEscrowAuthenticationInformationReadFrom, _OTEscrowMoveRequestContextReadFrom, 
+                       _OTEscrowRecordMetadataClientMetadataReadFrom, _OTEscrowRecordMetadataReadFrom, 
+                       _OTEscrowRecordReadFrom, _OTICDPRecordContextReadFrom, _OTICDPRecordSilentContextReadFrom, 
+                       _OTInheritanceKeyErrorDomain, _OTJoinedViaBottle, _OTSecureElementPeerIdentityReadFrom, 
+                       _OTTag1ReadFrom, _OTUserControllableViewStatusChanged, _OctagonTrustVersionNumber, 
+                       _OctagonTrustVersionString ]
+    objc-classes:    [ _OTAccountSettingsX, _OTCDPRecoveryInformation, _OTCurrentSecureElementIdentities, 
+                       _OTCustodianRecoveryKey, _OTEscrowAuthenticationInformation, 
+                       _OTEscrowMoveRequestContext, _OTEscrowRecord, _OTEscrowRecordMetadata, 
+                       _OTEscrowRecordMetadataClientMetadata, _OTEscrowTranslation, 
+                       _OTICDPRecordContext, _OTICDPRecordSilentContext, _OTInheritanceKey, 
+                       _OTSecureElementPeerIdentity, _OTTag1 ]
+    objc-ivars:      [ _OTAccountSettingsX._tag1, _OTCDPRecoveryInformation._containsIcdpData, 
+                       _OTCDPRecoveryInformation._has, _OTCDPRecoveryInformation._recoveryKey, 
+                       _OTCDPRecoveryInformation._recoverySecret, _OTCDPRecoveryInformation._silentRecoveryAttempt, 
+                       _OTCDPRecoveryInformation._useCachedSecret, _OTCDPRecoveryInformation._usePreviouslyCachedRecoveryKey, 
+                       _OTCDPRecoveryInformation._usesMultipleIcsc, _OTCurrentSecureElementIdentities._localPeerIdentity, 
+                       _OTCurrentSecureElementIdentities._pendingLocalPeerIdentity, 
+                       _OTCurrentSecureElementIdentities._trustedPeerSecureElementIdentities, 
+                       _OTEscrowAuthenticationInformation._authenticationAppleid, 
+                       _OTEscrowAuthenticationInformation._authenticationAuthToken, 
+                       _OTEscrowAuthenticationInformation._authenticationDsid, _OTEscrowAuthenticationInformation._authenticationEscrowproxyUrl, 
+                       _OTEscrowAuthenticationInformation._authenticationIcloudEnvironment, 
+                       _OTEscrowAuthenticationInformation._authenticationPassword, 
+                       _OTEscrowAuthenticationInformation._fmipRecovery, _OTEscrowAuthenticationInformation._fmipUuid, 
+                       _OTEscrowAuthenticationInformation._has, _OTEscrowAuthenticationInformation._idmsRecovery, 
+                       _OTEscrowMoveRequestContext._currentFederation, _OTEscrowMoveRequestContext._escrowRecordLabel, 
+                       _OTEscrowMoveRequestContext._intendedFederation, _OTEscrowRecord._coolOffEnd, 
+                       _OTEscrowRecord._creationDate, _OTEscrowRecord._escrowInformationMetadata, 
+                       _OTEscrowRecord._expectedFederationId, _OTEscrowRecord._federationId, 
+                       _OTEscrowRecord._has, _OTEscrowRecord._label, _OTEscrowRecord._recordId, 
+                       _OTEscrowRecord._recordStatus, _OTEscrowRecord._recordViability, 
+                       _OTEscrowRecord._recoveryStatus, _OTEscrowRecord._remainingAttempts, 
+                       _OTEscrowRecord._serialNumber, _OTEscrowRecord._silentAttemptAllowed, 
+                       _OTEscrowRecord._viabilityStatus, _OTEscrowRecordMetadata._backupKeybagDigest, 
+                       _OTEscrowRecordMetadata._bottleId, _OTEscrowRecordMetadata._bottleValidity, 
+                       _OTEscrowRecordMetadata._clientMetadata, _OTEscrowRecordMetadata._escrowedSpki, 
+                       _OTEscrowRecordMetadata._has, _OTEscrowRecordMetadata._peerInfo, 
+                       _OTEscrowRecordMetadata._secureBackupTimestamp, _OTEscrowRecordMetadata._secureBackupUsesMultipleIcscs, 
+                       _OTEscrowRecordMetadata._serial, _OTEscrowRecordMetadataClientMetadata._deviceColor, 
+                       _OTEscrowRecordMetadataClientMetadata._deviceEnclosureColor, 
+                       _OTEscrowRecordMetadataClientMetadata._deviceMid, _OTEscrowRecordMetadataClientMetadata._deviceModel, 
+                       _OTEscrowRecordMetadataClientMetadata._deviceModelClass, _OTEscrowRecordMetadataClientMetadata._deviceModelVersion, 
+                       _OTEscrowRecordMetadataClientMetadata._deviceName, _OTEscrowRecordMetadataClientMetadata._devicePlatform, 
+                       _OTEscrowRecordMetadataClientMetadata._has, _OTEscrowRecordMetadataClientMetadata._secureBackupMetadataTimestamp, 
+                       _OTEscrowRecordMetadataClientMetadata._secureBackupNumericPassphraseLength, 
+                       _OTEscrowRecordMetadataClientMetadata._secureBackupUsesComplexPassphrase, 
+                       _OTEscrowRecordMetadataClientMetadata._secureBackupUsesNumericPassphrase, 
+                       _OTICDPRecordContext._authInfo, _OTICDPRecordContext._cdpInfo, 
+                       _OTICDPRecordSilentContext._authInfo, _OTICDPRecordSilentContext._cdpInfo, 
+                       _OTSecureElementPeerIdentity._peerData, _OTSecureElementPeerIdentity._peerIdentifier, 
+                       _OTTag1._enabled, _OTTag1._has ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FD002AD5-0075-30A6-BB6F-6C63CBFD302C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F52D2571-52F8-34F7-93D6-F364096AD248' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/iCloudQuota.framework/Versions/A/iCloudQuota'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ICQLogDebugDataTaskComplete, _ICQLogOfferDetailsForServerDictionary, 
+                       __ICQGetLogSystem, __ICQSignpostCreate, __ICQSignpostCreateWithObject, 
+                       __ICQSignpostGetNanoseconds, __ICQSignpostLogSystem ]
+...

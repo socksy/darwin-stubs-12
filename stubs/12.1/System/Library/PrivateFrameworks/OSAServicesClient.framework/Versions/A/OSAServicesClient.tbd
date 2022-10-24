@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 47CA726E-16B2-3D03-B117-FAE2A6DB6BB6', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 75556C71-6421-3BF2-BF56-81BB5FF666DC' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/OSAServicesClient.framework/Versions/A/OSAServicesClient'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DiagnosticMonitorLog, _OSADiagnosticMonitorClientInterface, 
+                       _OSADiagnosticMonitorServerInterface, _OSAServicesClientVersionNumber, 
+                       _OSAServicesClientVersionString, _kOSADiagnosticMonitorMachService ]
+    objc-classes:    [ _EventObserver, _OSADiagnosticMonitor, _OSADiagnosticMonitorClient, 
+                       _OSALogEvent, _OSALogIdentity, _OSALogWriteResult, _OSAServicesClient, 
+                       _ObserverShim, _WriteObserver ]
+...

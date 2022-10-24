@@ -1,0 +1,8 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C8BC8301-4018-3E70-9C99-E7955C5D4DF2', 'x86_64: C8BC8301-4018-3E70-9C99-E7955C5D4DF2', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F1D2A33B-9409-3343-8C2E-23328C2310A2', 'arm64e: F1D2A33B-9409-3343-8C2E-23328C2310A2' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/StoreServices.framework/Versions/A/StoreServices'
+...

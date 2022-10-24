@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BB7B4B0F-4D67-390A-B41E-430CBEBD63B3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 062D294A-F483-3FC4-B3A0-D6969E1A3643' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/NearField.framework/Versions/A/NearField'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NFSecureElementManagerSessionECDSACertificateKey, _NFSecureElementManagerSessionRSAACertificateKey, 
+                       _NFSignedPlatformData, _NFSignedPlatformSignatureBlob, _NF_DCK_EVENT_KEY_APPLET_IDENTIFIER, 
+                       _NF_DCK_EVENT_KEY_ERROR, _NF_DCK_EVENT_KEY_KEY_IDENTIFIER, 
+                       _NF_DCK_EVENT_KEY_NAME, _NF_DCK_EVENT_KEY_RANGING_SUSPENSION_REASONS, 
+                       _NF_DCK_EVENT_KEY_RANGING_TIMEOUT_SEC, _NF_DCK_EVENT_KEY_READER_IDENTIFIER, 
+                       _NF_DCK_EVENT_KEY_RKE_ACTION, _NF_DCK_EVENT_KEY_RKE_EXECUTION_STATUS, 
+                       _NF_DCK_EVENT_KEY_RKE_FUNCTION, _NF_SECURE_XPC_EVENT_KEY_EVENT_NAME, 
+                       _NF_SECURE_XPC_EVENT_KEY_EVENT_SIMPLE_NUMBER, _NF_SECURE_XPC_EVENT_KEY_EVENT_SIMPLE_STRING, 
+                       _NfRestoreCopyUniqueFDRKey, _ObliterationDeleteAllApplets, 
+                       _PTErrorInternal, _PTErrorInvalidParameters, _PTErrorKeyAlreadyExist, 
+                       _PTErrorKeyNotFound, _PTErrorNoMemory, ___PTErrorString ]
+    objc-classes:    [ _NFApplet, _NFContactlessPaymentEndEvent, _NFContactlessPaymentSession, 
+                       _NFContactlessPaymentSessionCallbacks, _NFContactlessPaymentSessionInterface, 
+                       _NFContactlessPaymentStartEvent, _NFContactlessSession, _NFContactlessSessionCallbacks, 
+                       _NFContactlessSessionInterface, _NFContactlessUICCSession, 
+                       _NFDigitalCarKeyEndEvent, _NFDigitalCarKeySession, _NFDigitalCarKeyStartEvent, 
+                       _NFECommercePaymentRequest, _NFECommercePaymentResponse, _NFECommercePaymentSession, 
+                       _NFECommercePaymentSessionInterface, _NFFieldDetectSession, 
+                       _NFFieldDetectSessionInterfaceCallbacks, _NFFieldNotification, 
+                       _NFFieldNotificationECP1_0, _NFFieldNotificationECP2_0, _NFHCESession, 
+                       _NFHardwareControllerInfo, _NFHardwareManager, _NFHardwareManagerCallbacks, 
+                       _NFHardwareManagerInterface, _NFHardwareManagerXPC, _NFHardwareSecureElementInfo, 
+                       _NFLoyaltyAndPaymentSession, _NFNdefMessage, _NFNdefRecord, 
+                       _NFNdefTagSession, _NFPeerPaymentEnrollmentRequest, _NFPeerPaymentEnrollmentResponse, 
+                       _NFPeerPaymentRequest, _NFPeerPaymentResponse, _NFPeerPaymentSession, 
+                       _NFPeerPaymentTransferRequest, _NFReaderSession, _NFReaderSessionCallbacks, 
+                       _NFReaderSessionInterface, _NFReaderSessionInternalInterface, 
+                       _NFRemoteAdminCardIngestionRequest, _NFRemoteAdminManager, 
+                       _NFRemoteAdminManagerCallbacks, _NFRemoteAdminManagerInterface, 
+                       _NFSecureElement, _NFSecureElementAndHostCardEmulationSession, 
+                       _NFSecureElementLoggingSession, _NFSecureElementLoggingSessionInterface, 
+                       _NFSecureElementManagerSession, _NFSecureElementManagerSessionInterface, 
+                       _NFSeshatSession, _NFSession, _NFSignatureInfo, _NFTag, _NFTapToRadar, 
+                       _NFTechnologyEvent, _NFTrustKey, _NFTrustKeyRequest, _NFTrustLocalValidation, 
+                       _NFTrustObject, _NFTrustPaymentSignResponse, _NFTrustSession, 
+                       _NFTrustSessionInterface, _NFTrustSignRequest, _NFTrustSignResponse, 
+                       _NFVASRequest, _NFVASResponse, _NFValueAddedServiceCard, _NFValueAddedServiceTransaction, 
+                       _NFVehicleReport ]
+...

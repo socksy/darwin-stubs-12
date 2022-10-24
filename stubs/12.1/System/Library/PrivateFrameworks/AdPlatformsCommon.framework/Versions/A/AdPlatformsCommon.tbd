@@ -1,0 +1,49 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 68ED6A38-C552-39E6-A071-61F79F3124E2', 'x86_64: 68ED6A38-C552-39E6-A071-61F79F3124E2', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B7A580B9-CBA4-3B4E-BAF4-00396F54250A', 'arm64e: B7A580B9-CBA4-3B4E-BAF4-00396F54250A' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsCommon.framework/Versions/A/AdPlatformsCommon'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _APDefaultsBundleID, _APDiagnosticsSubmissionAllowed, _APLogForCategory, 
+                       _APSimulateCrash, _APSimulateCrashNoKillProcess, _AdPlatformsCommonVersionNumber, 
+                       _AdPlatformsCommonVersionString, _kAPAccountChangedNotification, 
+                       _kAPAdLibBundleID, _kAPAnalyticsAdEventTypeNavigationAttemptBlockedDueToAccidentalTapForMRAIDActionType, 
+                       _kAPAutomationLoggingEnabled, _kAPDisplayServerQE1Base, _kAPDisplayServerQE2Base, 
+                       _kAPDisplayServerQE3Base, _kAPDisplayServerQE4Base, _kAPMetricAreNetworkDatesKey, 
+                       _kAPMetricBundleIdentifierKey, _kAPMetricClientIdentifierKey, 
+                       _kAPMetricClientInfoKey, _kAPMetricClientSourceKey, _kAPMetricContentIdentifierKey, 
+                       _kAPMetricContextIdentifierKey, _kAPMetricDeviceIdentifierKey, 
+                       _kAPMetricDeviceModel, _kAPMetricIdentifierKey, _kAPMetricInternalMessageBetweenArticleRateKey, 
+                       _kAPMetricInternalMessageClientHandlesVisibilityTrackingKey, 
+                       _kAPMetricInternalMessageInArticleRateKey, _kAPMetricInternalMessageInFeedRateKey, 
+                       _kAPMetricInternalMessageNativeInArticleRateKey, _kAPMetricInternalMessageNativeInFeedRateKey, 
+                       _kAPMetricInternalMessageVideoInArticleRateKey, _kAPMetricInternalPropertiesKey, 
+                       _kAPMetricMetricKey, _kAPMetricOS, _kAPMetricOSBuild, _kAPMetricOSVersion, 
+                       _kAPMetricOptionsKey, _kAPMetricPropertiesKey, _kAPMetricRouteKey, 
+                       _kAPMetricSubscriptionCurrency, _kAPMetricSubscriptionIdentifier, 
+                       _kAPMetricSubscriptionPrice, _kAPMetricSubscriptionPurchase, 
+                       _kAPMetricSubscriptionSource, _kAPMetricSubscriptionToken, 
+                       _kAPMetricSubscriptionType, _kAPMetricTimestampKey, _kAPMetricUserIdentifierKey, 
+                       _kAPServerEnvironmentKey, _kAPServerEnvironmentProduction, 
+                       _kAPServerEnvironmentProductionBaseURL, _kAPServerEnvironmentQE1, 
+                       _kAPServerEnvironmentQE1BaseURL, _kAPServerEnvironmentQE2, 
+                       _kAPServerEnvironmentQE2BaseURL, _kAPServerEnvironmentQE3, 
+                       _kAPServerEnvironmentQE3BaseURL, _kAPServerEnvironmentQE4, 
+                       _kAPServerEnvironmentQE4BaseURL ]
+    objc-classes:    [ _APAMSClientBagManager, _APAnalytics, _APClientInfo, _APContentData, 
+                       _APContentDepiction, _APContext, _APControllerRequesterCoordinator, 
+                       _APFrequencyCapData, _APInstallAttribution, _APLocationInfo, 
+                       _APLocationManager, _APMescalSigning, _APMescalSigningRequestor, 
+                       _APMetric, _APMetricDaemonDelivery, _APMetricNotificationRegistrar, 
+                       _APOrderedMutableDictionary, _APPCControllerRequester, _APRepresentationData, 
+                       _APSupportedSecureEncodedClass, _APSystemInternal, _APTapAction, 
+                       _APUnfairLock, _APUnfairRecursiveLock, _APXPCActionRequester, 
+                       _APXPCConnection, _APXPCListenerManager, _APXPCRemoteConnection, 
+                       _MetricsModuleCommon, _PCNativeAsset, _PCNativeAssetInfo, 
+                       _PCNativeBorderStyle, _PCNativeButton, _PCNativeButtonStyle, 
+                       _PCNativeColor, _PCNativeElement, _PCNativePrimitiveColor, 
+                       _PCNativeRepresentation, _PCNativeShadowStyle, _PCNativeStyle ]
+...

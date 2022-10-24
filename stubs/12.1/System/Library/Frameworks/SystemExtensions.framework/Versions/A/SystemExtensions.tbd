@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A4CB0C69-463D-3D5A-910A-7A06FE9DA4DE', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4EC5B675-6BD3-303C-A334-46AC9C84163F' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/SystemExtensions.framework/Versions/A/SystemExtensions'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NSSystemExtensionUsageDescriptionKey, _OSBundleUsageDescriptionKey, 
+                       _OSRelatedKernelExtensionKey, _OSSystemExtensionCategoryIdentifierCoreMediaIO, 
+                       _OSSystemExtensionCategoryIdentifierDriverExtension, _OSSystemExtensionCategoryIdentifierEndpointSecurity, 
+                       _OSSystemExtensionCategoryIdentifierNetworkExtension, _OSSystemExtensionErrorDomain, 
+                       __systemextensions_fake_server_listener_connection, __systemextensions_framework_testing_active, 
+                       _applicationDisplayNameForExecutable ]
+    objc-classes:    [ _OSSystemExtensionClient, _OSSystemExtensionInfo, _OSSystemExtensionMDMClient, 
+                       _OSSystemExtensionManager, _OSSystemExtensionPointListener, 
+                       _OSSystemExtensionProperties, _OSSystemExtensionRequest ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3E9E282E-ABBB-3945-956D-0AC6ABC8BCD6', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E462F569-E611-32C6-B170-C12ED8981FF5' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MapsUI.framework/Versions/A/MapsUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MUConfigureMeasurementFormatter, _MUConvertedFormattedString, 
+                       _MUFactoidImpericalMeasurementFormatterForValue, _MUFactoidMeasurementFormatterForValue, 
+                       _MUPlaceSectionHeaderLeadingSpacingForInitialOffset, _MapsUIConfig_AmenityNumberOfInlineItemsBeforeSeeAll, 
+                       _MapsUIConfig_ForceSeparatorPlacecardStyle, _MapsUIConfig_MakeRatingScoreAndCallToActionRibbonItemsMutuallyExclusive, 
+                       _MapsUIConfig_MaximumNumberOfItemsToShowInPhotoSlider, _MapsUIConfig_MaximumNumberOfPhotosInSliderToShowFullScreenPhotoViewer, 
+                       _MapsUIConfig_MaximumSizeForQuickActionTrayArtworkCache, _MapsUIConfig_PlaceRibbonMinimumThresholdOfItems, 
+                       _MapsUIConfig_RelatedPlaceSectionNumberOfInlineItems, _MapsUIConfig_RelatedPlaceSectionSeeAllThreshold, 
+                       _MapsUIConfig_ServiceHoursNumberOfInlineItemsBeforeSeeAll, 
+                       _MapsUIConfig_StubPlacecard, _MapsUIConfig_SuppressDedicatedAttributionModule, 
+                       _MapsUIConfig_TimeToLiveInSecondsForQuickActionTrayArtworkCache, 
+                       _kMUApplePaySymbolName, _kMUHorizontalPlatterDefaultWidth, 
+                       _kMUHorizontalTileDefaultWidth, _kMUNFCSymbolName, _kMUPlaceAnimationDurationShort, 
+                       _kMUPlaceHorizontalMarginSpacing, _kMUPlaceHorizontalPlatterVerticalEdgeSpacing, 
+                       _kMUPlaceHorizontalStackInsets, _kMUPlaceHorizontalStackSpacing, 
+                       _kMUPlacePlatterButtonLength, _kMUPlacePlatterContentInsets, 
+                       _kMUPlacePlatterCornerRadius, _kMUPlacePlatterPadding, _kMUPlaceSectionVerticalSpacing, 
+                       _kMUPlaceSystemSpacing ]
+    objc-classes:    [ _MUCoordinateStringFormatter, _MUCoordinateViewModel, _MUFactoidViewModel, 
+                       _MUInfoCardStyle, _MULRUCache, _MUPlaceHeaderETAFormatter, 
+                       _MUPlaceSectionController, _MUPlaceSectionFooterViewModel, 
+                       _MUPlaceSectionHeaderView, _MUPlaceSectionHeaderViewModel, 
+                       _MUPlaceSectionView, _MUPlaceViewController, _MUPlaceViewControllerConfiguration, 
+                       _MUPlatterConfigurator, _MUPlatterView, _MUPresentationOptions, 
+                       _MUScrollableStackView, _MUStackView, _MUTextFactoidViewModel, 
+                       _MUTimeExpirableLRUCache ]
+...

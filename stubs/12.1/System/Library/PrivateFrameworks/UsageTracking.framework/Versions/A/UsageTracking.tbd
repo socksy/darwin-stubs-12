@@ -1,0 +1,48 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AB5F07F1-2F4B-31C2-8CC6-54C4E389ED1D', 'x86_64: AB5F07F1-2F4B-31C2-8CC6-54C4E389ED1D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1CBE2C69-923D-3243-B5CF-B68C336331EF', 'arm64e: 1CBE2C69-923D-3243-B5CF-B68C336331EF' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTracking'
+current-version: 220
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ ContextStoreAgent, DeviceActivity, DeviceActivityFunctionalTests, 
+                         DeviceActivityMonitorExtension, DeviceActivityTestApplication, 
+                         DeviceActivityTests, DeviceManagementTests, FamilyControlsAgent, 
+                         FamilyControlsTests, PowerlogHelperdOperators, PowerlogLiteOperators, 
+                         RemoteManagementTests, SafariShared, ScreenTime, ScreenTimeAgent, 
+                         ScreenTimeSettingsUI, ScreenTimeTests, ScreenTimeUI, ScreenTimeWebExtension, 
+                         UsageTrackingAgent, dmd, remotemanagementd, usagetool ]
+    symbols:         [ _USBundleIdentifierQuickLookUIServiceEmbedded, _USBundleIdentifierQuickLookUIServiceMacOS, 
+                       _USBundleIdentifierSafariEmbedded, _USBundleIdentifierSafariViewService, 
+                       _USDeviceActivityMonitorExtensionTimeoutInSeconds, _USDeviceActivityMonitorExtensionTimeoutLeewayInSeconds, 
+                       _USDidCancelDeviceActivityMonitorExtensionRequest, _USDuetClientNameUsageTracking, 
+                       _USErrorDomain, _USMachServiceNameUsageTracking, _USMachServiceNameUsageTrackingPrivate, 
+                       _USNotificationReceivedValue, _USUsageTrackingVersionNumber, 
+                       _USUsageTrackingVersionString, _USVideoMetadataKeyAudioElementWithUserGesture, 
+                       _USVideoMetadataKeyCanShowControlsManager, _USVideoMetadataKeyCanShowNowPlayingControls, 
+                       _USVideoMetadataKeyHasEverNotifiedAboutPlaying, _USVideoMetadataKeyHasHadUserInteractionAndQuirksContainsShouldAutoplayForArbitraryUserGesture, 
+                       _USVideoMetadataKeyIsAudio, _USVideoMetadataKeyIsAudioAndRequiresUserGestureForAudioRateChange, 
+                       _USVideoMetadataKeyIsElementRectMostlyInMainFrame, _USVideoMetadataKeyIsFullscreen, 
+                       _USVideoMetadataKeyIsInActiveDocument, _USVideoMetadataKeyIsLargeEnoughForMainContent, 
+                       _USVideoMetadataKeyIsMediaDocumentAndNotOwnerElement, _USVideoMetadataKeyIsMediaDocumentInMainFrame, 
+                       _USVideoMetadataKeyIsMuted, _USVideoMetadataKeyIsSuspended, 
+                       _USVideoMetadataKeyIsVideo, _USVideoMetadataKeyIsVideoAndRequiresUserGestureForVideoDueToLowPowerMode, 
+                       _USVideoMetadataKeyIsVideoAndRequiresUserGestureForVideoRateChange, 
+                       _USVideoMetadataKeyNoAudio, _USVideoMetadataKeyNoUserGestureRequired, 
+                       _USVideoMetadataKeyNoVideo, _USVideoMetadataKeyOutsideOfFullscreen, 
+                       _USVideoMetadataKeyPageExplicitlyAllowsElementToAutoplayInline, 
+                       _USVideoMetadataKeyPageMediaPlaybackSuspended, _USVideoMetadataKeyPlaybackPermitted, 
+                       _USVideoMetadataKeyRenderer, _USVideoMetadataKeyRequiresFullscreenForVideoPlaybackAndFullscreenNotPermitted, 
+                       _USVideoMetadataKeyRequiresPlaybackAndIsNotPlaying, _USVideoMetadataKeyUserHasPlayedAudioBefore, 
+                       _usageContextContainsPlayingQuickLookVideo ]
+    objc-classes:    [ _USApplicationUsageReport, _USBudget, _USCategoryUsageReport, 
+                       _USDeviceActivityEvent, _USDeviceActivityMonitorExtensionProxy, 
+                       _USDeviceActivitySchedule, _USDomainNormalization, _USTrackingAgentConnection, 
+                       _USTrackingAgentPrivateConnection, _USTrustIdentifier, _USUsageMonitor, 
+                       _USUsageQuerying, _USUsageReport, _USUsageReporter, _USUsageTrackingBundle, 
+                       _USUsageTrust, _USVideoUsage, _USWebHistory, _USWebUsageReport, 
+                       _USWebpageUsage, _USXPCRemoteObjectProxy ]
+...

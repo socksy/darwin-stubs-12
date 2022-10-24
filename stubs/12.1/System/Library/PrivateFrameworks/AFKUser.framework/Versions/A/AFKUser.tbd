@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F8F3DF6A-3F95-3499-846C-AAC73A191FAF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E169957F-6C56-31ED-8F3E-68CF54065554' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AFKUser.framework/Versions/A/AFKUser'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AFKUserVersionNumber, _AFKUserVersionString, _kAFKEventCancel, 
+                       _kAFKEventError ]
+    objc-classes:    [ _AFKEndpointInterface ]
+...

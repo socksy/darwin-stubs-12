@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8F9ACED9-5100-36FA-9697-06B59C0D90BB', 'x86_64: 8F9ACED9-5100-36FA-9697-06B59C0D90BB', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 21936D63-5766-3C2A-B927-1818C11C17A4', 'arm64e: 21936D63-5766-3C2A-B927-1818C11C17A4' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IncomingCallFilter.framework/Versions/A/IncomingCallFilter'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ICFCallProviderShouldAllowIncomingCall, _ICFCallProviderShouldAllowIncomingCallWithQueue, 
+                       _ICFRegisterCallFilterBlockWithIdentifier, _ICFRegisterCallFilterResultBlockWithIdentifier, 
+                       _ICFServiceIdentifierFaceTime, _ICFServiceIdentifierFaceTimeAudio, 
+                       _ICFServiceIdentifierTelephony, _ICFServiceIdentifierTelephonyRelay, 
+                       _ICFUnknownID, _ICFUnregisterCallFilterBlockWithIdentifier, 
+                       _ICFUnregisterCallFilterResultBlockWithIdentifier ]
+    objc-classes:    [ _ICFCallServer ]
+...

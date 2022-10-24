@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3F199152-3314-39E8-A2AD-543CBC1517C9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 809FF062-C975-31A7-8401-6AD354610134' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/ScreenTime.framework/Versions/A/ScreenTime'
+current-version: 500.6.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _STMachServiceNameScreenTime ]
+    objc-classes:    [ _STScreenTimeAgentConnection, _STScreenTimeConfiguration, 
+                       _STScreenTimeConfigurationObserver, _STWebHistory, _STWebRemoteViewController, 
+                       _STWebService, _STWebpageController ]
+...

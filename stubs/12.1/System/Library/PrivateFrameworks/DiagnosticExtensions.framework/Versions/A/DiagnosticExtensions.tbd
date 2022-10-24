@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 29016C6B-56E0-3445-9FB5-050ACE1C4885', 'x86_64: 29016C6B-56E0-3445-9FB5-050ACE1C4885', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 363CBE7A-18AA-3A7E-AFBD-BB080AFF9D9F', 'arm64e: 363CBE7A-18AA-3A7E-AFBD-BB080AFF9D9F' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/Versions/A/DiagnosticExtensions'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DEExtensionTrackerEarliestExpirationDateKey, _DEExtensionTrackerExpirationDateKey, 
+                       _DEExtensionTrackerSessionsKey, _DEExtensionTrackerUserDefaultsKey, 
+                       _DEExtensionTrackerXPCActivityDateKey, _DEExtensionTrackerXPCActivityKey, 
+                       _DEUtilsValidateConnection, _DEUtilsValidateDestination, _DiagnosticExtensionsVersionNumber, 
+                       _DiagnosticExtensionsVersionString, _pgrep, _signal_USR2 ]
+    objc-classes:    [ _DEArchive, _DEArchiveReader, _DEArchiver, _DEAttachmentGroup, 
+                       _DEAttachmentItem, _DEAttachmentItemSandboxExtensionHandle, 
+                       _DEExtension, _DEExtensionContext, _DEExtensionHostContext, 
+                       _DEExtensionManager, _DEExtensionProvider, _DEExtensionTracker, 
+                       _DELogMover, _DELogging, _DEUtils, _DiagnosticExtensions_Subsystem ]
+...

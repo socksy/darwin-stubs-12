@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 79EFC397-A3E2-3278-86D3-18D3E7D0EEFC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C5042D4A-6DD2-350A-8E18-F65A0ACE3BAC' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CalendarAgent.framework/Versions/A/CalendarAgent'
+current-version: 961
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CalAgentErrorDomain, _CalAgentErrorGenerateStringVersion, 
+                       _CalAgentNS_ApplePushServiceConnection, _CalAgentNS_Log, _CalAgentNS_Log_Accounts, 
+                       _CalAgentNS_Log_Operations, _CalAgentNS_Log_Push, _CalAgentNS_Log_Refresh, 
+                       _CalAgentNS_Log_XPC, _CalAgentNS_Preference_DefaultEventCalendar, 
+                       _CalAgentNS_Preference_DefaultReminderCalendar, _CalAgentNS_Preference_LastSelectedCalendarListItemUid, 
+                       _CalAgentNS_Preference_OverriddenHTTPUserAgent, _CalAgentNS_Queue_LoadNetworkObjects, 
+                       _CalStoreRemoteManagedAlarmTriggerDateCompare, _CalTravelTimeErrorDomain, 
+                       _CoreAlarmTriggerDateCompare ]
+    objc-classes:    [ _CalAccountActions, _CalAgent, _CalAgentAPSConnectionManager, 
+                       _CalAgentAnalyticsTracker, _CalAgentAnalyticsUtilities, _CalAgentCalDAVQueueOperation, 
+                       _CalAgentDefaultTCCChecker, _CalAgentDownloadSpecificAttachmentOperation, 
+                       _CalAgentExchangeQueueOperation, _CalAgentLaunchExternalSyncOperation, 
+                       _CalAgentMessageEngine, _CalAgentOperation, _CalAgentOperationMap, 
+                       _CalAgentPolicy, _CalAgentPreferences, _CalAgentProcessChangeRequestsOperation, 
+                       _CalAgentProxy, _CalAgentQueueStatusOperation, _CalAgentRequestCalendarPublishOperation, 
+                       _CalAgentScanDropboxOperation, _CalAgentUpdateSubscriptionAuthInfoOperation, 
+                       _CalAgentUserNotificationOperation, _CalAgentXPCServerDelegate, 
+                       _CalTravelTimeManager, _CalendarLinkProxy, _CalendarStoreProxy ]
+    objc-ivars:      [ _CalAgentOperationMap._concurrentQueue, _CalAgentOperationMap._map, 
+                       _CalAgentOperationMap._serialQueue, _CalTravelTimeManager._hasMapKitFramework, 
+                       _CalendarLinkProxy._concurrentQueue, _CalendarLinkProxy._delayForCoreDataGroup, 
+                       _CalendarLinkProxy._nWideQueue, _CalendarLinkProxy._serialQueue ]
+...

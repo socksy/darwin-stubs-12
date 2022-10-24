@@ -1,0 +1,49 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 35C73A72-E373-38A8-8436-D140618D2BA1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AB67CEBE-282E-3553-B2EB-8D4AF768901A' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/Social.framework/Versions/A/Social'
+current-version: 726
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CPFileBuildDirectoriesToPath, _SLErrorDomain, _SLFacebookEnvironmentDidChangeNotification, 
+                       _SLFacebookGraphAPIShouldUseBetaKey, _SLFacebookIgnoreAccessRequests, 
+                       _SLFacebookLikeInfoFriendCountKey, _SLFacebookLikeInfoFriendsKey, 
+                       _SLFacebookLikeInfoGlobalCountKey, _SLFacebookLikeInfoMeKey, 
+                       _SLFacebookPreferencesAppID, _SLFacebookRESTAPIShouldUseBetaKey, 
+                       _SLFacebookVideoUploadSupportEnabledKey, _SLLinkedInEnvironmentDidChangeNotification, 
+                       _SLLinkedInIgnoreAccessRequests, _SLLinkedInPreferencesAppID, 
+                       _SLLogLevelKey, _SLNotificationChoices, _SLNotificationDisplayName, 
+                       _SLNotificationFacebookBundleID, _SLNotificationKey, _SLNotificationLinkedInBundleID, 
+                       _SLNotificationPrefsDomain, _SLNotificationSinaWeiboBundleID, 
+                       _SLNotificationTencentWeiboBundleID, _SLNotificationTwitterBundleID, 
+                       _SLNotificationTypeComments, _SLNotificationTypeDirectMessages, 
+                       _SLNotificationTypeFavorites, _SLNotificationTypeMentions, 
+                       _SLNotificationTypeRetweets, _SLNotificationValue, _SLOutputLevelKey, 
+                       _SLServiceMain, _SLServiceTypeFacebook, _SLServiceTypeFacebookInternal, 
+                       _SLServiceTypeFlickr, _SLServiceTypeLinkedIn, _SLServiceTypeLinkedInInternal, 
+                       _SLServiceTypeSinaWeibo, _SLServiceTypeSinaWeiboInternal, 
+                       _SLServiceTypeTencentWeibo, _SLServiceTypeTencentWeiboInternal, 
+                       _SLServiceTypeTudou, _SLServiceTypeTwitter, _SLServiceTypeTwitterInternal, 
+                       _SLServiceTypeVimeo, _SLServiceTypeYouku, _SLSocialFrameworkBundle, 
+                       _SLTudouErrorDomain, _SLUserDataDirectory, _SLUserLibraryDirectory, 
+                       _SLYoukuErrorDomain, __SLLog ]
+    objc-classes:    [ _SLAOLWebAuthController, _SLAOLWebClient, _SLBatchRequest, 
+                       _SLComposeServiceViewController, _SLDatabase, _SLExternalServiceGatekeeper, 
+                       _SLFacebookAlbum, _SLFacebookGraphUtils, _SLFacebookPlace, 
+                       _SLFacebookRequest, _SLFacebookSession, _SLGoogleLegacyTokenMigrationCodeResponse, 
+                       _SLGoogleLegacyTokenMigrationRequest, _SLGoogleLegacyTokenMigrationResponse, 
+                       _SLGoogleLegacyTokenMigrationTokenResponse, _SLGoogleOAuth2TokenRequest, 
+                       _SLGoogleOAuth2TokenResponse, _SLGoogleUserInfoResponse, _SLGoogleWebAuthRequest, 
+                       _SLGoogleWebClient, _SLGuaranteedRemoteCall, _SLLegacyGooglePlusUserInfoResponse, 
+                       _SLManagedObject, _SLMicroBlogStatus, _SLMicroBlogUserRecord, 
+                       _SLNotificationPrefs, _SLPlace, _SLRemoteSession, _SLRemoteSessionProxy, 
+                       _SLRequest, _SLRequestMultiPart, _SLSafeLocationManagerDelegate, 
+                       _SLService, _SLServiceListener, _SLWebAuthController, _SLWebAuthIdentity, 
+                       _SLWebTokenHandlerController, _SLWebUserInfoResponse, _SLYahooLoginTokenRequest, 
+                       _SLYahooLoginTokenResponse, _SLYahooOAuth2MigrationRequest, 
+                       _SLYahooOAuth2MigrationResponse, _SLYahooWebAuthController, 
+                       _SLYahooWebAuthRequest, _SLYahooWebClient, _SLYahooWebOAuth2TokenRequest, 
+                       _SLYahooWebOAuth2TokenResponse ]
+...

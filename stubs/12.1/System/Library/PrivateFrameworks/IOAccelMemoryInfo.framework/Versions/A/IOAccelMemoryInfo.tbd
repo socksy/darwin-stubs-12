@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 80D6EB49-BBDA-3533-B23E-E0FD37EC187F', 'x86_64: 80D6EB49-BBDA-3533-B23E-E0FD37EC187F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 357193C4-9C6B-3A97-8B26-192B93F02277', 'arm64e: 357193C4-9C6B-3A97-8B26-192B93F02277' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IOAccelMemoryInfo.framework/Versions/A/IOAccelMemoryInfo'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IOAccelMemoryInfoErrorDomain, _IOAccelMemoryInfoIOKitDriverKey, 
+                       _IOAccelMemoryInfoProcessIDKey ]
+    objc-classes:    [ _IOAccelMemoryInfo, _IOAccelMemoryMapInfo, _IOAccelMemoryOpenCLInfo, 
+                       _IOAccelMemoryOpenGLInfo, _IOAccelMemoryPoolTotals, _IOAccelMemorySurfaceInfo ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4E1D3771-3417-307F-BBBE-5952312D629C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0F2DE527-B1B2-318A-8196-B1C03CE3855A' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleISPEmulator.framework/Versions/A/AppleISPEmulator'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CopyISPEmulatorConfigurationDictionary, _CreateISPEmulator, 
+                       _DestroyISPEmulator, _EnqueueFrame, _SetISPEmulatorConfigurationDictionary, 
+                       _kAppleISPEmulatorConfiguration_AlgorithmProfile, _kAppleISPEmulatorConfiguration_AlgorithmProfileVersion, 
+                       _kAppleISPEmulatorConfiguration_AlgorithmProfile_MLVNR, _kAppleISPEmulatorConfiguration_AlgorithmProfile_MLVNR_MetalVEIRL, 
+                       _kAppleISPEmulatorConfiguration_AlgorithmProfile_MetalVEIRL, 
+                       _kAppleISPEmulatorConfiguration_AlgorithmProfile_MetalVNR, 
+                       _kAppleISPEmulatorConfiguration_AlgorithmProfile_MetalVNR_MetalVEIRL, 
+                       _kAppleISPEmulatorConfiguration_InputFrameHeight, _kAppleISPEmulatorConfiguration_InputFramePixelFormat, 
+                       _kAppleISPEmulatorConfiguration_InputFrameWidth, _kAppleISPEmulatorConfiguration_OutputFrameHeight, 
+                       _kAppleISPEmulatorConfiguration_OutputFramePixelFormat, _kAppleISPEmulatorConfiguration_OutputFrameWidth, 
+                       _kCaptureSampleBufferAttachmentKey_VEIRL_Frame_Metadata ]
+...

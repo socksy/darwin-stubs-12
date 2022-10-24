@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B51039D7-D5BA-328D-A19F-5F906FF2C681', 'x86_64: B51039D7-D5BA-328D-A19F-5F906FF2C681', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FF8C0E14-3DBA-3EDD-99F6-8E31985C2B84', 'arm64e: FF8C0E14-3DBA-3EDD-99F6-8E31985C2B84' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AcousticMaterials.framework/Versions/A/AcousticMaterials'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AMAcousticParameterTypeAbsorption, _AMAcousticParameterTypeScattering, 
+                       _AMAcousticParameterTypeSoundReductionIndex, _AMErrorDomain, 
+                       _AMSemanticTypeGeoLocation, _AMSemanticTypeObject, _AMSemanticTypeObjectARMeshClassificationID, 
+                       _AMSemanticTypeObjectAttribute, _AMSemanticTypeScene, _AMSemanticTypeVisualMaterial, 
+                       _AMSemanticTypeVisualMaterialARMeshMaterialID, _AcousticMaterialsVersionNumber, 
+                       _AcousticMaterialsVersionString, _DBIOCloseDatabase, _DBIODatabaseValidatedWithoutError, 
+                       _DBIOFetchDatabaseResults, _DBIOOpenDatabaseFromURL, __dbPtr, 
+                       _decimalValuesFromCSV, _integerValuesFromCSV, _valueIsBetween ]
+    objc-classes:    [ _AMAbsorption, _AMDatabase, _AMScattering, _AMSoundReductionIndex ]
+...

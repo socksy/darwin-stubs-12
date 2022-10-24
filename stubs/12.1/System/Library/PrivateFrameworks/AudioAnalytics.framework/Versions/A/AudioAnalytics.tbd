@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9C96CD78-6532-3E76-A71E-363CDDE7ABF3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5923AFB3-B0C6-32A5-A24C-8A272126DFD6' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AudioAnalytics.framework/Versions/A/AudioAnalytics'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AudioAnalyticsVersionNumber, _AudioAnalyticsVersionString ]
+...

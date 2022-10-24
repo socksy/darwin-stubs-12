@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 96D065D5-3F02-3425-B4B5-94A626E0EFBA', 'x86_64: 96D065D5-3F02-3425-B4B5-94A626E0EFBA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 869BDF49-0340-3CD2-A732-3F0F1AD9C08E', 'arm64e: 869BDF49-0340-3CD2-A732-3F0F1AD9C08E' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FTClientServices.framework/Versions/A/FTClientServices'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FTCServiceAvailabilityAvailabilityKey, _FTCServiceAvailabilityDidChangeNotification, 
+                       _FTCServiceAvailabilityServiceTypeKey, _FTCServiceNameCalling, 
+                       _FTCServiceNameFaceTime, _FTCServiceNameForServiceType, _FTCServiceNameMadrid, 
+                       _FTCServiceNameiMessage, _FTCServiceTypeForServiceName ]
+    objc-classes:    [ _FTCServiceAvailabilityCenter ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 00E72792-0AFC-3994-99DF-D1C0D017356D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5A17627B-18F3-3C0A-A3DE-EB02A55C863E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/HDAInterface.framework/Versions/A/HDAInterface'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _HDAAudioEngineInputClass, _HDAAudioEngineOutputClass, _HDAErrorDomain ]
+    objc-classes:    [ _HDAAudioEngineUserClient, _HDABuiltinCodecInterface, _HDAControllerInterface, 
+                       _HDADSPInterface, _HDADSPUserClient, _HDAInterface, _HDAMikeyInterface, 
+                       _HDAUserClient, _IOHDAudioCodecDeviceUserClient ]
+    objc-ivars:      [ _HDADSPInterface.mInput, _HDAInterface.mConnect, _HDAInterface.mService, 
+                       _HDAMikeyInterface.mInternalMikey, _IOHDAudioCodecDeviceUserClient.appleHDAControllerUserClientBuffer, 
+                       _IOHDAudioCodecDeviceUserClient.appleHDADriverUserClientBuffer, 
+                       _IOHDAudioCodecDeviceUserClient.appleHDA_UserClientBuffer, 
+                       _IOHDAudioCodecDeviceUserClient.gDataPort, _IOHDAudioCodecDeviceUserClient.gDriverObject, 
+                       _IOHDAudioCodecDeviceUserClient.gMainPort, _IOHDAudioCodecDeviceUserClient.iOHDACodecDeviceUserClientBuffer, 
+                       _IOHDAudioCodecDeviceUserClient.mCodecRegistryEntryID, _IOHDAudioCodecDeviceUserClient.mCodecUserClientIndex, 
+                       _IOHDAudioCodecDeviceUserClient.mControllerRegistryEntryID, 
+                       _IOHDAudioCodecDeviceUserClient.mControllerUserClientIndex, 
+                       _IOHDAudioCodecDeviceUserClient.mEdidPtr, _IOHDAudioCodecDeviceUserClient.mHDAInterruptCountInfoPtr, 
+                       _IOHDAudioCodecDeviceUserClient.mRegElapsedPtr, _IOHDAudioCodecDeviceUserClient.mRegPtr, 
+                       _IOHDAudioCodecDeviceUserClient.ucSecondaryTestBuffer, _IOHDAudioCodecDeviceUserClient.ucStickyStatusBuffer, 
+                       _IOHDAudioCodecDeviceUserClient.ucTestBuffer ]
+...

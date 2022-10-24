@@ -1,0 +1,58 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: ECFABC9E-B386-392F-A12A-2D341AE9BACE', 'x86_64: ECFABC9E-B386-392F-A12A-2D341AE9BACE', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3F208078-6C8F-3A29-883D-C987634ECD61', 'arm64e: 3F208078-6C8F-3A29-883D-C987634ECD61' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CacheDelete.framework/Versions/A/CacheDelete'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CDGetLogHandle, _CDGetLowDiskSignpostHighSeverityLogHandle, 
+                       _CDGetLowDiskSignpostLowSeverityLogHandle, _CDGetLowDiskSignpostMediumSeverityLogHandle, 
+                       _CDSimulateCrash, _CDVEnumerationFlagsAll, _CacheDeleteAllowAutoPurge, 
+                       _CacheDeleteAutoPurgeAllowed, _CacheDeleteCacheable, _CacheDeleteCancelPurge, 
+                       _CacheDeleteCopyAvailableSpaceForVolume, _CacheDeleteCopyItemizedPurgeableSpace, 
+                       _CacheDeleteCopyItemizedPurgeableSpaceWithInfo, _CacheDeleteCopyPurgeHistory, 
+                       _CacheDeleteCopyPurgeableSpaceWithInfo, _CacheDeleteCurrentCacheableSpace, 
+                       _CacheDeleteCurrentCacheableSpaceForVolume, _CacheDeleteDoNotAutoPurge, 
+                       _CacheDeleteDoNotPurgeUserManagedAssets, _CacheDeleteEnumerateRemovedFiles, 
+                       _CacheDeleteEnumerateRemovedFilesInDirectories, _CacheDeleteGetSetting, 
+                       _CacheDeleteInitPurgeMarker, _CacheDeletePerformOperation, 
+                       _CacheDeletePurgeAsync, _CacheDeletePurgeSpace, _CacheDeletePurgeSpaceWithInfo, 
+                       _CacheDeletePurgeSpaceWithInfoSync, _CacheDeletePurgeUserManagedAssets, 
+                       _CacheDeletePurgeableSpace, _CacheDeleteRegister, _CacheDeleteRegisterCallback, 
+                       _CacheDeleteRegisterCallbacks, _CacheDeleteRegisterCallbacksForProcess, 
+                       _CacheDeleteRegisterExtensionCallbacks, _CacheDeleteRegisterForProcess, 
+                       _CacheDeleteRegisterInfoCallbacks, _CacheDeleteRegisterInfoCallbacksForProcess, 
+                       _CacheDeleteRegisterLowDiskFailure, _CacheDeleteRegisterPurgeNotification, 
+                       _CacheDeleteRegisterVolumePurgeNotification, _CacheDeleteRequestCacheableSpaceGuidance, 
+                       _CacheDeleteServiceRequest, _CacheDeleteSetCacheable, _CacheDeleteSyncDone, 
+                       _CacheDeleteUpdatePurgeable, _CacheDeleteUpdatePurgeableSync, 
+                       _CacheDeleteUpdateSetting, _CacheDeleteUserManagedAssetsPurgeable, 
+                       _CacheManagementEnumerateAssets, _CacheManagementEnumerateAssetsOnVolume, 
+                       _CacheManagementRemove, _CallCacheD, _CallCacheDPublic, _VolUUID, 
+                       __CacheDeleteAbortWithMessage, __CacheDeleteEnumerateRemovedFiles, 
+                       _allowNoBrowse, _assert_group_cache_deletion, _breadcrumbs, 
+                       _cdAppSuptPath, _cdCachesPath, _clearDiscardedCaches, _connectionIsEntitled, 
+                       _containerUserManagedAssetsPath, _copyNANDSizeBytes, _createCacheDeleteToken, 
+                       _dataContainerURLs, _did_fast_size_directory, _discardedCachesPathForVolume, 
+                       _diskUsageList, _dropBreadcrumb, _enableDirStats, _enumerateNotifiedVolumes, 
+                       _evaluateBoolProperty, _evaluateNumberProperty, _evaluateStringProperty, 
+                       _evaluateUrgency, _fast_size_directory, _fetchAllPersonas, 
+                       _flattenedAssetDescription, _fsPurgeableTypeForService, _fsPurgeableTypeToServiceMap, 
+                       _gTimebaseConversion, _gatherLargeAppInfo, _getAllVolumes, 
+                       _getCacheDeleteXattr, _getFunc, _getLocalVolumes, _getRootVolume, 
+                       _getbacktrace, _getbacktrace_short, _glinked_to_daemon, _humanReadableNumber, 
+                       _isConfiguredForMultiUser, _is_first_boot, _lowSpaceVolumes, 
+                       _mapVolume, _markNotifiedVolume, _nonContainerForID, _normalizePath, 
+                       _nuke_dir, _paddingForVolume, _pruneFile, _recentlyUsedAppsDictionary, 
+                       _removeBreadcrumb, _sentinelDir, _serviceForFSPurgeableType, 
+                       _set_first_boot_work_completed, _size_dir, _tallyDict, _thresholdKeyForUrgency, 
+                       _thresholdsForMountPoint, _timeStamp, _traverse_dir_with_state, 
+                       _traverse_directory, _urgencyForDate, _userManagerEntitled, 
+                       _validateTimestamp, _volumeForUUID, _writeToCacheFile ]
+    objc-classes:    [ _AppCache, _CacheDeleteHostExtensionContext, _CacheDeleteListener, 
+                       _CacheDeleteRemoteExtensionContext, _CacheDeleteServiceInfo, 
+                       _CacheDeleteServiceListener, _CacheDeleteVolume, _CacheManagementAsset, 
+                       _ClientSpaceGuidanceCache, _OperationState, _TestTelemetry ]
+...

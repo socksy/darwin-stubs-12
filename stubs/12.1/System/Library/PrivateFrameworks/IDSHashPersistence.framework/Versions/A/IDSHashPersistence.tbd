@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 63C1982C-E31D-38B7-AE53-0A6230BD50DC', 'x86_64: 63C1982C-E31D-38B7-AE53-0A6230BD50DC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A42837CC-FD20-37EC-A8BA-195B78F56C02', 'arm64e: A42837CC-FD20-37EC-A8BA-195B78F56C02' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IDSHashPersistence.framework/Versions/A/IDSHashPersistence'
+current-version: 800
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _IDSMessageHashStore ]
+...

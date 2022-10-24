@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BDD0ACD2-0160-39CD-9F61-C3B11BA088DC', 'x86_64: BDD0ACD2-0160-39CD-9F61-C3B11BA088DC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1E4DA4BD-73FA-3E83-85AB-D973470CBB25', 'arm64e: 1E4DA4BD-73FA-3E83-85AB-D973470CBB25' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/HearingCore.framework/Versions/A/HearingCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXHAMessageKeyIdentifier, _AXHAMessageKeyPayload, _AXHANULL, 
+                       _AXHearingAidServerName, _CSEngineeringLog, _CSInitializeLogging, 
+                       _CSLoggingQueue, _HAEngineeringLog, _HAInitializeLogging, 
+                       _HALoggingQueue, _HCAXUIServerProcessName, _HCApplicationGetMainBundleIdentifier, 
+                       _HCHeardBundleName, _HCHeardProcessName, _HCLogSoundMeter, 
+                       _HCMessageDeviceNameKey, _HCPerformSafeBlock, _HCPreferencesBundleName, 
+                       _HCProcessGetName, _HearingCoreVersionNumber, _HearingCoreVersionString, 
+                       _PAEngineeringLog, _PAInitializeLogging, _PALoggingQueue, 
+                       _kAdjust0DB ]
+    objc-classes:    [ _HCDatabaseManager, _HCServer, _HCSettings, _HCSettingsListenerHelper, 
+                       _HCUtilities, _HCXPCClient, _HCXPCMessage ]
+...

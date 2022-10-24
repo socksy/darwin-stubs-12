@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4FE9873E-53B5-36BE-92CD-E66CF2B793EF', 'x86_64: 4FE9873E-53B5-36BE-92CD-E66CF2B793EF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 27421163-4561-31A3-8626-6BFAD685381C', 'arm64e: 27421163-4561-31A3-8626-6BFAD685381C' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/StoreKitMacHelper.framework/Versions/A/StoreKitMacHelper'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ StoreKit ]
+    symbols:         [ _SKRemoteEngagementCatalystHelper, _StoreProductPageNewHelper ]
+...

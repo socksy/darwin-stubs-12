@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FFB3D0DC-766B-390F-B183-9DAA78E801EC', 'x86_64: FFB3D0DC-766B-390F-B183-9DAA78E801EC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7351EACD-6F38-32A1-8ED4-A66D6FF45F2A', 'arm64e: 7351EACD-6F38-32A1-8ED4-A66D6FF45F2A' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/AdServices.framework/Versions/A/AdServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AAAttributionErrorDomain, _kAAAttributionXPCMachServiceName ]
+    objc-classes:    [ _AAAttribution ]
+...

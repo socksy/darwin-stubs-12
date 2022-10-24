@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CE5D203A-322B-3922-89FF-678651A00EDE', 'x86_64: CE5D203A-322B-3922-89FF-678651A00EDE', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 18F4BAE6-AB59-36B6-BC7F-D3297CF8212A', 'arm64e: 18F4BAE6-AB59-36B6-BC7F-D3297CF8212A' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ContactsDonationFeedback.framework/Versions/A/ContactsDonationFeedback'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ContactsDonationFeedbackVersionNumber, _ContactsDonationFeedbackVersionString, 
+                       _kCDFErrorDomain, _kCDFInsufficientValuesToHashError, _kCDFMissingIdentifierError, 
+                       _kCDFUnhandledValueTypeError ]
+    objc-classes:    [ _CDFDonationFeedbackStore, _CNDFDonationStringCollector ]
+...

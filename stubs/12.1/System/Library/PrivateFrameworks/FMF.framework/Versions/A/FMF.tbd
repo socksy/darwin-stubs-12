@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0729DC47-819F-3E17-A0E4-1C3CC43DCF6D', 'x86_64: 0729DC47-819F-3E17-A0E4-1C3CC43DCF6D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D715CE79-63C3-39F6-8D05-D3B9383ECB8F', 'arm64e: D715CE79-63C3-39F6-8D05-D3B9383ECB8F' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FMF.framework/Versions/A/FMF'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FMFDataUpdateCompleteNotification, _FMFDaysOfWeekCount, _FMFDaysOfWeekFromDayOfWeek, 
+                       _FMFDevicesChangedNotification, _FMFErrorDomain, _FMFFenceAcceptanceStatusAccepted, 
+                       _FMFFenceAcceptanceStatusPending, _FMFFenceAcceptanceStatusPendingHidden, 
+                       _FMFFenceErrorDomain, _FMFFenceTimerAlarmDateKey, _FMFFenceTimerAlarmStream, 
+                       _FMFFenceTimerAlarmUserVisible, _FMFFenceTriggerArriving, 
+                       _FMFFenceTriggerImmediate, _FMFFenceTriggerLeaving, _FMFFenceTriggerScheduled, 
+                       _FMFFenceTriggerStatusEnter, _FMFFenceTriggerStatusExit, _FMFFenceTriggerStatusIn, 
+                       _FMFFenceTriggerStatusOut, _FMFFenceTriggerStatusUndetermined, 
+                       _FMFFenceTypeNotifyMe, _FMFFenceTypeNotifyOther, _FMFFollowersChangedNotification, 
+                       _FMFFollowersRemovedNotification, _FMFFollowingRemovedNotification, 
+                       _FMFGroupIdDefault, _FMFGroupIdGroup, _FMFGroupIdOneToOne, 
+                       _FMFHomeKitAutomationDeviceChangedNotification, _FMFLocationSharingStatusChanged, 
+                       _FMFMeDeviceChangedNotification, _FMFScheduleTimerIdentifier, 
+                       _kFMFSyncXPCTimeout, _kMapImageKey ]
+    objc-classes:    [ _FMFAppAccountInfo, _FMFContactUtility, _FMFDevice, _FMFFence, 
+                       _FMFFriendshipRequest, _FMFHandle, _FMFLocation, _FMFMapImageRequest, 
+                       _FMFMapSession, _FMFNotNowRequest, _FMFPlacemark, _FMFSchedule, 
+                       _FMFScheduler, _FMFSession, _FMFSynchronizer ]
+...

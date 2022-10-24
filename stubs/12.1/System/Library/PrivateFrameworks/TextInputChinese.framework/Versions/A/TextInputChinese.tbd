@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 38F5FB6E-7CF9-3714-AFAE-7F8184BAFAD7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 63513BCB-9BCA-3AF3-B9FC-2CAED4C74675' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/TextInputChinese.framework/Versions/A/TextInputChinese'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _TIWubixingMode, __Z37handwritingResponseKitBackgroundQueuev, 
+                       _kCangjieMode, _kDefaultLayoutTag, _kDisambiguationLayoutTag, 
+                       _kFacemarkLookupKey, _kGB18030LookupKey, _kHalfWidthPunctuationLayoutTag, 
+                       _kSeparatorLayoutTag, _kSimplifiedChinese, _kTraditionalCantonese, 
+                       _kTraditionalChinese, _kUnicodeLookupKey, _kWubihuaMode ]
+    objc-classes:    [ _CIMCandidateData, _RecognizeDrawingOperation, _RecognizePredictionOperation, 
+                       _RecognizerProvider, _TIConversionHistory, _TIConvertedCandidate, 
+                       _TIInputManagerHandwriting, _TIKeyboardHandwritingSpecialization, 
+                       _TIKeyboardInputManagerCangjie, _TIKeyboardInputManagerChinese, 
+                       _TIKeyboardInputManagerChinesePhonetic, _TIKeyboardInputManagerShapeBased, 
+                       _TIKeyboardInputManagerWubi, _TIKeyboardInputManagerWubixing, 
+                       _TIWordSearchCangjie, _TIWordSearchCangjie_yue_Hant, _TIWordSearchChinesePhonetic, 
+                       _TIWordSearchChinesePhoneticOperationGetCandidates, _TIWordSearchShapeBased, 
+                       _TIWordSearchWubihua, _TIWordSearchWubihua_yue_Hant, _TIWordSearchWubihua_zh_Hans, 
+                       _TIWordSearchWubihua_zh_Hant, _TIWordSearchWubixing ]
+    objc-ivars:      [ _RecognizeDrawingOperation._candidates, _RecognizeDrawingOperation._history, 
+                       _RecognizeDrawingOperation._recognitionLanguage, _RecognizeDrawingOperation._strokes, 
+                       _TIKeyboardInputManagerChinese._isInCompletionMode, _TIKeyboardInputManagerChinese._wordSearch, 
+                       _TIKeyboardInputManagerChinesePhonetic._acceptingCandidate, 
+                       _TIKeyboardInputManagerChinesePhonetic._candidateData, _TIKeyboardInputManagerChinesePhonetic._isCandidateSelected, 
+                       _TIKeyboardInputManagerChinesePhonetic._isInAmbiguousMode, 
+                       _TIKeyboardInputManagerChinesePhonetic._lockingPinyinSyllableSelection, 
+                       _TIKeyboardInputManagerChinesePhonetic._operationQueue, _TIKeyboardInputManagerChinesePhonetic._usesCandidateSelection, 
+                       _TIKeyboardInputManagerShapeBased._keepRemainingInput, _TIKeyboardInputManagerShapeBased._remainingInput, 
+                       _TIKeyboardInputManagerShapeBased._searchString ]
+...

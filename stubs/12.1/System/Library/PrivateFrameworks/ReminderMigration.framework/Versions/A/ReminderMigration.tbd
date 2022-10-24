@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4031F6AB-6E4D-33E4-8035-A95B30078739', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1FFB1E67-7129-375C-9233-BA22D65DC959' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ReminderMigration.framework/Versions/A/ReminderMigration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kCalACAccountIDPlistKey, _kCalAccountIdentifierDictionaryKey, 
+                       _kCalAccountTypeDictionaryKey, _kCalBackupFileName, _kCalCTagPlistKey, 
+                       _kCalCalDAVAccountPathExtension, _kCalCalendarEnabledPlistKey, 
+                       _kCalCalendarPathExtension, _kCalCalendarPathPlistKey, _kCalColorPlistKey, 
+                       _kCalCurrentReminderMigrationCleanupVersion, _kCalDefaultListName, 
+                       _kCalDefaultReminderListDefaultsKey, _kCalDelegatePlistKey, 
+                       _kCalEnabledPlistKey, _kCalEventContainerPlistKey, _kCalEventsDirectoryName, 
+                       _kCalExchangeAccountPathExtension, _kCalICSPathExtension, 
+                       _kCalInboxCTagPlistKey, _kCalIsSubscriptionPlistKey, _kCalLastReminderMigrationCleanupVersionDefaultsKey, 
+                       _kCalLocalAccountName, _kCalLocalAccountPathExtension, _kCalMaximumCalendarDirectorySizeAllowedForBackupInBytes, 
+                       _kCalOrderPlistKey, _kCalPlistName, _kCalPushKeyPlistKey, 
+                       _kCalReminderMigrationErrorDomain, _kCalRemindersEnabledPlistKey, 
+                       _kCalShouldBackupBeforeReminderMigrationDefaultsKey, _kCalTaskContainerPlistKey, 
+                       _kCalTitlePlistKey, _kCalToolTestFailureArgument, _kCalToolTestSuccessArgument, 
+                       _kCalTruthFilesCalendarDirectoryRelativeToHome, _kCalUidPlistKey ]
+    objc-classes:    [ _CalDefaultReminderKitDatabaseMigrationContext, _CalDefaultReminderKitProvider, 
+                       _CalDefaultReminderMigrationDefaultsProvider, _CalInProcessReminderMigrator, 
+                       _CalOutOfProcessReminderMigrator, _CalReminderMigrationFailure, 
+                       _CalReminderMigrationLog, _CalTruthFilesReminderMigrator ]
+...

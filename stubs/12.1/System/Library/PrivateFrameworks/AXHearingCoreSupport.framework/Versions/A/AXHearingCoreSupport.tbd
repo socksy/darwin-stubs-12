@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 74C62D3B-CA1D-31CE-A9BF-A89BD6478380', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 92948340-CC65-3C18-BB8C-5152A4DA44C0' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AXHearingCoreSupport.framework/Versions/A/AXHearingCoreSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXHAMessageKeyIdentifier, _AXHAMessageKeyPayload, _AXHANULL, 
+                       _AXHATrustChainReady, _AXHearingAidAudioRoutesChangedNotification, 
+                       _AXHearingAidControlCenterBundleID, _AXHearingAidControlCenterPath, 
+                       _AXHearingAidServerName, _AXHearingAidServerReadyNotification, 
+                       _AXHearingCoreSupportVersionNumber, _AXHearingCoreSupportVersionString, 
+                       _AXLEHIAuthServiceUUIDString, _AXLEHIAuthVersionCharacteristicUUIDString, 
+                       _AXLEHIDISFirmwareVersionCharacteristicUUIDString, _AXLEHIDISHardwareVersionCharacteristicUUIDString, 
+                       _AXLEHIDISManufacturerCharacteristicUUIDString, _AXLEHIDISModelNumberCharacteristicUUIDString, 
+                       _AXLEHIDISServiceUUIDString, _AXLEHIServiceUUIDString ]
+    objc-classes:    [ _AXHACoreUtilities, _AXHeardServer ]
+...

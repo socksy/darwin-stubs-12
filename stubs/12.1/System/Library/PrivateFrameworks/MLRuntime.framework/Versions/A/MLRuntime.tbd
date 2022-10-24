@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 979D1AFF-3F6B-3D9E-968C-DF33982F4B6A', 'x86_64: 979D1AFF-3F6B-3D9E-968C-DF33982F4B6A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E3E98985-7A06-3D63-92C9-55E2A933AA0D', 'arm64e: E3E98985-7A06-3D63-92C9-55E2A933AA0D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MLRuntime.framework/Versions/A/MLRuntime'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MLRuntimeVersionNumber, _MLRuntimeVersionString, _kMLRTrialTaskMinInterval, 
+                       _kMRLogSubsystem ]
+    objc-classes:    [ _MLRExtensionPrincipalClass, _MLRExtensionRemoteContext, _MLRExtensionService_Subsystem, 
+                       _MLRInternalTrialTask, _MLRInternalTrialTaskResult, _MLRTask, 
+                       _MLRTaskAttachments, _MLRTaskParameters, _MLRTaskResult, _MLRTrialTask, 
+                       _MLRTrialTaskResult, _MLRTrialTaskSchedulingPolicy ]
+...

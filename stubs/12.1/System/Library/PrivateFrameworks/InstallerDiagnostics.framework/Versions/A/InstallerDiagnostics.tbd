@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0BE1CE94-398A-30CA-8C3E-A794CAF1787C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 12E4BAED-AFD0-30A7-9A6B-886EBC6AF6E6' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/InstallerDiagnostics.framework/Versions/A/InstallerDiagnostics'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IDDiagnosticsMessageTypes, _IDDiagnosticsProtocolInterface, 
+                       _InstallerDiagnosticsVersionNumber, _InstallerDiagnosticsVersionString, 
+                       __IDGetDefaultLogger, __activity, __nvramSema, _kIDInstallerDiagnosticsClientCategoryAPFSConversions, 
+                       _kIDInstallerDiagnosticsClientCategoryEFIUpdates, _kIDInstallerDiagnosticsClientCategoryEmbeddedOSInstalls, 
+                       _kIDInstallerDiagnosticsClientCategoryFailedInstalls, _kIDInstallerDiagnosticsClientCategoryGPUFirmwareUpdates, 
+                       _kIDInstallerDiagnosticsClientCategoryKeyRecoveryAssistant, 
+                       _kIDInstallerDiagnosticsClientCategoryNameAPFSConversions, 
+                       _kIDInstallerDiagnosticsClientCategoryNameEFIUpdates, _kIDInstallerDiagnosticsClientCategoryNameEmbeddedOSInstalls, 
+                       _kIDInstallerDiagnosticsClientCategoryNameFailedInstalls, 
+                       _kIDInstallerDiagnosticsClientCategoryNameGPUFirmwareUpdates, 
+                       _kIDInstallerDiagnosticsClientCategoryNameKeyRecoveryAssistant, 
+                       _kIDInstallerDiagnosticsClientCategoryNameSampledMetrics, 
+                       _kIDInstallerDiagnosticsClientCategoryNameSuccessfulInstalls, 
+                       _kIDInstallerDiagnosticsClientCategoryNamebridgeOSUpdate, 
+                       _kIDInstallerDiagnosticsClientCategoryNamemacOSPersonalization, 
+                       _kIDInstallerDiagnosticsClientCategorySampledMetrics, _kIDInstallerDiagnosticsClientCategorySuccessfulInstalls, 
+                       _kIDInstallerDiagnosticsClientCategorybridgeOSUpdate, _kIDInstallerDiagnosticsClientCategorymacOSPersonalization, 
+                       _kIDInstallerDiagnosticsNVRAMV1Key, _kIDInstallerDiagnosticsNVRAMV2Key, 
+                       _kIDInstallerDiagnosticsStoreErrorDomain, _kInstallerDiagnosticsServiceName ]
+    objc-classes:    [ _IDDiagnosticsConnection, _IDDiagnosticsGPUGatherStatistics, 
+                       _IDDiagnosticsManager, _IDDiagnosticsServer, _IDDiagnosticsStore, 
+                       _IDDiagnosticsTransport ]
+...

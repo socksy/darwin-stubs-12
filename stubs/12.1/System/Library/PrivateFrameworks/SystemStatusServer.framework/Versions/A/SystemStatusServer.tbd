@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2049C4A8-15DC-3E32-9CAE-7DB84E7C7667', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6B5C3611-93FC-33CF-A3D0-111BA6ED85AB' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemStatusServer.framework/Versions/A/SystemStatusServer'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _STEntitledDomainsForEntitlementValue, _STStatusDomainNameForEntitlementValue, 
+                       _STSystemStatusLogServer, _SystemStatusServerVersionNumber, 
+                       _SystemStatusServerVersionString ]
+    objc-classes:    [ _STStatusDomainDataChangeLog, _STStatusDomainDataChangeRecord, 
+                       _STStatusDomainDataChangeRecordDataEntry, _STStatusDomainDataChangeRecordDiffEntry, 
+                       _STStatusDomainPublisherXPCClientHandle, _STStatusDomainPublisherXPCClientListener, 
+                       _STStatusDomainXPCClientHandle, _STStatusDomainXPCClientListener, 
+                       _STStatusServer ]
+...

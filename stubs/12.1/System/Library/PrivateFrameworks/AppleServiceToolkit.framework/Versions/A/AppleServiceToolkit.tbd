@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8BAADB03-9D78-3001-B9BC-153D5EAC1FD3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B3AE3032-F0D0-3249-A355-40998C1A5FA3' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleServiceToolkit.framework/Versions/A/AppleServiceToolkit'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ASTActionKey, _ASTActionsKey, _ASTAllowCellularDataKey, _ASTCustomServerKey, 
+                       _ASTDomain, _ASTErrorDomain, _ASTGZIPEnabledKey, _ASTImageNameKey, 
+                       _ASTLogHandleForCategory, _ASTPropertyItemsKey, _ASTRelaxTimeoutsKey, 
+                       _ASTServerKey, _ASTServerLoggingKey, _ASTStrongDeviceIdentityKey, 
+                       _ASTSuiteNameKey, _ASTTestAutomationKey, _ASTTestSuiteCompleteAction, 
+                       _ASTTestSuiteImageAction, _ASTTestSuiteStartingAction, _ASTTimberLorrySessionKey, 
+                       _ASTUploadStatusFailed, _ASTUploadStatusQueued, _ASTUploadStatusSuccessful, 
+                       _ASTUploadStatusUploading, _ASTUseChunkedTransferEncodingKey, 
+                       _ASTViewTitleKey, _kASTAlwaysAllowCellularSizeThreshold, _kASTAnalyticsSessionDurationKey, 
+                       _kASTAnalyticsStatusCodeKey, _kASTAnalyticsStatusCodeStringKey, 
+                       _kASTAnalyticsTestIDKey, _kASTEndpointAssets, _kASTEndpointAuthInfo, 
+                       _kASTEndpointClientStatus, _kASTEndpointEnroll, _kASTEndpointFileUploadFormat, 
+                       _kASTEndpointProfile, _kASTEndpointResults, _kASTEndpointSession, 
+                       _kASTHTTPHeaderAccept, _kASTHTTPHeaderAcceptLanguage, _kASTHTTPHeaderContentEncoding, 
+                       _kASTHTTPHeaderContentLength, _kASTHTTPHeaderContentType, 
+                       _kASTHTTPHeaderFileSequence, _kASTHTTPHeaderFileSize, _kASTHTTPHeaderHost, 
+                       _kASTHTTPHeaderLogLevel, _kASTHTTPHeaderMD5, _kASTHTTPHeaderSessionId, 
+                       _kASTHTTPHeaderSignature, _kASTHTTPHeaderToken, _kASTHTTPHeaderTotalFiles, 
+                       _kASTHTTPHeaderUserAgent, _kASTIdentityAliasDictionaryChipIDKey, 
+                       _kASTIdentityAliasDictionaryECIDKey, _kASTIdentityAliasDictionaryIsServicePartKey, 
+                       _kASTIdentityAliasDictionarySerialNumberKey, _kASTIdentityAliasDictionaryTimberLorryKey, 
+                       _kASTIdentityAliasDictionaryTypeKey, _kGenevaHTTPHeaderEncryption, 
+                       _kGenevaHTTPHeaderToken ]
+    objc-classes:    [ _ASTAction, _ASTAnalytics, _ASTAuthInfoResult, _ASTAutomatedSession, 
+                       _ASTConfigurableUploadClient, _ASTConnectionAsset, _ASTConnectionAuthInfo, 
+                       _ASTConnectionClientStatus, _ASTConnectionEnroll, _ASTConnectionProfile, 
+                       _ASTConnectionSession, _ASTConnectionTestResult, _ASTConnectionTestResultBinary, 
+                       _ASTConnectionUtilities, _ASTContext, _ASTControlCommand, 
+                       _ASTEncodingUtilities, _ASTEnvironment, _ASTErrorStatus, _ASTFileManagement, 
+                       _ASTIdentity, _ASTIdentityAlias, _ASTLinking, _ASTLocalization, 
+                       _ASTMaterializedConnection, _ASTMaterializedConnectionManager, 
+                       _ASTNetworkObject, _ASTNetworking, _ASTProfileResult, _ASTRequest, 
+                       _ASTResponse, _ASTSealableFile, _ASTSealablePayload, _ASTSendPropertiesErrorStatus, 
+                       _ASTSession, _ASTTestAttributes, _ASTTestAutomation, _ASTTestResult, 
+                       _ASTUploadClientFactory, _ASTUploadFilesCertsEntry, _ASTUploadFilesItemEntry, 
+                       _ASTUploadFilesResult, _ASTUploadItem, _RepairToolRequestItem, 
+                       _RepairToolURLFactory ]
+...

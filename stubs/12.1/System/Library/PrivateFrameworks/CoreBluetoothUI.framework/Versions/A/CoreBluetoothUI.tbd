@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4582C6B7-8645-3A3C-8E88-8384B8E9A7AC', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D2993000-86F9-3B7A-8ED2-3648E5C7DA82' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CoreBluetoothUI.framework/Versions/A/CoreBluetoothUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BluetoothInquiryCacheTimeout, _CBUILogComponent, _CBUILogInit, 
+                       _CBUILogInitOnce, _CoreBluetoothUIVersionNumber, _CoreBluetoothUIVersionString, 
+                       _closeButtonIconColor, _closeButtonIconColorPushed, _closeButtonImage, 
+                       _dynamicStoreCallback, _isDebugLogEnabled, _registerValueTransformers ]
+    objc-classes:    [ _AudioOptions, _AudioOptionsViewClickHold, _AudioOptionsViewController, 
+                       _AudioOptionsViewCrownRotation, _AudioOptionsViewDoubleTap, 
+                       _AudioOptionsViewDoubleTapExtended, _AudioOptionsViewInEarDetection, 
+                       _AudioOptionsViewListeningMode, _AudioOptionsViewMagneticEarbudsControl, 
+                       _AudioOptionsViewMicSwitching, _AudioOptionsViewNoiseControl, 
+                       _AudioOptionsViewSmartRouting, _BTDevicePicker, _CBAssetHelper, 
+                       _CBClassicInquiryAttributes, _CBDeviceCollectionView, _CBDeviceSelectorController, 
+                       _CBDeviceServiceBrowserController, _CBPairViewController, 
+                       _CBPairedDeviceSelectorController, _CBPairedStateValueTransformer, 
+                       _CBPasskeyDisplay, _CBSortedDeviceArrayController, _CBUIBackgroundStyle2AlternateRemoveButton, 
+                       _CBUIBackgroundStyle2GrayColorTransformer, _CBUIBackgroundStyle2RemoveButton, 
+                       _CBUIBatteryControl, _CBUIBool2BWColorTransformer, _CBUIConnected2ImageIndicatorTransformer, 
+                       _CBUIConnected2StatusTransformer, _CBUIPaired2ActionTitle, 
+                       _CBUIPairedColorTransformer, _CBUtil, _DeviceOptionsControllerShareGestures ]
+    objc-ivars:      [ _AudioOptions._peer, _AudioOptions.isReferenceUsed, _AudioOptions.optionViewControllers, 
+                       _AudioOptionsViewListeningMode.buttonsLocked, _AudioOptionsViewListeningMode.mReady, 
+                       _AudioOptionsViewListeningMode.unlockTimer, _CBAssetHelper.mDictCache, 
+                       _CBDeviceCollectionView.audioOptionsController, _CBDeviceCollectionView.mDeviceTableTrackingArea, 
+                       _CBUIBatteryControl.batteryImage, _CBUIBatteryControl.levelFillImage ]
+...

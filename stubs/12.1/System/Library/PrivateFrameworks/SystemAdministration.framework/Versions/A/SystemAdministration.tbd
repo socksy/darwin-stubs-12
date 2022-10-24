@@ -1,0 +1,50 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: ED6BDBE2-5125-3134-819F-790313E26C05', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 47711649-2F73-3AD7-BB95-2F8DA9585AF2' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemAdministration.framework/Versions/A/SystemAdministration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NetworkTimeStartedNotification, _NetworkTimeStoppedNotification, 
+                       _SafeCFBundleGetFunctionPointerForName, _SecRequiresGracePeriod, 
+                       _XMLStringFromObject, _canOpenAccountsPreferencePane, _collectionFromXMLString, 
+                       _copyKeyboardType, _coreTimeFrameworkBundle, _createAuthorizationFromExternalForm, 
+                       _debugLoggingEnabled, _directorySizeAtPath, _fingerPrintsEnrolledForUser, 
+                       _freeSpaceAtPath, _getPIDForProcess, _isApplePayEnabled, _isBootVolumeHCSFDE, 
+                       _isComputerUnlockEnabled, _isInternalBuild, _isSIPDisabled, 
+                       _isStorePurchaseEnabled, _kADMSecureTokenAuthorizingUserNameKey, 
+                       _kADMSecureTokenAuthorizingUserPasswordKey, _kADMSecureTokenEnableKey, 
+                       _kADMSecureTokenUserPasswordKey, _kickMCXDForUID, _loadAppKit, 
+                       _setSafariLockedSync, _writeKeyboardType ]
+    objc-classes:    [ _ADMARDConfig, _ADMAccountPasswordPolicy, _ADMCredential, 
+                       _ADMDSNode, _ADMDSRecord, _ADMDynamicDNSConfig, _ADMGroup, 
+                       _ADMGuestUserConfig, _ADMHostConfig, _ADMInternetServices, 
+                       _ADMLocalUser, _ADMLoginPrefs, _ADMNetworkTimeClient, _ADMNetworkTimeServer, 
+                       _ADMOwnerCredential, _ADMParentalControlsConfig, _ADMPowerActivityManager, 
+                       _ADMPrinterSharingConfig, _ADMRemoteAEConfig, _ADMRemoteUser, 
+                       _ADMSysKeyChainConfig, _ADMSystem, _ADMSystemClock, _ADMSystemProvisioningDecision, 
+                       _ADMUser, _ADMUserAccountUtilities, _ADMWebServerConfig, _ADM_NVRAMConfig, 
+                       _AdminAuthenticator, _AdminDSAuthenticator, _AdminDirectoryService, 
+                       _DOAsyncResult, _MCXPrefObject, _UserUtilities, _WriteConfigClient, 
+                       _WriteConfigOnewayMessageDispatcher ]
+    objc-ivars:      [ _ADMDSNode.mDirectoryService, _ADMDSNode.mNodeName, _ADMDSNode.mNodeReference, 
+                       _ADMDSNode.mOpenCloseSemaphore, _ADMDSRecord.mNode, _ADMDSRecord.mRecordName, 
+                       _ADMDSRecord.mRecordReference, _ADMDSRecord.mRecordType, _ADMGroup.mGUIDChecked, 
+                       _ADMGroup.mGUIDNumber, _ADMGroup.mHasGUID, _ADMGroup.mNestedGUIDs, 
+                       _ADMGroup.mRealNameString, _ADMGroup.mUUIDString, _ADMGroup.mUserGUIDs, 
+                       _ADMGroup.mUsers, _ADMGuestUserConfig.mDefaultGuestPicture, 
+                       _ADMNetworkTimeServer._address, _ADMNetworkTimeServer._descriptiveName, 
+                       _ADMPowerActivityManager._ioNotificationPort, _ADMPowerActivityManager._ioNotifier, 
+                       _ADMPowerActivityManager._powerPreferences, _ADMPowerActivityManager._upsShutdownLevels, 
+                       _ADMUser.mCache, _ADMUser.mCachedName, _ADMUser.mCachedPassword, 
+                       _ADMUser.mIdentityRef, _ADMUser.mIsLocal, _ADMUser.mModifiedFields, 
+                       _ADMWebServerConfig._configurationDirectory, _AdminAuthenticator._syncWaitDone, 
+                       _AdminAuthenticator._wantsClearTextAuthentication, _AdminDSAuthenticator._didClearTextAuthentication, 
+                       _AdminDirectoryService.mDirReference, _AdminDirectoryService.mNameOfDefaultLocalNode, 
+                       _AdminDirectoryService.mNameOfSearchNode, _DOAsyncResult.mCompletionBlock, 
+                       _DOAsyncResult.mContext, _DOAsyncResult.mDone, _DOAsyncResult.mResult, 
+                       _MCXPrefObject.mMCXDict, _MCXPrefObject.mUnionPolicyKeys, 
+                       _WriteConfigClient._authorizationData, _WriteConfigClient._connection, 
+                       _WriteConfigClient._onewayMessageDispatcher ]
+...

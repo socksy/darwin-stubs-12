@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8D54807D-ED0B-3907-9747-2511B6A8D0AC', 'x86_64: 8D54807D-ED0B-3907-9747-2511B6A8D0AC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3168F735-92A4-33DE-A6CF-0F349CB5FFA5', 'arm64e: 3168F735-92A4-33DE-A6CF-0F349CB5FFA5' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/Versions/A/DataDetectorsNaturalLanguage'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IPFeatureDataContextDateIsTimeOnlyAndReferrengingToSentDate, 
+                       _IPFeatureDataContextDateOnlyContainsTimeInformation, _IPFeatureDataContextDateTimeFromIpsosOverlay, 
+                       _IPFeatureDataContextDateTimeIsTenseDependent, _IPFeatureDataContextEventEndDate, 
+                       _IPFeatureDataContextEventEndDateTimeZone, _IPFeatureDataContextEventIsAllDay, 
+                       _IPFeatureDataContextEventIsDateRange, _IPFeatureDataContextEventPlacemark, 
+                       _IPFeatureDataContextEventPrefersAllDay, _IPFeatureDataContextEventStartDateTimeZone, 
+                       _IPFeatureDataContextExtractedFromSubject, _IPFeatureDataContextIsDateTimeComplement, 
+                       _IPFeatureDataContextIsTimeOffset, _IPFeatureDataContextPolarityProbability, 
+                       _IPFeatureDataContextTimeIsApproximate, _IPFeatureDataContextTimeNeedsMeridianGuess, 
+                       _IPFeatureExtractorContextDataDetectorsFeatures, _IPFeatureExtractorContextSubject, 
+                       _IPFeatureExtractorContextText, _IPFeatureExtractorDetectedDateInSubjectFeatureData, 
+                       _IPFeatureExtractorPreviousFeatureSentences, _IPFeatureKeywordContextDistanceToDate, 
+                       _IPFeatureKeywordContextExtractedFromSubject, _IPFeatureKeywordContextMatchedRatio, 
+                       _IPFeatureTextMessageScannerConfidenceDistanceToDates, _IPFeatureTextMessageScannerConfidenceEventVariance, 
+                       _IPFeatureTextMessageScannerConfidenceMatchedRatio, _IPFeatureTextMessageScannerConfidenceNormTextLength, 
+                       _IPFeatureTextMessageScannerConfidenceNumberOfEventTypes, 
+                       _IPFeatureTextMessageScannerConfidencePolarityFlips, _IPMessageTypeEmail, 
+                       _IPMessageTypeShortMessage ]
+    objc-classes:    [ _IPCircularBufferArray, _IPDataDetectorsFeatureExtractor, 
+                       _IPEventClassificationType, _IPFeature, _IPFeatureData, _IPFeatureExtractor, 
+                       _IPFeatureKeyword, _IPFeatureMailScanner, _IPFeatureManager, 
+                       _IPFeatureScanner, _IPFeatureSentence, _IPFeatureSentenceFragment, 
+                       _IPFeatureTextMessageScanner, _IPKeywordFeatureExtractor, 
+                       _IPMessage, _IPMessageUnit, _IPMessageXMLParser, _IPPerson, 
+                       _IPRegexToolbox, _IPSentenceFeatureExtractor, _IPTenseDetector, 
+                       _IPTextMessageConversation ]
+...

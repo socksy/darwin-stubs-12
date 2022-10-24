@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FD44F381-2849-38DB-8602-F637F8C5D5B3', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A5A3832A-8BA7-3CBF-8D4B-DCBA520AEB91' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/GPURawCounter.framework/Versions/A/GPURawCounter'
+current-version: 21.5
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CTRCopyAllCounterSourceGroup, _CTRReleaseAllCounterSourceGroup, 
+                       _GPURawCounterVersionNumber, _GPURawCounterVersionString, 
+                       _GRCCopyAllCounterSourceGroup, _GRCReleaseAllCounterSourceGroup ]
+    objc-classes:    [ _GPURawCounterSelect, _GPURawCounterSourceTriggerSelect, __GPURawCounter, 
+                       __GPURawCounterSource, __GPURawCounterSourceGroup, __GPURawCounterSourceTrigger ]
+    objc-ivars:      [ __GPURawCounter._counterValueType, __GPURawCounter._description, 
+                       __GPURawCounter._name, __GPURawCounterSource._features, __GPURawCounterSource._name, 
+                       __GPURawCounterSource._options, __GPURawCounterSource._sourceGroup, 
+                       __GPURawCounterSourceGroup._acceleratorPort, __GPURawCounterSourceGroup._features, 
+                       __GPURawCounterSourceGroup._name, __GPURawCounterSourceGroup._options, 
+                       __GPURawCounterSourceGroup._samplingPeriodInMicroseconds, 
+                       __GPURawCounterSourceGroup._samplingTriggers, __GPURawCounterSourceGroup._sourceList, 
+                       __GPURawCounterSourceTrigger._description, __GPURawCounterSourceTrigger._name, 
+                       __GPURawCounterSourceTrigger._options ]
+...

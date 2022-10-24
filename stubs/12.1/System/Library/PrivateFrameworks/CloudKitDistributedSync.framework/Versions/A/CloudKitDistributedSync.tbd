@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5D50ACBC-E798-37E8-BDCD-F23317705CA0', 'x86_64: 5D50ACBC-E798-37E8-BDCD-F23317705CA0', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 908D90A5-9BD1-3480-A0F3-CDBB1AEBF744', 'arm64e: 908D90A5-9BD1-3480-A0F3-CDBB1AEBF744' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CloudKitDistributedSync.framework/Versions/A/CloudKitDistributedSync'
+current-version: 1930.13
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CKDSErrorDomain, _CKXAtomBinding, _CKXLatestFormatVersion, 
+                       _CKXUncompressedFormatVersion, _CKXUnknownFormatVersion ]
+    objc-classes:    [ _CKAtomBatch, _CKAtomBatchEnumerationOptions, _CKAtomBatchMutableProxy, 
+                       _CKAtomBatchProxy, _CKAtomLocation, _CKAtomLocationMutableProxy, 
+                       _CKAtomLocationProxy, _CKAtomMutableProxy, _CKAtomProxy, _CKAtomReference, 
+                       _CKAtomReferenceMutableProxy, _CKAtomReferenceProxy, _CKDistributedTimestamp, 
+                       _CKDistributedTimestampMutableProxy, _CKDistributedTimestampProxy, 
+                       _CKDistributedTimestampVector, _CKDistributedTimestampVectorRange, 
+                       _CKXArrayProxyBase, _CKXAtom, _CKXAtomBatch, _CKXAtomLocation, 
+                       _CKXAtomReference, _CKXBackingStore, _CKXDistributedTimestamp, 
+                       _CKXORCReader, _CKXORCReaderOptions, _CKXORCWriter, _CKXORCWriterOptions, 
+                       _CKXProxyBase, _CKXProxyCache, _CKXReaderBase, _CKXSchema, 
+                       _CKXStructArrayMutableProxy, _CKXStructArrayProxy, _CKXStructMutableProxyBase, 
+                       _CKXStructProxyBase, _CKXUncompressedReader, _CKXUncompressedWriter, 
+                       _CKXVersionedReaderWriterStore, _CKXWriterBase ]
+...

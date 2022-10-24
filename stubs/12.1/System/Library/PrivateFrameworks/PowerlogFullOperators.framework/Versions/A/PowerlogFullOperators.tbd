@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 039E9892-220D-3E05-9DAA-0201F879208A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EACFE07B-D9D6-3FE8-ACD7-1B488CC6390F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/PowerlogFullOperators.framework/Versions/A/PowerlogFullOperators'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kPLPMUAgentSensors, _kPLScheduledWakeAgentEventForwardNameScheduledEvent ]
+    objc-classes:    [ _PLPMUAgent, _PLScheduledWakeAgent ]
+...

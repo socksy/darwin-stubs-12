@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 269A1E36-6117-355D-8CA3-C00E5140615C', 'x86_64: 269A1E36-6117-355D-8CA3-C00E5140615C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E234165F-B6F2-3868-9A15-C97C135A9E36', 'arm64e: E234165F-B6F2-3868-9A15-C97C135A9E36' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SharePointManagement.framework/Versions/A/SharePointManagement'
+current-version: 104
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SharePointManagementVersionNumber, _SharePointManagementVersionString, 
+                       __kSharePointPropertyAFPGuestAccessKey, __kSharePointPropertyAFPNameKey, 
+                       __kSharePointPropertyAFPSharedKey, __kSharePointPropertyAFPUseParentOwnerKey, 
+                       __kSharePointPropertyAFPUseParentPrivsKey, __kSharePointPropertyDirectoryPathKey, 
+                       __kSharePointPropertyFTPGuestAccessKey, __kSharePointPropertyFTPNameKey, 
+                       __kSharePointPropertyFTPSharedKey, __kSharePointPropertyGeneratedUID, 
+                       __kSharePointPropertyNameKey, __kSharePointPropertySMBCreateMaskKey, 
+                       __kSharePointPropertySMBDirectoryMaskKey, __kSharePointPropertySMBGuestAccessKey, 
+                       __kSharePointPropertySMBInheritPermissionsKey, __kSharePointPropertySMBNameKey, 
+                       __kSharePointPropertySMBOpLocksKey, __kSharePointPropertySMBSharedKey, 
+                       __kSharePointPropertySMBStrictLockingKey, __kSharePointPropertySharePointAccountUUIDKey, 
+                       __kSharePointPropertySharePointGroupIDKey, __kSharePointPropertySharePointVersionKey, 
+                       __kSharePointPropertySharingUUIDKey ]
+    objc-classes:    [ _SPMSharePoint, _SPMSharePointManager, _SPMVolume, _SPMVolumeObserver ]
+...

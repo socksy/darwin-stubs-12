@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: ECFDE7EF-B814-361A-857D-04DC12A29B4E', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 22957E73-D21E-3E5C-B4E3-7E11F0508AA5' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/Versions/A/ScreenTimeSettingsUI'
+current-version: 500.6.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _STAlwaysAllowedController, _STAlwaysAllowedItem, _STContentAndPrivacyController, 
+                       _STControlProtection, _STDowntimeCommunicationViewController, 
+                       _STKeyValuePair, _STMacOSAlertPresenter, _STProtectedButton, 
+                       _STProtectedDatePicker, _STProtectedPopUpButton, _STProtectedSegmentedControl, 
+                       _STRequestItem, _STRequestsController, _STScreenTimeCommunicationViewController, 
+                       _STTimeAllowancesCompatibilityController, _STUsersImageController ]
+...

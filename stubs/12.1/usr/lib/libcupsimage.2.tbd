@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000' ]
+platform:        zippered
+install-name:    '/usr/lib/libcupsimage.2.dylib'
+current-version: 2.3
+compatibility-version: 2
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _cupsRasterClose, _cupsRasterErrorString, _cupsRasterInitPWGHeader, 
+                       _cupsRasterInterpretPPD, _cupsRasterOpen, _cupsRasterOpenIO, 
+                       _cupsRasterReadHeader, _cupsRasterReadHeader2, _cupsRasterReadPixels, 
+                       _cupsRasterWriteHeader, _cupsRasterWriteHeader2, _cupsRasterWritePixels ]
+...

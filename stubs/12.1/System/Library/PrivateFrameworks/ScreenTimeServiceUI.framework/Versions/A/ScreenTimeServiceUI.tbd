@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1ACC2413-DF97-3A93-8F39-8241BD1D6AD9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6246329F-853D-3AAF-8837-64B96EFA3093' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeServiceUI.framework/Versions/A/ScreenTimeServiceUI'
+current-version: 500.6.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _STBlockingRemoteViewControllerDidFinishDismissalAnimationNotification, 
+                       _STClassNameSTBlockingServiceViewController, _STClassNameSTPINServiceViewController ]
+    objc-classes:    [ _STBlockingRemoteViewController, _STBlockingViewService, _STPINRemoteViewController, 
+                       _STPINViewService ]
+...

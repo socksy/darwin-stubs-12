@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 55E5536A-5558-36F7-9D9D-E406C81BF148', 'x86_64: 55E5536A-5558-36F7-9D9D-E406C81BF148', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E6245B62-E7F7-3EB4-97DF-B8CBDDDE1AD4', 'arm64e: E6245B62-E7F7-3EB4-97DF-B8CBDDDE1AD4' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RemoteManagement.framework/Versions/A/Frameworks/RemoteManagementStore.framework/Versions/A/RemoteManagementStore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RMObserverStoreStoreDidChangeNotification, _RMStatusFileKeyIdentifier, 
+                       _RMStatusFileKeyReasons, _RMStatusFileKeyServerToken, _RMStatusFileKeyValid, 
+                       _RMStoreOptionAccountIdentifier, _RMStoreOptionDescription, 
+                       _RMStoreOptionName, _RMStoreOptionPersonaIdentifier, _RMStoreXPCAgentMachServiceName, 
+                       _RMStoreXPCDaemonMachServiceName ]
+    objc-classes:    [ _RMBaseStore, _RMConfigurationStatusUpdater, _RMConfigurationSubscriberClient, 
+                       _RMConfigurationSubscriberEventDescription, _RMConfigurationSubscriberEventStream, 
+                       _RMConfigurationSubscriberEventStreamDelegate, _RMConfigurationSubscriberExtension, 
+                       _RMConfigurationSubscriberExtensionContext, _RMConfigurationSubscriberExtensionRequestHandler, 
+                       _RMDeclarationManifest, _RMDeclarationManifestItem, _RMObserverStore, 
+                       _RMProviderStore, _RMStoreConfigurationSubscriberDescription, 
+                       _RMStoreResolvedAsset, _RMStoreUnresolvedAsset, _RMStoreUtility, 
+                       _RMStoreXPCConnection, _RMStoreXPCProxy, _RMSubscribedConfigurationReference, 
+                       _RMSubscriberStore ]
+...

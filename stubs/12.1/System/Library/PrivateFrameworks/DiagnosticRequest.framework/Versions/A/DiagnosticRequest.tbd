@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C6411D0A-BDC6-3F9E-8285-6A74C68B1B47', 'x86_64: C6411D0A-BDC6-3F9E-8285-6A74C68B1B47', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5FB888C1-09AA-3398-A8B1-7F2F903D2650', 'arm64e: 5FB888C1-09AA-3398-A8B1-7F2F903D2650' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticRequest.framework/Versions/A/DiagnosticRequest'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DRConfigStringForState, _DRGetAllLogFileURLs, _DRShouldEnableLogGathering, 
+                       _DRShouldGatherLog, _DRSubmitLog, _DRSubmitLogToCKContainer, 
+                       _DRTailspinRequest, __DPCEnableLogGatheringQueryMessage, __DPCGetCloudChannelConfig, 
+                       __DPCGetConfigStateForUUID, __DPCInjectEnableLogGatheringQueryResult, 
+                       __DPCMarkConfigUUIDCompletedOrRejected, __DPCRequestTeamIDBroadcast, 
+                       __DPCResetToDefaultCloudChannelConfig, __DPCSendClearTaskingStateMessage, 
+                       __DPCSendTaskingSystemJSONDataMessage, __DPCSetCloudChannelConfig, 
+                       __DPCSubmitLogRequestMessage, __DPCSubmitLogToCKContainerRequestMessage, 
+                       __DPCTailspinRequestMessage, __DPCTriggerRequestClean, __DPClientXPCSendMessage, 
+                       __DPClientXPCSendMessageWithReplySync, __DRCResetDampeningConfigurationToDefault, 
+                       __DRCSetDampeningConfigurationDefaults, __DRCSetDampeningIsEnabled, 
+                       __DRCTriggerCloudKitWork, __DRRequestPassesTailspinHysteresis, 
+                       _kDRRequestClientError, _kDRRequestOversizedContextDictErrorString, 
+                       _kMinimumTailspinLeewaySeconds ]
+    objc-classes:    [ _DRConfig, _DRConfigMonitor, _DRSubscriptionManager ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A31E2470-659E-39A1-B36C-18AFA202C987', 'x86_64: A31E2470-659E-39A1-B36C-18AFA202C987', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F0C1CD3A-5089-3671-BBC0-F7D543EC87B8', 'arm64e: F0C1CD3A-5089-3671-BBC0-F7D543EC87B8' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/_CoreData_CloudKit.framework/Versions/A/_CoreData_CloudKit'
+current-version: 15
+swift-version:   7
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0VvM', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0Vvg', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0VvpMV', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0Vvs' ]
+...

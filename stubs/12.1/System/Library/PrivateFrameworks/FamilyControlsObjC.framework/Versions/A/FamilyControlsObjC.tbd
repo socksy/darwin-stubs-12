@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 6FA7530A-6AD7-3614-B302-4BE3E22A9D94', 'x86_64: 6FA7530A-6AD7-3614-B302-4BE3E22A9D94', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BE0465A4-FC3A-3784-8712-9DD7DCB97491', 'arm64e: BE0465A4-FC3A-3784-8712-9DD7DCB97491' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/FamilyControlsObjC.framework/Versions/A/FamilyControlsObjC'
+current-version: 1017
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FOFamilyControlsAgentPrivateServiceName ]
+    objc-classes:    [ _FOAgentConnectionPrivate, _FOAuthorizationCenter, _FOAuthorizationRecord, 
+                       _FOAuthorizationRecordDecoder, _FOAuthorizationRecordEncoder, 
+                       _FOXPCRemoteObjectProxy ]
+...

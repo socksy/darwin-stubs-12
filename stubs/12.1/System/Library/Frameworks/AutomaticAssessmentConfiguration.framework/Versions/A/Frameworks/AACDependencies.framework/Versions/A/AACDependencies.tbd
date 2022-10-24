@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EE131312-981E-3D08-A583-DEDB32095271', 'x86_64: EE131312-981E-3D08-A583-DEDB32095271', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A9B3AD03-A5B9-36F4-A187-A38650ADDFA2', 'arm64e: A9B3AD03-A5B9-36F4-A187-A38650ADDFA2' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/Versions/A/Frameworks/AACDependencies.framework/Versions/A/AACDependencies'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _AEDDisplayPrimitivesProvider, _AEDScreenPrimitivesProvider, 
+                       _AEDSingleAppModeConfiguration, _AEDWindowPrimitivesProvider ]
+...

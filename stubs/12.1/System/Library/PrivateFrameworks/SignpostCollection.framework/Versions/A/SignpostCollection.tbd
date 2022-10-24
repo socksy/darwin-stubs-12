@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3247BA62-7153-3A53-B23E-93B64C4920C1', 'x86_64: 3247BA62-7153-3A53-B23E-93B64C4920C1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F6E6A6AD-4044-3B40-9135-2612D13894BE', 'arm64e: F6E6A6AD-4044-3B40-9135-2612D13894BE' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SignpostCollection.framework/Versions/A/SignpostCollection'
+current-version: 69
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SCCurrentTotalFrameCount, _SignpostPlatformForDevice, _SignpostPlatformForString, 
+                       _SignpostSystemTimebaseRatio, _StringForSignpostPlatform, 
+                       __signpostcollection_debug_log, _kSignpostNotification_NoTimeout ]
+    objc-classes:    [ _SignpostSerializationFilterConfiguration, _SignpostSupportObjectSerializer ]
+...

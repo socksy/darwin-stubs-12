@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3D98F3DD-E82B-3ABE-8FCF-92BFC7C0FCA4', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F7F08A82-C005-3DF3-8B3F-3FB767EE8845' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ZhuGeSupport.framework/Versions/A/ZhuGeSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ZhuGeCopyValueWithError ]
+...

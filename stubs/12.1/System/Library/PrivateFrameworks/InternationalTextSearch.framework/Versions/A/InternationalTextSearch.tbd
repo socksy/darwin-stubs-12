@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 190CD62E-5321-3B8C-B40C-5B9361F18D05', 'x86_64: 190CD62E-5321-3B8C-B40C-5B9361F18D05', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2AFC3B25-A5E2-3FEB-B744-CB86B2DC71AF', 'arm64e: 2AFC3B25-A5E2-3FEB-B744-CB86B2DC71AF' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/InternationalTextSearch.framework/Versions/A/InternationalTextSearch'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ITSCollationContextFreeContextForDatabaseHandle, _ITSCopyFTSTableCreateStatementUsingCurrentLanguage, 
+                       _ITSCopyFTSTableCreateStatementWithLanguageAndCollator, _ITSCopySearchCollatorForLanguage, 
+                       _ITSCopyUserLanguage, _ITSCreateCollator, _ITSCreateCollatorWithPreferredLocale, 
+                       _ITSCreateSortKey, _ITSFTSIsEnabled, _ITSRegisterSQLiteICUTokenizer, 
+                       _ITSSetCollatorOverrideForDatabaseConnectionHandle, _ITSSetLocaleOverrideForDatabaseConnectionHandle, 
+                       _ITSTokenListCopyEscapedTokenAtIndex, _ITSTokenListCreate, 
+                       _ITSTokenListDestroy, _ITSTokenListGetCount, _ITSTokenListGetTokenAtIndex, 
+                       _ITSTokenListGetTokenCollationKeyAtIndex, _ITSTokenListGetTokenCollationKeyLengthAtIndex, 
+                       _ITSTokenListGetTokenEndByteOffsetAtIndex, _ITSTokenListGetTokenRangeAtIndex, 
+                       _ITSTokenListGetTokenStartByteOffsetAtIndex, _ITSTokenListPopulateFromString, 
+                       _ITSTokenListRemoveAllTokens, _InternationalTextSearchVersionNumber, 
+                       _InternationalTextSearchVersionString ]
+...

@@ -1,0 +1,8 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 81219DC9-625A-3229-8D51-F234A55FFDA4', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BF3F4FBC-77BF-3110-B9BA-D32828224300' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/LiveTranscription.framework/Versions/A/LiveTranscription'
+swift-version:   7
+...

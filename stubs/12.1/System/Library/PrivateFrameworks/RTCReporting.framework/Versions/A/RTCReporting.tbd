@@ -1,0 +1,39 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D2CAE251-4400-3D0F-9909-DD2FE6474584', 'x86_64: D2CAE251-4400-3D0F-9909-DD2FE6474584', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 600B2B0D-AB8C-3F5E-A4A8-E0ECD474E6D8', 'arm64e: 600B2B0D-AB8C-3F5E-A4A8-E0ECD474E6D8' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RTCReporting.framework/Versions/A/RTCReporting'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RTCReportingCloseEphemeralSessionWithSessionId, _RTCReportingCreateEphemeralSessionWithSessionInfo, 
+                       _RTCReportingCreateHierarchyTokenFromParentToken, _RTCReportingFetchStatesWithUserInfo, 
+                       _RTCReportingFlushMessages, _RTCReportingFlushMessagesWithCompletion, 
+                       _RTCReportingInitWithSessionInfo, _RTCReportingInitWithSessionInfoDict, 
+                       _RTCReportingSendMessageWithDictionary, _RTCReportingSendMessageWithError, 
+                       _RTCReportingSendOneMessageWithDictionary, _RTCReportingSetMessageBlock, 
+                       _RTCReportingStartConfiguration, _RTCReportingUpdateSharedDataForKey, 
+                       _RTCReportingUpdateSharedDataWithDictionary, _RTCReportingUploadLogWithArray, 
+                       _kRTCReportingBackendAWD, _kRTCReportingBackendDashboard, 
+                       _kRTCReportingBackendHTTPPost, _kRTCReportingBackendHTTPPost2, 
+                       _kRTCReportingBackendHTTPPost3, _kRTCReportingBackendLocal, 
+                       _kRTCReportingBackendPowerlog, _kRTCReportingBackendQRS, _kRTCReportingBackendUploadServer, 
+                       _kRTCReportingErrorDomain, _kRTCReportingHierarchyTokenLevel, 
+                       _kRTCReportingHierarchyTokenTokenID, _kRTCReportingLogDataData, 
+                       _kRTCReportingLogDataEndTime, _kRTCReportingLogDataStartTime, 
+                       _kRTCReportingMessageParametersCategory, _kRTCReportingMessageParametersFlag, 
+                       _kRTCReportingMessageParametersPayload, _kRTCReportingMessageParametersType, 
+                       _kRTCReportingSessionInfoBatchEvent, _kRTCReportingSessionInfoClientBundleID, 
+                       _kRTCReportingSessionInfoClientType, _kRTCReportingSessionInfoClientVersion, 
+                       _kRTCReportingSessionInfoContainsRealtimeEvents, _kRTCReportingSessionInfoEnableFlag, 
+                       _kRTCReportingSessionInfoEphemeralSessionClose, _kRTCReportingSessionInfoEphemeralSessionID, 
+                       _kRTCReportingSessionInfoHierarchyToken, _kRTCReportingSessionInfoRequireUserInfo, 
+                       _kRTCReportingSessionInfoSamplingUUIID, _kRTCReportingSessionInfoSessionID, 
+                       _kRTCReportingUserInfoClientName, _kRTCReportingUserInfoServiceName ]
+    objc-classes:    [ _RTCReporting, _RTCReportingAggregationObject, _RTCSecureHierarchyToken, 
+                       _UpdateAndReportServices ]
+    objc-ivars:      [ _RTCReportingAggregationObject._aggregationBlock, _RTCSecureHierarchyToken._level, 
+                       _RTCSecureHierarchyToken._token, _UpdateAndReportServices._block, 
+                       _UpdateAndReportServices._report, _UpdateAndReportServices._update ]
+...

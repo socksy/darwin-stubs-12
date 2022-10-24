@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, x86_64h, arm64, arm64e ]
+uuids:           [ 'x86_64: C55B389E-8888-35B8-908E-045081256582', 'x86_64: C55B389E-8888-35B8-908E-045081256582', 
+                   'x86_64h: 8D6FC317-4E51-3D53-A369-1DB27260DDD8', 'x86_64h: 8D6FC317-4E51-3D53-A369-1DB27260DDD8', 
+                   'arm64: 0D1266B2-134F-374E-A8A1-6A7ADDF61CD9', 'arm64: 0D1266B2-134F-374E-A8A1-6A7ADDF61CD9', 
+                   'arm64e: 5F4FBCD5-4CD0-3A14-AC04-DC456E8BADE8', 'arm64e: 5F4FBCD5-4CD0-3A14-AC04-DC456E8BADE8' ]
+platform:        zippered
+install-name:    '/usr/lib/libcompression.dylib'
+exports:
+  - archs:           [ x86_64, x86_64h, arm64, arm64e ]
+    symbols:         [ _compression_decode_buffer, _compression_decode_scratch_buffer_size, 
+                       _compression_encode_buffer, _compression_encode_scratch_buffer_size, 
+                       _compression_stream_destroy, _compression_stream_get_decode_state_size, 
+                       _compression_stream_get_encode_state_size, _compression_stream_get_state_size, 
+                       _compression_stream_identify_algorithm, _compression_stream_init, 
+                       _compression_stream_init_with_state_buffer, _compression_stream_is_state_valid, 
+                       _compression_stream_process, _compression_stream_reinit, _yzip_codec_create, 
+                       _yzip_codec_destroy, _yzip_image_create, _yzip_image_create_with_payload, 
+                       _yzip_image_decode, _yzip_image_destroy, _yzip_image_encode, 
+                       _yzip_image_get_descriptor, _yzip_image_get_max_payload_size, 
+                       _yzip_image_get_plane_descriptor, _yzip_image_set_data, _yzip_image_set_identifier, 
+                       _yzip_image_set_plane_data ]
+...

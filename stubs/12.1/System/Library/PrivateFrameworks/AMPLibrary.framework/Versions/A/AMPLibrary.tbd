@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0582A012-19BF-31DB-B892-89925A56E238', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A2F53FF1-0176-399F-85E8-B599A0F212BB' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AMPLibrary.framework/Versions/A/AMPLibrary'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AMPLibraryPlaylistSharing_AppDomainKey, _AMPLibraryPlaylistSharing_IDKey, 
+                       _AMPLibraryPlaylistSharing_IsSharedKey, _AMPLibraryPlaylistSharing_NameKey ]
+    objc-classes:    [ _AMPArtworkClient, _AMPArtworkEventInfo, _AMPArtworkRequest, 
+                       _AMPArtworkRequestResponse, _AMPArtworkSourceInfo, _AMPLClient, 
+                       _AMPLFrameworkClient, _AMPLMediaAppClient, _AMPLSharingClient, 
+                       _AMPLegacyITunesPrefs, _AMPLibraryAddToCloudMusicLibraryRequest, 
+                       _AMPRemoveArtworkRequest, _AMPSetArtworkResponse ]
+...

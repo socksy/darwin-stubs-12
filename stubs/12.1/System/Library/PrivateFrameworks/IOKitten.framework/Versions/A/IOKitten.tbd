@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9AA9C2A0-9553-3ECD-8CE4-72427C0A984D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E7A8F64D-892D-33EE-BE41-5767B352C1F0' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IOKitten.framework/Versions/A/IOKitten'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IOErrorDomain, _IOKAppPowerStateInterest, _IOKAudioPlane, 
+                       _IOKBusyInterest, _IOKDeviceTreePlane, _IOKFireWirePlane, 
+                       _IOKFirstMatchNotification, _IOKFirstPublishNotification, 
+                       _IOKGeneralInterest, _IOKMatchedNotification, _IOKPMAssertionTypeNetworkClientActive, 
+                       _IOKPMAssertionTypePreventDiskIdle, _IOKPMAssertionTypePreventUserIdleDisplaySleep, 
+                       _IOKPMAssertionTypePreventUserIdleSleep, _IOKPowerPlane, _IOKPriorityPowerStateInterest, 
+                       _IOKPublishNotification, _IOKServicePlane, _IOKTerminatedNotification, 
+                       _IOKUSBPlane, _IOKWillTerminateNotification, _IOKittenVersionNumber, 
+                       _IOKittenVersionString ]
+    objc-classes:    [ _IOKConnection, _IOKInterestNotification, _IOKInterestNotificationRef, 
+                       _IOKIterator, _IOKMatchingNotification, _IOKMatchingNotificationRef, 
+                       _IOKNotificationPort, _IOKObject, _IOKPowerManager, _IOKPowerManagerPowerAssertion, 
+                       _IOKPowerNotifier, _IOKRegistryEntry, _IOKService, _IORegistryIterator ]
+...

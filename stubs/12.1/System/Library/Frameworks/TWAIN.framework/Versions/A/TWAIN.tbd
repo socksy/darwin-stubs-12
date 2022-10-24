@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 42D9A99D-23A7-31F5-B35D-46736BA6B803', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A7E8F069-3EF5-380E-99FC-8095D8D88ABA' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/TWAIN.framework/Versions/A/TWAIN'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DSM_Entry ]
+...

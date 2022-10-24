@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B4F68DF8-722E-3AEC-861F-AFBA659AAE2F', 'x86_64: B4F68DF8-722E-3AEC-861F-AFBA659AAE2F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 179C3349-FD2A-33A2-B44E-50B49703A8AD', 'arm64e: 179C3349-FD2A-33A2-B44E-50B49703A8AD' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreLocationReplay.framework/Versions/A/CoreLocationReplay'
+current-version: 2665.0.9
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ __CLLocationPlayer ]
+...

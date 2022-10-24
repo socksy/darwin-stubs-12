@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1FCAFC9C-AE36-3FFC-9EDD-10882224FFAF', 'x86_64: 1FCAFC9C-AE36-3FFC-9EDD-10882224FFAF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8B2BCFBB-69A6-3200-AC04-CB0797703A8C', 'arm64e: 8B2BCFBB-69A6-3200-AC04-CB0797703A8C' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/Speech.framework/Versions/A/Speech'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SFAnalyticsEventTypeGetName, _SFIsIOS, _SFIsInternalInstall, 
+                       _SFIsMac, _SFIsTV, _SFLSRDelegateGetInterface, _SFLSRGetInterface, 
+                       _SFSupportsANE, _kSFCoreAnalyticsAppnameKey, _kSFCoreAnalyticsAsrInitializationTimeKey, 
+                       _kSFCoreAnalyticsAudioDurationKey, _kSFCoreAnalyticsCpuRtfKey, 
+                       _kSFCoreAnalyticsErrorCode, _kSFCoreAnalyticsErrorDomain, 
+                       _kSFCoreAnalyticsIsFinalKey, _kSFCoreAnalyticsJitLmeProcessingTimeKey, 
+                       _kSFCoreAnalyticsLanguageKey, _kSFCoreAnalyticsModelLoadTimeKey, 
+                       _kSFCoreAnalyticsModelVersionKey, _kSFCoreAnalyticsNarrowbandKey, 
+                       _kSFCoreAnalyticsOndeviceKey, _kSFCoreAnalyticsRecognitionDurationKey, 
+                       _kSFCoreAnalyticsRecognitionResponseTimeKey, _kSFCoreAnalyticsSuccessKey, 
+                       _kSFCoreAnalyticsTTFWKey, _kSFCoreAnalyticsTaskKey, _kSFCoreAnalyticsTextNotEmptyKey, 
+                       _kSFHindiLocaleIdentifier, _kSFHindiTranslitKeyboardIdentifier, 
+                       _kSFHindiTranslitReplacementLocaleIdentifier, _kSFSpeechRecognizerTaskDictation, 
+                       _kSFSpeechRecognizerTaskVoiceMail ]
+    objc-classes:    [ _SFAcousticFeature, _SFLocalSpeechRecognitionClient, _SFRequestParameters, 
+                       _SFSpeechAssetManager, _SFSpeechAudioBufferRecognitionRequest, 
+                       _SFSpeechLanguageModel, _SFSpeechRecognitionMetadata, _SFSpeechRecognitionRequest, 
+                       _SFSpeechRecognitionResult, _SFSpeechRecognitionTask, _SFSpeechRecognizer, 
+                       _SFSpeechURLRecognitionRequest, _SFTranscription, _SFTranscriptionSegment, 
+                       _SFUtilities, _SFVoiceAnalytics, __SFSearchRequest, __SFSearchResult ]
+...

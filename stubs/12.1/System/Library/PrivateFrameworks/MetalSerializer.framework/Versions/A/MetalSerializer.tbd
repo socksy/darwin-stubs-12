@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0FE81EFE-E80D-3456-95F1-CC7C70D4B0BF', 'x86_64: 0FE81EFE-E80D-3456-95F1-CC7C70D4B0BF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F083227C-51A6-3413-A2C6-B1ADED5A43F3', 'arm64e: F083227C-51A6-3413-A2C6-B1ADED5A43F3' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/MetalSerializer.framework/Versions/A/MetalSerializer'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MTLCreateDeserializerForDevice, _MTLCreateDeserializerForDeviceWithDelegate, 
+                       _MTLCreateDeserializerForDeviceWithDelegateNoQueue, _MTLDeserializerForDevice ]
+    objc-classes:    [ _MTLSerializer, _MTLSerializerBlitCommandEncoder, _MTLSerializerCommandEncoder, 
+                       _MTLSerializerComputeCommandEncoder, _MTLSerializerParallelRenderCommandEncoder, 
+                       _MTLSerializerRenderCommandEncoder ]
+    objc-ivars:      [ _MTLSerializerCommandEncoder.stream, _MTLSerializerParallelRenderCommandEncoder._encoders, 
+                       _MTLSerializerParallelRenderCommandEncoder._encodersCount, 
+                       _MTLSerializerParallelRenderCommandEncoder._encodersSize ]
+...

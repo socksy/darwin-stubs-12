@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 12DB8CC1-69E1-388B-AC38-BB00CBFA473D', 'x86_64: 12DB8CC1-69E1-388B-AC38-BB00CBFA473D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4921F0D8-A77B-3E24-A374-64C85645E0EC', 'arm64e: 4921F0D8-A77B-3E24-A374-64C85645E0EC' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ProactiveInputPredictions.framework/Versions/A/ProactiveInputPredictions'
+current-version: 1153.10
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PSGErrorDomain, _ProactiveInputPredictionsVersionNumber, 
+                       _ProactiveInputPredictionsVersionString, _kPSGContactsAutocompleteSearchFieldKey, 
+                       _kPSGContactsAutocompleteSearchTermKey, _kPSGContactsAutocompleteTriggerTypeValue, 
+                       _kPSGInputSuggestionsExplanationInternalNamespace, _kPSGInputSuggestionsExplanationPortraitNamespace, 
+                       _kPSGKeyboardLanguageKey, _kPSGKeyboardRegionKey, _kPSGLMWordBoundaryTriggerCategory, 
+                       _kPSGLogSubsystem, _kPSGMLModelLowConfidenceResponseCategory, 
+                       _kPSGMLModelLowConfidenceZKWTriggerCategory, _kPSGMLModelResponseCategory, 
+                       _kPSGMLModelWordBoundaryTriggerCategory, _kPSGMLModelZKWTriggerCategory, 
+                       _kPSGMessageDurationKey, _kPSGMessageLengthKey, _kPSGMessageWordsKey, 
+                       _kPSGMessagesMentionsMiniAppBundleIdentifier, _kPSGNameMentionsTriggerCategory, 
+                       _kPSGNameMentionsTriggerNamePrefixKey, _kPSGNameMentionsTriggerTypeValue, 
+                       _kPSGPhotoSharingResponseCategory, _kPSGQueryAlternativeResponseCategory, 
+                       _kPSGSelectionPositionKey, _kPSGSelectionPositionUnknown, 
+                       _kPSGTaggedTextFieldContactsAutocompleteTriggerCategory, _kPSGTaggedTextFieldMeCardTriggerCategory, 
+                       _kPSGTextContentTypeTagKey, _kPSGTriggerTypeConnections, _kPSGUndefinedResponseKitCategory, 
+                       _psg_default_log_handle ]
+    objc-classes:    [ _PSGInputSuggester, _PSGInputSuggesterClient, _PSGInputSuggestionsExplanationSet, 
+                       _PSGInputSuggestionsExplanationSetGuardedData, _PSGInputSuggestionsRequest, 
+                       _PSGInputSuggestionsResponse, _PSGInputSuggestionsResponseItem, 
+                       _PSGInternalClient, _PSGLMWrapper, _PSGNameMentionsHandler, 
+                       _PSGOperationalPredictedItem, _PSGProactiveTrigger, _PSGProactiveTriggerHandler, 
+                       _PSGStructuredInfoSuggestion, _PSGStructuredInfoSuggestionCache, 
+                       _PSGTextualResponseSuggestion, _PSGUtilities, _PSGWordBoundaryFSTGrammar ]
+    objc-ivars:      [ _PSGInputSuggestionsExplanationSetGuardedData._set ]
+...

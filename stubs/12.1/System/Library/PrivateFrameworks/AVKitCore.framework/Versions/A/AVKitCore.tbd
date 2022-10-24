@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 537FBD08-FA83-330F-B14B-04275FFCD5F1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D207C54C-6D41-3F0C-B2F9-42355599EC93' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AVKitCore.framework/Versions/A/AVKitCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ AVKit, AVKitMacHelper, OutputDeviceMenuService, RoutePickerViewService ]
+    symbols:         [ _AVMediaSelectionAutoOption, _AVMediaSelectionOffOption, _AVMicaPackageFilterNamePlusL, 
+                       _AVMicaPackageNameRoutePickerCircularGlyph, _AVMicaPackageNameRoutePickerSquareGlyph, 
+                       _AVMicaPackageNameVolumeGlyph, _AVPlayerControllerContentDimensionsChangedNotification, 
+                       _AVPlayerControllerCurrentTimeJumpedNotification, _AVPlayerControllerDidBeginScanningNotification, 
+                       _AVPlayerControllerDidEndScanningNotification, _AVPlayerControllerDidSeekChapterChapterKey, 
+                       _AVPlayerControllerDidSeekChapterNotification, _AVPlayerControllerPIPActivitySessionIdentifierDidChangeNotification, 
+                       _AVPlayerControllerPlaybackDidEndNotification, _AVPlayerControllerScanningDirectionKey, 
+                       _AVPlayerControllerSelectedMediaOptionDidChangeNotification, 
+                       _AVRoutePickerGlyphStateNameActive, _AVRoutePickerGlyphStateNameInactive, 
+                       _AVVolumeGlyphStateNameHigh, _AVVolumeGlyphStateNameLow, _AVVolumeGlyphStateNameMax, 
+                       _AVVolumeGlyphStateNameMedium, _AVVolumeGlyphStateNameMuted, 
+                       _AVVolumeGlyphStateNameVolumeZero, _AVWaveformDefaultNotificationInterval, 
+                       _AVWaveformDefaultResolution, _AVWaveformFinishedLoadingNotification, 
+                       _AVWaveformSamplesDidBecomeAvailableNotification, __AVDebugLog, 
+                       __AVLog, __AVMethodProem ]
+    objc-classes:    [ _AVAssetIdentifier, _AVChapter, _AVKeyValueChange, _AVMicaPackage, 
+                       _AVMutableValueTiming, _AVObservationController, _AVPlaybackRate, 
+                       _AVPlaybackRateCollection, _AVPlayerController, _AVPlayerControllerTimeResolver, 
+                       _AVRouteDetectorCoordinator, _AVThumbnail, _AVThumbnailCache, 
+                       _AVThumbnailGenerator, _AVTimecode, _AVTimecodeController, 
+                       _AVTimer, _AVTouchBarMediaSelectionOption, _AVTrackIdentifier, 
+                       _AVValueTiming, _AVWaveform, _AVWaveformController ]
+...

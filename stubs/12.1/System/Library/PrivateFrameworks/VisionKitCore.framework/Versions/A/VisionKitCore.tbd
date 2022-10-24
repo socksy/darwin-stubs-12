@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 442C678E-1D00-3EE1-A701-EE2405F86C60', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E87DEBD7-B273-3FFB-A7B3-116B0DD6BD4B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/VisionKitCore.framework/Versions/A/VisionKitCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _VKFeedbackMetadataKeyAdditionalDescriptionText, _VKFeedbackMetadataKeyClientID, 
+                       _VKFeedbackMetadataKeyComponentID, _VKFeedbackMetadataKeyComponentName, 
+                       _VKFeedbackMetadataKeyComponentVersion, _VKMMininumQuadSideLength, 
+                       _VKMMultiplyQuadSideLengthScaler, _VKMNearlyEqualVKQuads, 
+                       _vk_cgImagePropertyOrientationFromVKOrientation, _vk_clockwiseRotationsFromUpToMatchOrientation, 
+                       _vk_counterClockwiseRotationsFromUpToMatchOrientation, _vk_nonLocalizedOrientationNameForType, 
+                       _vk_orientationByRotatingLeft, _vk_orientationByRotatingRight, 
+                       _vk_orientationFromNonLocalizedName, _vk_transformFromImageOrientation ]
+    objc-classes:    [ _VKAnalysisExecutionDurations, _VKAnalyticsAnalyzerEvent, 
+                       _VKAnalyticsDDEvent, _VKAnalyticsEvent, _VKAnalyticsInteractionEvent, 
+                       _VKAnalyticsMRCEvent, _VKAnalyticsTextEvent, _VKAnalyticsVisualSearchEvent, 
+                       _VKCTextRecognitionResult, _VKFeedbackAttachment, _VKFeedbackProvider, 
+                       _VKImageAnalysis, _VKImageAnalysisOverlayView, _VKImageAnalyzer, 
+                       _VKImageAnalyzerRequest, _VKQuad, _VKWKDataDetectorInfo, _VKWKLineInfo, 
+                       _VKWKTextInfo ]
+...

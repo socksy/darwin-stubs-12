@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 692A8345-F42C-34DF-92AD-4F8B1ECE563F', 'x86_64: 692A8345-F42C-34DF-92AD-4F8B1ECE563F', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FFBB0FAC-5E99-30EA-A106-0DC8598C9FE8', 'arm64e: FFBB0FAC-5E99-30EA-A106-0DC8598C9FE8' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SignpostMetrics.framework/Versions/A/SignpostMetrics'
+current-version: 69
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __MXSignpostMetricsSnapshot ]
+    objc-classes:    [ _SignpostMetricsSnapshotter ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9C1F623A-62F6-34A2-B7BF-117ED45CE913', 'x86_64: 9C1F623A-62F6-34A2-B7BF-117ED45CE913', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BE72E39C-A515-38F1-A6DF-3170C55D796F', 'arm64e: BE72E39C-A515-38F1-A6DF-3170C55D796F' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SyncedDefaults.framework/Versions/A/SyncedDefaults'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SYDGetAccountsLog, _SYDGetAnalyticsLog, _SYDGetCloudKitLog, 
+                       _SYDGetConnectionLog, _SYDGetCoreDataLog, _SYDGetDefaultLog, 
+                       _SYDGetMigrationLog, _SYDGetMiscLog, _SYDGetReachabilityLog, 
+                       _SYDGetSchedulerLog, _SYDGetTCCLog, _SYDGetTraceLog, _SYDRemotePreferencesSourceConfigurationDidChangeNotification, 
+                       _SYDRemotePreferencesSourceDidChangeNotification, _SYDUbiquitousKeyValueStoreDidChangeExternallyNotification, 
+                       _SYDXPCCreateCFObjectFromXPCObject, _SYDXPCCreateXPCObjectFromCFObject, 
+                       _SyncedDefaultsVersionNumber, _SyncedDefaultsVersionString ]
+    objc-classes:    [ _SYDClient, _SYDClientToDaemonConnection, _SYDJournal, _SYDRemotePreferencesSource, 
+                       _SYDStoreConfiguration, _SYDStoreID ]
+...

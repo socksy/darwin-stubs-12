@@ -1,0 +1,37 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 953BD619-20C9-38FD-9F7C-7E54F83558D4', 'x86_64: 953BD619-20C9-38FD-9F7C-7E54F83558D4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 08A9E106-91D9-391A-9E72-30E2DE12FE4F', 'arm64e: 08A9E106-91D9-391A-9E72-30E2DE12FE4F' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SidecarCore.framework/Versions/A/SidecarCore'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SidecarBundle, _SidecarDeviceGeneration, _SidecarDevicesChangedNotification, 
+                       _SidecarDiagnose, _SidecarDisplayManagerConnectedDevicesChangedNotification, 
+                       _SidecarDisplayManagerPreferencesChangedNotification, _SidecarErrorDomain, 
+                       _SidecarGetProcessUniqueID, _SidecarLocalizedString, _SidecarMapTableAddObject, 
+                       _SidecarMapTableCreateStrong, _SidecarMapTableCreateWeak, 
+                       _SidecarMapTableGetCount, _SidecarMapTableGetHandle, _SidecarMapTableGetObject, 
+                       _SidecarMapTableIterateObjects, _SidecarMapTableRemoveAllObjects, 
+                       _SidecarMapTableRemoveObject, _SidecarMapTableReplaceObject, 
+                       _SidecarMessageCreateMutable, _SidecarMessageGetDefaults, 
+                       _SidecarMessageGetDictionaryRepresentation, _SidecarMessageGetItemData, 
+                       _SidecarMessageGetRequestID, _SidecarMessageGetServiceName, 
+                       _SidecarMessageGetTransferID, _SidecarMessageGetType, _SidecarMessageSetDefaults, 
+                       _SidecarMessageSetItemData, _SidecarMessageSetItemMetaData, 
+                       _SidecarMessageSetRequestID, _SidecarMessageSetServiceName, 
+                       _SidecarMessageSetTransferID, _SidecarMessageSetType, _SidecarOptOutOfReconnect, 
+                       _SidecarPDFDefaultPageRect, _SidecarPDFJPEGCompression, _SidecarPasteboardInfoType, 
+                       _SidecarRegisterServicePresenter, _SidecarRegisterServiceProvider, 
+                       _SidecarServiceNameAnnotation, _SidecarServiceNameDisplay, 
+                       _SidecarServiceNameMarkupDisplay, _SidecarServiceNameScanDocument, 
+                       _SidecarServiceNameSignature, _SidecarServiceNameSketch, _SidecarServiceNameTakePhoto, 
+                       _SidecarServicePresenterReady, _SidecarServiceProviderReady, 
+                       _kUTType_iPadPro, _makeDeviceIdentifierMap ]
+    objc-classes:    [ _SidecarDebugRequest, _SidecarDevice, _SidecarDisplayConfig, 
+                       _SidecarDisplayManager, _SidecarItem, _SidecarMapTable, _SidecarPasteboardInfo, 
+                       _SidecarRequest, _SidecarResponse, _SidecarService, _SidecarSession, 
+                       _SidecarStream ]
+...

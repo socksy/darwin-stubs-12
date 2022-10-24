@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 81D0B31B-5A43-3226-AA03-64CE17FA383E', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FFD2B1E6-8C18-37FB-8144-327646714892' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/WiFiCloudSyncEngine.framework/Versions/A/WiFiCloudSyncEngine'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _WiFiCloudSyncEngineAddNetworkToCloud, _WiFiCloudSyncEngineAddNetworkToKnownNetworksList, 
+                       _WiFiCloudSyncEngineAllowLegacyUpdates, _WiFiCloudSyncEngineCheckKeychainSyncState, 
+                       _WiFiCloudSyncEngineCopyCompleteKVS, _WiFiCloudSyncEngineCreate, 
+                       _WiFiCloudSyncEngineGetLogCallbackFunction, _WiFiCloudSyncEngineIsRunning, 
+                       _WiFiCloudSyncEngineLoggerLog, _WiFiCloudSyncEngineMergeKnownNetworksToCloud, 
+                       _WiFiCloudSyncEngineMergeKnownNetworksToCloudWithKVS, _WiFiCloudSyncEnginePruneNetworksInCloud, 
+                       _WiFiCloudSyncEngineRegisterCallbacks, _WiFiCloudSyncEngineRegisterCallbacksWithQueue, 
+                       _WiFiCloudSyncEngineRemoveNetworkFromCloud, _WiFiCloudSyncEngineRemoveNetworkFromKnownNetworksList, 
+                       _WiFiCloudSyncEngineScheduleWithQueue, _WiFiCloudSyncEngineScheduleWithRunLoop, 
+                       _WiFiCloudSyncEngineStartEngine, _WiFiCloudSyncEngineStopEngine, 
+                       _WiFiCloudSyncEngineUnScheduleWithQueue, _WiFiCloudSyncEngineUnScheduleWithRunLoop, 
+                       _kKeychainChangedNotificationName ]
+    objc-classes:    [ _WiFiCloudSyncEngineCore, _WiFiCloudSyncEngineLogger ]
+    objc-ivars:      [ _WiFiCloudSyncEngineCore.callback, _WiFiCloudSyncEngineCore.clientQueue, 
+                       _WiFiCloudSyncEngineCore.clientThread, _WiFiCloudSyncEngineCore.context, 
+                       _WiFiCloudSyncEngineCore.iCloudSyncingEnabled, _WiFiCloudSyncEngineCore.keyValueStore ]
+...

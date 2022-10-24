@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E0E479B2-EBEE-380A-A63E-56E4DE6EFAAC', 'x86_64: E0E479B2-EBEE-380A-A63E-56E4DE6EFAAC', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1BB0E533-D9D6-3A27-A1B9-B51FAF2D4C25', 'arm64e: 1BB0E533-D9D6-3A27-A1B9-B51FAF2D4C25' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/InAppMessagesCore.framework/Versions/A/InAppMessagesCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IAMApplicationDidBecomeActiveEventName, _IAMLogCategoryDefault, 
+                       _IAMLogCategoryDefault_Oversize, _IAMWebProcessShouldDismissPresentationBeforeOpen, 
+                       _IAMWebProcessShouldDismissPresentationBeforePerformingAction, 
+                       _InAppMessagesCoreVersionNumber, _InAppMessagesCoreVersionString ]
+    objc-classes:    [ _IAMAction, _IAMApplicationDidBecomeActiveEvent, _IAMContent, 
+                       _IAMCountableEvent, _IAMEvent, _IAMFigaroEvent, _IAMImage, 
+                       _IAMImpression, _IAMMessage, _IAMPresentationPolicy, _IAMTempTestMessages, 
+                       _IAMValueEvent ]
+...

@@ -1,0 +1,68 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 45848037-C33D-3E88-AD99-0B26467D6679', 'x86_64: 45848037-C33D-3E88-AD99-0B26467D6679', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DE1A3739-6B5E-3080-B237-9FB6BD5A0DD8', 'arm64e: DE1A3739-6B5E-3080-B237-9FB6BD5A0DD8' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/TipsDaemon.framework/Versions/A/TipsDaemon'
+current-version: 613.8
+swift-version:   7
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '_$s10TipsDaemon29TPSTargetingConditionJoinTypeO8rawValueACSgSi_tcfC', 
+                       '_$s10TipsDaemon29TPSTargetingConditionJoinTypeO8rawValueSivg', 
+                       '_$s10TipsDaemon29TPSTargetingConditionJoinTypeO8rawValueSivpMV', 
+                       '_$s10TipsDaemon29TPSTargetingConditionJoinTypeOMa', '_$s10TipsDaemon29TPSTargetingConditionJoinTypeOMn', 
+                       '_$s10TipsDaemon29TPSTargetingConditionJoinTypeON', '_$s10TipsDaemon29TPSTargetingConditionJoinTypeOSHAAMc', 
+                       '_$s10TipsDaemon29TPSTargetingConditionJoinTypeOSQAAMc', '_$s10TipsDaemon29TPSTargetingConditionJoinTypeOSYAAMc', 
+                       _TPSContextualEventSinceDateGracePeriod, _TPSDeliveryPreconditionRootKey, 
+                       _TPSHMManagerSpeakersConfiguredChangedNotificationString, 
+                       _TPSTipsManagerErrorDomain, _TipsDaemonVersionNumber, _TipsDaemonVersionString, 
+                       _kTPSPairedBeaconValidation, _kTPSPairedCarPlayValidation, 
+                       _kTPSPairedHomePodValidation, _kTPSPairedSmallHomePodValidation, 
+                       _kTPSPairedWatchValidation ]
+    objc-classes:    [ _TPSAnalyticsEventProcessedUsageEvents, _TPSAnalyticsHistoricTipsDataProcessor, 
+                       _TPSAnalyticsProcessingController, _TPSAnalyticsProcessor, 
+                       _TPSAnalyticsUsageEventsProcessor, _TPSAnalyticsUsageInfo, 
+                       _TPSAppStoreRegionValidation, _TPSAppStoreRegionsCondition, 
+                       _TPSAppleArcadeValidation, _TPSAppleCardSetupValidation, _TPSAppleCashFamilyValidation, 
+                       _TPSAppleCashValidation, _TPSApplePayActivationValidation, 
+                       _TPSApplePayPeerValidation, _TPSApplePaySetupValidation, _TPSAppleTVHomePodValidation, 
+                       _TPSBetaUserValidation, _TPSBlockValidation, _TPSBluetoothChecker, 
+                       _TPSCapability, _TPSCloudAccountChecker, _TPSCloudAccountValidation, 
+                       _TPSCloudBackupValidation, _TPSCloudDeviceInfo, _TPSCloudDeviceValidation, 
+                       _TPSCloudDevicesCondition, _TPSCloudDriveValidation, _TPSCloudFindMyValidation, 
+                       _TPSCloudMusicCatalogPlaybackValidation, _TPSCloudPhotoLibraryValidation, 
+                       _TPSCondition, _TPSContextualEventValidation, _TPSContextualInfo, 
+                       _TPSCustomCapabilityValidationBuilder, _TPSDataMigrator, _TPSDeliveryNotification, 
+                       _TPSDeliveryPrecondition, _TPSDeviceCapability, _TPSDeviceCapabilityCondition, 
+                       _TPSDeviceCapabilityValidation, _TPSDeviceValidation, _TPSDevicesCondition, 
+                       _TPSDictationLanguageValidation, _TPSDiscoverabilityController, 
+                       _TPSDualSimValidation, _TPSEventsHistoryController, _TPSExcludeAppsValidation, 
+                       _TPSExtendedKeyboardValidation, _TPSFamilyChildValidation, 
+                       _TPSFamilyOrganizerValidation, _TPSGestaltValidation, _TPSHRAccountInfoStatusValidation, 
+                       _TPSHandwritingKeyboardValidation, _TPSHeySiriAvailableValidation, 
+                       _TPSHeySiriEnabledValidation, _TPSHeySiriEverUsedValidation, 
+                       _TPSHomeAccessoriesValidation, _TPSHomeSetupValidation, _TPSInclusivityCondition, 
+                       _TPSInclusivityInfo, _TPSInclusivityValidation, _TPSInstalledAppInfo, 
+                       _TPSInstalledAppsCondition, _TPSInstalledAppsValidation, _TPSInstalledKeyboardValidation, 
+                       _TPSKeyboardUtilities, _TPSLocalNotificationController, _TPSMedicalIDValidation, 
+                       _TPSMultiLanguageValidation, _TPSNRDeviceCapability, _TPSNRDeviceCapabilityCondition, 
+                       _TPSNRDeviceCapabilityValidation, _TPSNRElectrocardiogramValidation, 
+                       _TPSNRFallDetectionValidation, _TPSNotificationCache, _TPSNotificationController, 
+                       _TPSOfflineContentManager, _TPSPairedBeaconValidation, _TPSPairedCarPlayValidation, 
+                       _TPSPairedDeviceValidation, _TPSPairedDevicesCondition, _TPSPairedHomePodValidation, 
+                       _TPSPairedSmallHomePodValidation, _TPSPairedWatchValidation, 
+                       _TPSPeopleSuggestionValidation, _TPSPineBoardBulletinController, 
+                       _TPSPreferredLanguageValidation, _TPSRegionsCondition, _TPSRegionsValidation, 
+                       _TPSReminderCloudKitValidation, _TPSReminderCompletedItemValidation, 
+                       _TPSReminderCustomBadgeValidation, _TPSReminderCustomSmartListValidation, 
+                       _TPSReminderHashtagValidation, _TPSScreenTimeCloudValidation, 
+                       _TPSScreenTimeValidation, _TPSSiriEnabledValidation, _TPSSiriLanguageValidation, 
+                       _TPSSiriLanguagesCondition, _TPSSiriSystemLanguageMatchValidation, 
+                       _TPSSleepSetupValidation, _TPSSpatialAudioValidation, _TPSTargetingCache, 
+                       _TPSTargetingValidateOperation, _TPSTargetingValidation, _TPSTargetingValidator, 
+                       _TPSTinkerValidation, _TPSTipsManager, _TPSUserNotificationController, 
+                       _TPSUserTypeCondition, _TPSUserTypesValidation, _TPSWelcomeDocument, 
+                       _TPSWelcomeInformation ]
+...

@@ -1,0 +1,33 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 866F7F6D-5B4A-3E5F-B7A8-F76A4431A6A9', 'x86_64: 866F7F6D-5B4A-3E5F-B7A8-F76A4431A6A9', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1DF04CF7-E528-3891-9EE8-52A07F1BCE52', 'arm64e: 1DF04CF7-E528-3891-9EE8-52A07F1BCE52' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RemoteManagement.framework/Versions/A/Frameworks/RemoteManagementProtocol.framework/Versions/A/RemoteManagementProtocol'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RMProtocolChannelDevice, _RMProtocolChannelUser, _RMProtocolCommandRequest_Status_busy, 
+                       _RMProtocolCommandRequest_Status_completed, _RMProtocolCommandRequest_Status_failed, 
+                       _RMProtocolCommandRequest_Status_ready, _RMProtocolEndpointCommand, 
+                       _RMProtocolEndpointDeclarationActivation, _RMProtocolEndpointDeclarationAsset, 
+                       _RMProtocolEndpointDeclarationConfiguration, _RMProtocolEndpointDeclarationItems, 
+                       _RMProtocolEndpointDeclarationManagement, _RMProtocolEndpointEnroll, 
+                       _RMProtocolEndpointEnrollment, _RMProtocolEndpointStatus, 
+                       _RMProtocolEndpointTokens, _RMProtocolEndpointWellknown, _RMProtocolEnrollResponse_PushEnvironment_development, 
+                       _RMProtocolEnrollResponse_PushEnvironment_production, _RMProtocolErrorResponse_Code_clientVersionInvalid, 
+                       _RMProtocolErrorResponse_Code_deviceAuthInvalid, _RMProtocolErrorResponse_Code_deviceAuthMissing, 
+                       _RMProtocolErrorResponse_Code_enrollmentNotAllowed, _RMProtocolErrorResponse_Code_enrollmentTokenInvalid, 
+                       _RMProtocolErrorResponse_Code_internalError, _RMProtocolErrorResponse_Code_jsonInvalid, 
+                       _RMProtocolErrorResponse_Code_jsonObjectInvalid, _RMProtocolErrorResponse_Code_missingRequestBody, 
+                       _RMProtocolErrorResponse_Code_userAuthInvalid, _RMProtocolErrorResponse_Code_userAuthMissing ]
+    objc-classes:    [ _RMProtocolCommandRequest, _RMProtocolCommandRequest_StatusReason, 
+                       _RMProtocolCommandResponse, _RMProtocolCommandResponse_Command, 
+                       _RMProtocolDeclarationItemsResponse, _RMProtocolDeclarationItemsResponse_DeclarationItem, 
+                       _RMProtocolDeclarationItemsResponse_Declarations, _RMProtocolDeclarationResponse, 
+                       _RMProtocolEnrollReferralResponse, _RMProtocolEnrollRequest, 
+                       _RMProtocolEnrollResponse, _RMProtocolErrorResponse, _RMProtocolPushMessage, 
+                       _RMProtocolStatusReport, _RMProtocolStatusReport_Errors, _RMProtocolStatusReport_StatusReason, 
+                       _RMProtocolSynchronizationTokens, _RMProtocolTokensResponse, 
+                       _RMProtocolWellKnownResponse, _RMProtocolWellKnownResponse_WellKnownResponseServer ]
+...

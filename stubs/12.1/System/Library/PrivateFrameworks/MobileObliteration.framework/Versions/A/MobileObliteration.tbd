@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 79227A49-C8E4-326E-BDEC-80DACBACD9A6', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1149BB87-B0E7-39E3-BAF7-51C48F2B1C4E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MobileObliteration.framework/Versions/A/MobileObliteration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _Mobile_Obliterate, _Mobile_Obliterate_IsSupported, _kDisplayProgressBarKey, 
+                       _kMobileObliterationError, _kMobileObliterationInternalError, 
+                       _kMobileObliterationSuccess, _kObliterateDataPartition, _kObliterationBrickIncludesFirmwareKey, 
+                       _kObliterationCompletedOK, _kObliterationCompletedWithWarning, 
+                       _kObliterationDelayAfterReplyKey, _kObliterationExclusionPathsKey, 
+                       _kObliterationFailedOSBroken, _kObliterationFailedOSValid, 
+                       _kObliterationIgnoreMissingPathKey, _kObliterationManagedDeviceWipeKey, 
+                       _kObliterationMessageKey, _kObliterationOptionsFilePathKey, 
+                       _kObliterationPreservedItemsDictKey, _kObliterationPreservedVolumeGroupUUID, 
+                       _kObliterationResultStateKey, _kObliterationResultStringKey, 
+                       _kObliterationReturnDictKey, _kObliterationTypeBrickOnly, 
+                       _kObliterationTypeKey, _kObliterationTypeMarkStart, _kObliterationTypeWipeAndBrick, 
+                       _kSkipDataObliteration ]
+...

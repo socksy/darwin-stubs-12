@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 271DE78F-2DF6-3434-ADF0-EBB037BD2A93', 'x86_64: 271DE78F-2DF6-3434-ADF0-EBB037BD2A93', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: BDD9B7E8-2B12-3673-BF8F-5736770AA463', 'arm64e: BDD9B7E8-2B12-3673-BF8F-5736770AA463' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Timeline.framework/Versions/A/Timeline'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _TLLoggingObjectForDomain, _TimelineVersionNumber, _TimelineVersionString ]
+    objc-classes:    [ _TLOperation, _TLPreviewTimelineError, _TLPreviewTimelineSelectableRegion, 
+                       _TLTimeline, _TLTimelineBlobEntry, _TLTimelineEntryNode, _TLTimelineEntryNodeRecycleBin, 
+                       _TLTimelineExtendOperation, _TLTimelineNode, _TLTimelineOperation, 
+                       _TLTimelineSegment, _TLTimelineSessionOperation, _TLTimelineSetupOperation, 
+                       _TLTimelineUtilities, _TLTimelineWindow ]
+...

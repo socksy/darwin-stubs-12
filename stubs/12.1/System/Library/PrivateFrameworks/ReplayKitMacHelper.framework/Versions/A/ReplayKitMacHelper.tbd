@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C2453B5E-88D9-341E-8EF6-20A723525999', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: AFB37859-58E7-3071-AF55-62E683CD3D74' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ReplayKitMacHelper.framework/Versions/A/ReplayKitMacHelper'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RPLogSetLogLevel, _ReplayKitMacHelperMake, _ReplayKitMacHelperVersionNumber, 
+                       _ReplayKitMacHelperVersionString, ___RPLogLevel, _kRPBroadcastActivityViewServiceProtocol, 
+                       _kRPVideoEditorViewServiceProtocol ]
+    objc-classes:    [ _RPBlurWindow, _RPBorderlessEffectWindow, _RPBroadcastActivityHostRemoteNSViewController, 
+                       _RPBroadcastActivityViewServiceExtensionHostContext, _RPDimAndShadowWindow, 
+                       _RPDimAndShadowWindowContentView, _RPMacUtility, _RPRemoteViewContainerWindow, 
+                       _RPRemoteWindowController, _RPTransparentWindow, _RPVideoEditorHostRemoteNSViewController, 
+                       _RPVideoEditorViewServiceExtensionHostContext, _ReplayKitMacHelperClass ]
+    objc-ivars:      [ _RPBorderlessEffectWindow.noSourceWindow, _RPDimAndShadowWindow.animatesTransitions, 
+                       _RPDimAndShadowWindow.dimLayer, _RPDimAndShadowWindow.groupLayer, 
+                       _RPDimAndShadowWindow.shadowCenterKnockoutLayer, _RPDimAndShadowWindow.shadowLayer ]
+...

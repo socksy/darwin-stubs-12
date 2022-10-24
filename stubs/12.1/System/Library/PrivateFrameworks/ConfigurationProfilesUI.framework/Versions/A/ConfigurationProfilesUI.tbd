@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EB9EC094-E5A9-3693-872F-ECDD8B76138B', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2B520316-6284-3E77-8666-4F11B8D4BC82' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ConfigurationProfilesUI.framework/Versions/A/ConfigurationProfilesUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CPUI_EnrollInRemoteManagementPriv, _CPUI_EnrollInRemoteManagementViaSetupAssistant, 
+                       _CPUI_GetProfilesPrefPaneIcon, _CPUI_PreflightMDMUnenrollmentViaUI, 
+                       _CPUI_PreflightManagedAccountDeletion, _CPUI_ProgressWindowCancelClickedResponse, 
+                       _CPUI_StartMDMReAuth, _CPUI_StartORGOEnrollment, _CPUI_StartSilentPhase2ReAuth ]
+    objc-classes:    [ _CPUI_ProgressWindowController ]
+...

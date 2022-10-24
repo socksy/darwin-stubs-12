@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2C9FD51C-BA9B-35EE-B46F-FEA830496BC5', 'x86_64: 2C9FD51C-BA9B-35EE-B46F-FEA830496BC5', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1DC2C060-C8CA-31FF-9668-DD44CFC79F2D', 'arm64e: 1DC2C060-C8CA-31FF-9668-DD44CFC79F2D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreMotionAlgorithms.framework/Versions/A/CoreMotionAlgorithms'
+current-version: 2665.0.9
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _CMADeviceMotionVisionFusionPlayer ]
+...

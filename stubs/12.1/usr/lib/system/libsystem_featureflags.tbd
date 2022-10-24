@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 036CD6A1-CD55-3558-86E5-8AA371ABAB39', 'x86_64: 036CD6A1-CD55-3558-86E5-8AA371ABAB39', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D945ABFC-8F6D-355B-A72B-530E52C1AC9B', 'arm64e: D945ABFC-8F6D-355B-A72B-530E52C1AC9B' ]
+platform:        zippered
+install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
+current-version: 56
+parent-umbrella: System
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __os_feature_enabled_impl, __os_feature_enabled_simple_impl ]
+...

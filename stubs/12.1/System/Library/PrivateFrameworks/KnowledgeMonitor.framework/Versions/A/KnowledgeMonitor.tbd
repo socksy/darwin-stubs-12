@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 85AA8296-FAA9-30E7-92FB-A435B00B90A4', 'x86_64: 85AA8296-FAA9-30E7-92FB-A435B00B90A4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3E6FFAE1-9405-31C3-90FE-122C0A12084C', 'arm64e: 3E6FFAE1-9405-31C3-90FE-122C0A12084C' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/KnowledgeMonitor.framework/Versions/A/KnowledgeMonitor'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _KnowledgeMonitorVersionNumber, _KnowledgeMonitorVersionString, 
+                       __DKApplicationIsForegroundType, __DKApplicationIsTrackableType, 
+                       __DKUserIsActiveByActivityState ]
+    objc-classes:    [ __DKApplicationMonitor, __DKApplicationUsageMonitor, __DKAssertionsPreventingRestartMonitor, 
+                       __DKBacklightMonitor, __DKBatteryMonitor, __DKBluetoothMonitor, 
+                       __DKCPUUsageMonitor, __DKDeviceActivityLevelMonitor, __DKDoNotDisturbMonitor, 
+                       __DKLocationMonitor, __DKLowPowerModeMonitor, __DKMonitor, 
+                       __DKNetworkQualityMonitor, __DKNextAlarmForTopOffProtectionMonitor, 
+                       __DKNowPlayingMonitor, __DKPeriod, __DKPluggedInMonitor, __DKScreenSharingMonitor, 
+                       __DKSunriseSunsetMonitor, __DKTemporalNumericState, __DKThermalPressureMonitor, 
+                       __DKUserNearbyMonitor, __DKWakeRequestMonitor, __DKWifiNetworkQualityMonitor, 
+                       __DKWiredNetworkQualityMonitor ]
+...

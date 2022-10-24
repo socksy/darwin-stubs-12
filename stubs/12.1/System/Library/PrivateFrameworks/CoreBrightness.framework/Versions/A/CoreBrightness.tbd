@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D775A808-72E9-3F64-813F-D786166B9C89', 'x86_64: D775A808-72E9-3F64-813F-D786166B9C89', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8059C898-C83B-3918-9252-1FBD1D17CF21', 'arm64e: 8059C898-C83B-3918-9252-1FBD1D17CF21' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreBrightness.framework/Versions/A/CoreBrightness'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CBALCALSCopyALSServiceClient, _CBALCDisplayFeatureAvailable, 
+                       _CBALCGetBoolPreferenceForKey, _CBALCGetDictPreferenceForKey, 
+                       _CBALCGetDisplayAutoBrightnessEnabled, _CBALCGetFloatPreferenceForKey, 
+                       _CBALCGetIntPreferenceForKey, _CBALCGetKeyboardAutoBrightnessEnabled, 
+                       _CBALCGetKeyboardDimTime, _CBALCKeyboardFeatureAvailable, 
+                       _CBALCLGPVersion, _CBALCRegisterALSPluginCallback, _CBALCSetBoolPreferenceForKey, 
+                       _CBALCSetDictPreferenceForKey, _CBALCSetDictionary, _CBALCSetDisplayAutoBrightnessEnabled, 
+                       _CBALCSetFloatPreferenceForKey, _CBALCSetIntPreferenceForKey, 
+                       _CBALCSetKeyboardAutoBrightnessEnabled, _CBALCSetKeyboardDimTime, 
+                       _CBALCUnregisterALSPluginCallback, _kKBIDBuiltIn, _kKBIDDefault, 
+                       _kKBIDPrimary, _kKBIDSecondary ]
+    objc-classes:    [ _BrightnessSystem, _BrightnessSystemClient, _BrightnessSystemClientInternal, 
+                       _CBAdaptationClient, _CBBlueLightClient, _CBClient, _CBKeyboardPreferencesManager, 
+                       _CBTrueToneClient, _DisplayServicesClient, _KeyboardBrightnessClient ]
+...

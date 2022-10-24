@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EA7B493B-6FC9-365B-A85B-1301435F3705', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D64B6BAB-7347-36E6-B9B7-1D08470A99C1' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SystemWake.framework/Versions/A/SystemWake'
+current-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SWLogPower, _SWLogTimer, _SWSystemWakeVersionNumber, _SWSystemWakeVersionString, 
+                       _sw_kernel_wake_mach_absolute_time, _sw_kernel_wake_mach_continuous_time ]
+    objc-classes:    [ _SWDeclareSystemActivityResult, _SWPreventSystemSleepAssertion, 
+                       _SWScheduledSystemWake, _SWSystemActivityAcquisitionDetails, 
+                       _SWSystemActivityAssertion, _SWSystemActivityProvider, _SWSystemSleepAssertionProvider, 
+                       _SWSystemSleepMonitor, _SWSystemSleepMonitorProvider, _SWWakingTimer ]
+...

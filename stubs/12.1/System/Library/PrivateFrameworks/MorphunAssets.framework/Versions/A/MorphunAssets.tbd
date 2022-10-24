@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 13958378-E2F9-3788-95FB-1C68A1BE6E15', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 20D70687-D9B0-37AB-85CB-BEFA9D89BAA0' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MorphunAssets.framework/Versions/A/MorphunAssets'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MorphunAssetOSLog, _MorphunAssetsError, _MorphunAssetsVersionNumber, 
+                       _MorphunAssetsVersionString, _MorphunLogInitIfNeeded, __EmbeddedLanguages, 
+                       __EmbeddedPath, __MorphunDomain, __SupportedLanguages, _embeddedFilepath, 
+                       _embeddedLanguagesKey, _kMorphunLogContextAsset, _libmorphunVersionKey, 
+                       _morphunNamespace ]
+    objc-classes:    [ _MorphunAssets, _MorphunAssetsUtilities ]
+...

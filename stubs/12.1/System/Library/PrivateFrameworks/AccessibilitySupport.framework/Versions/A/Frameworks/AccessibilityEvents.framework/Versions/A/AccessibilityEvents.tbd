@@ -1,0 +1,40 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E6E836FB-FA3D-31C3-B10E-CDEAB2EEB779', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: A6CF119C-FFB0-39E0-A3A8-F06ABBD3E6BB' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AccessibilitySupport.framework/Versions/A/Frameworks/AccessibilityEvents.framework/Versions/A/AccessibilityEvents'
+current-version: 2
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXEFixedGlyphForMacKeyCode, _AXEGlyphForMacKeyCode, _AXEGlyphForPureModifierFlags, 
+                       _AXEHIDDeviceGetDeviceInfo, _AXEHIDDeviceGetDeviceInfoUsingCache, 
+                       _AXEHIDDeviceHidServiceIDKey, _AXEHIDDeviceInfoKeys, _AXEIsSynthesizedEvent, 
+                       _AXEIsSynthesizedIgnoreEvent, _AXEMacKeyCodeFromUSBKeyCode, 
+                       _AXEMacKeyCodeIsModifier, _AXEMacKeyCodesForPureModifierFlags, 
+                       _AXEMenuGlyphForMacKeyCode, _AXEModifierFlagsForMacKeyCode, 
+                       _AXESynthesizedEventSourceID, _AXESynthesizedIgnoreEventSourceID, 
+                       _AXETrackingHoldGestureRecognizerAllowInstabilityBeforeHoldDefault, 
+                       _AXETrackingHoldGestureRecognizerMaximumHoldDeviationDefault, 
+                       _AXETrackingHoldGestureRecognizerMinimumHoldDurationDefault, 
+                       _AXETrackingHoldGestureRecognizerMinimumPreHoldStabilizationDurationDefault, 
+                       _AXETrackingHoldGestureRecognizerPreHoldTapCountDefault, _AXETrackingSplitTapGestureRecognizerMaximumTapDownDeviationDefault, 
+                       _AXETrackingTapGestureRecognizerMaximumTapDownDeviationDefault, 
+                       _AXETrackingTapGestureRecognizerMaximumTapDownDurationDefault, 
+                       _AXETrackingTapGestureRecognizerMaximumTapIntervalDefault, 
+                       _AXETrackingTwoFingerGestureRecognizerMinimumPanDistanceDefault, 
+                       _AXETrackingTwoFingerGestureRecognizerMinimumPinchSeparationDeviationDefault, 
+                       _AXETrackingTwoFingerGestureRecognizerMinimumRotateAngleDeviationDefault, 
+                       _AXEUSBKeyCodeFromMacKeyCode ]
+    objc-classes:    [ _AXEDFRDevice, _AXEEventTapManager, _AXEGestureEvent, _AXEHIDDevice, 
+                       _AXEHIDDeviceDetector, _AXEHIDDeviceManager, _AXEHIDEvent, 
+                       _AXEHIDGamePadDevice, _AXEHIDJoystickDevice, _AXEKeyboard, 
+                       _AXEKeyboardEvent, _AXEMathUtilities, _AXEMockTimerFactory, 
+                       _AXEMouseEvent, _AXEPhysicalKeyboard, _AXEPhysicalMouse, _AXETimerFactory, 
+                       _AXETrackingFlickGestureRecognizer, _AXETrackingGestureEvent, 
+                       _AXETrackingGestureRecognizerTestsFingerSimulator, _AXETrackingHoldGestureRecognizer, 
+                       _AXETrackingSplitTapGestureRecognizer, _AXETrackingTapGestureRecognizer, 
+                       _AXETrackingTouchEvent, _AXETrackingTrackpadDevice, _AXETrackingTwoFingerGestureRecognizer, 
+                       _AXEVirtualKeyboard ]
+...

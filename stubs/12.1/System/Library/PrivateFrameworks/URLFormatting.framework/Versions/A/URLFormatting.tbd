@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B8203714-5528-382B-802C-44E1EBCBBB49', 'x86_64: B8203714-5528-382B-802C-44E1EBCBBB49', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: ADB285DC-253E-3844-9E12-FC585B967116', 'arm64e: ADB285DC-253E-3844-9E12-FC585B967116' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting'
+current-version: 185.3
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _URLFormattingTestingOverrides ]
+...

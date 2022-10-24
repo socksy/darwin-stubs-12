@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 5AA961D0-B6E6-3DFD-B4B9-BAD5EB4E0C7A', 'x86_64: 5AA961D0-B6E6-3DFD-B4B9-BAD5EB4E0C7A', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CC484411-60E8-3588-8F85-C0FCE384F117', 'arm64e: CC484411-60E8-3588-8F85-C0FCE384F117' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ManagedSettingsObjC.framework/Versions/A/ManagedSettingsObjC'
+current-version: 26
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MOCodingKeyBackgroundColorData, _MOCodingKeyBackgroundEffectData, 
+                       _MOCodingKeyColorData, _MOCodingKeyIconData, _MOCodingKeyPrimaryButtonColorData, 
+                       _MOCodingKeyPrimaryButtonLabel, _MOCodingKeySecondaryButtonLabel, 
+                       _MOCodingKeySubtitle, _MOCodingKeyText, _MOCodingKeyTitle, 
+                       _MOEffectiveSettingsGroupAccount, _MOEffectiveSettingsGroupAllowedClient, 
+                       _MOEffectiveSettingsGroupAppStore, _MOEffectiveSettingsGroupApplication, 
+                       _MOEffectiveSettingsGroupCellular, _MOEffectiveSettingsGroupDateAndTime, 
+                       _MOEffectiveSettingsGroupGameCenter, _MOEffectiveSettingsGroupMedia, 
+                       _MOEffectiveSettingsGroupPasscode, _MOEffectiveSettingsGroupSafari, 
+                       _MOEffectiveSettingsGroupShield, _MOEffectiveSettingsGroupSiri, 
+                       _MOEffectiveSettingsGroupWebContent, _MOManagedSettingsObjCVersionNumber, 
+                       _MOManagedSettingsObjCVersionString, _MOSafariCookiePolicyAlways, 
+                       _MOSafariCookiePolicyCurrentWebsite, _MOSafariCookiePolicyNever, 
+                       _MOSafariCookiePolicyVisitedWebsites ]
+    objc-classes:    [ _MOApplication, _MOCategory, _MOCategoryShieldPolicy, _MOEffectiveAccountSettings, 
+                       _MOEffectiveAllowedClientSettings, _MOEffectiveAppStoreSettings, 
+                       _MOEffectiveApplicationSettings, _MOEffectiveArray, _MOEffectiveBool, 
+                       _MOEffectiveCategoryShieldPolicy, _MOEffectiveCellularSettings, 
+                       _MOEffectiveDateAndTimeSettings, _MOEffectiveGameCenterSettings, 
+                       _MOEffectiveInteger, _MOEffectiveMediaSettings, _MOEffectiveOptionalApplication, 
+                       _MOEffectivePasscodeSettings, _MOEffectiveSafariSettings, 
+                       _MOEffectiveSettings, _MOEffectiveShieldSettings, _MOEffectiveSiriSettings, 
+                       _MOEffectiveString, _MOEffectiveWebContentFilterPolicy, _MOEffectiveWebContentSettings, 
+                       _MOLocalSettingsStore, _MOLocations, _MOLogger, _MOManagedSettingsAgentConnection, 
+                       _MOSettingMetadata, _MOSettingsGroup, _MOSettingsStore, _MOShieldConfiguration, 
+                       _MOShieldLabel, _MOStringSettingMetadata, _MOWebContentFilterPolicy, 
+                       _MOWebDomain ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 876E773C-C7BA-3679-B45B-1A7F31215D9D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 12FC3B69-1D2A-3B9F-B1F4-FD2A35D1B215' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/UserNotificationsUI.framework/Versions/A/UserNotificationsUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _UNAppLaunchOriginContentExtension, _UNLogExtensions, _UNLogExtensionsHost, 
+                       _UNLogExtensionsService, _UNRegisterUserNotificationsUILogging, 
+                       __UNNotificationExtensionActionsKey ]
+    objc-classes:    [ __UNMachSendRight, __UNNotificationContentExtensionHostContext, 
+                       __UNNotificationContentExtensionManager ]
+    objc-ivars:      [ __UNMachSendRight._sendRight ]
+...

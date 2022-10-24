@@ -1,0 +1,58 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A084ACFE-AD13-37D7-A433-14FDCDA42694', 'x86_64: A084ACFE-AD13-37D7-A433-14FDCDA42694', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 38415BE2-05CA-39E5-9FD9-E18EDD48A417', 'arm64e: 38415BE2-05CA-39E5-9FD9-E18EDD48A417' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SignpostSupport.framework/Versions/A/SignpostSupport'
+current-version: 69
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IsPerfLoggingInterval, _PassesPerfLoggingAllowlist, _SSCAEventTypeForSignpost, 
+                       _SSCAIntervalTypeForSignpostInterval, _SSCAIsCAMetadataSubsystemCategory, 
+                       _SignpostPlatformForDevice, _SignpostPlatformForString, _SignpostReporterAllowlistedStringSet, 
+                       _SignpostReporterCrossPlatformAppleAccountAllowlist, _SignpostReporterCrossPlatformAppleIDAuthenticationAllowlist, 
+                       _SignpostReporterCrossPlatformAuthKitAllowlist, _SignpostReporterCrossPlatformSiriAudioStringPasslist, 
+                       _SignpostReporterCrossPlatformSiriHomeAutomationStringPasslist, 
+                       _SignpostReporterCrossPlatformSiriPersonalUpdateStringPasslist, 
+                       _SignpostReporterCrossPlatformSiriPlaybackControlsStringPasslist, 
+                       _SignpostReporterCrossPlatformSiriVideoUTSOperationRequestStringPasslist, 
+                       _SignpostReporterShouldUseAllowlist, _SignpostSupportAllowlistedStringSetForCurrentDevice, 
+                       _SignpostSupportAverageDurationMachContinuousTimeForIntervals, 
+                       _SignpostSupportAverageDurationNsForIntervals, _SignpostSupportAverageDurationOfLongestIntervalsInMachContinuousTime, 
+                       _SignpostSupportAverageDurationOfLongestIntervalsInNs, _SignpostSupportAverageDurationOfShortestIntervalsInMachContinuousTime, 
+                       _SignpostSupportAverageDurationOfShortestIntervalsInNs, _SignpostSupportDeserializationEnumerateObjectArrayFromData, 
+                       _SignpostSupportSlidingWindowAveragesForIntervalsInMachContinuousTime, 
+                       _SignpostSupportSlidingWindowAveragesForIntervalsInNs, _SignpostSupportSortedSubArrayFromIntervals, 
+                       _SignpostSupportStdDevMachContinuousTimeForIntervals, _SignpostSupportStdDevNsForIntervals, 
+                       _SignpostSupportTotalDurationMachContinuousTimeForIntervals, 
+                       _SignpostSupportTotalDurationNsForIntervals, _SignpostSystemTimebaseRatio, 
+                       _StringForSignpostPlatform, _StringPassesSignpostReporterStringAllowlist, 
+                       __SignpostSerializeableObjectFromSerializedObjectDictionary, 
+                       __SignpostSupportSerializationDataFromObjectArray, __signpost_debug_log, 
+                       _kSignpostSupportMachTimeTranslator_UnknownTime ]
+    objc-classes:    [ _SignpostAnimationAccumulatedState, _SignpostAnimationInterval, 
+                       _SignpostAnimationSubInterval, _SignpostAnimationTransactionLifetime, 
+                       _SignpostCAInstrumentationProcessor, _SignpostCAIntervalAggregationStats, 
+                       _SignpostCAProcessStallAggregation, _SignpostCAStallAggregation, 
+                       _SignpostCAStallAggregationBuilder, _SignpostCommitInterval, 
+                       _SignpostContextInfo, _SignpostEvent, _SignpostFrameAccumulatedState, 
+                       _SignpostFrameLatencyInterval, _SignpostFrameLifetimeInterval, 
+                       _SignpostHIDLatencyInterval, _SignpostInterval, _SignpostIntervalBuilder, 
+                       _SignpostMetrics, _SignpostObject, _SignpostRenderServerRenderInterval, 
+                       _SignpostStackFrame, _SignpostStreamEvent, _SignpostSupportCompositorInterval, 
+                       _SignpostSupportExactProcessNameAllowlist, _SignpostSupportExactProcessNameBlacklist, 
+                       _SignpostSupportExactProcessNameBlocklist, _SignpostSupportExactProcessNameFilter, 
+                       _SignpostSupportExactProcessNameWhitelist, _SignpostSupportLogMessage, 
+                       _SignpostSupportMachTimeTranslationRange, _SignpostSupportMachTimeTranslator, 
+                       _SignpostSupportMessageArgument, _SignpostSupportMetadataSegment, 
+                       _SignpostSupportObject, _SignpostSupportObjectExtractor, _SignpostSupportObjectFilter, 
+                       _SignpostSupportPIDAllowlist, _SignpostSupportPIDBlacklist, 
+                       _SignpostSupportPIDBlocklist, _SignpostSupportPIDFilter, _SignpostSupportPIDWhitelist, 
+                       _SignpostSupportSerializabledObjectCollection, _SignpostSupportSubsystemCategoryAllowlist, 
+                       _SignpostSupportSubsystemCategoryBlacklist, _SignpostSupportSubsystemCategoryBlocklist, 
+                       _SignpostSupportSubsystemCategoryFilter, _SignpostSupportSubsystemCategoryFilterEntry, 
+                       _SignpostSupportSubsystemCategoryWhitelist, _SignpostSupportUniquePIDAllowlist, 
+                       _SignpostSupportUniquePIDBlacklist, _SignpostSupportUniquePIDBlocklist, 
+                       _SignpostSupportUniquePIDFilter, _SignpostSupportUniquePIDWhitelist ]
+...

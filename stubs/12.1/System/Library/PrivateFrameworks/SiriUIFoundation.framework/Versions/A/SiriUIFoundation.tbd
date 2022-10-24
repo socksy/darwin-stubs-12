@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3CCFF830-92B9-3302-BF51-D42D2EA83BF8', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 3660B1E9-F414-3AF5-94D9-3D8A628468CD' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SiriUIFoundation.framework/Versions/A/SiriUIFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SRUIFConversationErrorDomain, _SRUIFFileURLForConversationWithIdentifier, 
+                       _SRUIFGetLanguageCode, _SRUIFGetLocale, _SRUIFLanguageCodeDidChangeNotification, 
+                       _SRUIFPreviousConversationIdentifier, _SRUIFSetLanguageCode, 
+                       _SiriUIFoundationVersionNumber, _SiriUIFoundationVersionString, 
+                       _kLastStoredUUIDTurnIdentifier, _kPreferencesDefaultDomain ]
+    objc-classes:    [ _SRUIFAceCommandRecord, _SRUIFAceCommandRecords, _SRUIFAlternativeInfo, 
+                       _SRUIFAnalyticsSupplement, _SRUIFCardLoader, _SRUIFCardLoadingMonitor, 
+                       _SRUIFChildConversationItemList, _SRUIFCoercion, _SRUIFConversation, 
+                       _SRUIFConversationError, _SRUIFConversationInsertion, _SRUIFConversationItem, 
+                       _SRUIFConversationStore, _SRUIFConversationTransaction, _SRUIFDataStore, 
+                       _SRUIFDebugLog, _SRUIFDelayedActionCommandCache, _SRUIFDialogPhase, 
+                       _SRUIFDictionarySchema, _SRUIFImagePNGData, _SRUIFInstrumentationManager, 
+                       _SRUIFMutableConversationItem, _SRUIFMutableStack, _SRUIFSiriSessionInfo, 
+                       _SRUIFSpeechRecognitionHypothesis, _SRUIFStack, _SRUIFStateMachine, 
+                       _SRUIFTreeNode, _SRUIFTreeNodePropertyListSerialization, __SRUIFAssertingDelayedActionCommand, 
+                       __SRUIFDataStoreEntry ]
+...

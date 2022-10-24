@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EA46E4C7-839D-36E7-8B76-3B50C3304316', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F0B9CFB8-F403-36DA-AD7A-53D2678DE710' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/ScreenSaver.framework/Versions/A/ScreenSaver'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _OSLogForCategory, _SSCenterRectInRect, _SSDBackground, _SSDBlackSaver, 
+                       _SSDEngineDimTime, _SSDEngineLWModulePath, _SSDEngineModuleDict, 
+                       _SSDEngineModuleName, _SSDEngineModulePath, _SSDHotCorners, 
+                       _SSDLastNonRandomModuleDict, _SSDLastNonRandomModuleName, 
+                       _SSDMainScreenOnly, _SSDPreviousModuleDict, _SSDPreviousModuleName, 
+                       _SSDShowClock, _SSDUserSelectedPictureFolders, _SSGetScaleFactor, 
+                       _SSHasGfxAcceleration, _SSInitRandom, _SSInitRandomWithSeed, 
+                       _SSIsAppleSignedModule, _SSModuleComputeArchitectureToUse, 
+                       _SSModuleIsCompatibleArch, _SSPreflightModuleLoadForPath, 
+                       _SSRandomInt, _SSRandomPointForSizeWithinBounds, _SSRunningAsNormalUser, 
+                       _SSScreenIsMirrored, _SSScreenSaverWindowLevel, _SSSetCrashReporterSignature, 
+                       _SSSystemScreenSaversPath ]
+    objc-classes:    [ _LegacyScreenSaverExtensionModule, _LegacyScreenSaverModule, 
+                       _ScreenSaverClockView, _ScreenSaverClockWindow, _ScreenSaverConfigurationViewController, 
+                       _ScreenSaverController, _ScreenSaverDefaults, _ScreenSaverDefaultsManager, 
+                       _ScreenSaverEngine, _ScreenSaverExtension, _ScreenSaverExtensionContext, 
+                       _ScreenSaverExtensionManager, _ScreenSaverExtensionModule, 
+                       _ScreenSaverExtensionView, _ScreenSaverHostExtensionContext, 
+                       _ScreenSaverMessage, _ScreenSaverMessageTracerLogger, _ScreenSaverModule, 
+                       _ScreenSaverModules, _ScreenSaverPhotoChooser, _ScreenSaverView, 
+                       _ScreenSaverViewController, _ScreenSaverWindow ]
+    objc-ivars:      [ _ScreenSaverModule._archCompatible, _ScreenSaverModule._archToUse, 
+                       _ScreenSaverModule._bundle, _ScreenSaverModule._displayName, 
+                       _ScreenSaverModule._enabled, _ScreenSaverModule._hasConfigureSheet, 
+                       _ScreenSaverModule._moduleName, _ScreenSaverModule._path, 
+                       _ScreenSaverModule._representedObject, _ScreenSaverModule._requiresGraphicsAcceleration, 
+                       _ScreenSaverModule._type, _ScreenSaverModules._modules, _ScreenSaverModules._times ]
+...

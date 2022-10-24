@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 6307D122-7F88-3F91-A181-4A52CA2B5C3D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 88FC4F5A-ACCD-330C-A92E-427A32BA2CCB' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/iPodSync.framework/Versions/A/iPodSync'
+current-version: 121.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CopySyncEngineDisplayNameForDataClass, _CopySyncEngineImageForDataClass, 
+                       _IsiPodRegisteredForSync, _IsiPodRegisteredForSyncWithUID, 
+                       __ConvertCFStringToUInt64, __iPodSynchronizeWithSyncUID, _iPodCancelSynchronization, 
+                       _iPodCleanUp, _iPodHasFilesToCleanUp, _iPodIsSyncing, _iPodRegisterForSync, 
+                       _iPodRegisterForSyncWithUIDAndName, _iPodSyncCopyAllSyncingiPodUIDAsCFStrings, 
+                       _iPodSyncCopyLastSyncDate, _iPodSyncCopyLastSyncDateForUID, 
+                       _iPodSyncCopySupportedSyncDataClasses, _iPodSyncCopySupportedSyncDataClassesWithUID, 
+                       _iPodSyncCopySyncClientIDForUID, _iPodSyncCopySyncClientNameForUID, 
+                       _iPodSyncCopySyncDataClasses, _iPodSyncCopySyncDataClassesWithUID, 
+                       _iPodSyncGetCalendarsDataClassName, _iPodSyncGetContactsDataClassName, 
+                       _iPodSyncGetSyncContactPictures, _iPodSyncGetSyncContactPicturesWithUID, 
+                       _iPodSyncHasAddressBookEverSynced, _iPodSyncSetForceAddressBookToSyncOnce, 
+                       _iPodSyncSetSyncContactPictures, _iPodSyncSetSyncContactPicturesWithUID, 
+                       _iPodSyncSetSyncDataClasses, _iPodSyncSetSyncDataClassesWithUID, 
+                       _iPodSyncVersionNumber, _iPodSyncVersionString, _iPodSynchronize, 
+                       _iPodSynchronizeWithUID, _iPodSynchronizeiPodGroup, _iPodUnregisterForSync, 
+                       _iPodUnregisterForSyncWithUID ]
+    objc-classes:    [ _iPodCalendarFilter, _iPodContactFilter ]
+    objc-ivars:      [ _iPodCalendarFilter._needsUpdate, _iPodCalendarFilter._useAllCalendars, 
+                       _iPodCalendarFilter._usedCalendarGroups, _iPodContactFilter._needsUpdate, 
+                       _iPodContactFilter._useAllContacts, _iPodContactFilter._usedContactGroups ]
+...

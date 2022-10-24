@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A9D52C87-BB8A-3F37-8451-BB07BCE125DF', 'x86_64: A9D52C87-BB8A-3F37-8451-BB07BCE125DF', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: DAC4A053-0411-3518-97F7-2168DDDF4271', 'arm64e: DAC4A053-0411-3518-97F7-2168DDDF4271' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Versions/A/TrustEvaluationAgent'
+current-version: 36
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _TEACertificateChainAddCert, _TEACertificateChainCreate, _TEACertificateChainCreateWithData, 
+                       _TEACertificateChainEnumerateWithBlock, _TEACertificateChainGetCertAtIndex, 
+                       _TEACertificateChainGetCerts, _TEACertificateChainGetCount, 
+                       _TEACertificateChainGetData, _TEACertificateChainRelease, 
+                       _TEACertificateChainSetDecodingHandler, _TEACertificateChainSetEncodingHandler, 
+                       _TEACertificateGetData, _TEACertificateGetSize, _TEAErrorCreate, 
+                       _TEAErrorCreateWithDescription, _TEAErrorGetDescription, _TEAErrorRelease, 
+                       _TEALog, _TEAOptionsCreate, _TEAOptionsRelease, _TEAOptionsSetPurpose, 
+                       _TEAOptionsSetTime, _TEAService_server, _TEAService_server_routine, 
+                       _TEAService_subsystem, _TEAVerifyCert, _TEAVerifyCertChainTrust, 
+                       _agent_TEAVerifyCert, _getServicePort ]
+...

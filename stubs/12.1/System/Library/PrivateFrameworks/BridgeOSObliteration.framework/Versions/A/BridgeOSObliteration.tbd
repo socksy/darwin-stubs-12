@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: CAE30A6C-6963-3E72-A504-A208EA587F67', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2860A0AD-95DD-3F0D-90AA-9C4FE0480A9B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/BridgeOSObliteration.framework/Versions/A/BridgeOSObliteration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BridgeOS_Obliterate, _kDisplayProgressBarKey, _kMobileObliterationError, 
+                       _kMobileObliterationInternalError, _kMobileObliterationRebootError, 
+                       _kObliterateDataPartition, _kObliterateMarkAndReboot, _kObliterationBrickIncludesFirmwareKey, 
+                       _kObliterationDelayAfterReplyKey, _kObliterationExclusionPathsKey, 
+                       _kObliterationIgnoreMissingPathKey, _kObliterationManagedDeviceWipeKey, 
+                       _kObliterationMessageKey, _kObliterationTypeBrickOnly, _kObliterationTypeKey, 
+                       _kObliterationTypeMarkStart, _kObliterationTypeWipeAndBrick, 
+                       _kSkipDataObliteration ]
+...

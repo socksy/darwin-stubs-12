@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 6FBACF32-CCFF-3210-848F-832DF62D2DA8', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FFF8F537-AA26-3FF2-8740-6D5A48EDCBD8' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Calculate.framework/Versions/A/Calculate'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CalculateExpression, _CalculateExpressionError, _CalculateInternationalExpression, 
+                       _CalculatePerformExpression ]
+    objc-classes:    [ _Converter, _CurrencyCache ]
+    objc-ivars:      [ _Converter._additionalResults, _Converter._conversionType, 
+                       _Converter._currencyUpdateTimeOut, _Converter._inputString, 
+                       _Converter._inputUnit, _Converter._inputValue, _Converter._isCurrency, 
+                       _Converter._localizedInputValueAndUnit, _Converter._localizedOutputUnit, 
+                       _Converter._localizedOutputValue, _Converter._localizedOutputValueAndUnit, 
+                       _Converter._outputUnit, _Converter._outputValue, _CurrencyCache._currencyData, 
+                       _CurrencyCache._currentCurrency, _CurrencyCache._currentRate, 
+                       _CurrencyCache._currentString, _CurrencyCache._lastRefreshDate, 
+                       _CurrencyCache._mutableCurrencyCache, _CurrencyCache._serializer, 
+                       _CurrencyCache._uuid ]
+...

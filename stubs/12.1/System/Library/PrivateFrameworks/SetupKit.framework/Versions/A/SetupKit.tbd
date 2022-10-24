@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 480DE5E0-E0A9-37FC-B48A-BD9E00F97C7A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1F19669C-7F2D-3B9D-9E7E-751EE59FDB31' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SetupKit.framework/Versions/A/SetupKit'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SKOptionTimeoutSeconds ]
+    objc-classes:    [ _SKDevice, _SKSetupClient, _SKSetupServer, _SKStepBluetoothPairClient, 
+                       _SKStepBluetoothPairServer, _SKStepCaptiveNetworkJoinClient, 
+                       _SKStepCaptiveNetworkJoinServer, _SKStepWiFiPreflight, _SKStepWiFiSetupClient, 
+                       _SKStepWiFiSetupServer ]
+...

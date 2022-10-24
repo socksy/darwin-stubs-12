@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2C3FB00D-A49D-3B00-99C3-134DF3926E10', 'x86_64: 2C3FB00D-A49D-3B00-99C3-134DF3926E10', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8F326048-C1C6-38E8-B885-2C0B4FE19DCA', 'arm64e: 8F326048-C1C6-38E8-B885-2C0B4FE19DCA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/PodcastServices.framework/Versions/A/PodcastServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PODContentDomainITunesDatabase, _PODContentDomainSyncToApp, 
+                       _PODContentDomainSyncToDevice, _PODContentDomainUnitTest, 
+                       _PODContentServiceErrorDomain, _PODContentSourceIdentifierNull, 
+                       _PODServiceErrorDomain ]
+    objc-classes:    [ _PODArtwork, _PODContentAnchor, _PODContentChange, _PODContentChangeEntityData, 
+                       _PODContentChangeSet, _PODContentChangeSetBuilder, _PODContentEntity, 
+                       _PODContentService, _PODEpisode, _PODEpisodeChange, _PODEpisodeChangeEntityData, 
+                       _PODEpisodePlayMetadata, _PODLibrarySettings, _PODPlaylist, 
+                       _PODPlaylistChange, _PODPlaylistChangeEntityData, _PODService, 
+                       _PODShow, _PODShowArtworkChange, _PODShowArtworkChangeEntityData, 
+                       _PODShowChange, _PODShowChangeEntityData, _PODShowSettings ]
+...

@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0A2E790E-11AC-3FDA-BD5D-200B8DB165D1', 'x86_64: 0A2E790E-11AC-3FDA-BD5D-200B8DB165D1', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 91A0621B-8CDD-3553-BB8D-D538B459C6C5', 'arm64e: 91A0621B-8CDD-3553-BB8D-D538B459C6C5' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Translation.framework/Versions/A/Translation'
+current-version: 173.11.5
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __LTBuildVersion, __LTDeviceName, __LTIsInternalInstall, __LTIsSeedInstall, 
+                       __LTLanguageCodeToSupportedLocale, __LTLocaleMappedForTTS, 
+                       __LTObjectMappedForKey, __LTProductName, __LTProductType, 
+                       __LTProductVersion, __LTTranslationErrorDomain, __LTTranslationModelTaskString, 
+                       __LTTranslationServiceDelegateXPCInterface, __LTTranslationServiceXPCInterface, 
+                       _kLTUnknownLanguageCode ]
+    objc-classes:    [ __LTAlignment, __LTBatchTextTranslationRequest, __LTCombinedEngine, 
+                       __LTCombinedRouteParagraphTranslationRequest, __LTDaemon, 
+                       __LTInstallRequest, __LTLanguageDetectionResult, __LTLanguageDetector, 
+                       __LTLanguageDetectorFeatureCombinationModel, __LTLanguageInstallationStatus, 
+                       __LTLanguageManager, __LTLanguagePairOfflineAvailability, 
+                       __LTLocalePair, __LTParagraphTranslationRequest, __LTSafariLatencyLoggingRequest, 
+                       __LTSpeakRequest, __LTSpeechLIDLoggingRequest, __LTSpeechRecognitionBin, 
+                       __LTSpeechRecognitionResult, __LTSpeechRecognitionSausage, 
+                       __LTSpeechRecognitionTokensAlternative, __LTSpeechTranscription, 
+                       __LTSpeechTranslationRequest, __LTTextLanguageDetectionResult, 
+                       __LTTextLanguageDetector, __LTTextToSpeechTranslationRequest, 
+                       __LTTextTranslationRequest, __LTTranslationCandidate, __LTTranslationContext, 
+                       __LTTranslationFeedback, __LTTranslationParagraph, __LTTranslationRange, 
+                       __LTTranslationRequest, __LTTranslationResult, __LTTranslationSense, 
+                       __LTTranslationSensesLoggingRequest, __LTTranslationSession, 
+                       __LTTranslationSpan, __LTTranslationStatistics, __LTTranslationToken, 
+                       __LTTranslator ]
+...

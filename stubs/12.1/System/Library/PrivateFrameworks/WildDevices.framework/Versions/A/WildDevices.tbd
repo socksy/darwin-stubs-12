@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 59E5597E-15E8-37E8-AB54-BCAE6F1250BB', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 8CCD455C-10F0-3596-8951-82A14D8EA857' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/WildDevices.framework/Versions/A/WildDevices'
+current-version: 1.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _WildDevicesVersionNumber, _WildDevicesVersionString, _cobs_decode, 
+                       _cobs_encode, _hippo_fillCheetahHeader, _hippo_fillStdHeader, 
+                       _hippo_getPacketType ]
+    objc-classes:    [ _AWDHippoChannel, _AWDHippoLink, _AWDHippoProcessor, _AWDHippoSerial, 
+                       _AWDPtyMaster, _AWDSerial, _AWDWatershedChan0, _AWDWatershedProcessor, 
+                       _CHDBaseChannel, _CHDBaseDevice, _CHDChannelPlugin ]
+...

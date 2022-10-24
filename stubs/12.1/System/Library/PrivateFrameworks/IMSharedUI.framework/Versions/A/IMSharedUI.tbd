@@ -1,0 +1,48 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: A5FCD18A-1F63-3C05-901E-6E6AEE7FF0E7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 048B9800-49AA-34EA-8EF6-D89C8B0CE599' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IMSharedUI.framework/Versions/A/IMSharedUI'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IMAnonymizeContentAndContacts, _IMAnonymizeContentAndContactsDidChangeNotification, 
+                       _IMAttachmentLogSubtype, _IMAudioSessionControllerSessionNotificationOptionsKey, 
+                       _IMAudioSessionControllerSessionOptionsWillChangeNotification, 
+                       _IMBalloonDescriptorEqualsBalloonDescriptor, _IMBalloonDescriptorZero, 
+                       _IMFullScreenEffectPreferredFrameInterval, _IMFullscreenEffectManagerUpdatesPlaying, 
+                       _IMFullscreenEffectsBundlePath, _IMGroupAcknowledgementAvatarCellAvatarDiameter, 
+                       _IMGroupAcknowledgementPollElementKindAvatarLabel, _IMGroupAcknowledgementPollFadeInAnimationDuration, 
+                       _IMGroupAcknowledgementPollIntroAnimationStep, _IMGroupAcknowledgementPollLayoutAvatarDistanceFromTop, 
+                       _IMGroupAcknowledgementPollLayoutCompactCellSeparation, _IMGroupAcknowledgementPollLayoutFooterDistanceFromAvatar, 
+                       _IMGroupAcknowledgementPollLayoutLabelDistanceFromAvatar, 
+                       _IMGroupAcknowledgementPollLayoutLabelHeight, _IMGroupAcknowledgementPollLayoutLabelWidth, 
+                       _IMGroupAcknowledgementPollLayoutSectionSeparation, _IMGroupAcknowledgementPollLayoutSectionWidth, 
+                       _IMGroupAcknowledgementPollSectionViewDefaultIconSize, _IMGroupAcknowledgementPollViewCornerRadius, 
+                       _IMGroupAcknowledgementPollViewExpandAnimationDuration, _IMGroupAcknowledgementPollViewFontSize, 
+                       _IMGroupAcknowledgementPollViewHeight, _IMGroupAcknowledgementPollViewShadowRadius, 
+                       _IMGroupAcknowledgementPollViewSideControlWidth, _IMGroupAcknowledgementPollViewWidth, 
+                       _IMGroupAcknowledgmentPollSectionViewFooterImageFormat, _IMGroupAcknowledgmentPollSectionViewHeaderImageFormat, 
+                       _IMReceiverPlaybackDelayRaise, _IMReceiverPlaybackDelayTap, 
+                       _IMSetAnonymizeContentAndContacts, _IMSharedUIBundle, _IMSharedUIBundleID, 
+                       _IMSharedUIVersionNumber, _IMSharedUIVersionString, _IMURLForResourceFromSharedUIBundle, 
+                       _NSStringFromIMBalloonAttributes, _NSStringFromIMBalloonDescriptor, 
+                       _NSStringFromIMBalloonShape, _NSStringFromIMBalloonStyle, 
+                       _NSStringFromIMBalloonVisibleOrientation, _NSStringFromIMColorType, 
+                       _NSStringFromIMRectCorner, _NSStringFromIMTailShape, _NSStringFromIMTranscriptOrientation, 
+                       _ackNameForAcknowledgmentType, _kCKThinkingDotsOpacityDefault ]
+    objc-classes:    [ _IMAudioController, _IMAudioPlayer, _IMAudioSessionController, 
+                       _IMChatTranscriptItemExtendedLayoutAttributes, _IMChatTranscriptItemLayoutAttributes, 
+                       _IMChatTranscriptLayoutEngine, _IMChatTranscriptLayoutSpecification, 
+                       _IMDarkAquaSelectedBackgroundTypingIndicatorLayer, _IMDarkAquaTypingIndicatorLayer, 
+                       _IMDarkBackgroundTypingIndicatorLayer, _IMDisplayLink, _IMDisplayLink_macOS, 
+                       _IMDynamicGradientLayer, _IMFullScreenEffect, _IMFullScreenEffectBaseView, 
+                       _IMFullScreenEffectBundleManager, _IMFullScreenEffectManager, 
+                       _IMFullScreenEffectPlayer, _IMFullScreenEffectSoundPlayer, 
+                       _IMFullscreenEffectFilter, _IMGroupAcknowledgementAvatarCell, 
+                       _IMGroupAcknowledgementAvatarCellWorkaroundView, _IMGroupAcknowledgementPollLayout, 
+                       _IMGroupAcknowledgementPollSectionLayoutAttributes, _IMGroupAcknowledgementPollSectionView, 
+                       _IMGroupAcknowledgementPollViewController, _IMHeaderView, 
+                       _IMInternalAVAudioPlayer, _IMSharedUI, _IMTranscriptBubbleSizeCache, 
+                       _IMTypingIndicatorLayer, __IMTranscriptBubbleSizeCacheEntry ]
+...

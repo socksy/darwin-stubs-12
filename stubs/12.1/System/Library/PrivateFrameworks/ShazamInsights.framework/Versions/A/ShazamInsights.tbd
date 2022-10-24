@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4DCA3D79-C059-35D7-B1F7-CB827AF2895C', 'x86_64: 4DCA3D79-C059-35D7-B1F7-CB827AF2895C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5C7C6CAE-1927-3E4A-915A-EF5CE8989683', 'arm64e: 5C7C6CAE-1927-3E4A-915A-EF5CE8989683' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ShazamInsights.framework/Versions/A/ShazamInsights'
+current-version: 162.1
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SHInsightsErrorDomain ]
+    objc-classes:    [ _SHAffinityGroup, _SHAffinityGroupQuery, _SHRegion ]
+...

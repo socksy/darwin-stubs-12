@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 74A958D7-FC2D-3A9A-8792-DF9D3672DE06', 'x86_64: 74A958D7-FC2D-3A9A-8792-DF9D3672DE06', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 5DC32511-EB88-3948-8478-52E61A2E26EA', 'arm64e: 5DC32511-EB88-3948-8478-52E61A2E26EA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RemoteTextInput.framework/Versions/A/RemoteTextInput'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RTILogFacility, _RTIServiceAnonymousName, _RTIServiceIOSMacName, 
+                       _RTIServiceMediaRemoteName, _RTIServiceRapportName, _RTIServiceSharingName, 
+                       _RTIServiceSharingSafariName, _RTIServiceTVControlServicesName, 
+                       _RemoteTextInputVersionNumber, _RemoteTextInputVersionString, 
+                       __RTI_NSStringFromCGRect ]
+    objc-classes:    [ _RTIDataPayload, _RTIDocumentState, _RTIDocumentTraits, _RTIInputSystemClient, 
+                       _RTIInputSystemClientSession, _RTIInputSystemDataPayload, 
+                       _RTIInputSystemService, _RTIInputSystemServiceSession, _RTIInputSystemSession, 
+                       _RTIInputSystemSourceSession, _RTIStyledIntermediateText, 
+                       _RTITextOperations, _RTIUtilities ]
+...

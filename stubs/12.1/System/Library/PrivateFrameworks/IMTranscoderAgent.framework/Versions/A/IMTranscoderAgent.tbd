@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D544A601-000A-38D5-B99A-B2FE3E255F6E', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EED1574C-2CA3-3CD2-BF09-DEF154C77417' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/IMTranscoderAgent.framework/Versions/A/IMTranscoderAgent'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IMTranscodeErrorDomain, __IMTranscoderLinkFile ]
+    objc-classes:    [ _IMEmbeddedHardwareJPEGTranscoder, _IMFallbackTranscoder, 
+                       _IMFallbackTranscoder_AudioMessage, _IMTranscoder, _IMTranscoderImageSizeEstimator, 
+                       _IMTranscoderTelemetry, _IMTranscoder_AV, _IMTranscoder_Image, 
+                       _IMTranscodingAgentController ]
+    objc-ivars:      [ _IMTranscodingAgentController._fallbackTranscoders, _IMTranscodingAgentController._previewGenerationQueue, 
+                       _IMTranscodingAgentController._queue, _IMTranscodingAgentController._textValidationQueue, 
+                       _IMTranscodingAgentController._transcoders ]
+...

@@ -1,0 +1,50 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7FCDFE9A-F193-3DDA-B36B-814543B417A1', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: D30E28EC-3CC5-3C4F-9593-D46098D6841B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/InstallCoordination.framework/Versions/A/InstallCoordination'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IXAlertUserErrorKey, _IXAppMayUninstallNotificationName, 
+                       _IXAppRemovabilityChangedNotificationName, _IXApplicationRecordForRecordPromise, 
+                       _IXArrayContainsOnlyClass, _IXArrayifyThing, _IXBooleanValue, 
+                       _IXCopyClientNameForConnection, _IXCopyItemAtURL, _IXCopyProcessNameForPid, 
+                       _IXCopyRemovabilityStorageURL, _IXCreateDirectoryAtURL, _IXCreateUserPresentableError, 
+                       _IXDictionaryContainsOnlyClasses, _IXDictionaryContainsOnlyClassesCheckingValueTypes, 
+                       _IXDisplayUserPresentableErrorForApp, _IXDisplayUserPresentableErrorForAppWithLocalizedName, 
+                       _IXDisplayUserPresentableErrorForApps, _IXErrorDomain, _IXFunctionNameErrorKey, 
+                       _IXGetLoggingHandle, _IXGetRemovabilityMetadataForApp, _IXGetUncachedRemovabilityMetadataForApp, 
+                       _IXHasMobileInstallationSPIEntitlement, _IXHasTrueValueForEntitlement, 
+                       _IXItemExistsAtURL, _IXLocalizedBodyForFirstAppName, _IXLocalizedTitleForFirstAppName, 
+                       _IXOncePerBootWorkNeeded, _IXPathArgumentErrorKey, _IXPresentErrorHighlightingLocalizedAppName, 
+                       _IXRemoveItemAtURL, _IXRunOncePerBootWork, _IXSetContainsOnlyClass, 
+                       _IXSetOncePerBootWorkCompleted, _IXSetRemovabilityStorageURLOverride, 
+                       _IXSourceFileLineErrorKey, _IXStringForAppRemovability, _IXStringForAppRemovabilityClient, 
+                       _IXStringForClientID, _IXStringForCoordinatorImportance, _IXStringForIXError, 
+                       _IXStringForQOSClass, _IXStringForUninstallDisposition, _IXStringKeyForError, 
+                       _IXStringifyObject, _IXUrlsForItemsInDirectoryAtURL, _IXUserPresentableErrorCodeIsHardError, 
+                       _IXUserPresentableErrorDomain, _IXUserPresentableErrorForInsufficientSpaceError, 
+                       _IXValidateMobileInstallationSPIEntitlement, _InstallCoordinationVersionNumber, 
+                       _InstallCoordinationVersionString, _LoadInfoPlistFromBundle, 
+                       _LoadInfoPlistFromBundleAtURL, __CreateError, __CreateErrorV, 
+                       _kIXLoggingSubsystem ]
+    objc-classes:    [ _IXAppInstallCoordinator, _IXAppInstallCoordinatorSeed, _IXAppInstallObjectsMetadata, 
+                       _IXAppInstallObserver, _IXAppInstallObserverProtocolInterface, 
+                       _IXAppRemovabilityMetadata, _IXClientDelegateProtocolInterface, 
+                       _IXClientProtocolInterface, _IXDataPromise, _IXDataPromiseSeed, 
+                       _IXDemotingAppInstallCoordinator, _IXFileManager, _IXGizmoInstallingAppInstallCoordinator, 
+                       _IXGlobalConfiguration, _IXInitiatingAppInstallCoordinator, 
+                       _IXOpaqueDataPromise, _IXOpaqueDataPromiseSeed, _IXOwnedDataPromise, 
+                       _IXOwnedDataPromiseSeed, _IXPlaceholder, _IXPlaceholderAttributes, 
+                       _IXPlaceholderSeed, _IXPromisedInMemoryData, _IXPromisedInMemoryDataSeed, 
+                       _IXPromisedInMemoryDictionary, _IXPromisedInMemoryDictionarySeed, 
+                       _IXPromisedOutOfBandStreamingZipTransfer, _IXPromisedOutOfBandStreamingZipTransferSeed, 
+                       _IXPromisedOutOfBandTransfer, _IXPromisedOutOfBandTransferSeed, 
+                       _IXPromisedStreamingZipTransfer, _IXPromisedStreamingZipTransferSeed, 
+                       _IXPromisedTransferToPath, _IXPromisedTransferToPathSeed, 
+                       _IXPromotingAppInstallCoordinator, _IXRestoringAppInstallCoordinator, 
+                       _IXRestoringDemotedAppInstallCoordinator, _IXServerConnection, 
+                       _IXUninstallOptions, _IXUpdatingAppInstallCoordinator, __IXDemoteToPlaceholderDelegate, 
+                       __IXSimpleInstallerDelegate ]
+...

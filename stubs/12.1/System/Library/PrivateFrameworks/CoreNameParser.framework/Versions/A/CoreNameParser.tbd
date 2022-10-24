@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3D666388-CF70-34E3-90B2-311DC7FC2249', 'x86_64: 3D666388-CF70-34E3-90B2-311DC7FC2249', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7B6E8B4B-4404-35FD-9FCF-206AF4AA8C65', 'arm64e: 7B6E8B4B-4404-35FD-9FCF-206AF4AA8C65' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/CoreNameParser.framework/Versions/A/CoreNameParser'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __NPCollapseWhitespaceAndStrip, __NPRemoveAppSignature, __NPRemoveEmojis, 
+                       __NPRemoveParenthesisBracketsAndInside, __NPStripDiatritics, 
+                       __NPStripQuotationMarks, __NPTokenizeName, __NPTrimNonLetters, 
+                       _charSetWithEndpoints ]
+    objc-classes:    [ _NPComponentSequence, _NPHMMClassifier, _NPNameComponentsData, 
+                       _NPNameParser ]
+...

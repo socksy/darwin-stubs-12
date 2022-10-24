@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9C5E0E3A-0F7B-3FCE-B28E-BCD2D58014F9', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 262F4BD8-18F6-3326-BC6C-B42181B9AA9C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AXAssetLoader.framework/Versions/A/AXAssetLoader'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXAssetBundle, _AXAssetLoaderVersionNumber, _AXAssetLoaderVersionString, 
+                       _AXAssetLocalizedString, _AXAssetMakeErrorForDownloadResult, 
+                       _AXAssetMakeErrorForPurgeResult, _AXAssetMakeErrorForQueryResult, 
+                       _AXAssetMakeError_, __AXAssetMakeError, __AXCreateAXAssetsServiceInterface, 
+                       _kAXCharacterFaceDefaultsDomain, _kAXImageCaptionModelAssetType, 
+                       _kAXImageCaptionModelInfoKeyModel, _kAXUltronModelAssetMaximumCompatibilityVersion, 
+                       _kAXUltronModelAssetMinimumCompatibilityVersion, _kAXUltronModelAssetType ]
+    objc-classes:    [ _AXAsset, _AXAssetController, _AXAssetMetadataStore, _AXAssetPolicy, 
+                       _AXAssetUpdateMonitor, _AXAssetsService, _AXCharacterVoiceAssetPolicy, 
+                       _AXElementVisionModelAssetPolicy, _AXIconVisionModelAssetPolicy, 
+                       _AXImageCaptionModel, _AXImageCaptionModelAssetAssertion, 
+                       _AXImageCaptionModelAssetPolicy, _AXPhoenixAssetPolicy, _AXUltronModelAssetPolicy ]
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B700AF5B-1794-3BE8-8CC9-01FA1371C86D', 'x86_64: B700AF5B-1794-3BE8-8CC9-01FA1371C86D', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1FF58348-B999-3710-9076-FABA89859486', 'arm64e: 1FF58348-B999-3710-9076-FABA89859486' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/PowerLog.framework/Versions/A/PowerLog'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PLBatchDropMessages, _PLBatteryGaugeGetSnapshot, _PLBatteryGaugePauseTracingForBundleId, 
+                       _PLBatteryGaugePauseTracingForPid, _PLBatteryGaugePauseTracingForProcessName, 
+                       _PLBatteryGaugeResumeTracingForBundleId, _PLBatteryGaugeResumeTracingForPid, 
+                       _PLBatteryGaugeResumeTracingForProcessName, _PLBatteryGaugeStartTracingForBundleId, 
+                       _PLBatteryGaugeStartTracingForPid, _PLBatteryGaugeStartTracingForProcessName, 
+                       _PLBatteryGaugeStopTracingForBundleId, _PLBatteryGaugeStopTracingForPid, 
+                       _PLBatteryGaugeStopTracingForProcessName, _PLBatteryGaugeVersion, 
+                       _PLBatteryLifeMonitorLogCoreDuetAdmissionEvent, _PLBatteryLifeMonitorLogCoreDuetEvent, 
+                       _PLBatteryLifeMonitorLogCoreDuetEventsAggregate, _PLBatteryLifeMonitorLogCoreDuetPredictionEvents, 
+                       _PLBatteryLifeMonitorLogDuetEvent, _PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet, 
+                       _PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet, 
+                       _PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet, _PLBatteryLifeMonitorReportEnergyCoreDuet, 
+                       _PLBatteryLifeMonitorReportEnergyDuet, _PLBatteryLifeMonitorStopAllDuetEvents, 
+                       _PLBatteryUsageUIQuery, _PLBuildEnergyBucket, _PLBuildEnergyBucketTillNow, 
+                       _PLBuildUsageSnapshot, _PLCalculateEndOfDay, _PLCalculateEndOfHour, 
+                       _PLCopyBatteryUIPlists, _PLCopyExtendedPersistenceLog, _PLCopyMetadataReports, 
+                       _PLCopyPowerlog, _PLCrashMoverCopyPowerlog, _PLForceBatching, 
+                       _PLGenerateBatteryUIPlist, _PLLogEvent, _PLLogRegisteredAggregateEvent, 
+                       _PLLogRegisteredEvent, _PLLogRegisteredEventFilterByInterval, 
+                       _PLLogTimeSensitiveRegisteredEvent, _PLMovePowerlogsToCR, 
+                       _PLPrefixForQueryType, _PLQuery, _PLQueryRegistered, _PLShouldLogEvent, 
+                       _PLShouldLogRegisteredEvent, _PLSysdiagnoseCopyBatteryUILogs, 
+                       _PLSysdiagnoseCopyPowerlog, _PLTalkToPowerlogHelper, _PerfPowerTelemetryCreateIdentifier, 
+                       _PerfPowerTelemetrySendEvent, _perfpowertelemetry_create_identifier, 
+                       _perfpowertelemetry_send_event ]
+    objc-classes:    [ _PLCoreDuetEvent, _PLCoreDuetEventInterval, _PLDiscretionaryEnergyMonitor, 
+                       _PLDiscretionaryIntervalManager, _PLDuetActivitySchedulerUsageSnapshot, 
+                       _PLEnergyBucket, _PLModelingUtilities, _PLNetworkEnergyModel, 
+                       _PLUsageSnapshot ]
+...

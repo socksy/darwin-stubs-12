@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4D24731F-FA90-3747-8860-1ED4B4794EE7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CE99CA7B-EA58-37EB-A7AA-314ED1C23880' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/RemoteHID.framework/Versions/A/RemoteHID'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RemoteHIDLog, _RemoteHIDLogPackets, _RemoteHIDVersionNumber, 
+                       _RemoteHIDVersionString ]
+    objc-classes:    [ _HIDRemoteDevice, _HIDRemoteDeviceAACPServer, _HIDRemoteDeviceServer ]
+...

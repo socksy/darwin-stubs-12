@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BDD5761C-C140-3A4F-B040-6D6E94E6EFA9', 'x86_64: BDD5761C-C140-3A4F-B040-6D6E94E6EFA9', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: F28F7FC3-0BE0-3DFA-A58D-02E3FF5998CC', 'arm64e: F28F7FC3-0BE0-3DFA-A58D-02E3FF5998CC' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/ContextKitExtraction.framework/Versions/A/ContextKitExtraction'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ContextKitExtractionVersionNumber, _ContextKitExtractionVersionString ]
+    objc-classes:    [ _CKContextContentProvider, _CKContextContentProviderManager, 
+                       _CKContextExecutor, _CKContextExtractionUtil, _CKContextImageSource, 
+                       _CKContextItem, _CKContextUIClasses, _CKContextUIElement ]
+...

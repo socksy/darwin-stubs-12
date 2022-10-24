@@ -1,0 +1,35 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 51DB18C5-CC1F-3BB3-874A-4E1273962162', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 74DB7407-C5A8-3F12-858A-1CE653773C49' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MobileInstallation.framework/Versions/A/MobileInstallation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MIFunctionNameErrorKey, _MIInstallerErrorDomain, _MILibMISErrorNumberKey, 
+                       _MIPathArgumentErrorKey, _MIRemoveSinf, _MIReplicateRootSinf, 
+                       _MISourceFileLineErrorKey, _MIUpdateSinfWithData, _MobileInstallationCheckCapabilitiesMatch, 
+                       _MobileInstallationClearTestFlags, _MobileInstallationClearUninstalled, 
+                       _MobileInstallationCopyAppInfoForLaunchServicesWithWrapperURL, 
+                       _MobileInstallationCopyAppMetadata, _MobileInstallationCopyContainerizedAppInfoForLaunchServices, 
+                       _MobileInstallationCopyDiskUsageForLaunchServices, _MobileInstallationCopyFrameworkInfoForLaunchServices, 
+                       _MobileInstallationEndTestMode, _MobileInstallationEnumerateAllInstalledItemDictionaries, 
+                       _MobileInstallationGetHelperServicePid, _MobileInstallationGetInstalldPid, 
+                       _MobileInstallationGetTestModeEnabled, _MobileInstallationInstallForLaunchServices, 
+                       _MobileInstallationInstallForLaunchServicesWithError, _MobileInstallationKillHelperService, 
+                       _MobileInstallationKillInstalld, _MobileInstallationLookupUninstalled, 
+                       _MobileInstallationSetTestFlags, _MobileInstallationSetTestMode, 
+                       _MobileInstallationUninstallForLaunchServices, _MobileInstallationUninstallForLaunchServicesWithError, 
+                       _MobileInstallationUpdatePlaceholderMetadata, _MobileInstallationUpdateSinfForLaunchServices, 
+                       _MobileInstallationUpdateSinfForLaunchServicesWithWrapperURL, 
+                       _MobileInstallationUpdateiTunesMetadataForLaunchServices, 
+                       _MobileInstallationUpdateiTunesMetadataForLaunchServicesWithWrapperURL, 
+                       __MILogTransactionStep, _kMICallbackPercentCompleteKey, _kMIDemotionCompleteErrorOccurredKey, 
+                       _kMIDemotionCompleteNotificationName, _kMIInstallResultInstalledAppInfoArrayKey, 
+                       _kMIUninstallParallelPlaceholderKey, _kMIUninstallResultRemovedAppInfoArrayKey, 
+                       _kMIWatchKitSnapshotInfoDiskUsageBytes, _kMIWatchKitSnapshotOptionCreatePlaceholder, 
+                       _kMIWatchKitSnapshotOptionMaxWKAppVersion ]
+    objc-classes:    [ _AITransactionLog, _MIBundleMetadata, _MIFileManager, _MIGlobalConfiguration, 
+                       _MIHelperServiceFrameworkClient, _MIInstallOptions, _MIStoreMetadata, 
+                       _MIStoreMetadataSubGenre ]
+...

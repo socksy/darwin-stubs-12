@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4A76983E-6BC6-3419-B4E7-07015C6D02FF', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 42001672-E915-325A-95CA-D29A95CD74F3' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/iPodVoiceOver.framework/Versions/A/iPodVoiceOver'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _VVVVoGetRecordInfoFromDB, _VVViTSLBestLanguage, _VVViTSLClose, 
+                       _VVViTSLCloseSyncSession, _VVViTSLCopyLanguageForString, _VVViTSLCopyLanguageForStringDecide, 
+                       _VVViTSLCopyLanguageForStringLimitingLanguages, _VVViTSLCopySupportedLanguages, 
+                       _VVViTSLCopySynthesizableLanguages, _VVViTSLDeleteSyncInfo, 
+                       _VVViTSLGeneratePCM, _VVViTSLGeneratePCMData, _VVViTSLGeneratePcmNoConditioning, 
+                       _VVViTSLGetComponentsVersions, _VVViTSLGetComponentsVersionsExtra, 
+                       _VVViTSLGetComponentsVersionsOfLoadedLibrary, _VVViTSLGetSpeechRate, 
+                       _VVViTSLGetSpeechRateWithSystemRate, _VVViTSLGetSupportedBundles, 
+                       _VVViTSLGetVersionNumber, _VVViTSLInitialize, _VVViTSLInitializeLibrary, 
+                       _VVViTSLInitializeRulesets, _VVViTSLIsRegenerateRequired, 
+                       _VVViTSLIsSupportedLanguage, _VVViTSLIsSyncRequired, _VVViTSLOpenSyncSession, 
+                       _VVViTSLSetSpeechRate, _VVViTSLSetSpeechRateWithSystemRate, 
+                       _VVViTSLUpdateSyncInfo ]
+...

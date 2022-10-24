@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: F19B026A-B044-32F1-AF7D-72D20DBE6A38', 'arm64: 242B1DAF-C69A-39E8-A158-0C44E8AAE1E8', 
+                   'arm64e: 37AA8B10-D1DB-3A05-8DB7-043403E27055' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/ShortcutDropletServices.framework/Versions/A/ShortcutDropletServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ShortcutDropletServicesVersionNumber, _ShortcutDropletServicesVersionString, 
+                       _WFLogCategoryDroplet, _WFShortcutDropletServicesMain, _getWFDropletLogObject ]
+    objc-classes:    [ _WFShortcutDropletAppDelegate ]
+...

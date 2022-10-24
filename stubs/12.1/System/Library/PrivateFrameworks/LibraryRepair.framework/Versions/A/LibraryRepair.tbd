@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FB945BF2-66AC-3080-87AD-BA88FE7ADB55', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: FFA19AB3-1E07-30D3-9B65-C6F5039E2F2F' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/LibraryRepair.framework/Versions/A/LibraryRepair'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _LRConnectionInterruptedCode, _LRConnectionInvalidCode, _LRErrorDomain, 
+                       _LRFailureErrorCode, _LRInvalidArgumentsCode, _LRNotAuthorizedCode, 
+                       _LRRepairNeededCode, _LRRepairOpKey, _LRRepairPathKey, _LRRepairValueKey, 
+                       _LRTargetVerificationFailureCode ]
+    objc-classes:    [ _LROperation ]
+...

@@ -1,0 +1,50 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: EC5A861C-22EF-3EBD-B418-D74D28873A91', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 48706C40-A7FD-342A-AF2A-F7CC4BA6B402' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/SiriFoundation.framework/Versions/A/SiriFoundation'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SRFBugReporterSubtypeConfigurationGuide, _SRFBugReporterSubtypeDismissalUnexpected, 
+                       _SRFBugReporterSubtypeFault, _SRFBugReporterSubtypeInvocationSuppression, 
+                       _SRFBugReporterSubtypePerformance, _SRFBugReporterSubtypeServerImproperResponse, 
+                       _SRFBugReporterSubtypeTesting, _SRFBugReporterSubtypeViewHierarchyMissingSuperview, 
+                       _SRFBugReporterTypeAssertion, _SRFBugReporterTypeAudio, _SRFBugReporterTypeBuddy, 
+                       _SRFBugReporterTypeConfiguration, _SRFBugReporterTypeDismissal, 
+                       _SRFBugReporterTypeInvocation, _SRFBugReporterTypeServer, 
+                       _SRFBugReporterTypeTesting, _SRFBugReporterTypeViewHierachy, 
+                       _SRFClamshellStateNotifierDidCloseDeviceLid, _SRFClamshellStateNotifierDidOpenDeviceLid, 
+                       _SRFInvocationWasSuccessful, _SRFLockStateNotifierDidLockDeviceNotification, 
+                       _SRFLockStateNotifierDidUnlockDeviceNotification, _SRFPinningCommandDictionaryKey, 
+                       _SRFPinningConversationInfoKey, _SRFPinningExpectedSnippetKindKey, 
+                       _SRFPinningIsFirstRunKey, _SRFPinningPendingDataStoreKey, 
+                       _SRFPinningPinnedSnippetsKey, _SRFPinningShouldShowAllKey, 
+                       _SiriInvocationNoLongerSuppressedNotification, _SiriKeyboardShortcutDidChangeNotificationName, 
+                       _SiriLockscreenEnabledDidChangeNotificationName, _SiriStatusMenuVisibilityDidChangeNotificationName, 
+                       _SiriUIAccessibilityPressNotification, _SiriUIAppleMikeyActivateNotification, 
+                       _SiriUIAppleMikeyDeactivateNotification, _SiriUIBluetoothATBVRAActivateNotification, 
+                       _SiriUIBluetoothATBVRADeactivateNotification, _SiriUIDidActivateNotification, 
+                       _SiriUIDidAppearNotification, _SiriUIDidDisappearNotification, 
+                       _SiriUIGenericDeactivateNotification, _SiriUIHotkeyPressBeganNotification, 
+                       _SiriUIHotkeyPressEndedNotification, _SiriUIHotkeyPressPendingNotification, 
+                       _SiriUIIdleAndQuietNotification, _SiriUIInvocationRequestCompleted, 
+                       _SiriUIMicStartedListeningNotification, _SiriUIMicStoppedListeningNotification, 
+                       _SiriUIMicrophoneKeyPressBeganNotification, _SiriUIMicrophoneKeyPressEndedNotification, 
+                       _SiriUIMicrophoneKeyPressPendingNotification, _SiriUIPreferencesChanged, 
+                       _SiriUIPrewarmNotification, _SiriUIStateDictationAboutToListenNotification, 
+                       _SiriUIStateDictationListeningNotification, _SiriUIStateSiriAboutToListenNotification, 
+                       _SiriUIStateSiriListeningNotification, _SiriUIStateSiriSuccessNotification, 
+                       _SiriUIStateSiriThinkingNotification, _SiriUIStateTrainingAboutToListenNotification, 
+                       _SiriUIStateTrainingListeningNotification, _SiriUIStateTrainingThinkingNotification, 
+                       _SiriUIStatusMenuPressBeganNotification, _SiriUIStatusMenuPressEndedNotification, 
+                       _SiriUITouchBarPressBeganNotification, _SiriUITouchBarPressEndedNotification, 
+                       _SiriUIVoiceTriggerActivateNotification, _SiriUserDidSwitchOnVoiceTriggerNotification, 
+                       _SiriVoiceTriggerNoLongerSuppressedNotification, __SRFAssertionFailed ]
+    objc-classes:    [ _SRFAnalyticsOverride, _SRFBugReporter, _SRFClamshellStateNotifier, 
+                       _SRFEnablementFlowConfigurationProvider, _SRFInvocationSuppressor, 
+                       _SRFLauncher, _SRFLockStateNotifier, _SRFLoggingDefaults, 
+                       _SRFPreferences, _SRFProcessInfo, _SRFSetupAssistantPreferences, 
+                       _SRFSignpostLog, _SRFStateNotifier, _SRFUserDefaultsController, 
+                       _SRFUtilities, _SRFVoiceTriggerDevices ]
+...

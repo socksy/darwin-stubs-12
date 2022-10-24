@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 2CDA7EFA-CE4B-3216-9CF4-AB4AAB6EFD63', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: EE93D767-CC81-342D-8215-6946A870D76D' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Versions/A/MobileAccessoryUpdater'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AUSandboxPlatformInit, _FUDError, _FudLog, _FudLogCopyMessages, 
+                       _FudLogInit, _FudLogSetMode, _FudLogger, _FudLogv, _MAUError, 
+                       _addObjectToXpcDictionary, _archivedKeyedData, _clientHasEntitlement, 
+                       _dumpXPCObject, _getOperationNameFromCode, _getProgressWeightsFromPluginInfo, 
+                       _kMAU_STEP_APPLY, _kMAU_STEP_AU_NOTIFICATION, _kMAU_STEP_BOOTSTRAP, 
+                       _kMAU_STEP_COMPLETE_INFO_KEY_NEXT_STEP, _kMAU_STEP_CONTINUE, 
+                       _kMAU_STEP_DONE, _kMAU_STEP_DOWNLOAD, _kMAU_STEP_END, _kMAU_STEP_FIND, 
+                       _kMAU_STEP_FINISH, _kMAU_STEP_PREPARE, _metadataTLVGetNext, 
+                       _objectFinalizer, _objectFromXpcDictionary, _parseSuperBinaryAndPayloadHeaders, 
+                       _parseSuperBinaryHeader, _printSuperBinaryHeader, _sendMessageToExternalClient, 
+                       _sendMessageToInternalClient, _sendReplyMessageToClient, _sendReplyMessageToExternalClient, 
+                       _sendReplyMessageToInternalClient, _unarchivedKeyedObject, 
+                       _updateSuperBinaryPayload ]
+    objc-classes:    [ _AUDAccessory, _AUNotificationRequest, _AUServiceAdapter, 
+                       _AUServiceManager, _FudInternalConnection, _FudPersonalizationObjectInfo, 
+                       _FudPersonalizationRequest, _FudProgressWeights, _FudXPCConnection, 
+                       _MobileAccessoryUpdater, _ServiceDelegate ]
+    objc-ivars:      [ _FudInternalConnection.clientIdentifier, _FudInternalConnection.didStop, 
+                       _FudInternalConnection.handlerQueue, _FudInternalConnection.messageHandler, 
+                       _FudInternalConnection.pendingRequests, _FudProgressWeights.applyWeight, 
+                       _FudProgressWeights.finishWeight, _FudProgressWeights.prepareWeight, 
+                       _FudXPCConnection.clientIdentifier, _FudXPCConnection.connection, 
+                       _FudXPCConnection.connectionQueue, _FudXPCConnection.didStop, 
+                       _FudXPCConnection.messageHandler, _FudXPCConnection.notifyToken, 
+                       _FudXPCConnection.replyQueue, _FudXPCConnection.sessionQueue ]
+...

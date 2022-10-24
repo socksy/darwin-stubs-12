@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9BDA581A-ED5B-305C-B94A-4917CF2BB403', 'x86_64: 9BDA581A-ED5B-305C-B94A-4917CF2BB403', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4F9477F3-1B87-310D-864A-DFFB65471581', 'arm64e: 4F9477F3-1B87-310D-864A-DFFB65471581' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Netrb.framework/Versions/A/Netrb'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _NETRBClientSendNotification, _NETRBDebugLog, _NETRBEndPointCleanup, 
+                       _NETRBErrorLog, _NETRBInfoLog, _NETRBLogCreate, _NETRBNoticeLog, 
+                       _NETRBXPCCleanup, _NETRBXPCCreate, _NETRBXPCEndPointCreate, 
+                       _NETRBXPCSetupAndSend, _NetrbVersionNumber, _NetrbVersionString, 
+                       __NETRBClientAddIPPortForwardingRule, __NETRBClientCopyFixtureForwardedPorts, 
+                       __NETRBClientCreate, __NETRBClientDestroy, __NETRBClientGetDynamicStoreKey, 
+                       __NETRBClientGetExtName, __NETRBClientGetIPPortForwardingRules, 
+                       __NETRBClientNewInterface, __NETRBClientRemoveIPPortForwardingRule, 
+                       __NETRBClientSetFixtureForwardedPorts, __NETRBClientStartService, 
+                       __NETRBClientStopService, __NETRBIPPortForwardingDictGetDetails, 
+                       _netrbClientAllocateMACAddress, _netrbClientAnyExternal, _netrbClientDeviceType, 
+                       _netrbClientDns64Prefix, _netrbClientEnableChecksumOffload, 
+                       _netrbClientEnableIsolation, _netrbClientEnableTSO, _netrbClientErrorCode, 
+                       _netrbClientExternalInterface, _netrbClientForwardedHighPort, 
+                       _netrbClientForwardedLowPort, _netrbClientInterfaceEndAddress, 
+                       _netrbClientInterfaceIPv4Address, _netrbClientInterfaceIPv6Address, 
+                       _netrbClientInterfaceInstance, _netrbClientInterfaceMTU, _netrbClientInterfaceName, 
+                       _netrbClientInterfaceNetworkMask, _netrbClientInterfaceSpeed, 
+                       _netrbClientInterfaceStartAddress, _netrbClientMACAddress, 
+                       _netrbClientMACUUID, _netrbClientNat64Param, _netrbClientNat66Param, 
+                       _netrbClientNatType, _netrbClientNetworkIdentifier, _netrbClientNotificationKey, 
+                       _netrbClientRaPrefix, _netrbClientRaPrefixLen, _netrbClientSocketFD ]
+...

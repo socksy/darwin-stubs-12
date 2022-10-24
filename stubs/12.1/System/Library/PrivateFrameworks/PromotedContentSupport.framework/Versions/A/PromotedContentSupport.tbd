@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 47BD0D56-A3F3-3C9B-82CC-1D0CA647C34C', 'x86_64: 47BD0D56-A3F3-3C9B-82CC-1D0CA647C34C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 907B68A7-DDC9-3211-8A1D-2AF2AED2C452', 'arm64e: 907B68A7-DDC9-3211-8A1D-2AF2AED2C452' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/PromotedContentSupport.framework/Versions/A/PromotedContentSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _PromotedContentSupportVersionNumber, _PromotedContentSupportVersionString ]
+    objc-classes:    [ _PCAdPolicyFormat, _PCNewsSegmentation, _PCRingBuffer, _PCRuntimeParameters, 
+                       _PCStatusConditionRateLimitedObject, _PCStatusConditions, 
+                       _PCStatusConditionsImpl, _PCSupportRequester ]
+...

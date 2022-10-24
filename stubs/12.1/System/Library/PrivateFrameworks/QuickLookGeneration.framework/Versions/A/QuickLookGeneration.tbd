@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D7FD284C-3C15-37E5-A3FF-44A3FAEAD4A0', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C04B93F3-2B1C-3CD9-978E-989B497918C0' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/QuickLookGeneration.framework/Versions/A/QuickLookGeneration'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _QuickLookGenerationVersionNumber, _QuickLookGenerationVersionString ]
+    objc-classes:    [ _QLPreviewGenerationProvider, _QLTextGenerationPreviewProvider ]
+...

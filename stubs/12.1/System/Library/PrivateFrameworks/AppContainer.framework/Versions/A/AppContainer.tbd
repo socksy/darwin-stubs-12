@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C06FF276-E792-3453-A9F3-D189982A9F71', 'x86_64: C06FF276-E792-3453-A9F3-D189982A9F71', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: C484B1BD-BB91-30A2-AB51-50AF4FB9D6F4', 'arm64e: C484B1BD-BB91-30A2-AB51-50AF4FB9D6F4' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AppContainer.framework/Versions/A/AppContainer'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ASBBundleIdPassesSanityCheck, _ASBContainerErrorsIsOtherReportableError, 
+                       _ASBContainerErrorsIsPermissionsError, _ASBContainerErrorsRecordPermissionsError, 
+                       _ASBContainerErrorsUpdateError, _containerSetError, _kASBContainerErrorDomain, 
+                       _kASBContainerErrorsHasPermissionsDataKey, _kASBContainerIdentityKey, 
+                       _kASBContainerSandboxProfileDataKey, _kASBContainerSandboxProfileDataValidationInfoKey, 
+                       _recordPermissionsError, _restorePermissions ]
+    objc-classes:    [ _ASBContainer, _ASBContainerACL, _ASBContainerAction, _ASBContainerActionMove, 
+                       _ASBContainerActionMoveContents, _ASBContainerActionSymlink, 
+                       _ASBContainerActionUnlink, _ASBContainerFileManager, _ASBContainerUpgradeScript, 
+                       _ASBMutableContainer, _ASBMutableContainerSynchronization ]
+    objc-ivars:      [ _ASBContainer._acl, _ASBContainer._containerPath, _ASBContainer._dataPath, 
+                       _ASBContainer._homeDirPath, _ASBContainer._metadata, _ASBContainer._personaVolume, 
+                       _ASBContainerACL._requirements, _ASBContainerActionMove._destSpec, 
+                       _ASBContainerActionMove._sourceSpec, _ASBContainerActionMoveContents._destSpec, 
+                       _ASBContainerActionMoveContents._sourceSpec, _ASBContainerActionSymlink._destSpec, 
+                       _ASBContainerActionSymlink._linkSpec, _ASBContainerActionUnlink._pathSpec, 
+                       _ASBContainerUpgradeScript._actions ]
+...

@@ -1,0 +1,8 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E2FBBCA9-635B-325A-BB00-CD6395D6398A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 22C37338-989A-3F82-99AA-6452A8E04FF2' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/_StoreKit_SwiftUI.framework/Versions/A/_StoreKit_SwiftUI'
+swift-version:   7
+...

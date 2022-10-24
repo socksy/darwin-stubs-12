@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9DE203D6-5902-328D-AFB7-FAAB85C9BBA8', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 62483715-A014-3516-ACC4-39F6666CDB1E' ]
+platform:        macosx
+install-name:    '/System/Library/Frameworks/_AVKit_SwiftUI.framework/Versions/A/_AVKit_SwiftUI'
+swift-version:   7
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvg', '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvpMV', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvpQOMQ', '_$s14_AVKit_SwiftUI11VideoPlayerV6player12videoOverlayACyxGSo8AVPlayerCSg_xyXEtcfC', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVAA0bC09EmptyViewVRszrlE6playerACyAFGSo8AVPlayerCSg_tcfC', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVMa', '_$s14_AVKit_SwiftUI11VideoPlayerVMn', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVyxG0bC04ViewAAMc' ]
+...

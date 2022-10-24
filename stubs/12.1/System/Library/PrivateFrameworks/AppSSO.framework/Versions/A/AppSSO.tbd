@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: B71142B1-EA00-3A5C-B6CA-B0CDBFFC6CBB', 'x86_64: B71142B1-EA00-3A5C-B6CA-B0CDBFFC6CBB', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4CE28FC5-D766-39F4-BC36-39ECD7893E6D', 'arm64e: 4CE28FC5-D766-39F4-BC36-39ECD7893E6D' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/AppSSO.framework/Versions/A/AppSSO'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SOAuthorizationOperationConfigurationRemoved, _SOAuthorizationOperationFetchNetworkCredentials, 
+                       _SOAuthorizationOptionInitiatingAction, _SOAuthorizationOptionInitiatorOrigin, 
+                       _SOAuthorizationOptionRemovedProfileExtensionBundleIdentifier, 
+                       _SOAuthorizationOptionUserActionInitiated, _SODebugConfigurationKeyAssociatedDomainsValidated, 
+                       _SODebugConfigurationKeyConfig, _SODebugConfigurationKeyPlugins, 
+                       _SODebugConfigurationKeyRealms, _SODebugConfigurationKeyRequestQueue, 
+                       _SODebugConfigurationKeyServerConfigVersion, _SODebugConfigurationKeySignatureValidated, 
+                       _SOErrorDomain, _SOErrorSubcodeKey, _SONotificationConfigurationChanged, 
+                       _SONotificationExtensionsChanged, _appSSO_handleResponse, 
+                       _appSSO_handleResponseCredential, _appSSO_handleResponseImpersonationCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ _SOAuthorization, _SOAuthorizationCredential, _SOAuthorizationHints, 
+                       _SOAuthorizationParameters, _SOAuthorizationRequest, _SOAuthorizationRequestParameters, 
+                       _SOAuthorizationResult, _SOConfigurationHost, _SOConfigurationManager, 
+                       _SODebugHints, _SOExtension, _SOExtensionManager, _SOPreferences, 
+                       _SORequestQueue, _SORequestQueueItem ]
+...

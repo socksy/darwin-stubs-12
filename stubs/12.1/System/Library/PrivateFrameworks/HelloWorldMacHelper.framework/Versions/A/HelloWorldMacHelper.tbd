@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D7CC7909-7F52-3F7E-9B49-97E40D6D2B56', 'x86_64: D7CC7909-7F52-3F7E-9B49-97E40D6D2B56', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 1DAE5AD2-9FEA-3D91-8CFB-45BE5AAF9F84', 'arm64e: 1DAE5AD2-9FEA-3D91-8CFB-45BE5AAF9F84' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/HelloWorldMacHelper.framework/Versions/A/HelloWorldMacHelper'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _HelloWorldMacHelperVersionNumber, _HelloWorldMacHelperVersionString, 
+                       _HelloWorldNewMacExtensionViewer ]
+    objc-classes:    [ _HelloWorldMacExtensionViewerRemoteViewController, _HelloWorldMacExtensionViewerView, 
+                       _HelloWorldMacExtensionViewerViewController, _HelloWorldMacExtensionViewerWindowController ]
+...

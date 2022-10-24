@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7AC751AA-ABDE-3954-BEF0-B4DB5BBFE676', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0AB97B2D-85EF-31E8-854D-F0FC655781C1' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AdID.framework/Versions/A/AdID'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ADSimulatedCrashKillCode_InternalInconsistency, _AdIDVersionNumber, 
+                       _AdIDVersionString ]
+    objc-classes:    [ _ADAMSBagManager, _ADAdTrackingSchedulingManager, _ADAppTrackingService, 
+                       _ADClientDPIDManager, _ADIDManagerService, _ADJingleOptOutRequest, 
+                       _ADJingleRequest, _ADJingleRequestManager, _ADJingleSegmentRequest, 
+                       _ADLoggingProfileMonitor, _ADPersonalizedAdsStatusManager, 
+                       _ADSegmentDataManager ]
+...

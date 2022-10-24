@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9F762E45-1B41-34CE-AE74-879E04E06A88', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2CE984E1-7E1A-38A1-862D-8F35D735264E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MobileSystemServices.framework/Versions/A/MobileSystemServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _MOCreateCFTypeFromSerializedBuffer, _MOCreateSerializedData, 
+                       _MOLogClose, _MOLogEnableDiskLogging, _MOLogGetLogLevel, _MOLogOpen, 
+                       _MOLogSetLogLevel, _MOLogWrite, _MOLogWriteV ]
+    objc-classes:    [ _MOSplunkLogger ]
+...

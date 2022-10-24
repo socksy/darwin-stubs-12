@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D0F214DA-687F-3C3D-8E1C-A42136F44465', 'x86_64: D0F214DA-687F-3C3D-8E1C-A42136F44465', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9D06A4E0-AD83-340C-B73D-0906E37A9429', 'arm64e: 9D06A4E0-AD83-340C-B73D-0906E37A9429' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/SoftLinking.framework/Versions/A/SoftLinking'
+current-version: 42
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ __sl_dlopen, __sl_dlopen_audited ]
+...

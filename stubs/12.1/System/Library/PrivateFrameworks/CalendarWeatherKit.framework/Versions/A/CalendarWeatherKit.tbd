@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: FFAA1D84-44DA-3CE4-8E41-573AB817832D', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: E9E316F9-C95D-3055-9039-AD50D225B9FE' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/CalendarWeatherKit.framework/Versions/A/CalendarWeatherKit'
+current-version: 689
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _WMLocationCodingCity, _WMLocationCodingCountry, _WMLocationCodingCountryAbbreviation, 
+                       _WMLocationCodingCounty, _WMLocationCodingCreationDate, _WMLocationCodingGeoLocation, 
+                       _WMLocationCodingGeoLocationLat, _WMLocationCodingGeoLocationLong, 
+                       _WMLocationCodingLocationID, _WMLocationCodingState, _WMLocationCodingStateAbbreviation, 
+                       _WMLocationCodingTimeZone, _WMLocationCodingWoeid, _WMNS_Log, 
+                       _WMNS_Networking_Log_Raw_XML, _WMWeatherDataCodingConditionCode, 
+                       _WMWeatherDataCodingConditionLocalizedString, _WMWeatherDataCodingCreationDate, 
+                       _WMWeatherDataCodingImageLargeURL, _WMWeatherDataCodingImageSmallURL, 
+                       _WMWeatherDataCodingLocationLatitude, _WMWeatherDataCodingLocationLongitude, 
+                       _WMWeatherDataCodingLocationObject, _WMWeatherDataCodingNaturalLanguageStringCelsius, 
+                       _WMWeatherDataCodingNaturalLanguageStringFahrenheit, _WMWeatherDataCodingRepresentedDate, 
+                       _WMWeatherDataCodingTemperatureCelsius, _WMWeatherDataCodingTemperatureHighCelsius, 
+                       _WMWeatherDataCodingTemperatureHighColor, _WMWeatherDataCodingTemperatureLowCelsius, 
+                       _WMWeatherDataCodingTemperatureLowColor, _WMWeatherDataCodingWeatherDataType ]
+    objc-classes:    [ _WMLocation, _WMObject, _WMTypes, _WMWeatherData, _WMWeatherStore ]
+...

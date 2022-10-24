@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8631961F-700D-39B5-96E0-92D15F46A136', 'x86_64: 8631961F-700D-39B5-96E0-92D15F46A136', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 447D9F23-F7FC-363C-8736-F1F5B6C2D7DA', 'arm64e: 447D9F23-F7FC-363C-8736-F1F5B6C2D7DA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/C2.framework/Versions/A/C2'
+current-version: 1930
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    objc-classes:    [ _C2MetricOperationGroupOptions, _C2MetricOperationOptions, 
+                       _C2MetricOptions, _C2MetricRequestOptions, _C2NetworkingDelegateURLSession, 
+                       _C2NetworkingDelegateURLSessionDataTask, _C2NetworkingResponse, 
+                       _C2ReportMetrics, _C2RequestManager, _C2RequestOptions, _C2Session, 
+                       _C2SessionCallbackMetrics, _C2SessionGroup, _C2SessionPool, 
+                       _C2SessionTask ]
+...

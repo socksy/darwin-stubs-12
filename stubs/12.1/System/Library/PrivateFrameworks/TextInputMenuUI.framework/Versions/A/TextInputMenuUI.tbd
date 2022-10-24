@@ -1,0 +1,58 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D333F7DF-1494-3A7C-86FB-D81DAEDB1586', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9086DBFF-BD18-36BC-A4A5-F1DD89C30C7B' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/TextInputMenuUI.framework/Versions/A/TextInputMenuUI'
+current-version: 290
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AmTargetProcess, _CarbonModifiersToAppkitModifiers, _CreateClassFromKey, 
+                       _CreateNSImageFromIconRef, _GetKeyFocusProcess, _ISWHotKeyDidPressedNotification, 
+                       _MessageTracerLogDidSwitch, _TISMakeRectWithAspectRatioInsideRect, 
+                       __InputSwitcherIsRunning, __InputSwitcherStart, __InputSwitcherStop, 
+                       __InputSwitcherSwitch, __ToggleInputSwitcherIfNecessary, _alignPointToUserSpace, 
+                       _alignRectToUserSpace, _createAlignedImage, _do_main_thread_work, 
+                       _kFloatingIndicatorIconSize, _kIMSReceiveUIServerMessagesPortName, 
+                       _kImageViewTag, _kLableViewTag, _kSCIMInputSourceID, _kTCIMInputSourceID, 
+                       _kTouchBarReceiveDisableInputMessagesPortName, _kTrackingOff, 
+                       _kTrackingOn, _kWindowHVInset, _tabID ]
+    objc-classes:    [ _CPInputSource, _HUDCollectionView, _HUDCollectionViewItem, 
+                       _HUDController, _HUDPanel, _HUDRoundedContextView, _HUDTextView, 
+                       _HUDWindowController, _HandwritingInputSource, _IMInputSource, 
+                       _ISWHotKey, _InputSource, _InputSourceOwner, _InputSourceTargetEnumerator, 
+                       _InputView, _KLInputSource, _KeyboardViewerController, _OldIMInputSource, 
+                       _RomanInputSource, _SourceIndicatorBubble, _SourceIndicatorWindowController, 
+                       _TIMIconLabel, _TIMLog, _TISHotKey, _TISHotKeyHandler, _TSMMessageGetTIMTargetAppInfoResponse, 
+                       _TSMMessageHandler, _TSMMessageRecentUsageResponse, _TextInputUtilities ]
+    objc-ivars:      [ _HUDController.cachedFrameHeight, _HUDController.cachedPointSize, 
+                       _HUDController.cachedTextFieldFrameHeight, _HUDController.containingScrollView, 
+                       _HUDController.dataSource, _HUDController.extraSmallTemplateView, 
+                       _HUDController.ibCollectionView, _HUDController.ibCollectionViewItem, 
+                       _HUDController.inputs, _HUDController.inputsController, _HUDController.inputsCount, 
+                       _HUDController.inputsWindow, _HUDController.largeTemplateView, 
+                       _HUDController.mediumTemplateView, _HUDController.recentInputs, 
+                       _HUDController.smallMediumTemplateView, _HUDController.smallTemplateView, 
+                       _HUDController.sortedInputs, _HUDController.templateView, 
+                       _HUDController.tinyTemplateView, _HUDController.visualEffectView, 
+                       _HUDPanel.fIgnoreNextFlagChangedEvent, _HUDPanel.fIsEventCaptureOurs, 
+                       _HUDWindowController.fCurrentInputSource, _HUDWindowController.fDisabledInputSources, 
+                       _HUDWindowController.fHotKeysRegistered, _HUDWindowController.fIsSecureMode, 
+                       _HUDWindowController.fSourceListContainsOnlyCurrentSource, 
+                       _HUDWindowController.fTargetApp, _HUDWindowController.fTargetDocRef, 
+                       _HUDWindowController.hotKeyChar, _HUDWindowController.hotModifiers, 
+                       _HUDWindowController.hotVirtualKey, _HUDWindowController.hudViewController, 
+                       _HUDWindowController.inputs, _HUDWindowController.inputsCount, 
+                       _ISWHotKey.identifier, _ISWHotKey.pressed, _ISWHotKey.refireEvent, 
+                       _ISWHotKey.signature, _InputSourceTargetEnumerator.fArrayEnum, 
+                       _InputView.delegate, _InputView.index, _InputView.selected, 
+                       _InputView.trackingTag, _SourceIndicatorBubble._lastCaretLocation, 
+                       _SourceIndicatorBubble._lastDisplayTime, _SourceIndicatorBubble._lastFocusSwitch, 
+                       _SourceIndicatorBubble._lastKeyProcess, _SourceIndicatorBubble._lastSourceID, 
+                       _SourceIndicatorBubble._lastSourceSwitch, _SourceIndicatorBubble._showedIndicatorOnce, 
+                       _SourceIndicatorBubble._sourceChangedNotificationReceived, 
+                       _SourceIndicatorBubble._taskForMessage, _SourceIndicatorBubble._timerToCaretLocationCheck, 
+                       _SourceIndicatorBubble._timerToHide, _TISHotKey.delegate, 
+                       _TISHotKey.eventRef, _TISHotKey.hotKeyAction, _TISHotKeyHandler.hotKeys, 
+                       _TSMMessageHandler.fLocalPort, _TSMMessageHandler.fRunLoopSourceForPort ]
+...

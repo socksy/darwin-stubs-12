@@ -1,0 +1,49 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: BB1BB0DC-25F6-3B26-B7B7-C841A52C9173', 'x86_64: BB1BB0DC-25F6-3B26-B7B7-C841A52C9173', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9798C593-C575-3C60-8398-71B0E1859418', 'arm64e: 9798C593-C575-3C60-8398-71B0E1859418' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RemoteManagement.framework/Versions/A/RemoteManagement'
+current-version: 2
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    allowable-clients: [ AccountExtension, AppManagementExtension, DMCEnrollmentProvider, 
+                         InteractiveLegacyProfilesExtension, LegacyProfilesExtension, 
+                         MDM, ManagementTestExtension, MiniLauncher, PasscodeSettingsExtension, 
+                         RMTestConfigAgent, RemoteManagementAgent, RemoteManagementInternalSettings, 
+                         RemoteManagementMCXService, RemoteManagementStoreTests, 
+                         RemoteManagementTests, SettingsSharedSupport, Setup, Setup Assistant, 
+                         SetupTests, remotemanagementd, rm_test_configd, rmdctl, 
+                         rmdinspect, rmdtool ]
+    symbols:         [ _InteractiveLegacyProfileIdentifierPrefix, _LegacyProfileIdentifierPrefix, 
+                       _MDMv1DaemonUnenrollNotification, _RMAccountAdditionalInfoKeyManagedByOlympus, 
+                       _RMAccountPropertyKeyAccountScheme, _RMAccountPropertyKeyAdditionalInfo, 
+                       _RMAccountPropertyKeyAltDSID, _RMAccountPropertyKeyBearerToken, 
+                       _RMAccountPropertyKeyDSID, _RMAccountPropertyKeyEnrollmentToken, 
+                       _RMAccountPropertyKeyEnrollmentURL, _RMAccountPropertyKeyManagementSourceIdentifier, 
+                       _RMAccountSchemeBearer, _RMAccountSchemeMAID, _RMAccountSchemeTest, 
+                       _RMAssetTypeImage, _RMAssetTypeUserIdentity, _RMAssetTypeVPPOnDemand, 
+                       _RMAuthenticationSchemeBearer, _RMAuthenticationSchemeBearerFieldAccessToken, 
+                       _RMAuthenticationSchemeMAID, _RMAuthenticationSchemeMAIDFieldAltDSID, 
+                       _RMAuthenticationSchemeMAIDFieldDSID, _RMAuthenticationSchemeMAIDFieldLongLivedToken, 
+                       _RMAuthenticationSchemeMAIDFieldShortLivedToken, _RMAuthenticationSchemeMAIDFieldUsername, 
+                       _RMAuthenticationSchemeTest, _RMAuthenticationSchemeTestFieldToken, 
+                       _RMAuthenticationSchemeTestFieldUsername, _RMCMSDecodeStatusCodeKey, 
+                       _RMConfigurationTypeAccountCalDAV, _RMConfigurationTypeAccountCardDAV, 
+                       _RMConfigurationTypeAccountExchange, _RMConfigurationTypeAccountGoogle, 
+                       _RMConfigurationTypeAccountLDAP, _RMConfigurationTypeAccountMail, 
+                       _RMConfigurationTypeAccountSubscribedCalendar, _RMConfigurationTypeApplicationManagement, 
+                       _RMConfigurationTypeLegacyInteractiveProfiles, _RMConfigurationTypeLegacyProfiles, 
+                       _RMConfigurationTypeManagementStatusSubscription, _RMConfigurationTypeManagementTest, 
+                       _RMConfigurationTypePasscodeSettings, _RMErrorDomain, _RMErrorUserInfoKeyDescriptionKey, 
+                       _RMHTTPStatusCodeKey, _RMMobileKeyBagErrorCodeKey, _RMPersonaRestorationFailedException, 
+                       _RMXPCAgentMachServiceName, _RMXPCDaemonMachServiceName ]
+    objc-classes:    [ _RMAccountHelper, _RMAsset, _RMAuthenticationCredential, _RMBundle, 
+                       _RMConfiguration, _RMDebounceTimer, _RMDeclarationKey, _RMDeviceAuthenticationCredential, 
+                       _RMEnrollmentController, _RMErrorUtilities, _RMFeatureFlags, 
+                       _RMFeatureOverrides, _RMGenericAuthenticationCredential, _RMLocations, 
+                       _RMLog, _RMMDMHelper, _RMManagementChannel, _RMPersonaHelper, 
+                       _RMProfilesAdapter, _RMProfilesController, _RMSynchronous, 
+                       _RMTimedDispatch, _RMXPCProxy, _RemoteManagement_Subsystem ]
+...

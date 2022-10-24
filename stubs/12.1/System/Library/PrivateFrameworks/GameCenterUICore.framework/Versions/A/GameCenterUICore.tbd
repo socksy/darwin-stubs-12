@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9F5CB750-7DAE-3A52-B67F-6FB50C5C2EFE', 'x86_64: 9F5CB750-7DAE-3A52-B67F-6FB50C5C2EFE', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 2F88EAA1-F002-328D-BE3F-B73585BFB4F0', 'arm64e: 2F88EAA1-F002-328D-BE3F-B73585BFB4F0' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/GameCenterUICore.framework/Versions/A/GameCenterUICore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _GKCurrentMedusaMode, _GKIsAvatarEditingSupported, _GKIsVoiceoverEnabled, 
+                       _GKRectDivideYIntoThreeConsumingMiddle, _GKRectEnforceMinimumHeight, 
+                       _GKRectsCenterXInRect, _GKRectsCenterYInRect, _GKShouldLayoutRTL, 
+                       _GKUIImageJPEGRepresentation, _GKUIImagePNGRepresentation, 
+                       _GKViewServiceLocalInitialStateKey, _GKViewServiceMessageTypeKey, 
+                       _GKViewServiceMessagesFromClientKey, _GKViewServiceMessagesFromServiceKey, 
+                       _GKViewServiceRequestsDismissKey, _GameCenterUICoreVersionNumber, 
+                       _GameCenterUICoreVersionString, _NSStringFromUIEdgeInsets, 
+                       __GKIsClientAppUsingRTL, __GKIsRemoteUIUsingPadIdiom, __UIGraphicsGetImageFromCurrentImageContext, 
+                       __UIGraphicsGetMaskImageFromCurrentImageContext, __UIKitShimGraphicsBeginImageContext, 
+                       __UIKitShimGraphicsBeginImageContextWithOptions, __UIKitShimGraphicsEndImageContext, 
+                       __UIKitShimGraphicsGetCurrentContext, __UIKitShimGraphicsGetImageFromCurrentImageContext, 
+                       _findClipViewAncestorForView ]
+    objc-classes:    [ _GKAccountViewController, _GKAdditions_NSAlert_SuperDelegate, 
+                       _GKAppearanceWebViewWrapper, _GKAvatarImage, _GKAvatarImageBrush, 
+                       _GKBadgedGameIconBrush, _GKBrush, _GKBrushList, _GKCircleImageBrush, 
+                       _GKColorPalette, _GKComposedImageBrush, _GKConditionBrush, 
+                       _GKFocusableDarkColorPalette, _GKGameMessagesBrush, _GKGradient, 
+                       _GKGreenBuddyViewController, _GKImageBrush, _GKImageColorPalette, 
+                       _GKImageContext, _GKImageKey, _GKImageSource, _GKInGameColorPalette, 
+                       _GKLocalImageSource, _GKLocalPlayerAuthenticator, _GKLoginAlertAccessoryView, 
+                       _GKLoginAlertView, _GKMButton, _GKMButtonCell, _GKMacGameIconBrush, 
+                       _GKMultiCircleImageBrush, _GKNetworkImageSource, _GKPanel, 
+                       _GKPasswordVerifyAlert, _GKRemoteSignInViewController, _GKRemoteViewController, 
+                       _GKRemoteViewControllerProxy, _GKScreenConfigurationController, 
+                       _GKServerWebViewController, _GKServerWebViewJSAccount, _GKServerWebViewJSEnvironment, 
+                       _GKServerWebViewJSExternalAccounts, _GKServerWebViewJSGame, 
+                       _GKServerWebViewJSRoot, _GKTextStyle, _GKTextStyleFocus, _GKTextStyleMac, 
+                       _GKTextStylePad, _GKTextStylePhone, _GKThemeBrush, _GKThreadsafeImageCache, 
+                       _GKUIActivityIndicatorView, _GKUITheme, _SortHueEntry, _UXAlertAction, 
+                       _UXAlertController, _UXNavigationBar, _UXNavigationController, 
+                       _UXNavigationItem, _UXResizableImage, _UXResizableImageView, 
+                       _UXViewController, __GKAlert ]
+    objc-ivars:      [ _GKAccountViewController._accountName, _GKAccountViewController._alias, 
+                       _GKAccountViewController._firstName, _GKAccountViewController._lastName, 
+                       _GKAccountViewController._mode, _GKAccountViewController._shouldUploadContacts, 
+                       _GKAdditions_NSAlert_SuperDelegate.real_delegate, _GKAdditions_NSAlert_SuperDelegate.tag, 
+                       _GKLocalPlayerAuthenticator._alertMessage, _GKLocalPlayerAuthenticator._alertTitle, 
+                       _GKLocalPlayerAuthenticator._authenticated, _GKLocalPlayerAuthenticator._authenticating, 
+                       _GKLocalPlayerAuthenticator._forceAuthentication, _GKLocalPlayerAuthenticator._hostWindow, 
+                       _GKLocalPlayerAuthenticator._inputLocalPlayer, _GKLocalPlayerAuthenticator._lastAuthDate, 
+                       _GKLocalPlayerAuthenticator._lastAuthPlayerID, _GKLocalPlayerAuthenticator._password, 
+                       _GKLocalPlayerAuthenticator._resultantLocalPlayer, _GKLocalPlayerAuthenticator._username, 
+                       _GKLoginAlertView._passwordFieldIndex, _GKLoginAlertView._username, 
+                       _GKPanel._sheetOffset, _GKServerWebViewJSAccount._authToken, 
+                       _GKServerWebViewJSAccount._player, _GKServerWebViewJSGame._game, 
+                       _GKUITheme._resourceCache, _UXAlertAction._enabled, _UXAlertAction._handler, 
+                       _UXAlertAction._style, _UXAlertAction._title, _UXResizableImage._alwaysStretches, 
+                       _UXResizableImage._capInsets, _UXResizableImage._needsInsetUpdate, 
+                       _UXResizableImageView._image ]
+...

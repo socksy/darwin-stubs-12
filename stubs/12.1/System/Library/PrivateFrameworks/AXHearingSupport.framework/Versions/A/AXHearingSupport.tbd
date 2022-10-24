@@ -1,0 +1,47 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: E45397E9-568A-3629-9661-7BA61D937711', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 638ED69B-6DF7-3D33-8A4A-4A1FF8511AB7' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AXHearingSupport.framework/Versions/A/AXHearingSupport'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXCloudKitContainerIdentifier, _AXCloudKitErrorDomain, _AXCloudKitFinishedSchemaCheckKey, 
+                       _AXCloudKitMaxRecordDataBytes, _AXCloudKitPushTopic, _AXCloudKitServerChangeTokenKey, 
+                       _AXCloudKitZoneName, _AXColorizeFormatLog, _AXLogShouldLogWithLevelAndFacility, 
+                       _AXLoggerForFacility, _AXOSLogLevelFromAXLogLevel, _AXPerformBlockAsynchronouslyOnMainThread, 
+                       _AXPerformBlockOnMainThread, _AXPerformBlockOnMainThreadAfterDelay, 
+                       _AXPerformBlockSynchronouslyOnMainThread, _AXTTYMessageKeyCallID, 
+                       _AXTTYMessageKeyContactID, _AXTTYMessageKeyContactPathSearchAction, 
+                       _AXTTYMessageKeyContactSearchAction, _AXTTYMessageKeyConversation, 
+                       _AXTTYMessageKeyConversationUpdates, _AXTTYMessageKeyDeleteAction, 
+                       _AXTTYMessageKeyReadAction, _AXTTYMessageKeyResult, _AXTTYMessageKeySettingsKey, 
+                       _AXTTYMessageKeyUUID, _AXTTYMessageKeyValue, _AXTTYMessageKeyWriteAction, 
+                       _AXTTYPreferredTransportMethodChangedNotification, _AXUnitTestingException, 
+                       _AXWillLogDebugWithFacility, _AXWillLogInfoWithFacility, _HAPerformBlockAsynchronouslyOnMainThread, 
+                       _HAPerformBlockOnMainThread, _HAPerformBlockOnMainThreadAfterDelay, 
+                       _HAPerformBlockSynchronouslyOnMainThread, _HAPerformSafeBlock, 
+                       __AXAssert, __AXLogWithFacility, __AXLogWithFacilityV, __AXStringForArgs, 
+                       _accessibilityHearingAidSupportBundle, _accessibilityTTYSupportBundle, 
+                       _currentProcessIsHeard, _hearingInputRouteStringForOption, 
+                       _hearingLocString, _hearingPropertyDescription, _kAXSAccessibilityPreferenceDomain, 
+                       _propertyContainsProperty, _supportsBinauralStreamingForHearingAid, 
+                       _ttyImageNamed, _ttyLocString, _ttyLocStringAndLocale ]
+    objc-classes:    [ _AXCloudKitHelper, _AXCloudKitHelperManagedObjectContext, 
+                       _AXFakeHearingAidDevice, _AXHAAccessQueue, _AXHAAccessQueueTimer, 
+                       _AXHAController, _AXHAControllerBrowser, _AXHAFakeXPCClient, 
+                       _AXHAListenerHelper, _AXHAMessageHandlerContext, _AXHAPacket, 
+                       _AXHARemoteController, _AXHASecurityHelper, _AXHAServer, _AXHASettings, 
+                       _AXHASettingsListenerHelper, _AXHAUtilities, _AXHAXPCClient, 
+                       _AXHAXPCMessage, _AXHeardController, _AXHearingAidDevice, 
+                       _AXHearingAidDeviceController, _AXHearingAidMode, _AXHearingSlaveController, 
+                       _AXIDCManager, _AXIDCMessage, _AXIDCPacket, _AXIDCRemoteController, 
+                       _AXIDCSlaveController, _AXRemoteHearingAidDevice, _AXSimpleMessage, 
+                       _AXTTYController, _AXTTYSettingsListenerHelper, _AXTTYSimulatorSubscriptionContext, 
+                       _TTYCall, _TTYContactList, _TTYConversation, _TTYConversationViewController, 
+                       _TTYDatabaseHelper, _TTYDictionaryManager, _TTYHistory, _TTYServer, 
+                       _TTYSettings, _TTYStretchImageView, _TTYTelephonyUtilities, 
+                       _TTYUtilities, _TTYUtterance, _TTYUtteranceCell, _TTYUtteranceRequest ]
+    objc-ivars:      [ _AXFakeHearingAidDevice._leftFakePrograms, _AXFakeHearingAidDevice._rightFakePrograms, 
+                       _AXIDCSlaveController._resolveTimer ]
+...

@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 853B47ED-3771-3136-9693-E58B2F05AD3C', 'x86_64: 853B47ED-3771-3136-9693-E58B2F05AD3C', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 9D3DA336-7A42-33CA-BB73-992322C43A79', 'arm64e: 9D3DA336-7A42-33CA-BB73-992322C43A79' ]
+platform:        zippered
+install-name:    '/usr/lib/system/libsystem_collections.dylib'
+current-version: 1506.40.4
+parent-umbrella: System
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _os_map_128_clear, _os_map_128_count, _os_map_128_delete, 
+                       _os_map_128_destroy, _os_map_128_find, _os_map_128_foreach, 
+                       _os_map_128_init, _os_map_128_insert, _os_map_32_clear, _os_map_32_count, 
+                       _os_map_32_delete, _os_map_32_destroy, _os_map_32_find, _os_map_32_foreach, 
+                       _os_map_32_init, _os_map_32_insert, _os_map_64_clear, _os_map_64_count, 
+                       _os_map_64_delete, _os_map_64_destroy, _os_map_64_find, _os_map_64_foreach, 
+                       _os_map_64_init, _os_map_64_insert, _os_map_str_clear, _os_map_str_count, 
+                       _os_map_str_delete, _os_map_str_destroy, _os_map_str_entry, 
+                       _os_map_str_find, _os_map_str_foreach, _os_map_str_init, _os_map_str_insert, 
+                       _os_set_32_ptr_clear, _os_set_32_ptr_count, _os_set_32_ptr_delete, 
+                       _os_set_32_ptr_destroy, _os_set_32_ptr_find, _os_set_32_ptr_foreach, 
+                       _os_set_32_ptr_init, _os_set_32_ptr_insert, _os_set_64_ptr_clear, 
+                       _os_set_64_ptr_count, _os_set_64_ptr_delete, _os_set_64_ptr_destroy, 
+                       _os_set_64_ptr_find, _os_set_64_ptr_foreach, _os_set_64_ptr_init, 
+                       _os_set_64_ptr_insert, _os_set_str_ptr_clear, _os_set_str_ptr_count, 
+                       _os_set_str_ptr_delete, _os_set_str_ptr_destroy, _os_set_str_ptr_find, 
+                       _os_set_str_ptr_foreach, _os_set_str_ptr_init, _os_set_str_ptr_insert ]
+...

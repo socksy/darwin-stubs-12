@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: D51CAC61-B8A8-365D-A0A4-F975A8C7FDAA', 'x86_64: D51CAC61-B8A8-365D-A0A4-F975A8C7FDAA', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 7064911F-9A95-33B9-855A-DE025E7BF4EE', 'arm64e: 7064911F-9A95-33B9-855A-DE025E7BF4EE' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement'
+current-version: 104
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BackgroundTaskManagementVersionNumber, _BackgroundTaskManagementVersionString, 
+                       _kBTMBackgroundItemsChangeNotification ]
+    objc-classes:    [ _BTMAgentConnection, _BTMBackgroundItem, _BTMBackgroundItemController, 
+                       _BTMBackgroundTaskManager, _BTMLoginItem, _BTMLoginItemController ]
+...

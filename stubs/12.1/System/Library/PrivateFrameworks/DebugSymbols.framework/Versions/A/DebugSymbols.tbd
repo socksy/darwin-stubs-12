@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 68EEECDB-50B6-32DC-93A9-4AD23002CA84', 'x86_64: 68EEECDB-50B6-32DC-93A9-4AD23002CA84', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: CFC7E6BF-A35E-33E2-A2BA-D832C0BF9DBA', 'arm64e: CFC7E6BF-A35E-33E2-A2BA-D832C0BF9DBA' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DebugSymbols.framework/Versions/A/DebugSymbols'
+current-version: 195.1
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DBGAddDSYMURL, _DBGAppID, _DBGBlockPath, _DBGCopyDSYMPropertyLists, 
+                       _DBGCopyDSYMURLForUUID, _DBGCopyDSYMURLForUUIDWithOptions, 
+                       _DBGCopyFullDSYMURLForUUID, _DBGCopyFullDSYMURLForUUIDWithOptions, 
+                       _DBGCopyMatchingUUIDsForURL, _DBGDictKey_FUNCTIONS, _DBGDictKey_LINE_TABLE, 
+                       _DBGDictKey_PATH, _DBGDictKey_TAG, _DBGDictKey_UID, _DBGDwarfClose, 
+                       _DBGDwarfGetAttributeKey, _DBGDwarfGetCompileUnitFunctions, 
+                       _DBGDwarfGetCompileUnitLineTable, _DBGDwarfGetCompileUnits, 
+                       _DBGDwarfGetDIEObjectsForAddress, _DBGDwarfGetFirstChild, 
+                       _DBGDwarfGetLinkMap, _DBGDwarfGetParent, _DBGDwarfGetSibling, 
+                       _DBGDwarfGetTagKey, _DBGDwarfOpen, _DBGExplicitSearchPathAdd, 
+                       _DBGExplicitSearchPathRemove, _DBGExplicitSearchPathRemoveAll, 
+                       _DBGPauseWatchingPaths, _DBGPrefKey_DisableFSEvents, _DBGPrefKey_FileMappedPaths, 
+                       _DBGPrefKey_SearchPaths, _DBGPrefKey_ShellCommands, _DBGPrefKey_SpotlightPaths, 
+                       _DBGPrefKey_SpotlightTimeout, _DBGRegisterObserver, _DBGResumeWatchingPaths, 
+                       _DBGSpotlightStart, _DBGSpotlightStop, _DBGTerminate, _DBGUnregisterObserver ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 1201C512-0EC9-3D56-860E-28E0580B864A', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 82D1D9D5-632E-368B-9789-D1A567E42AF7' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/DataDetectors.framework/Versions/A/DataDetectors'
+current-version: 435
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DDActionsManagerDidRunActionNotification, _DDActionsManagerWillRunActionNotification, 
+                       _DDHighlightCreateWithRectsInVisibleRectWithStyle, _DDHighlightCreateWithRectsInVisibleRectWithStyleAndDirection, 
+                       _DDHighlightCreateWithRectsInVisibleRectWithStyleScaleAndDirection, 
+                       _DDHighlightGetActionRect, _DDHighlightGetAimFrameRect, _DDHighlightGetBoundingRect, 
+                       _DDHighlightGetLayerWithContext, _DDHighlightGetTrackingRects, 
+                       _DDHighlightPointIsOnButton, _DDHighlightPointIsOnHighlight, 
+                       _DDHighlightSetButtonPressed, _DDHighlightWantsRollover, _DDMapsGetBestAddressForResults, 
+                       _DDMenuItemGetActionUTI, _kDataDetectorsABPersonAuthorKey, 
+                       _kDataDetectorsActionUTIContactCreate, _kDataDetectorsActionUTIContactPreview, 
+                       _kDataDetectorsActionUTIDial, _kDataDetectorsActionUTIEventCreate, 
+                       _kDataDetectorsActionUTIFaceTime, _kDataDetectorsActionUTIFaceTimeAudio, 
+                       _kDataDetectorsActionUTIItemInformation, _kDataDetectorsActionUTILargeType, 
+                       _kDataDetectorsActionUTIMessage, _kDataDetectorsActionUTIReminderCreate, 
+                       _kDataDetectorsActionUTIShowDate, _kDataDetectorsActionUTIShowMap, 
+                       _kDataDetectorsActionUTITTYDirectDial, _kDataDetectorsActionUTITTYRelayDial, 
+                       _kDataDetectorsActionUTITrackShipment, _kDataDetectorsActionUTIURLOpen, 
+                       _kDataDetectorsActionUTIURLQuickLook, _kDataDetectorsAllResultsKey, 
+                       _kDataDetectorsAuthorAsEmailAddressKey, _kDataDetectorsAuthorAsStringKey, 
+                       _kDataDetectorsAuthorNameComponentsKey, _kDataDetectorsAuthorPictureKey, 
+                       _kDataDetectorsCoreSpotlightUniqueIdentifier, _kDataDetectorsEventTitleKey, 
+                       _kDataDetectorsHostUUIDKey, _kDataDetectorsLeadingTextKey, 
+                       _kDataDetectorsMatchedStringKey, _kDataDetectorsReferenceDateKey, 
+                       _kDataDetectorsSelectionStringKey, _kDataDetectorsSpecialURLKey, 
+                       _kDataDetectorsTrailingTextKey ]
+    objc-classes:    [ _DDActionContext, _DDActionViewController, _DDActionsManager, 
+                       _DDDetectorManager2, _DDMacAction, _DDPhoneOrMailURI, _DDThreadManager ]
+    objc-ivars:      [ _DDPhoneOrMailURI._isFileScheme, _DDPhoneOrMailURI._isHttpScheme, 
+                       _DDPhoneOrMailURI._isMailScheme, _DDPhoneOrMailURI._value ]
+...

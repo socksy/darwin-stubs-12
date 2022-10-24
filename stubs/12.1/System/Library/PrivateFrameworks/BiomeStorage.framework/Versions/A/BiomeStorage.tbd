@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 9E579F0C-ACDF-32B8-A8A7-AA89B5796D7E', 'x86_64: 9E579F0C-ACDF-32B8-A8A7-AA89B5796D7E', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 25C20B8F-D489-324A-8D20-F524D6DA0881', 'arm64e: 25C20B8F-D489-324A-8D20-F524D6DA0881' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomeStorage.framework/Versions/A/BiomeStorage'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BMPBStoreBookmarkReadFrom, _BMPBTombstoneEventReadFrom, _BMPruningPolicyMaxAgeNoLimit, 
+                       _BiomeStorageVersionNumber, _BiomeStorageVersionString, _bm_defaultStoreSegmentSize, 
+                       _bm_defaultStoreVersion, _bm_frame_bytes, _bm_frame_header_info, 
+                       _bm_frame_header_status, _bm_generateChecksum, _bm_kLocalDeviceIdentifier, 
+                       _bm_kRemoteDeviceIdentifier, _bm_useAdler32, _bm_useCrc32, 
+                       _kTombstoneSubdirectory ]
+    objc-classes:    [ _BMDataProtection, _BMFileAttributes, _BMFileHandleIntern, 
+                       _BMFileLock, _BMFrame, _BMFrameStore, _BMMemoryMapping, _BMPBStoreBookmark, 
+                       _BMPBTombstoneEvent, _BMPruningPolicy, _BMStoreBookmark, _BMStoreConfig, 
+                       _BMStoreEnumerator, _BMStoreEnumeratorBase, _BMStoreEvent, 
+                       _BMStreamDatastore, _BMStreamDatastoreBase, _BMStreamDatastoreDeviceLockState, 
+                       _BMStreamDatastorePruner, _BMStreamDatastoreReader, _BMStreamDatastoreWriter, 
+                       _BMStreamMetadata, _BMStreamTombstoneEventDatastore, _BMTombstoneEvent, 
+                       _BMTombstoneEventEnumerator ]
+    objc-ivars:      [ _BMPBStoreBookmark._has, _BMPBStoreBookmark._iterationStartTime, 
+                       _BMPBStoreBookmark._offset, _BMPBStoreBookmark._segmentName, 
+                       _BMPBStoreBookmark._streamId, _BMPBTombstoneEvent._has, _BMPBTombstoneEvent._length, 
+                       _BMPBTombstoneEvent._offset, _BMPBTombstoneEvent._reason, 
+                       _BMPBTombstoneEvent._segmentName ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 3C9B7A94-53C9-3A29-9642-99B6E058D657', 'x86_64: 3C9B7A94-53C9-3A29-9642-99B6E058D657', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: B4704AFD-38CD-31F0-884A-70CEAFB2FB05', 'arm64e: B4704AFD-38CD-31F0-884A-70CEAFB2FB05' ]
+platform:        zippered
+install-name:    '/System/Library/Frameworks/SoundAnalysis.framework/Versions/A/SoundAnalysis'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _SNClassifierIdentifierVersion1, _SNErrorDomain, _SNSoundIdentifierApplause, 
+                       _SNSoundIdentifierBabble, _SNSoundIdentifierBeep, _SNSoundIdentifierBuzzer, 
+                       _SNSoundIdentifierCatMeow, _SNSoundIdentifierCheering, _SNSoundIdentifierDingBell, 
+                       _SNSoundIdentifierDistressedBaby, _SNSoundIdentifierDogBark, 
+                       _SNSoundIdentifierDoorKnock, _SNSoundIdentifierDoorbell, _SNSoundIdentifierFireAlarm, 
+                       _SNSoundIdentifierLaughter, _SNSoundIdentifierMusic, _SNSoundIdentifierShouting, 
+                       _SNSoundIdentifierSmokeAlarm, _SNSoundIdentifierSpeech, _SNSoundPrintAFeatureEmbeddingCustomModelName, 
+                       _SNSoundPrintKFeatureEmbeddingCustomModelName, _SNVGGishFeatureEmbeddingCustomModelName, 
+                       _SNVGGishFrontEndProcessingCustomModelName ]
+    objc-classes:    [ _SNAudioConfiguration, _SNAudioCorrelationResult, _SNAudioFileAnalyzer, 
+                       _SNAudioStreamAnalyzer, _SNClassification, _SNClassificationResult, 
+                       _SNClassifySoundRequest, _SNCopyFilesRequest, _SNCorrelateAudioRequest, 
+                       _SNCreateFeaturePrintRequest, _SNDaemon, _SNDeleteFilesRequest, 
+                       _SNDetectSignalThresholdRequest, _SNDetectSoundRequest, _SNDetectSpeechUtteranceRequest, 
+                       _SNDetectVoiceTriggerRequest, _SNDetectionResult, _SNDiscoverFileServerRequest, 
+                       _SNDistanceClassifier, _SNEstimateSpeechEmotionRequest, _SNFeaturePrint, 
+                       _SNFileCopyingResult, _SNFileDeletionResult, _SNFileListingResult, 
+                       _SNFileServerDiscoveryResult, _SNFileServerInfo, _SNFileSystem, 
+                       _SNKShotFeaturizationResult, _SNKShotFeaturizer, _SNKShotSegment, 
+                       _SNKShotSegmentationRequest, _SNKShotSegmentationResult, _SNLKFSResult, 
+                       _SNListFilesRequest, _SNMeasureLKFSRequest, _SNNullRequest, 
+                       _SNNullResult, _SNResultsCollector, _SNResultsPrinter, _SNSignalThresholdResult, 
+                       _SNSpeechEmotionResult, _SNSpeechUtteranceResult, _SNSystemAudioAnalyzer, 
+                       _SNTimeDurationConstraint, _SNVoiceTriggerCommand, _SNVoiceTriggerResult ]
+...

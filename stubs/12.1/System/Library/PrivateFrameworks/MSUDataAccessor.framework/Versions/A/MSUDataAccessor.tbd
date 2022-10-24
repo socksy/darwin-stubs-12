@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 29AF1F69-6D72-3257-88E6-987DBBDB827C', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 907360AB-F7FF-3303-9527-B2A786103F8C' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MSUDataAccessor.framework/Versions/A/MSUDataAccessor'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _kMSUDAErrorDomain, _lookupPathForPersistentData, _lookupPathForPersonalizedData ]
+    objc-classes:    [ _MSUDataAccessor ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4C42EF20-876B-3B09-A52E-E6805078E6E7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 35029D7A-6421-3C20-8EE1-73B429828742' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/TrustedAccessory.framework/Versions/A/TrustedAccessory'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _TAErrorDomain ]
+    objc-classes:    [ _TADevice, _TADeviceManager, _TAOperation, _TASecureIntentInfo, 
+                       _TASecureIntentOperation ]
+...

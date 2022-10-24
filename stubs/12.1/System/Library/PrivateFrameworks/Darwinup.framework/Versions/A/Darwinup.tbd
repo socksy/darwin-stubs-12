@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 237299C5-1090-381F-9034-E691CA5D01B7', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 0B4636F1-34BF-359B-BA5D-72E6D170EEDA' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/Darwinup.framework/Versions/A/Darwinup'
+current-version: 0
+compatibility-version: 0
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _DUErrorDomain, __DUMakeError ]
+    objc-classes:    [ _DUModification, _DURoot, _DUSession, _DUSessionSummary ]
+...

@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 4DF50C00-679F-31CF-A660-84C9B0BDA4D2', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 52F944D8-6AE7-3BC4-8A12-8AADFE458830' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/TranslationUIServices.framework/Versions/A/TranslationUIServices'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _LTUIErrorDomain, _kLTUIViewServiceProtocol ]
+    objc-classes:    [ _LTUIExtensionVendorViewController, _LTUISourceMeta, _LTUITranslationViewController ]
+...

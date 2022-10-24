@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 0D6F6D48-1705-35C1-BD8B-868D6C33AA01', 'x86_64: 0D6F6D48-1705-35C1-BD8B-868D6C33AA01', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4676097F-F721-3D0B-9CF6-5D8ED63B4975', 'arm64e: 4676097F-F721-3D0B-9CF6-5D8ED63B4975' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/RevealCore.framework/Versions/A/RevealCore'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _RevealCoreVersionNumber, _RevealCoreVersionString ]
+    objc-classes:    [ _RVDocumentContext, _RVItem, _RVQuery, _RVSelection ]
+...

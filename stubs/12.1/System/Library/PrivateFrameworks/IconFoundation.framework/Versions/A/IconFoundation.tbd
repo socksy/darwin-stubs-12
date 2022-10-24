@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 7BC9E472-2B97-3BEC-B26F-5472DE17C5BD', 'x86_64: 7BC9E472-2B97-3BEC-B26F-5472DE17C5BD', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 6DF438CE-4A8E-34B8-8F91-C0D1F4F18CD9', 'arm64e: 6DF438CE-4A8E-34B8-8F91-C0D1F4F18CD9' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/IconFoundation.framework/Versions/A/IconFoundation'
+current-version: 493
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _IFDefaultLog, _IFImageSpecificationTagAll, _IFImageSpecificationTagAppStore, 
+                       _IFImageSpecificationTagHomeScreen, _IFImageSpecificationTagInternal, 
+                       _IFImageSpecificationTagOptional, _IFImageSpecificationTagPrivate, 
+                       _IFImageSpecificationTagRecomended, _IFImageSpecificationTagRequired, 
+                       _IFImageSpecificationTagiPad, _IFImageSpecificationTagiPhone, 
+                       _IconFoundationVersionNumber, _IconFoundationVersionString ]
+    objc-classes:    [ _IFBundle, _IFCacheImage, _IFColor, _IFConcreteImage, _IFGraphicsContext, 
+                       _IFIconSpecification, _IFImage, _IFImageBag, _IFImageSpecification, 
+                       _IFPDFDocument, _IFPDFPage, _IFPlaceholderImage, _IFResourceMetadata, 
+                       _IFSymbol, _IFSymbolImage, _IFSymbolImageDescriptor, _ISCGImageBlockSet, 
+                       _ISImage, _ISPlaceholderImage, _ISSymbolImage, _ISVariantIconSpecification ]
+...

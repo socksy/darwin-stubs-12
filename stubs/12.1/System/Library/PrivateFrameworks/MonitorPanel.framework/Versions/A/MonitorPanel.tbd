@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 615278C7-1970-3AF2-BB1E-793C4DEFB05F', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 598713FA-584E-372B-A039-BAD0D47FAA05' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/MonitorPanel.framework/Versions/A/MonitorPanel'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _CalibrateDisplay, _ClearDisplayModeFlag, _ClearDisplayModeFlags, 
+                       _CopyDisplayModes, _CopyPreferredModes, _DisplayHasMultipleScanRates, 
+                       _GetDisplayModeFlags, _GetDisplayModeFlagsPtr, _IsDisplayModeFlagSet, 
+                       _IsShowingAllDisplayModes, _MPCopyDisplayAliasList, _MPCopyOnlineDisplayList, 
+                       _MPFreeDisplayAliasList, _MPFreeOnlineDisplayList, _OSLogForCategory, 
+                       _SetDisplayModeFlag, _SetShowAllDisplayModes, _kMPDisplaysHardwareChangeNotification, 
+                       _kMPDisplaysReconfigureNotification, _kMPDisplaysWillReconfigureNotification, 
+                       _kMPFamilyKey, _kMPMajorOrderKey, _kMPMinorOrderKey, _kMPNibNameKey, 
+                       _kMPTypeKey ]
+    objc-classes:    [ _MPDisplay, _MPDisplayMgr, _MPDisplayMode, _MPDisplayPreset, 
+                       _MonitorPanel ]
+    objc-ivars:      [ _MonitorPanel._bundle, _MonitorPanel._controller, _MonitorPanel._displayID, 
+                       _MonitorPanel._view ]
+...

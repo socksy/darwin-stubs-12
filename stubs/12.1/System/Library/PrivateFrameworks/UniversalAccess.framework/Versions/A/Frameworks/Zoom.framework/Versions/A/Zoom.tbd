@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 65014A98-0A1B-3CB1-86D3-B39AEC5B6C63', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 09322E5B-7AF2-3F2D-AFD3-1ED0C79DB234' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Frameworks/Zoom.framework/Versions/A/Zoom'
+current-version: 68
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _ZMCopyProcessInfoItemWithPSN, _ZMCreateARGBBitmapContext, 
+                       _ZMCreateImageFromFile, _ZMCreateImageFromResource, _ZMDispatchGetCurrentQueue, 
+                       _ZMDisplayFullRect, _ZMDisplayFullSplitScreenArea, _ZMDisplayMainRect, 
+                       _ZMDisplayRectForPoint, _ZMInsetZoomRectIntoScreenRect, _ZMIsPointOnAnyDisplay, 
+                       _ZMIsRectOnAnyDisplay, _ZMLocString, _ZMLocStringFromTable, 
+                       _ZMLockScreenBundleIdentifier, _ZMPSNIsEqualToPSN, _ZMPointContainsInf, 
+                       _ZMPointContainsNaN, _ZMPointIsValid, _ZMRectContainsNaN, 
+                       _ZMScreenPointForPoint, _ZMScreenSaverBundleIdentifier, _ZMSecurityAgentBundleIdentifier, 
+                       _ZMSetMagicZoom, _ZMSetMagicZoomOff, _ZMSizeContainsNaN, _ZMSourceRectComputation, 
+                       _ZMTopLayerForLayer, _ZMUpdateDisplayCache, _ZMWCopyProcessInfoWithPSN, 
+                       _ZMWindowIDForDst ]
+    objc-classes:    [ _ZMFZManager, _ZMFZScreenTransitionStateMachine, _ZMPreferences, 
+                       _ZMWWorkspace ]
+    objc-ivars:      [ _ZMFZScreenTransitionStateMachine._isObservingScreenScreenNotifications, 
+                       _ZMFZScreenTransitionStateMachine._zoomFactorToRestore, _ZMFZScreenTransitionStateMachine._zoomOriginToRestore, 
+                       _ZMPreferences._coalesceSyncKeys, _ZMPreferences._coalesceSyncTimer, 
+                       _ZMPreferences._coalesceTimerLock, _ZMPreferences._isZoomApp, 
+                       _ZMPreferences._notificationsDisabled ]
+...

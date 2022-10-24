@@ -45,15 +45,15 @@ mkdir -p "$out"
 
 result_name() {
   local lib=$1
-  local result=$out$lib
-  result=${result%.dylib}.tbd
+  local result=$out/$lib
+  result=${result%.dylib}
   echo "$result"
 }
 
 export_library() {
   local result
 
-  local lib=$1
+  local lib="${1%.tbd}.tbd"
   result=$(result_name "$lib")
   local file=$sysroot/$lib
 
@@ -74,7 +74,7 @@ export_library() {
 
     for exported_lib in "${reexports[@]}"; do
       log "Processing re-exported library: $exported_lib"
-      export_library "$exported_lib"
+      export_library "${exported_lib%.dylib}"
 
       if [ "$append" ]; then
         reexported_result=$(result_name "$exported_lib")

@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: AAFD85C7-3570-3E93-A1BC-71D9F2FAAB05', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 595A7307-C1C1-33E4-8040-70A93DE33C75' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityBundles.framework/Versions/A/AccessibilityBundles'
+current-version: 12
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AXBApplyBestTitleUIElementToAllSubviews, _AXBBundleManagerLoadAXBundles, 
+                       _AXBBundleManagerLoadAXBundlesWithClientToken, _AXBBundleManagerLoadRequiredAXBundlesWithClientToken, 
+                       _AXBComponentsJoinedByComma, _AXBEnumerateSubviewsUsingBlock, 
+                       _AXBFindViewControllerMatchingPredicate, _AXBFindViewControllerWithMaxSearchCountMatchingPredicate, 
+                       _AXBFormatFloat, _AXBFormatFloatWithPercentage, _AXBFormatInteger, 
+                       _AXBFormatNumber, _AXBFormatNumberWithOptions, _AXBPerformSafeBlock, 
+                       _AXBSafeCategoryInstall, _AXBSafeClassFromString, _AXBStarRatingStringForRating, 
+                       _AXBSubviewsMatchingCriteria, _AXBTraverseMainWindowViewControllersUsingBlock, 
+                       _AXBValidationAppendError, _AXBValidationLog, _AXBValidationLogAbort, 
+                       _AXBValidationPerformChecks, _AXBValidationSetAbortOnError, 
+                       _AXBValidationSetForceTests, _AXBValidationSetRunningUnitTests, 
+                       _AXBValidationShouldCrashOnErrors, _AXBValidationShouldLogErrors, 
+                       _AXBValidationShouldReportErrors, __AXBHasApplicationTurnedOnEnhanceUserInterface, 
+                       __AXBLocalizedString, __AXBLocalizedStringGlobal, __AXBStarRatingEqual, 
+                       __AXBValidationCheckClassConformsToProtocol, __AXBValidationCheckClassMethod, 
+                       __AXBValidationCheckClassMethodComplete, __AXBValidationCheckClassName, 
+                       __AXBValidationCheckClassProtocolMethod, __AXBValidationCheckExpression, 
+                       __AXBValidationCheckInstanceMethod, __AXBValidationCheckInstanceMethodComplete, 
+                       __AXBValidationCheckIsKindOfClass, __AXBValidationCheckIvar, 
+                       __AXBValidationCheckIvarType, __AXBValidationCheckProperty, 
+                       __AXBValidationCheckProtocolProperty, __AXBValidationCheckSymbol, 
+                       __AbortOnValidationError, __ForceValidationTests, __RunningUnitTests, 
+                       ___AXBCastAsClass, ___AXBCastAsForwardedClass, ___AXBCastAsForwardedSafeCategory, 
+                       ___AXBCastAsProtocol, ___AXBCastAsSafeCategory, ___AXBValidationCheckClassMethodArguments, 
+                       ___AXBValidationCheckInstanceMethodArguments ]
+    objc-classes:    [ _AXBBundleManager, _AXBNSBundleAccessibility, _AXBSafeCategory, 
+                       _AXBSafeCategory__NSObject, _AXBWeakReferenceContainer, ___AXBNSBundleAccessibility_super ]
+    objc-ivars:      [ _AXBBundleManager._blacklistedBundles, _AXBBundleManager._bundlesWithoutAXBundles, 
+                       _AXBBundleManager._loadedBundlePaths, _AXBBundleManager._loadedBundles, 
+                       _AXBBundleManager._lock, _AXBBundleManager._requiredBundles, 
+                       _AXBWeakReferenceContainer._weakReference ]
+...

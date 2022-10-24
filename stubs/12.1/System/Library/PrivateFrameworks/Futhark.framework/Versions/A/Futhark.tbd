@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: ED79F8A0-0F84-328E-8806-537AD9EA9F41', 'x86_64: ED79F8A0-0F84-328E-8806-537AD9EA9F41', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 4F01766C-B37B-3AC6-B641-8398257F317C', 'arm64e: 4F01766C-B37B-3AC6-B641-8398257F317C' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/Futhark.framework/Versions/A/Futhark'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _FKCCMatchGetConfidence, _FKComponentPrint, _FKGetBuildAPIVersion, 
+                       _FKGetBuildGitHash, _FKGetBuildTimestamp, _FKGetFrameworkVersion, 
+                       _FKPrintLinesegList, _FKPrintRender, _FKRecognizeConcomp, 
+                       _FKSeqMatchGetConfidence, _FutharkVersionNumber, _FutharkVersionString ]
+    objc-classes:    [ _FKTextCandidate, _FKTextDetector, _FKTextFeature ]
+    objc-ivars:      [ _FKTextDetector._memoryUsage, _FKTextDetector._recognizer, 
+                       _FKTextDetector._roi, _FKTextDetector._sessions, _FKTextDetector._size, 
+                       _FKTextDetector._timeBinarizer, _FKTextDetector._timeConcomps, 
+                       _FKTextDetector._timeDownscale, _FKTextDetector._timeRecognizer, 
+                       _FKTextDetector._timeSequences, _FKTextFeature._backingIndex, 
+                       _FKTextFeature._scale, _FKTextFeature._session ]
+...

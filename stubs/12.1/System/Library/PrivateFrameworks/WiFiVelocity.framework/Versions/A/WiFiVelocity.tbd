@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 8F71C89B-E467-3251-9C37-36371431823E', 'x86_64: 8F71C89B-E467-3251-9C37-36371431823E', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 595D0A8B-539E-35C6-8FD8-2C9D92CF5618', 'arm64e: 595D0A8B-539E-35C6-8FD8-2C9D92CF5618' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/WiFiVelocity.framework/Versions/A/WiFiVelocity'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _W5DebugDescriptionForAWDLSyncChannelSequence, _W5DebugDescriptionForAWDLSyncState, 
+                       _W5DescriptionForAWDLElectionParameters, _W5DescriptionForAWDLOpMode, 
+                       _W5DescriptionForAWDLScheduleState, _W5DescriptionForAWDLSyncChannelSequence, 
+                       _W5DescriptionForAWDLSyncParameters, _W5DescriptionForAWDLSyncState, 
+                       _W5DescriptionForAirDropDiscoverableMode, _W5DescriptionForBTCMode, 
+                       _W5DescriptionForBTCProfile, _W5DescriptionForBatteryWarningLevel, 
+                       _W5DescriptionForBluetoothDeviceConnectionMode, _W5DescriptionForBluetoothDeviceManufacturer, 
+                       _W5DescriptionForBluetoothDeviceRole, _W5DescriptionForBluetoothDeviceType, 
+                       _W5DescriptionForChainAck, _W5DescriptionForChainPowerState, 
+                       _W5DescriptionForChannel, _W5DescriptionForChannelWidth, _W5DescriptionForDesense, 
+                       _W5DescriptionForDesenseFlags, _W5DescriptionForDeviceType, 
+                       _W5DescriptionForDiagnosticsTestID, _W5DescriptionForDiagnosticsTestResult, 
+                       _W5DescriptionForEAPOLControlMode, _W5DescriptionForEAPOLControlState, 
+                       _W5DescriptionForEAPOLSupplicantState, _W5DescriptionForEventID, 
+                       _W5DescriptionForIPv4ConfigMethod, _W5DescriptionForIPv6ConfigMethod, 
+                       _W5DescriptionForLogItemID, _W5DescriptionForLogState, _W5DescriptionForOpMode, 
+                       _W5DescriptionForPHYMode, _W5DescriptionForPingTrafficClass, 
+                       _W5DescriptionForPower, _W5DescriptionForPowerSourceType, 
+                       _W5DescriptionForPowerStateCaps, _W5DescriptionForReachabilityFlags, 
+                       _W5DescriptionForSecurity, _W5DescriptionForTxChainPower, 
+                       _W5DescriptionForWiFiDropReason, _W5ExtendedDescriptionForDiagnosticsTestID, 
+                       _W5FormattedDescriptionForDebugConfiguration, _W5FormattedDescriptionForDiagnosticsTestResult, 
+                       _W5FormattedDescriptionForDiagnosticsTestResult2, _W5FormattedDescriptionForStatus, 
+                       _W5FormattedHeaderForDiagnosticsTestResults, _W5FormattedHeaderForDiagnosticsTestResults2, 
+                       _W5IsSelfAssignedIPv4, _W5IsSelfAssignedIPv6, _W5MachineSerialNumber ]
+    objc-classes:    [ _W5AWDLStatus, _W5BluetoothDevice, _W5BluetoothStatus, _W5Client, 
+                       _W5DebugConfiguration, _W5DiagnosticsTestRequest, _W5DiagnosticsTestResult, 
+                       _W5Event, _W5LogItemReceipt, _W5LogItemRequest, _W5NetworkStatus, 
+                       _W5Peer, _W5PingResult, _W5PowerStatus, _W5Status, _W5WiFiChannel, 
+                       _W5WiFiLinkQualityUpdate, _W5WiFiPreferredNetwork, _W5WiFiScanResult, 
+                       _W5WiFiStatus ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 39AB4872-1E8C-33C3-85AB-4D59F5F25AC4', 'x86_64: 39AB4872-1E8C-33C3-85AB-4D59F5F25AC4', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 73662979-EBA8-3C46-8B43-5D4EFD1721F1', 'arm64e: 73662979-EBA8-3C46-8B43-5D4EFD1721F1' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/BiomeDSL.framework/Versions/A/BiomeDSL'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _BMDSLJSONTransformerNameFromEncodingDescriptor, _BMDSLRegisterJSONTransformerNameFromEncodingDescriptor, 
+                       _BMDSLValidateDictionary, _BiomeDSLVersionNumber, _BiomeDSLVersionString, 
+                       _kBMDSLName, _kBMDSLUpstream, _kBMDSLVersion ]
+    objc-classes:    [ _BMDSL, _BMDSLAggregator, _BMDSLArgumentTransform, _BMDSLArray, 
+                       _BMDSLBaseCodable, _BMDSLClassTransform, _BMDSLClasses, _BMDSLCollect, 
+                       _BMDSLFilter, _BMDSLInstanceTransform, _BMDSLJSONAllowedClasses, 
+                       _BMDSLJSONArchiver, _BMDSLJSONCoder, _BMDSLJSONUnarchiver, 
+                       _BMDSLKeyPathSelector, _BMDSLKeyPathTransform, _BMDSLMap, 
+                       _BMDSLMerge, _BMDSLOrderedMerge, _BMDSLState, _BMDSLSubscribeOn, 
+                       _BMDSLSubscriber, _BMDSLTransformInvocation, _BMDSLTransformValidator, 
+                       _BMDSLTransforms, _BMDSLTumblingWindowAssigner, _BMDSLWindowAssigner, 
+                       _BMDSLWindower, __BPSSubscribeOnInner ]
+...

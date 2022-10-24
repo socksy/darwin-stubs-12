@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: C8930AA2-E50A-3721-9D02-1C4BAB7D5558', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 001FFEFB-70E2-32FE-8F46-F2CDFADAAE4E' ]
+platform:        macosx
+install-name:    '/System/Library/PrivateFrameworks/AppleScript.framework/Versions/A/AppleScript'
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _AppleScriptComponent, _AppletComponent, _GenericComponent, 
+                       _OSAAppletExecute ]
+...

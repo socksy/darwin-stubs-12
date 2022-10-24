@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ x86_64, arm64, arm64e ]
+uuids:           [ 'x86_64: 00A217EE-36AE-3915-B627-5016C2340126', 'x86_64: 00A217EE-36AE-3915-B627-5016C2340126', 
+                   'arm64: 00000000-0000-0000-0000-000000000000', 'arm64: 00000000-0000-0000-0000-000000000000', 
+                   'arm64e: 45FC2E53-226E-3151-84A9-E0F98BAAB223', 'arm64e: 45FC2E53-226E-3151-84A9-E0F98BAAB223' ]
+platform:        zippered
+install-name:    '/System/Library/PrivateFrameworks/DeviceToDeviceManager.framework/Versions/A/DeviceToDeviceManager'
+current-version: 38
+exports:
+  - archs:           [ x86_64, arm64, arm64e ]
+    symbols:         [ _D2DInitialize, _D2DRelease, _D2DRetain, _D2DStartAdvertisingPair, 
+                       _D2DStartAdvertisingPairOnTransport, _D2DStartBrowsingForKey, 
+                       _D2DStartBrowsingForKeyOnTransport, _D2DStartResolvingPair, 
+                       _D2DStartResolvingPairOnTransport, _D2DStopAdvertisingPair, 
+                       _D2DStopAdvertisingPairOnTransport, _D2DStopBrowsingForKey, 
+                       _D2DStopBrowsingForKeyOnTransport, _D2DStopResolvingPair, 
+                       _D2DStopResolvingPairOnTransport, _D2DTerminate, _DeviceToDeviceManagerVersionNumber, 
+                       _DeviceToDeviceManagerVersionString ]
+...
